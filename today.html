@@ -70,8 +70,8 @@ async function render() {
       <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>${LD.t('week')} ${th.week || ''}: ${LD.esc(th.title || '')}</span>
       <span class="muted small">${LD.t('day')} ${day} ${LD.t('of')} ${LD.TOTAL_DAYS}</span>
     </div>
-    ${!started ? `<div class="card amber" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div>You are previewing. Start your own journey and the app will bring you one message a day.</div><button class="btn sm" onclick="LD.start();location.href='today.html'">Start day 1 today</button></div>` : ''}
-    ${ahead ? `<div class="card soft small muted">You are reading ahead. Your journey is on day ${today}; this one will be your message in ${day - today} day${day - today > 1 ? 's' : ''}.</div>` : ''}
+    ${!started ? `<div class="card amber" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div>${LD.t('preview')}</div><button class="btn sm" onclick="LD.start();location.href='today.html'">${LD.t('startBtn')}</button></div>` : ''}
+    ${ahead ? `<div class="card soft small muted">${LD.t('ahead')} ${today}; ${LD.t('aheadEnd')}</div>` : ''}
     ${m.fallback ? `<div class="card soft small muted">${LD.t('inEnglish')}</div>` : ''}
     <h1 class="title">${LD.esc(m.title)}</h1>
 
@@ -104,7 +104,7 @@ async function render() {
     <section class="card soft">
       <div class="card-lbl">${LD.t('mood')}</div>
       <div class="moods" id="moods">${MOODS.map((x, i) => `<button data-v="${i + 1}" class="${moodToday === i + 1 ? 'on' : ''}" aria-label="${x[1]}">${x[0]}<small>${x[1]}</small></button>`).join('')}</div>
-      <p class="small muted" style="margin:10px 0 0">A one-tap check-in. Over the weeks you will see your pattern on the Journey page. Stored only on your device.</p>
+      <p class="small muted" style="margin:10px 0 0">${LD.t('moodNote')}</p>
     </section>
 
     <section class="card">
@@ -125,7 +125,7 @@ async function render() {
 
     <nav class="pager">
       ${day > 1 ? `<a class="btn ghost" href="today.html?day=${day - 1}">← ${LD.t('day')} ${day - 1}</a>` : '<span></span>'}
-      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1}</a>` : '<a class="btn ghost" href="journey.html">Finish</a>'}
+      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1}</a>` : '<a class="btn ghost" href="journey.html">${LD.t('finish')}</a>'}
     </nav>
   </article>`;
 
