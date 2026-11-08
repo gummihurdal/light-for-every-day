@@ -13,7 +13,7 @@
 <body>
 <main class="main">
   <div class="topbar">
-    <div class="tb-title">All Messages</div>
+    <div class="tb-title" id="tb-title">All Messages</div>
     <div class="tb-right"><span class="tb-sub" id="tb-count"></span></div>
   </div>
   <div class="filter-bar" id="filters">
@@ -33,6 +33,7 @@
 const PAGE = 18; let all = [], filtered = [], page = 0, weekFilter = 'all', searchQ = '', themes = [];
 const esc = LD.esc;
 async function load() {
+  document.getElementById('tb-title').textContent = T.all;
   const H = { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY };
   [themes, all] = await Promise.all([LD.getThemes(), fetch(`${LD.SB}/rest/v1/ld_messages?select=day_number,theme,title,quote,quote_source,scripture&lang=eq.${LD.lang()}&status=eq.published&order=day_number`, { headers: H }).then(r => r.json())]);
   if (!all.length && LD.lang() !== 'en') all = await fetch(`${LD.SB}/rest/v1/ld_messages?select=day_number,theme,title,quote,quote_source,scripture&lang=eq.en&status=eq.published&order=day_number`, { headers: H }).then(r => r.json());
@@ -55,7 +56,7 @@ function renderPage() {
     return `<a class="acard" href="today.html?day=${d.day_number}" style="animation-delay:${(i % PAGE * 0.03).toFixed(2)}s">
       <div class="card-img"><div class="card-img-placeholder"><div class="card-img-grad"></div><div class="card-img-verse">${esc(d.scripture?.reference || th.title || '')}</div></div></div>
       <div class="card-body">
-        <div class="card-date">Day ${d.day_number} · Week ${th.week || ''}${done[d.day_number] ? ' · ✓' : ''}</div>
+        <div class="card-date">${T.day} ${d.day_number} · ${T.week} ${th.week || ''}${done[d.day_number] ? ' · ✓' : ''}</div>
         <div class="card-theme">${esc(d.title)}</div>
         <div class="card-quote">"${esc(d.quote)}"</div>
       </div>

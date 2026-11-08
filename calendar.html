@@ -20,7 +20,7 @@
 <body>
 <main class="main">
   <div class="topbar">
-    <div class="tb-title">My Progress</div>
+    <div class="tb-title" id="tb-title">My Progress</div>
     <div class="tb-sub" id="tb-sub"></div>
   </div>
   <div class="body" style="padding:32px 40px 80px">
@@ -56,6 +56,7 @@ const esc = LD.esc;
 function iso(y, m, d) { return `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`; }
 function dayFor(dateISO) { const n = Math.round((new Date(dateISO + 'T00:00:00') - new Date(startISO + 'T00:00:00')) / 86400000) + 1; return n >= 1 && n <= LD.TOTAL_DAYS ? n : null; }
 async function boot() {
+  document.getElementById('tb-title').textContent = T.progress;
   [index, themes] = await Promise.all([LD.getMessagesIndex(), LD.getThemes()]);
   const done = LD.done(), moods = LD.moods(), cur = LD.currentDay();
   document.getElementById('jh').innerHTML = started ? `<span>Started <b>${startISO}</b></span><span>Current <b>Day ${cur}</b></span><span>Challenges done <b>${Object.keys(done).length}</b></span><span>Check-ins <b>${Object.keys(moods).length}</b></span>` : `<span>Not started yet · <a href="today.html?start=1" style="color:var(--gold)">Begin Day One</a> · the calendar previews the journey from today</span>`;
@@ -75,7 +76,7 @@ function render() {
     const n = dayFor(iso(viewYear, viewMonth, d)); const m = n ? index.find(r => r.day_number === n) : null;
     const th = m ? themes.find(t => t.slug === m.theme) : null;
     const cls = ['cal-cell', isToday ? 'today' : '', m ? 'has-devo' : '', n && done[n] ? 'done' : ''].filter(Boolean).join(' ');
-    const pill = m ? `<div class="cal-pill"><div class="cal-pill-ref">Day ${n}</div><div class="cal-pill-theme">${esc(m.title)}</div></div>` : '';
+    const pill = m ? `<div class="cal-pill"><div class="cal-pill-ref">${T.day} ${n}</div><div class="cal-pill-theme">${esc(m.title)}</div></div>` : '';
     html += `<div class="${cls}"${m ? ` onclick="openDrawer(${n})"` : ''}><div class="cal-num">${d}</div>${pill}</div>`;
   }
   const rem = (7 - (first + total) % 7) % 7;
