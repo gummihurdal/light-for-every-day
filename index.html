@@ -25,25 +25,25 @@ body{background:var(--navy4);color:var(--text);font-family:'Cormorant Garamond',
 .hero{position:relative;height:100vh;min-height:600px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background-image:url('hero-beach.jpg');background-size:cover;background-position:center 30%;transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate}
 @keyframes heroZoom{from{transform:scale(1.05) translateY(0)}to{transform:scale(1.12) translateY(-2%)}}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,13,26,0.35) 0%,rgba(8,13,26,0.2) 30%,rgba(8,13,26,0.4) 60%,rgba(8,13,26,0.85) 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,15,30,0.35) 0%,rgba(10,15,30,0.4) 35%,rgba(10,15,30,0.62) 60%,rgba(10,15,30,0.78) 80%,rgba(10,15,30,0.9) 100%)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;animation:fadeUp 1.4s cubic-bezier(0.22,1,0.36,1) both}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .hero-eyebrow{font-family:'Cinzel',serif;font-size:10px;letter-spacing:8px;text-transform:uppercase;color:rgba(255,255,255,0.92);margin-bottom:24px;text-shadow:0 2px 16px rgba(0,0,0,0.9),0 1px 4px rgba(0,0,0,0.8);animation:fadeUp 1.4s .2s cubic-bezier(0.22,1,0.36,1) both}
 .hero-title{font-family:'Cinzel Decorative',serif;font-size:clamp(36px,6vw,88px);font-weight:400;color:#fff;line-height:1.1;letter-spacing:2px;text-shadow:0 4px 40px rgba(0,0,0,0.5);margin-bottom:20px;animation:fadeUp 1.4s .35s cubic-bezier(0.22,1,0.36,1) both}
 .hero-tag{font-family:'Cinzel',serif;font-size:clamp(11px,1.4vw,15px);letter-spacing:4px;text-transform:uppercase;color:#F8EED4;margin:0 0 22px;text-shadow:0 1px 3px rgba(0,0,0,0.95),0 2px 18px rgba(0,0,0,0.9);animation:fadeUp 1.4s .45s cubic-bezier(0.22,1,0.36,1) both}
 .hero-rule{width:60px;height:1px;background:var(--gold);margin:0 auto 20px;opacity:.7;animation:fadeUp 1.4s .5s cubic-bezier(0.22,1,0.36,1) both}
-.hero-sub{font-size:clamp(17px,2.2vw,23px);font-style:italic;font-weight:300;color:rgba(237,224,192,0.85);line-height:1.65;max-width:560px;animation:fadeUp 1.4s .55s cubic-bezier(0.22,1,0.36,1) both}
+.hero-sub{font-size:clamp(17px,2.2vw,23px);font-style:italic;font-weight:400;color:#F2EDE4;text-shadow:0 1px 3px rgba(0,0,0,0.6),0 2px 14px rgba(0,0,0,0.55);line-height:1.65;max-width:560px;animation:fadeUp 1.4s .55s cubic-bezier(0.22,1,0.36,1) both}
 .hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:44px;animation:fadeUp 1.4s .7s cubic-bezier(0.22,1,0.36,1) both}
 .cta-primary{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--navy4);background:var(--gold);border:none;padding:16px 40px;cursor:pointer;text-decoration:none;transition:all .3s;display:inline-block;box-shadow:0 0 32px rgba(201,164,58,0.3)}
 .cta-primary:hover{background:var(--gold-l);box-shadow:0 0 48px rgba(201,164,58,0.5);transform:translateY(-1px)}
-.cta-secondary{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:rgba(237,224,192,0.85);background:transparent;border:1px solid rgba(237,224,192,0.3);padding:16px 32px;cursor:pointer;text-decoration:none;transition:all .3s;display:inline-block}
+.cta-secondary{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#F2EDE4;background:rgba(10,15,30,0.35);border:1.5px solid #F2EDE4;text-shadow:0 1px 3px rgba(0,0,0,0.6);padding:16px 32px;cursor:pointer;text-decoration:none;transition:all .3s;display:inline-block}
 .cta-secondary:hover{border-color:var(--gold);color:var(--gold)}
 .hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeUp 1.4s 1s cubic-bezier(0.22,1,0.36,1) both}
-.hero-scroll span{font-family:'Cinzel',serif;font-size:7px;letter-spacing:5px;text-transform:uppercase;color:rgba(237,224,192,0.4)}
+.hero-scroll span{font-family:'Cinzel',serif;font-size:7px;letter-spacing:5px;text-transform:uppercase;color:#F2EDE4;text-shadow:0 1px 3px rgba(0,0,0,0.6)}
 .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold-d),transparent);animation:scrollPulse 2s ease-in-out infinite}
 @keyframes scrollPulse{0%,100%{opacity:.4;transform:scaleY(.8)}50%{opacity:1;transform:scaleY(1)}}
 .today-strip{background:var(--navy2);border-bottom:1px solid var(--border2);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.ts-label{font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;text-transform:uppercase;color:var(--gold-d)}
+.ts-label{font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;text-transform:uppercase;color:var(--gold)}
 .ts-text{font-size:16px;font-style:italic;color:var(--text-b);flex:1;text-align:center}
 .ts-ref{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-d);white-space:nowrap}
 .features{padding:96px 48px;background:var(--navy4)}
@@ -92,7 +92,9 @@ body{background:var(--navy4);color:var(--text);font-family:'Cormorant Garamond',
 .footer-link:hover{color:var(--gold)}
 @media(max-width:768px){
   .hero-title{font-size:clamp(28px,10vw,52px)}
-  .hero-tag{font-size:11px;letter-spacing:2px;line-height:1.7;padding:0 12px}
+  .hero-tag{font-size:11px;letter-spacing:2px;line-height:1.7;padding:0 12px;color:#FFFFFF}
+  .hero-sub{font-size:19px;font-weight:500}
+  .cta-secondary{font-size:11px}
   .today-strip{flex-direction:column;text-align:center;padding:20px 24px}
   .features{padding:64px 20px}.verse-section{padding:72px 24px}.studies{padding:56px 20px}.safety{padding:48px 20px}
   .footer{padding:36px 24px;flex-direction:column;text-align:center}.footer-links{justify-content:center}
@@ -230,7 +232,7 @@ body{background:var(--navy4);color:var(--text);font-family:'Cormorant Garamond',
   </div>
 </footer>
 
-<script src="assets/app.js?v=202611082157"></script>
+<script src="assets/app.js?v=202611082216"></script>
 <script>
 const LAND = {
   en: { eyebrow: 'Pause · Breathe · Walk', sub: 'A place to pause when the days are dark. One short message each morning for people living with depression: hope, honesty, and a step small enough to take.', ctaToday: "Today's Light", ctaJourney: 'The Journey', ctaEmail: 'Get It By E-mail', scroll: 'Scroll Down', tsLabel: "Today's Word of Hope", fEyebrow: 'Everything in One Place', fTitle: 'Where would you like to begin?',
@@ -265,7 +267,7 @@ document.querySelectorAll('#lang-bar button').forEach(b => b.addEventListener('c
       document.getElementById('verse-ref').textContent = m.quote_source;
     }
   } catch (e) { document.getElementById('verse-text').textContent = 'Weeping may endure for a night, but joy comes in the morning.'; document.getElementById('verse-ref').textContent = 'Psalm 30:5'; }
-  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js?v=202611082157').catch(() => {});
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js?v=202611082216').catch(() => {});
 })();
 </script>
 </body>

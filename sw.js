@@ -1,5 +1,5 @@
 /* Light for Every Day — service worker: offline shell + cached messages */
-const VERSION = 'ld-v202611082157';
+const VERSION = 'ld-v202611082216';
 const SHELL = ['./', './index.html', './today.html', './topics.html', './learn.html', './calendar.html', './archive.html', './tools.html', './help.html', './settings.html', './about.html', './privacy.html', './subscribe.html', './contact.html',
   './assets/grace.css', './assets/app.js', './assets/shell.js', './crisis_lines.json', './manifest.json', './icons/icon.svg', './icons/icon-192.png', './hero-beach.jpg'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
