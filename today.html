@@ -125,7 +125,7 @@ async function render() {
 
     <nav class="pager">
       ${day > 1 ? `<a class="btn ghost" href="today.html?day=${day - 1}">← ${LD.t('day')} ${day - 1}</a>` : '<span></span>'}
-      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1}</a>` : '<a class="btn ghost" href="journey.html">${LD.t('finish')}</a>'}
+      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1}</a>` : `<a class="btn ghost" href="journey.html">${LD.t('finish')}</a>`}
     </nav>
   </article>`;
 
