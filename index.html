@@ -30,7 +30,7 @@ body{background:var(--navy4);color:var(--text);font-family:'Cormorant Garamond',
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .hero-eyebrow{font-family:'Cinzel',serif;font-size:10px;letter-spacing:8px;text-transform:uppercase;color:rgba(255,255,255,0.92);margin-bottom:24px;text-shadow:0 2px 16px rgba(0,0,0,0.9),0 1px 4px rgba(0,0,0,0.8);animation:fadeUp 1.4s .2s cubic-bezier(0.22,1,0.36,1) both}
 .hero-title{font-family:'Cinzel Decorative',serif;font-size:clamp(36px,6vw,88px);font-weight:400;color:#fff;line-height:1.1;letter-spacing:2px;text-shadow:0 4px 40px rgba(0,0,0,0.5);margin-bottom:20px;animation:fadeUp 1.4s .35s cubic-bezier(0.22,1,0.36,1) both}
-.hero-tag{font-family:'Cinzel',serif;font-size:clamp(11px,1.4vw,15px);letter-spacing:4px;text-transform:uppercase;color:var(--gold-l);margin:0 0 22px;text-shadow:0 2px 16px rgba(0,0,0,0.8);animation:fadeUp 1.4s .45s cubic-bezier(0.22,1,0.36,1) both}
+.hero-tag{font-family:'Cinzel',serif;font-size:clamp(11px,1.4vw,15px);letter-spacing:4px;text-transform:uppercase;color:#F8EED4;margin:0 0 22px;text-shadow:0 1px 3px rgba(0,0,0,0.95),0 2px 18px rgba(0,0,0,0.9);animation:fadeUp 1.4s .45s cubic-bezier(0.22,1,0.36,1) both}
 .hero-rule{width:60px;height:1px;background:var(--gold);margin:0 auto 20px;opacity:.7;animation:fadeUp 1.4s .5s cubic-bezier(0.22,1,0.36,1) both}
 .hero-sub{font-size:clamp(17px,2.2vw,23px);font-style:italic;font-weight:300;color:rgba(237,224,192,0.85);line-height:1.65;max-width:560px;animation:fadeUp 1.4s .55s cubic-bezier(0.22,1,0.36,1) both}
 .hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:44px;animation:fadeUp 1.4s .7s cubic-bezier(0.22,1,0.36,1) both}
@@ -92,6 +92,7 @@ body{background:var(--navy4);color:var(--text);font-family:'Cormorant Garamond',
 .footer-link:hover{color:var(--gold)}
 @media(max-width:768px){
   .hero-title{font-size:clamp(28px,10vw,52px)}
+  .hero-tag{font-size:11px;letter-spacing:2px;line-height:1.7;padding:0 12px}
   .today-strip{flex-direction:column;text-align:center;padding:20px 24px}
   .features{padding:64px 20px}.verse-section{padding:72px 24px}.studies{padding:56px 20px}.safety{padding:48px 20px}
   .footer{padding:36px 24px;flex-direction:column;text-align:center}.footer-links{justify-content:center}
