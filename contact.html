@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light for Every Day — Contact</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css">
+</head>
+<body>
+<main class="main">
+  <div class="topbar"><div class="tb-title">Contact</div></div>
+  <div class="body" style="padding:56px 48px 80px">
+    <div class="contact-wrap">
+      <div class="contact-header">
+        <div class="contact-eyebrow">Get in Touch</div>
+        <div class="contact-title">We'd Love to Hear From You</div>
+        <div class="contact-sub">Questions, corrections, a wrong crisis number, or a word about how the messages land — reach out any time. This is not a crisis service; if you need help now, please use the Help page.</div>
+      </div>
+      <div class="contact-email-block">
+        <span class="contact-email-label">Email</span>
+        <a class="contact-email-addr" href="mailto:hello@med.azurenexus.com">hello@med.azurenexus.com</a>
+      </div>
+      <div class="contact-or"><div class="contact-or-line"></div><span class="contact-or-text">Or send a message</span><div class="contact-or-line"></div></div>
+      <div id="contact-form-wrap">
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div><label class="field-lbl" for="cf-name">Your Name</label><input class="field-input" id="cf-name" type="text" placeholder="Your name"></div>
+            <div><label class="field-lbl" for="cf-email">Your Email</label><input class="field-input" id="cf-email" type="email" placeholder="your@email.com" required></div>
+          </div>
+          <div><label class="field-lbl" for="cf-message">Message</label><textarea class="field-textarea" id="cf-message" placeholder="Write your message here…" required></textarea></div>
+          <div class="form-err" id="cf-err"></div>
+          <button class="submit-btn" type="submit" id="cf-submit">Send Message →</button>
+        </form>
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">✦</div>
+          <div class="form-success-t">Your Message Has Been Received</div>
+          <div class="form-success-s">Thank you for reaching out. We read every message and will reply as soon as we can.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/shell.js"></script>
+<script>
+document.getElementById('contact-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = document.getElementById('cf-submit'), err = document.getElementById('cf-err');
+  const name = document.getElementById('cf-name').value.trim(), email = document.getElementById('cf-email').value.trim(), msg = document.getElementById('cf-message').value.trim();
+  if (!email || !msg) { err.textContent = 'Please add your e-mail and a message.'; err.style.display = 'block'; return; }
+  btn.disabled = true; err.style.display = 'none';
+  try {
+    const r = await fetch(LD.SB + '/rest/v1/ld_feedback', { method: 'POST', headers: { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+      body: JSON.stringify({ message_id: null, helpful: null, lang: LD.lang(), note: `[contact] ${name} <${email}>: ${msg}`.slice(0, 1000) }) });
+    if (!r.ok) throw new Error(r.status);
+    document.getElementById('contact-form').style.display = 'none'; document.getElementById('form-success').style.display = 'block';
+  } catch (e) { err.textContent = 'Could not send. Please e-mail us directly.'; err.style.display = 'block'; btn.disabled = false; }
+});
+</script>
+</body>
+</html>

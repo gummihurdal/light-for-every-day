@@ -2,151 +2,149 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Today — Light for Every Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today's Light — Light for Every Day</title>
 <meta name="description" content="Today's message: a quote, an explanation grounded in research, one small challenge and questions for reflection.">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#EDF1F5" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#131920" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0E1628">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/app.css">
-<style>
-.day-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px;flex-wrap:wrap}
-.title{margin:6px 0 18px}
-.challenge-done{display:flex;align-items:center;gap:12px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(0,0,0,.06)}
-.q{margin-bottom:18px}
-.q p{font-weight:600;margin-bottom:8px}
-.q textarea{background:var(--bg2)}
-.fb{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css">
 </head>
 <body>
-<main id="main">
-  <div id="loading"><div class="skeleton" style="width:30%"></div><div class="skeleton" style="height:2.2em;width:80%"></div><div class="skeleton" style="height:6em"></div><div class="skeleton" style="height:10em"></div></div>
-  <div id="app" style="display:none"></div>
+<main class="main">
+  <div class="topbar">
+    <div class="tb-greeting" id="greeting"></div>
+    <div class="tb-date" id="topdate"></div>
+  </div>
+  <div id="loading"><span class="load-t">Preparing today's light</span></div>
+  <div id="app" style="display:none;flex:1;flex-direction:column"></div>
 </main>
 <script src="assets/app.js"></script>
+<script src="assets/shell.js"></script>
 <script>
-LD.chrome('today');
+document.getElementById('greeting').textContent = greetingFor();
+document.getElementById('topdate').textContent = topDate();
 const params = new URLSearchParams(location.search);
 if (params.get('start') === '1' && !LD.startedOn()) { LD.start(); history.replaceState(null, '', 'today.html'); }
+const MOODS = [['😞', 'Very low'], ['😔', 'Low'], ['😐', 'Flat'], ['🙂', 'Okay'], ['😊', 'Good']];
+const esc = LD.esc;
 
-const MOODS = ['😞', '😔', '😐', '🙂', '😊'].map((e, i) => [e, LD.t('moods')[i]]);
-
-async function render() {
+async function init() {
   const today = LD.currentDay();
-  let day = parseInt(params.get('day') || '0', 10);
-  if (!day) day = today || 1;
-  const unlocked = LD.unlockedDay();
+  let day = parseInt(params.get('day') || '0', 10); if (!day) day = today || 1;
   const started = !!LD.startedOn();
+  const m = await LD.getMessage(day);
   const app = document.getElementById('app');
-
-  let m = null;
-  try { m = await LD.getMessage(day); } catch (e) {}
   document.getElementById('loading').style.display = 'none';
-  app.style.display = 'block';
-  if (!m) {
-    app.innerHTML = `<div class="card soft" style="text-align:center;padding:48px 24px"><h2>${LD.t('day')} ${day} ${LD.t('notready')}</h2><p class="muted">${LD.t('notready2')} ${day > 1 ? `<a href="today.html?day=${day - 1}">Go back a day</a>` : ''}</p><a class="btn ghost" href="journey.html">See the whole journey</a></div>`;
-    return;
-  }
+  app.style.display = 'flex';
+  if (!m) { app.innerHTML = `<div class="hero"><div class="hero-eyebrow">Day ${day}</div><div class="hero-theme">This day is still being written</div><a class="hero-cta" href="topics.html">See the Twelve Weeks</a></div>`; LDshell.addCrisis(); return; }
   const themes = await LD.getThemes();
   const th = themes.find(t => t.slug === m.theme) || {};
-  const doneMap = LD.done();
-  const j = LD.journal()[day] || {};
-  const s = LD.settings;
-  const qs = (m.reflection_questions || []);
-  const scripture = m.scripture || (m.sources && m.sources.scripture) || null;
-  const ahead = started && today && day > today;
-  const moodToday = LD.moods()[LD.todayISO()];
+  const doneMap = LD.done(), j = LD.journal()[day] || {}, s = LD.settings;
+  const sc = m.scripture || null;
   const sourceIds = Array.isArray(m.sources) ? m.sources.filter(x => typeof x === 'number') : [];
+  const paras = LD.paras(m.explanation);
+  const qs = (m.reflection_questions || []).map((q, i) => `<div class="sp-q"><div class="sp-qt">Question ${i + 1}</div><div class="sp-qtxt">${esc(q)}</div><textarea class="sp-ta" data-i="${i}" placeholder="Your private notes…">${esc(j[i] || '')}</textarea></div>`).join('');
+  const moodToday = LD.moods()[LD.todayISO()];
+  const ahead = started && today && day > today;
 
   app.innerHTML = `
-  <article>
-    <div class="day-head">
-      <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>${LD.t('week')} ${th.week || ''}: ${LD.esc(th.title || '')}</span>
-      <span class="muted small">${LD.t('day')} ${day} ${LD.t('of')} ${LD.TOTAL_DAYS}</span>
+    <div class="hero">
+      <div class="hero-eyebrow">Day ${day} of ${LD.TOTAL_DAYS} · Week ${th.week || ''}${day === today ? ' · Today' : ''}</div>
+      <div class="flame"><div class="flame-glow"></div><div class="flame-flame"></div><div class="flame-body"></div></div>
+      <div class="hero-quote">
+        <div class="hero-quote-text">"${esc(m.quote)}"</div>
+        <div class="hero-quote-by">— ${esc(m.quote_source)}</div>
+      </div>
+      <div class="hero-theme">${esc(m.title)}</div>
+      ${!started ? `<a href="#" class="hero-cta" onclick="LD.start();location.href='today.html';return false">Begin Day One</a>` : `<a href="#reading" class="hero-cta">Begin Reading</a>`}
+      ${ahead ? `<div class="hero-eyebrow" style="margin-top:22px;margin-bottom:0">You are reading ahead · your journey is on day ${today}</div>` : ''}
+      ${m.fallback ? `<div class="hero-eyebrow" style="margin-top:22px;margin-bottom:0">Shown in English · translation under review</div>` : ''}
     </div>
-    ${!started ? `<div class="card amber" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div>${LD.t('preview')}</div><button class="btn sm" onclick="LD.start();location.href='today.html'">${LD.t('startBtn')}</button></div>` : ''}
-    ${ahead ? `<div class="card soft small muted">${LD.t('ahead')} ${today}; ${LD.t('aheadEnd')}</div>` : ''}
-    ${m.fallback ? `<div class="card soft small muted">${LD.t('inEnglish')}</div>` : ''}
-    <h1 class="title">${LD.esc(m.title)}</h1>
 
-    <section class="card">
-      <div class="card-lbl">${LD.t('quote')}</div>
-      <blockquote class="quote">${LD.esc(m.quote)}</blockquote>
-      <div class="quote-by">— ${LD.esc(m.quote_source)}</div>
-    </section>
-
-    <section class="card">
-      <div class="card-lbl">${LD.t('expl')}</div>
-      <div class="body-text">${LD.paras(m.explanation)}</div>
-    </section>
-
-    <section class="card sage">
-      <div class="card-lbl">${LD.t('chal')}</div>
-      <div class="body-text">${LD.paras(m.challenge)}</div>
-      <label class="challenge-done check"><input type="checkbox" id="done" ${doneMap[day] ? 'checked' : ''}> <span>${LD.t('did')}</span></label>
-    </section>
-
-    <section class="card">
-      <div class="card-lbl">${LD.t('refl')}</div>
-      <p class="small muted">${LD.t('notes')}</p>
-      ${qs.map((q, i) => `<div class="q"><p>${LD.esc(q)}</p><textarea data-i="${i}" placeholder="…" aria-label="Your reflection">${LD.esc(j[i] || '')}</textarea></div>`).join('')}
-      <div class="small muted" id="saved"></div>
-    </section>
-
-    ${scripture && s.scripture ? `<section class="card amber"><div class="card-lbl">${LD.t('hope')}</div><p class="serif" style="font-size:1.15em;line-height:1.5;margin-bottom:6px">${LD.esc(scripture.text)}</p><div class="muted small">${LD.esc(scripture.reference)} · <a href="settings.html">${LD.t('hide')}</a></div></section>` : ''}
-
-    <section class="card soft">
-      <div class="card-lbl">${LD.t('mood')}</div>
-      <div class="moods" id="moods">${MOODS.map((x, i) => `<button data-v="${i + 1}" class="${moodToday === i + 1 ? 'on' : ''}" aria-label="${x[1]}">${x[0]}<small>${x[1]}</small></button>`).join('')}</div>
-      <p class="small muted" style="margin:10px 0 0">${LD.t('moodNote')}</p>
-    </section>
-
-    <section class="card">
-      <div class="fb">
-        <span class="muted">${LD.t('helpful')}</span>
-        <button class="btn ghost sm" data-fb="1">${LD.t('yes')}</button>
-        <button class="btn ghost sm" data-fb="0">${LD.t('no')}</button>
-        <span class="small muted" id="fb-thanks"></span>
+    <div class="cards-row">
+      <div class="card">
+        <div class="card-lbl">A Word of Hope</div>
+        <div class="card-body">${sc && s.scripture ? `<strong>${esc(sc.reference)}</strong>${esc(sc.text)}` : `<strong>${esc(th.title || '')}</strong>${esc(th.subtitle || '')}`}</div>
       </div>
-      <div class="btn-row" style="margin-top:14px">
-        <button class="btn ghost sm" id="share">${LD.t('share')}</button>
-        <a class="btn ghost sm" href="https://wa.me/?text=${encodeURIComponent(LD.shareText(m))}" target="_blank" rel="noopener">WhatsApp</a>
-        <button class="btn ghost sm" id="copy">${LD.t('copy')}</button>
+      <div class="card">
+        <div class="card-lbl">This Week</div>
+        <div class="card-body"><strong>${esc(th.title || '')}</strong>${esc(th.subtitle || 'A theme for seven days.')}</div>
       </div>
-    </section>
+      <div class="card">
+        <div class="card-lbl">Evidence</div>
+        <div class="card-body"><strong>${sourceIds.length} stud${sourceIds.length === 1 ? 'y' : 'ies'} behind today</strong>Every message draws on peer-reviewed research. The references are listed below.</div>
+      </div>
+    </div>
 
-    ${sourceIds.length ? `<details class="card soft"><summary>${LD.t('sources')} (${sourceIds.length})</summary><ol class="src-list" id="srcs" style="margin:14px 0 0 18px"><li class="muted">Loading…</li></ol></details>` : ''}
-
-    <nav class="pager">
-      ${day > 1 ? `<a class="btn ghost" href="today.html?day=${day - 1}">← ${LD.t('day')} ${day - 1}</a>` : '<span></span>'}
-      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1}</a>` : `<a class="btn ghost" href="journey.html">${LD.t('finish')}</a>`}
-    </nav>
-  </article>`;
-
-  document.getElementById('done').addEventListener('change', e => { LD.markDone(day, e.target.checked); if (e.target.checked) LD.toast('Well done. Small steps count.'); });
-  app.querySelectorAll('textarea').forEach(t => t.addEventListener('input', () => { LD.saveJournal(day, t.dataset.i, t.value); document.getElementById('saved').textContent = 'Saved on this device.'; }));
-  app.querySelectorAll('#moods button').forEach(b => b.addEventListener('click', () => { LD.saveMood(parseInt(b.dataset.v)); app.querySelectorAll('#moods button').forEach(x => x.classList.toggle('on', x === b)); LD.toast('Noted. Thank you for checking in.'); }));
+    <div class="body" id="reading">
+      <div class="two-col">
+        <div>
+          <div class="med-block">
+            <div class="block-lbl">Explanation</div>
+            <div class="med-title">${esc(m.title)}</div>
+            <div class="qbar"><div class="qbar-t">"${esc(m.quote)}"</div><div class="qbar-by">— ${esc(m.quote_source)}</div></div>
+            <div class="med-body">${paras}</div>
+            <div class="src-row"><a class="src-tag" href="learn.html?topic=${m.theme}">${esc(th.title || '')}</a><span class="src-tag">Week ${th.week || ''}</span><span class="src-tag">${sourceIds.length} sources</span></div>
+          </div>
+          <div class="orn"><div class="orn-l"></div><span class="orn-s">· · ·</span><div class="orn-l"></div></div>
+          <div class="call-block">
+            <div class="block-lbl">Today's Challenge</div>
+            <div class="call-text prose">${LD.paras(m.challenge)}</div>
+            <label class="done-row ${doneMap[day] ? 'on' : ''}"><input type="checkbox" id="done" ${doneMap[day] ? 'checked' : ''}> I did this, or my smaller version</label>
+          </div>
+          ${sc && s.scripture ? `<div class="pray-block"><div class="block-lbl">A Word of Hope</div><div class="pray-text">${esc(sc.text)}</div><div class="hero-quote-by" style="margin-top:14px">${esc(sc.reference)}</div></div>` : ''}
+          <div class="scripture-close">
+            <div class="block-lbl">Carry This With You</div>
+            <div class="sc-verse">"${esc(m.quote)}"</div>
+            <div class="sc-ref">${esc(m.quote_source)}</div>
+          </div>
+          <div class="lv-nav">
+            ${day > 1 ? `<a class="lv-btn" href="today.html?day=${day - 1}">← Day ${day - 1}</a>` : '<span></span>'}
+            ${day < LD.TOTAL_DAYS ? `<a class="lv-btn" href="today.html?day=${day + 1}">Day ${day + 1} →</a>` : `<a class="lv-btn" href="calendar.html">Finish →</a>`}
+          </div>
+        </div>
+        <div>
+          <div class="sp"><div class="sp-lbl">Reflection</div>${qs}<div class="sp-note">Your notes are saved only on this device.</div></div>
+          <div class="sp">
+            <div class="sp-lbl">How Are You Right Now?</div>
+            <div class="moods" id="moods">${MOODS.map((x, i) => `<button data-v="${i + 1}" class="${moodToday === i + 1 ? 'on' : ''}" aria-label="${x[1]}">${x[0]}<small>${x[1]}</small></button>`).join('')}</div>
+            <div class="sp-note">One tap a day. Your pattern appears on the Calendar.</div>
+          </div>
+          <div class="sp">
+            <div class="sp-lbl">Was This Helpful?</div>
+            <div class="btn-row"><button class="g-btn" data-fb="1">Yes</button><button class="g-btn" data-fb="0">Not Today</button><span class="sp-note" id="fb-thanks" style="margin:0;align-self:center"></span></div>
+            <div class="btn-row" style="margin-top:12px"><button class="g-btn" id="share">Share</button><a class="g-btn" href="https://wa.me/?text=${encodeURIComponent(LD.shareText(m))}" target="_blank" rel="noopener">WhatsApp</a><button class="g-btn" id="copy">Copy</button></div>
+          </div>
+          <div class="sp"><div class="sp-lbl">Sources</div><ol class="src-list" id="srcs"><li>Loading…</li></ol></div>
+          <div class="sp">
+            <div class="sp-lbl">Go Deeper</div>
+            <a class="sp-link" href="learn.html?topic=${m.theme}">This Week's Seven Days</a>
+            <a class="sp-link" href="topics.html">All Twelve Weeks</a>
+            <a class="sp-link" href="tools.html">The Well: Self-Check &amp; Tools</a>
+            <a class="sp-link" href="subscribe.html">Receive It By E-mail</a>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  LDshell.addCrisis();
+  document.getElementById('done').addEventListener('change', e => { LD.markDone(day, e.target.checked); e.target.parentElement.classList.toggle('on', e.target.checked); });
+  app.querySelectorAll('.sp-ta').forEach(t => t.addEventListener('input', () => LD.saveJournal(day, t.dataset.i, t.value)));
+  app.querySelectorAll('#moods button').forEach(b => b.addEventListener('click', () => { LD.saveMood(parseInt(b.dataset.v)); app.querySelectorAll('#moods button').forEach(x => x.classList.toggle('on', x === b)); }));
   app.querySelectorAll('[data-fb]').forEach(b => b.addEventListener('click', () => { LD.sendFeedback(m.id, b.dataset.fb === '1'); document.getElementById('fb-thanks').textContent = 'Thank you.'; app.querySelectorAll('[data-fb]').forEach(x => x.disabled = true); }));
-  document.getElementById('copy').addEventListener('click', async () => { try { await navigator.clipboard.writeText(LD.shareText(m)); LD.toast('Copied'); } catch (e) { LD.toast('Could not copy'); } });
-  document.getElementById('share').addEventListener('click', async () => {
-    const data = { title: m.title, text: LD.shareText(m) };
-    if (navigator.share) { try { await navigator.share(data); } catch (e) {} } else { try { await navigator.clipboard.writeText(data.text); LD.toast('Copied to clipboard'); } catch (e) {} }
-  });
-  if (sourceIds.length) {
-    try {
-      const srcs = await LD.getSources(sourceIds);
-      document.getElementById('srcs').innerHTML = srcs.map(x => `<li>${LD.esc(x.citation || x.title)}${x.doi ? ` <a href="https://doi.org/${LD.esc(x.doi)}" target="_blank" rel="noopener">doi</a>` : ''}</li>`).join('') || '<li class="muted">Sources listed in the evidence library.</li>';
-    } catch (e) {}
-  }
-  document.title = `${LD.t('day')} ${day}: ${m.title} — Light for Every Day`;
+  document.getElementById('copy').addEventListener('click', async () => { try { await navigator.clipboard.writeText(LD.shareText(m)); LD.toast('Copied'); } catch (e) {} });
+  document.getElementById('share').addEventListener('click', async () => { const data = { title: m.title, text: LD.shareText(m) }; if (navigator.share) { try { await navigator.share(data); } catch (e) {} } else { try { await navigator.clipboard.writeText(data.text); LD.toast('Copied'); } catch (e) {} } });
+  try {
+    const srcs = await LD.getSources(sourceIds);
+    document.getElementById('srcs').innerHTML = srcs.map(x => `<li>${esc(x.citation || x.title)}${x.doi ? ` <a href="https://doi.org/${esc(x.doi)}" target="_blank" rel="noopener">doi</a>` : ''}</li>`).join('') || '<li>See the evidence library.</li>';
+  } catch (e) {}
+  document.title = `Day ${day}: ${m.title} — Light for Every Day`;
 }
-render().catch(err => { document.getElementById('loading').innerHTML = '<p class="muted">Something did not load. Please check your connection and try again.</p>'; console.error(err); });
+init().catch(err => { console.error(err); document.getElementById('loading').innerHTML = '<span class="load-t">Rest for a moment, then try again</span>'; });
 </script>
 </body>
 </html>

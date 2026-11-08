@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light for Every Day — Twelve Weeks</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css">
+</head>
+<body>
+<main class="main">
+  <div class="topbar"><div class="tb-title">The Twelve Weeks</div><div class="tb-count">84 Days</div></div>
+  <div id="loading"><span class="load-t">Loading the weeks</span></div>
+  <div class="body" id="body" style="display:none;padding-top:0"><div class="tlist" id="grid"></div></div>
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/shell.js"></script>
+<script>
+(async () => {
+  const themes = await LD.getThemes();
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('body').style.display = 'block';
+  document.getElementById('grid').innerHTML = themes.map((t, i) => `
+    <a class="tlist-item" href="learn.html?topic=${t.slug}">
+      <span class="tlist-num">${String(i + 1).padStart(2, '0')}</span>
+      <span class="tlist-name">${LD.esc(t.title)}</span>
+      <span class="tlist-sub">${LD.esc(t.subtitle || '')}</span>
+      <span class="tlist-arr">→</span>
+    </a>`).join('');
+})().catch(console.error);
+</script>
+</body>
+</html>

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Confirmed — Light for Every Day</title><meta name="robots" content="noindex">
-<link rel="icon" href="icons/icon.svg" type="image/svg+xml"><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/app.css"></head>
-<body><main><section class="card" style="text-align:center;padding:48px 24px" id="box"><h1>One moment…</h1></section></main>
-<script src="assets/app.js"></script>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Confirmed — Light for Every Day</title><meta name="robots" content="noindex"><link rel="icon" href="icons/icon.svg" type="image/svg+xml"><meta name="theme-color" content="#0E1628"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/grace.css"></head><body>
+<main class="main"><div class="topbar"><div class="tb-title">Daily E-mail</div></div><div class="body" style="padding:56px 48px"><div class="contact-wrap"><div class="form-success" style="display:block" id="box"><div class="form-success-icon">✦</div><div class="form-success-t">One moment…</div></div></div></div></main>
+<script src="assets/app.js"></script><script src="assets/shell.js"></script>
 <script>
-LD.chrome('subscribe');
 (async () => {
   const t = new URLSearchParams(location.search).get('t'); const box = document.getElementById('box');
-  if (!t) { box.innerHTML = '<h1>Missing link</h1><p class="muted">Please open the link from your e-mail again.</p>'; return; }
+  if (!t) { box.innerHTML = '<div class="form-success-icon">✦</div><div class="form-success-t">Missing Link</div><div class="form-success-s">Please open the link from your e-mail again.</div>'; return; }
   try {
     const r = await fetch(LD.SB + '/rest/v1/rpc/ld_confirm', { method: 'POST', headers: { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_token: t }) });
     const ok = r.ok && (await r.json()) === true;
-    box.innerHTML = ok ? '<h1>You are in</h1><p>Your first message arrives tomorrow morning at the time you chose. Until then, you can <a href="today.html?start=1">read day 1 now</a>.</p>' : '<h1>Link not recognised</h1><p class="muted">It may have been used already, or the subscription was removed. <a href="subscribe.html">Sign up again</a>.</p>';
-  } catch (e) { box.innerHTML = '<h1>Something went wrong</h1><p class="muted">Please try the link again in a minute.</p>'; }
+    box.innerHTML = ok ? '<div class="form-success-icon">✦</div><div class="form-success-t">You Are In</div><div class="form-success-s">Your first message arrives tomorrow morning at the time you chose. Until then, you can <a href="today.html?start=1" style="color:var(--gold)">read day 1 now</a>.</div>' : '<div class="form-success-icon">✦</div><div class="form-success-t">Link Not Recognised</div><div class="form-success-s">It may have been used already. <a href="subscribe.html" style="color:var(--gold)">Sign up again</a>.</div>';
+  } catch (e) { box.innerHTML = '<div class="form-success-t">Something went wrong</div><div class="form-success-s">Please try the link again in a minute.</div>'; }
 })();
 </script></body></html>

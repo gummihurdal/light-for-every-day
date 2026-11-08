@@ -1,12 +1,12 @@
 {
   "name": "Light for Every Day",
   "short_name": "Light",
-  "description": "Daily encouragement grounded in research, for people living with depression.",
+  "description": "Daily hope and reflection for people living with depression, grounded in research.",
   "start_url": "./today.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#FAF7F2",
-  "theme_color": "#D98E3B",
+  "background_color": "#0E1628",
+  "theme_color": "#C9A43A",
   "orientation": "portrait",
   "lang": "en",
   "categories": ["health", "lifestyle"],
@@ -16,7 +16,7 @@
     { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "shortcuts": [
-    { "name": "Today's message", "url": "./today.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
-    { "name": "Help now", "url": "./help.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+    { "name": "Today's Light", "url": "./today.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Help Now", "url": "./help.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
   ]
 }

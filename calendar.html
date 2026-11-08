@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light for Every Day — Calendar</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css">
+<style>
+.mood-strip{display:flex;gap:3px;margin:0 0 24px;align-items:flex-end;height:36px;max-width:360px}
+.mood-strip span{flex:0 0 10px;background:var(--gold-d);opacity:.5}
+.mood-strip span.hi{background:var(--gold);opacity:.9}
+.journey-head{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--text-d)}
+.journey-head b{color:var(--gold);font-weight:500}
+</style>
+</head>
+<body>
+<main class="main">
+  <div class="topbar">
+    <div class="tb-title">Your Calendar</div>
+    <div class="tb-sub" id="tb-sub"></div>
+  </div>
+  <div class="body" style="padding:32px 40px 80px">
+    <div class="journey-head" id="jh"></div>
+    <div id="moodwrap" style="display:none"><div class="block-lbl">Mood Check-ins · Last Eight Weeks</div><div class="mood-strip" id="mood"></div></div>
+    <div class="cal-nav">
+      <div class="cal-month" id="cal-month"></div>
+      <div class="cal-btn-row">
+        <button class="cal-btn" onclick="changeMonth(-1)">← Prev</button>
+        <button class="cal-btn cal-today" onclick="goToday()">Today</button>
+        <button class="cal-btn" onclick="changeMonth(1)">Next →</button>
+      </div>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+  </div>
+</main>
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <div><div class="dr-date" id="dr-date"></div><div class="dr-theme" id="dr-theme"></div></div>
+    <button class="dr-close" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</div>
+<script src="assets/app.js"></script>
+<script src="assets/shell.js"></script>
+<script>
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const now = new Date(); let viewYear = now.getFullYear(), viewMonth = now.getMonth();
+let index = [], themes = [], startISO = LD.startedOn() || LD.todayISO(), started = !!LD.startedOn();
+const esc = LD.esc;
+function iso(y, m, d) { return `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`; }
+function dayFor(dateISO) { const n = Math.round((new Date(dateISO + 'T00:00:00') - new Date(startISO + 'T00:00:00')) / 86400000) + 1; return n >= 1 && n <= LD.TOTAL_DAYS ? n : null; }
+async function boot() {
+  [index, themes] = await Promise.all([LD.getMessagesIndex(), LD.getThemes()]);
+  const done = LD.done(), moods = LD.moods(), cur = LD.currentDay();
+  document.getElementById('jh').innerHTML = started ? `<span>Started <b>${startISO}</b></span><span>Current <b>Day ${cur}</b></span><span>Challenges done <b>${Object.keys(done).length}</b></span><span>Check-ins <b>${Object.keys(moods).length}</b></span>` : `<span>Not started yet · <a href="today.html?start=1" style="color:var(--gold)">Begin Day One</a> · the calendar previews the journey from today</span>`;
+  const keys = Object.keys(moods).sort().slice(-56);
+  if (keys.length >= 2) { document.getElementById('moodwrap').style.display = 'block'; document.getElementById('mood').innerHTML = keys.map(k => `<span style="height:${moods[k] * 20}%" class="${moods[k] >= 4 ? 'hi' : ''}" title="${k}: ${moods[k]}/5"></span>`).join(''); }
+  render();
+}
+function render() {
+  document.getElementById('cal-month').textContent = `${MONTHS[viewMonth]} ${viewYear}`;
+  document.getElementById('tb-sub').textContent = `${MONTHS[viewMonth]} ${viewYear}`;
+  const first = new Date(viewYear, viewMonth, 1).getDay(), total = new Date(viewYear, viewMonth + 1, 0).getDate(), prevTotal = new Date(viewYear, viewMonth, 0).getDate();
+  const done = LD.done();
+  let html = DAYS.map(d => `<div class="cal-head">${d}</div>`).join('');
+  for (let i = 0; i < first; i++) html += `<div class="cal-cell other-month"><div class="cal-num">${prevTotal - first + i + 1}</div></div>`;
+  for (let d = 1; d <= total; d++) {
+    const isToday = d === now.getDate() && viewMonth === now.getMonth() && viewYear === now.getFullYear();
+    const n = dayFor(iso(viewYear, viewMonth, d)); const m = n ? index.find(r => r.day_number === n) : null;
+    const th = m ? themes.find(t => t.slug === m.theme) : null;
+    const cls = ['cal-cell', isToday ? 'today' : '', m ? 'has-devo' : '', n && done[n] ? 'done' : ''].filter(Boolean).join(' ');
+    const pill = m ? `<div class="cal-pill"><div class="cal-pill-ref">Day ${n}</div><div class="cal-pill-theme">${esc(m.title)}</div></div>` : '';
+    html += `<div class="${cls}"${m ? ` onclick="openDrawer(${n})"` : ''}><div class="cal-num">${d}</div>${pill}</div>`;
+  }
+  const rem = (7 - (first + total) % 7) % 7;
+  for (let i = 1; i <= rem; i++) html += `<div class="cal-cell other-month"><div class="cal-num">${i}</div></div>`;
+  document.getElementById('cal-grid').innerHTML = html;
+}
+async function openDrawer(n) {
+  const m = await LD.getMessage(n); if (!m) return;
+  const th = themes.find(t => t.slug === m.theme) || {};
+  const d = new Date(startISO + 'T00:00:00'); d.setDate(d.getDate() + n - 1);
+  document.getElementById('dr-date').textContent = `Day ${n} · ${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  document.getElementById('dr-theme').textContent = m.title;
+  const paras = (m.explanation || '').split(/\n\n|\n/).filter(p => p.trim()).slice(0, 2).map(p => `<p>${esc(p.trim())}</p>`).join('');
+  document.getElementById('drawer-body').innerHTML = `
+    <div class="dr-sc"><div class="dr-sc-ref">Week ${th.week || ''} · ${esc(th.title || '')}</div>${m.scripture ? `<div class="dr-sc-t">${esc(m.scripture.text)} <span style="font-size:12px;color:var(--gold-d)">${esc(m.scripture.reference)}</span></div>` : ''}</div>
+    <div class="dr-q">"${esc(m.quote)}"</div>
+    <div class="dr-q-by">— ${esc(m.quote_source)}</div>
+    <div class="dr-med">${paras}</div>
+    <a class="dr-open" href="today.html?day=${n}">Open Full Message →</a>`;
+  document.getElementById('drawer').classList.add('open'); document.getElementById('overlay').classList.add('open');
+}
+function closeDrawer() { document.getElementById('drawer').classList.remove('open'); document.getElementById('overlay').classList.remove('open'); }
+function changeMonth(d) { viewMonth += d; if (viewMonth > 11) { viewMonth = 0; viewYear++; } if (viewMonth < 0) { viewMonth = 11; viewYear--; } render(); }
+function goToday() { viewYear = now.getFullYear(); viewMonth = now.getMonth(); render(); }
+boot().catch(console.error);
+</script>
+</body>
+</html>

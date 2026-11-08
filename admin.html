@@ -6,144 +6,125 @@
 <title>Review — Light for Every Day</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/app.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css">
 <style>
-main{max-width:980px}
-.row{display:grid;grid-template-columns:60px 1fr 120px 110px;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);cursor:pointer;font-size:15px}
-.row:hover{background:var(--bg3)}
-.st{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:999px;text-align:center}
-.st.draft{background:var(--bg3);color:var(--ink2)}.st.review{background:var(--amber-soft);color:var(--amber)}.st.published{background:var(--sage-soft);color:var(--sage)}.st.retired{background:var(--rose-soft);color:var(--rose)}
+.row{display:grid;grid-template-columns:60px 1fr 120px 110px;gap:10px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--border2);cursor:pointer;font-size:15px}
+.row:hover{background:var(--navy2)}
+.st{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;padding:4px 8px;border:1px solid var(--border2);text-align:center;color:var(--text-d)}
+.st.review{border-color:var(--gold-d);color:var(--gold-d)}.st.published{border-color:#5a9a6a;color:#7fc08f}.st.retired{border-color:#c05050;color:#c05050}
 .editor{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media(max-width:800px){.editor{grid-template-columns:1fr}.row{grid-template-columns:50px 1fr 90px}}
-.editor textarea{min-height:60px}
-#explanation{min-height:220px}
-.preview .card{margin-bottom:12px}
-.stats{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--ink2)}
+@media(max-width:900px){.editor{grid-template-columns:1fr}.row{grid-template-columns:50px 1fr 90px}}
+.editor label{margin-top:12px}
+.editor textarea{min-height:70px}
+#explanation{min-height:240px}
+.stats{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--text-d);align-items:center}
+.lang-tabs{display:flex;gap:6px}
 </style>
 </head>
 <body>
-<main>
-  <h1 style="margin-bottom:6px">Review queue</h1>
-  <p class="muted">For the editorial team. Messages are visible to readers only when their status is <strong>published</strong>.</p>
-
-  <section class="card" id="login">
-    <h3>Sign in</h3>
-    <p class="small muted">Enter your e-mail and we will send you a sign-in link. Only addresses on the editors list can change anything.</p>
-    <div class="field"><input type="email" id="email" placeholder="you@example.org"></div>
-    <div class="btn-row"><button class="btn primary" id="send">Send sign-in link</button><span class="small muted" id="login-msg"></span></div>
-  </section>
-
-  <section id="app" style="display:none">
-    <div class="card">
-      <div class="btn-row" style="justify-content:space-between">
-        <div class="stats" id="stats"></div>
-        <div class="btn-row"><select id="filter" style="width:auto"><option value="">All statuses</option><option>draft</option><option>review</option><option>published</option><option>retired</option></select><button class="btn ghost sm" id="logout">Sign out</button></div>
+<main class="main">
+  <div class="topbar"><div class="tb-title">Review Queue</div><div class="tb-sub">Editors</div></div>
+  <div class="body" style="padding:32px 48px 80px">
+    <div class="sec" id="login" style="max-width:560px">
+      <div class="sec-title">Sign In</div>
+      <p>Enter your e-mail and we will send you a sign-in link. Only addresses on the editors list can change anything. Messages are visible to readers only when their status is <strong style="color:var(--text-b)">published</strong>.</p>
+      <input class="field-input" type="email" id="email" placeholder="you@example.org" style="margin:12px 0">
+      <div class="btn-row" style="align-items:center"><button class="g-btn gold" id="send">Send Sign-In Link</button><span class="sp-note" id="login-msg" style="margin:0"></span></div>
+    </div>
+    <section id="app" style="display:none">
+      <div class="sec">
+        <div class="btn-row" style="justify-content:space-between;align-items:center">
+          <div class="stats" id="stats"></div>
+          <div class="btn-row" style="align-items:center"><div class="lang-tabs" id="langs"></div><select class="field-select" id="filter" style="width:auto"><option value="">All statuses</option><option>draft</option><option>review</option><option>published</option><option>retired</option></select><button class="g-btn" id="logout">Sign Out</button></div>
+        </div>
       </div>
-    </div>
-    <div class="card" id="list" style="padding:0;overflow:hidden"></div>
-    <div class="card" id="edit" style="display:none"></div>
-    <div class="card soft">
-      <h3>Reader feedback</h3>
-      <div id="feedback" class="small muted">Loading…</div>
-    </div>
-  </section>
+      <div class="sec" id="list" style="padding:0;overflow:hidden"></div>
+      <div class="sec" id="edit" style="display:none"></div>
+      <div class="sec"><div class="sec-title">Reader Feedback &amp; Contact Messages</div><div id="feedback" class="sp-note">Loading…</div></div>
+    </section>
+  </div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/shell.js"></script>
 <script>
-LD.chrome('more');
 const sb = supabase.createClient(LD.SB, LD.KEY);
-let themes = [], rows = [], current = null;
+let themes = [], rows = [], current = null, lang = 'en';
 const $ = id => document.getElementById(id);
-
-$('send').addEventListener('click', async () => {
-  const email = $('email').value.trim(); if (!email) return;
-  $('login-msg').textContent = 'Sending…';
-  const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + location.pathname } });
-  $('login-msg').textContent = error ? error.message : 'Check your inbox for the link.';
-});
+$('send').addEventListener('click', async () => { const email = $('email').value.trim(); if (!email) return; $('login-msg').textContent = 'Sending…'; const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + location.pathname } }); $('login-msg').textContent = error ? error.message : 'Check your inbox for the link.'; });
 $('logout').addEventListener('click', async () => { await sb.auth.signOut(); location.reload(); });
-
 async function boot() {
-  const { data: { session } } = await sb.auth.getSession();
-  if (!session) return;
+  const { data: { session } } = await sb.auth.getSession(); if (!session) return;
   const { data: admin } = await sb.from('ld_admins').select('email').limit(1);
-  if (!admin || !admin.length) { $('login').innerHTML = `<p>Signed in as ${LD.esc(session.user.email)}, but this address is not on the editors list. Ask the administrator to add it.</p><button class="btn ghost sm" onclick="sb.auth.signOut().then(()=>location.reload())">Sign out</button>`; return; }
+  if (!admin || !admin.length) { $('login').innerHTML = `<p>Signed in as ${LD.esc(session.user.email)}, but this address is not on the editors list. Ask the administrator to add it.</p><button class="g-btn" onclick="sb.auth.signOut().then(()=>location.reload())">Sign Out</button>`; return; }
   $('login').style.display = 'none'; $('app').style.display = 'block';
   themes = (await sb.from('ld_themes').select('*').order('week')).data || [];
-  await load();
-  loadFeedback();
+  $('langs').innerHTML = ['en', 'de', 'fr'].map(l => `<button class="g-btn ${l === lang ? 'gold' : ''}" data-l="${l}">${l.toUpperCase()}</button>`).join('');
+  $('langs').querySelectorAll('button').forEach(b => b.addEventListener('click', () => { lang = b.dataset.l; $('langs').querySelectorAll('button').forEach(x => x.classList.toggle('gold', x === b)); load(); }));
+  await load(); loadFeedback();
 }
 async function load() {
-  rows = (await sb.from('ld_messages').select('*').order('day_number')).data || [];
+  rows = (await sb.from('ld_messages').select('*').eq('lang', lang).order('day_number')).data || [];
   const c = {}; rows.forEach(r => c[r.status] = (c[r.status] || 0) + 1);
-  $('stats').innerHTML = Object.entries(c).map(([k, v]) => `<span><span class="st ${k}">${k}</span> ${v}</span>`).join('') + `<span>${rows.length} of 84</span>`;
+  $('stats').innerHTML = Object.entries(c).map(([k, v]) => `<span><span class="st ${k}">${k}</span> ${v}</span>`).join('') + `<span>${rows.length} of 84 · ${lang.toUpperCase()}</span>`;
   renderList();
 }
 function renderList() {
   const f = $('filter').value;
-  $('list').innerHTML = rows.filter(r => !f || r.status === f).map(r => {
-    const t = themes.find(x => x.slug === r.theme) || {};
-    return `<div class="row" data-id="${r.id}"><strong>${r.day_number}</strong><div>${LD.esc(r.title)}<div class="small muted">${LD.esc(t.title || r.theme)}${r.reviewed_by ? ' · reviewed by ' + LD.esc(r.reviewed_by) : ''}</div></div><span class="st ${r.status}">${r.status}</span><span class="small muted">${r.updated_at ? r.updated_at.slice(0, 10) : ''}</span></div>`;
-  }).join('') || '<div style="padding:16px" class="muted">Nothing here.</div>';
+  $('list').innerHTML = rows.filter(r => !f || r.status === f).map(r => { const t = themes.find(x => x.slug === r.theme) || {}; return `<div class="row" data-id="${r.id}"><strong style="font-family:'Cinzel',serif;font-size:12px;color:var(--gold-d)">${r.day_number}</strong><div>${LD.esc(r.title)}<div class="sp-note" style="margin:0">${LD.esc(t.title || r.theme)}${r.reviewed_by ? ' · reviewed by ' + LD.esc(r.reviewed_by) : ''}</div></div><span class="st ${r.status}">${r.status}</span><span class="sp-note" style="margin:0">${r.updated_at ? r.updated_at.slice(0, 10) : ''}</span></div>`; }).join('') || '<div style="padding:16px" class="sp-note">Nothing here.</div>';
   $('list').querySelectorAll('.row').forEach(el => el.addEventListener('click', () => openEditor(parseInt(el.dataset.id))));
 }
 $('filter').addEventListener('change', renderList);
-
 function openEditor(id) {
   current = rows.find(r => r.id === id); if (!current) return;
   const m = current, sc = m.scripture || {};
   $('edit').style.display = 'block';
   $('edit').innerHTML = `
-    <div class="btn-row" style="justify-content:space-between;margin-bottom:14px"><h2 style="margin:0">Day ${m.day_number} · ${LD.esc(m.title)}</h2><a class="small" href="today.html?day=${m.day_number}" target="_blank">preview as reader ↗</a></div>
+    <div class="btn-row" style="justify-content:space-between;margin-bottom:14px;align-items:center"><div class="sec-title" style="margin:0;padding:0;border:none">Day ${m.day_number} · ${LD.esc(m.title)}</div><a class="g-btn" href="today.html?day=${m.day_number}&lang=${m.lang}" target="_blank">Preview as reader ↗</a></div>
     <div class="editor">
       <div>
-        <div class="field"><label>Title</label><input type="text" id="title" value="${LD.esc(m.title)}"></div>
-        <div class="field"><label>Quote</label><textarea id="quote">${LD.esc(m.quote)}</textarea></div>
-        <div class="field"><label>Quote source</label><input type="text" id="quote_source" value="${LD.esc(m.quote_source)}"></div>
-        <div class="field"><label>Explanation</label><textarea id="explanation">${LD.esc(m.explanation)}</textarea></div>
-        <div class="field"><label>Challenge</label><textarea id="challenge">${LD.esc(m.challenge)}</textarea></div>
-        <div class="field"><label>Reflection questions (one per line)</label><textarea id="questions">${LD.esc((m.reflection_questions || []).join('\n'))}</textarea></div>
-        <div class="field"><label>Scripture reference</label><input type="text" id="sc_ref" value="${LD.esc(sc.reference || '')}"></div>
-        <div class="field"><label>Scripture text</label><textarea id="sc_text">${LD.esc(sc.text || '')}</textarea></div>
+        <label class="field-lbl">Title</label><input class="field-input" type="text" id="title" value="${LD.esc(m.title)}">
+        <label class="field-lbl">Quote</label><textarea class="field-textarea" id="quote">${LD.esc(m.quote)}</textarea>
+        <label class="field-lbl">Quote source</label><input class="field-input" type="text" id="quote_source" value="${LD.esc(m.quote_source)}">
+        <label class="field-lbl">Explanation</label><textarea class="field-textarea" id="explanation">${LD.esc(m.explanation)}</textarea>
+        <label class="field-lbl">Challenge</label><textarea class="field-textarea" id="challenge">${LD.esc(m.challenge)}</textarea>
+        <label class="field-lbl">Reflection questions (one per line)</label><textarea class="field-textarea" id="questions">${LD.esc((m.reflection_questions || []).join('\n'))}</textarea>
+        <label class="field-lbl">Scripture reference</label><input class="field-input" type="text" id="sc_ref" value="${LD.esc(sc.reference || '')}">
+        <label class="field-lbl">Scripture text</label><textarea class="field-textarea" id="sc_text">${LD.esc(sc.text || '')}</textarea>
       </div>
       <div>
-        <div class="field"><label>Status</label><select id="status">${['draft', 'review', 'published', 'retired'].map(s => `<option ${s === m.status ? 'selected' : ''}>${s}</option>`).join('')}</select></div>
-        <div class="field"><label>Reviewer note (internal)</label><textarea id="note">${LD.esc(m.reviewer_note || '')}</textarea></div>
-        <div class="field"><label>Sources (ids)</label><input type="text" id="sources" value="${LD.esc((m.sources || []).join(', '))}"></div>
-        <div class="btn-row"><button class="btn primary" id="save">Save</button><button class="btn ghost" id="publish">Save &amp; publish</button><button class="btn ghost" id="close">Close</button><span class="small muted" id="save-msg"></span></div>
-        <p class="small muted" style="margin-top:14px">Checklist before publishing: quote is real and attributed · no advice against medication or therapy · no dosages · challenge has a smaller version · tone is kind · sources match the text.</p>
+        <label class="field-lbl">Status</label><select class="field-select" id="status">${['draft', 'review', 'published', 'retired'].map(s => `<option ${s === m.status ? 'selected' : ''}>${s}</option>`).join('')}</select>
+        <label class="field-lbl">Reviewer note (internal)</label><textarea class="field-textarea" id="note">${LD.esc(m.reviewer_note || '')}</textarea>
+        <label class="field-lbl">Sources (ids)</label><input class="field-input" type="text" id="sources" value="${LD.esc((m.sources || []).join(', '))}">
+        <div class="btn-row" style="margin-top:16px;align-items:center"><button class="g-btn gold" id="save">Save</button><button class="g-btn" id="publish">Save &amp; Publish</button><button class="g-btn" id="close">Close</button><span class="sp-note" id="save-msg" style="margin:0"></span></div>
+        <p class="sp-note">Checklist before publishing: quote is real and attributed · no advice against medication or therapy · no dosages · challenge has a smaller version · tone is kind · sources match the text.</p>
       </div>
     </div>`;
   $('close').addEventListener('click', () => { $('edit').style.display = 'none'; });
-  $('save').addEventListener('click', () => save(false));
-  $('publish').addEventListener('click', () => save(true));
+  $('save').addEventListener('click', () => save(false)); $('publish').addEventListener('click', () => save(true));
+  $('edit').scrollIntoView({ behavior: 'smooth' });
 }
 async function save(publish) {
   const { data: { session } } = await sb.auth.getSession();
-  const patch = {
-    title: $('title').value.trim(), quote: $('quote').value.trim(), quote_source: $('quote_source').value.trim(), explanation: $('explanation').value.trim(), challenge: $('challenge').value.trim(),
-    reflection_questions: $('questions').value.split('\n').map(s => s.trim()).filter(Boolean),
-    scripture: $('sc_ref').value.trim() ? { reference: $('sc_ref').value.trim(), text: $('sc_text').value.trim() } : null,
-    sources: $('sources').value.split(/[,\s]+/).map(Number).filter(n => n > 0),
-    status: publish ? 'published' : $('status').value, reviewer_note: $('note').value.trim() || null,
-    reviewed_by: session.user.email, updated_at: new Date().toISOString(), published_at: (publish || $('status').value === 'published') ? (current.published_at || new Date().toISOString()) : current.published_at
-  };
+  const patch = { title: $('title').value.trim(), quote: $('quote').value.trim(), quote_source: $('quote_source').value.trim(), explanation: $('explanation').value.trim(), challenge: $('challenge').value.trim(),
+    reflection_questions: $('questions').value.split('\n').map(s => s.trim()).filter(Boolean), scripture: $('sc_ref').value.trim() ? { reference: $('sc_ref').value.trim(), text: $('sc_text').value.trim() } : null,
+    sources: $('sources').value.split(/[,\s]+/).map(Number).filter(n => n > 0), status: publish ? 'published' : $('status').value, reviewer_note: $('note').value.trim() || null,
+    reviewed_by: session.user.email, updated_at: new Date().toISOString(), published_at: (publish || $('status').value === 'published') ? (current.published_at || new Date().toISOString()) : current.published_at };
   const { error } = await sb.from('ld_messages').update(patch).eq('id', current.id);
-  $('save-msg').textContent = error ? 'Error: ' + error.message : 'Saved.';
-  if (!error) { await load(); }
+  $('save-msg').textContent = error ? 'Error: ' + error.message : 'Saved.'; if (!error) await load();
 }
 async function loadFeedback() {
   const { data } = await sb.from('ld_feedback').select('message_id,helpful,note,created_at').order('created_at', { ascending: false }).limit(300);
-  if (!data) { $('feedback').textContent = 'No feedback yet.'; return; }
-  const agg = {}; data.forEach(f => { const a = agg[f.message_id] = agg[f.message_id] || { y: 0, n: 0, notes: [] }; f.helpful ? a.y++ : a.n++; if (f.note) a.notes.push(f.note); });
+  if (!data || !data.length) { $('feedback').textContent = 'No feedback yet.'; return; }
+  const agg = {}, contact = []; data.forEach(f => { if (f.message_id == null) { contact.push(f); return; } const a = agg[f.message_id] = agg[f.message_id] || { y: 0, n: 0, notes: [] }; f.helpful ? a.y++ : a.n++; if (f.note) a.notes.push(f.note); });
   const ids = Object.keys(agg).sort((a, b) => a - b);
-  $('feedback').innerHTML = ids.length ? `<table><tr><th>Day</th><th>Helpful</th><th>Not today</th><th>Notes</th></tr>${ids.map(id => { const m = rows.find(r => r.id == id); return `<tr><td>${m ? m.day_number : id}</td><td>${agg[id].y}</td><td>${agg[id].n}</td><td>${agg[id].notes.map(LD.esc).join(' · ')}</td></tr>`; }).join('')}</table>` : 'No feedback yet.';
+  $('feedback').innerHTML = (ids.length ? `<table style="width:100%;border-collapse:collapse;font-size:14px"><tr><th style="text-align:left;padding:6px">Day</th><th style="text-align:left;padding:6px">Helpful</th><th style="text-align:left;padding:6px">Not today</th></tr>${ids.map(id => { const m = rows.find(r => r.id == id); return `<tr><td style="padding:6px;border-top:1px solid var(--border2)">${m ? m.day_number : id}</td><td style="padding:6px;border-top:1px solid var(--border2)">${agg[id].y}</td><td style="padding:6px;border-top:1px solid var(--border2)">${agg[id].n}</td></tr>`; }).join('')}</table>` : 'No votes yet.') +
+    (contact.length ? `<h3 style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-d);margin:20px 0 8px">Contact messages</h3>` + contact.map(c => `<p style="font-size:14px;color:var(--text);border-top:1px solid var(--border2);padding-top:8px">${LD.esc(c.created_at.slice(0, 16).replace('T', ' '))} · ${LD.esc(c.note)}</p>`).join('') : '');
 }
-sb.auth.onAuthStateChange(() => boot());
-boot();
+sb.auth.onAuthStateChange(() => boot()); boot();
 </script>
 </body>
 </html>

@@ -2,75 +2,76 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>About &amp; evidence library — Light for Every Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About &amp; Evidence — Light for Every Day</title>
 <meta name="description" content="How the daily messages are made, who reviews them, and the full library of research they draw on.">
-<link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#EDF1F5" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#131920" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0E1628">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/app.css">
-<style>.lib h3{margin-top:22px;padding-top:14px;border-top:1px solid var(--line)}.lib ol{margin-left:20px}.lib li{margin-bottom:8px;font-size:15px;color:var(--ink2)}.lib li a{white-space:nowrap}.filter{margin:14px 0}</style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css">
 </head>
 <body>
-<main>
-  <h1 style="margin-bottom:6px">About</h1>
-  <p class="muted">Why this exists, how it is made, and what it rests on.</p>
-
-  <section class="card">
-    <h2>Why</h2>
-    <p>Depression affects more than 300 million people. Most of them will never read a research paper about what helps, and when you are depressed you cannot concentrate on one anyway. Light for Every Day takes a library of research on depression and turns it into one short, kind, concrete message a day, in the four-part shape used by daily devotionals: a quote, an explanation, a challenge, questions for reflection.</p>
-    <p>It grew out of a conversation at the Inter-European Division of the Seventh-day Adventist Church about sharing small daily messages, by e-mail or WhatsApp, with people who are struggling. It is a sister project of <a href="https://graceforevery.day">Grace for Every Day</a>.</p>
-  </section>
-
-  <section class="card">
-    <h2>How the messages are made</h2>
-    <ol style="margin-left:20px;line-height:1.8">
-      <li>A curated library of more than two hundred documents (peer-reviewed studies, WHO reports, clinical self-help manuals) was gathered by health professionals in the church.</li>
-      <li>Each document was read and summarised; its key findings were tied to one of twelve themes.</li>
-      <li>Each day's message was drafted from those findings with the help of AI writing tools, under strict rules: no invented quotes, no invented numbers, no medical advice beyond the evidence, never a word against professional treatment.</li>
-      <li>Every message is read by a person before it is published. Readers can mark a message helpful or not, and that feedback shapes revisions.</li>
-      <li>Every message lists the studies it draws on. You can open them below.</li>
-    </ol>
-    <p class="small muted">The studies are copyrighted by their publishers; we link to them rather than copy them. The CBT self-help modules "Back from the Bluez" are published free of charge by the Centre for Clinical Interventions, Western Australia, at cci.health.wa.gov.au.</p>
-  </section>
-
-  <section class="card amber">
-    <h2>What this is not</h2>
-    <p>Not therapy, not a diagnosis, not a substitute for a doctor. If you have been low for more than two weeks, please see one. Everything you write in the app stays on your device; nothing you type is sent to us.</p>
-  </section>
-
-  <section class="card" id="contact">
-    <h2>Contact</h2>
-    <p>Corrections, wrong crisis numbers, ideas, or a request to review the messages in your language: write to <a href="mailto:hello@graceforevery.day">hello@graceforevery.day</a>.</p>
-  </section>
-
-  <section class="card lib">
-    <h2>Evidence library</h2>
-    <p class="muted">Every document the messages draw on, grouped by theme. Links go to the publisher via DOI where one exists.</p>
-    <div class="filter"><input type="text" id="q" placeholder="Search authors, titles, journals…" aria-label="Search the library"></div>
-    <div id="lib"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
-  </section>
+<main class="main">
+  <div class="topbar"><div class="tb-title">About</div><div class="tb-sub">Method &amp; Evidence</div></div>
+  <div class="page-hero">
+    <div class="ph-eyebrow">Why This Exists</div>
+    <div class="ph-title">About Light for Every Day</div>
+    <div class="ph-rule"></div>
+    <div class="ph-sub">Depression affects more than 300 million people. Most of them will never read a research paper about what helps, and when you are depressed you cannot concentrate on one anyway. This takes a library of research and turns it into one short, kind, concrete message a day.</div>
+  </div>
+  <div class="body" style="padding:32px 48px 80px">
+    <div class="settings-cols">
+      <div>
+        <div class="sec">
+          <div class="sec-title">How the Messages Are Made</div>
+          <ul>
+            <li>A curated library of more than two hundred documents (peer-reviewed studies, WHO reports, clinical self-help manuals) was gathered by health professionals in the church.</li>
+            <li>Each document was read and summarised; its key findings were tied to one of twelve themes.</li>
+            <li>Each day's message was drafted from those findings with the help of AI writing tools, under strict rules: no invented quotes, no invented numbers, no medical advice beyond the evidence, never a word against professional treatment.</li>
+            <li>Every message is read by a person before it is published. Readers can mark a message helpful or not, and that feedback shapes revisions.</li>
+            <li>Every message lists the studies it draws on. You can open them below.</li>
+          </ul>
+          <p class="sp-note">The studies are copyrighted by their publishers; we link to them rather than copy them. The CBT self-help modules "Back from the Bluez" are published free of charge by the Centre for Clinical Interventions, Western Australia.</p>
+        </div>
+        <div class="sec sources-wrap">
+          <div class="sec-title">Evidence Library</div>
+          <input class="field-input" type="text" id="q" placeholder="Search authors, titles, journals…" aria-label="Search the library">
+          <div id="lib"><p class="sp-note">Loading…</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="plan">
+          <div class="plan-lbl">What This Is Not</div>
+          <div class="plan-desc">Not therapy, not a diagnosis, not a substitute for a doctor. If you have been low for more than two weeks, please see one. Everything you write in the app stays on your device; nothing you type is sent to us.</div>
+          <a class="plan-btn" href="help.html">Help Now</a>
+        </div>
+        <div class="plan">
+          <div class="plan-lbl">Who Made This</div>
+          <div class="plan-desc">A project of the team behind Grace for Every Day, with the Inter-European Division of the Seventh-day Adventist Church. It grew out of a conversation about sharing small daily messages with people who are struggling.</div>
+          <a class="plan-btn" href="contact.html">Contact</a>
+        </div>
+        <div class="plan">
+          <div class="plan-lbl">Privacy</div>
+          <div class="plan-desc">No analytics, no advertising. Journal, moods and self-check scores never leave your browser. If you subscribe by e-mail, we store your address only to send the daily message.</div>
+          <a class="plan-btn" href="privacy.html">Privacy Notice</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 <script src="assets/app.js"></script>
+<script src="assets/shell.js"></script>
 <script>
-LD.chrome('more');
 (async () => {
   const [themes, srcs] = await Promise.all([LD.getThemes(), fetch(LD.SB + '/rest/v1/ld_sources?select=id,title,authors,year,journal,doi,kind,theme,citation&order=theme,year', { headers: { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY } }).then(r => r.json())]);
   const lib = document.getElementById('lib');
   function render(q) {
     q = (q || '').toLowerCase();
-    lib.innerHTML = themes.map(t => {
-      const items = srcs.filter(s => s.theme === t.slug && (!q || (s.citation || s.title || '').toLowerCase().includes(q)));
-      if (!items.length) return '';
-      return `<h3>${LD.esc(t.title)} <span class="muted small">· ${items.length}</span></h3><ol>${items.map(s => `<li>${LD.esc(s.citation || s.title)}${s.doi ? ` <a href="https://doi.org/${LD.esc(s.doi)}" target="_blank" rel="noopener">doi</a>` : ''}</li>`).join('')}</ol>`;
-    }).join('') || '<p class="muted">No matches.</p>';
+    lib.innerHTML = themes.map(t => { const items = srcs.filter(s => s.theme === t.slug && (!q || (s.citation || s.title || '').toLowerCase().includes(q))); if (!items.length) return ''; return `<h3>${LD.esc(t.title)} · ${items.length}</h3><ol>${items.map(s => `<li>${LD.esc(s.citation || s.title)}${s.doi ? ` <a href="https://doi.org/${LD.esc(s.doi)}" target="_blank" rel="noopener">doi</a>` : ''}</li>`).join('')}</ol>`; }).join('') || '<p class="sp-note">No matches.</p>';
   }
-  render('');
-  document.getElementById('q').addEventListener('input', e => render(e.target.value));
-})().catch(() => { document.getElementById('lib').innerHTML = '<p class="muted">The library could not load.</p>'; });
+  render(''); document.getElementById('q').addEventListener('input', e => render(e.target.value));
+})().catch(() => { document.getElementById('lib').innerHTML = '<p class="sp-note">The library could not load.</p>'; });
 </script>
 </body>
 </html>
