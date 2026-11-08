@@ -30,15 +30,10 @@ a{color:inherit}
 .sb-foot-date{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.5px;color:var(--text-d);line-height:1.9;font-weight:500}
 .sb-day{font-size:13px;letter-spacing:1.5px;color:var(--gold);font-weight:600;text-decoration:none}
 a.sb-day:hover{color:var(--gold-l)}
-.sb-crisis{margin:10px 12px 4px;padding:14px 14px 12px;border:1px solid rgba(208,72,72,0.6);border-left:3px solid #D04848;background:rgba(192,64,64,0.14)}
-.sbc-t{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#FF7B7B;font-weight:700;margin-bottom:6px}
-.sbc-p{font-size:13px;line-height:1.5;color:var(--text-b);margin-bottom:10px}
-.sbc-call{display:flex;align-items:center;gap:10px;text-decoration:none;background:#B23A3A;color:#fff;padding:7px 10px;margin-bottom:6px;border:1px solid rgba(255,255,255,0.12);transition:background .2s}
-.sbc-call:hover{background:#D04848}
-.sbc-call b{font-family:'Cinzel',serif;font-size:16px;font-weight:700;letter-spacing:1px;min-width:40px}
-.sbc-call span{font-size:12.5px;line-height:1.25;color:rgba(255,255,255,0.92)}
-.sbc-more{display:inline-block;margin-top:4px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#FF7B7B;text-decoration:none;border-bottom:1px solid rgba(255,123,123,0.6)}
-.sbc-more:hover{color:#fff;border-bottom-color:#fff}
+.sb-crisis{padding:10px 24px;border-top:1px solid var(--border2);font-size:12px;line-height:1.5;color:var(--text-d)}
+.sb-crisis .sbc-t{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:#E86A6A}
+.sb-crisis a{color:#FF7B7B;font-family:'Cinzel',serif;font-size:12px;font-weight:700;text-decoration:none;letter-spacing:1px}
+.sb-crisis a:hover{color:#fff}
 
 /* ── MOBILE BAR ── */
 .mob-bar{display:none;position:fixed;top:0;left:0;right:0;height:52px;background:var(--navy);border-bottom:1px solid var(--border2);z-index:400;align-items:center;justify-content:space-between;padding:0 20px}
@@ -63,14 +58,11 @@ a.sb-day:hover{color:var(--gold-l)}
 .fade-in{animation:rise .3s ease both}
 
 /* ── CRISIS BAR (safety, present on every page) ── */
-.crisis-bar{margin-top:auto;border-top:2px solid #D04848;background:rgba(192,64,64,0.10);padding:18px 32px 16px}
-.cb-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:10px}
-.cb-lbl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#FF7B7B;font-weight:700}
-.cb-line{font-size:15px;color:var(--text-b)}
-.cb-calls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.cb-calls .sbc-call{margin:0}
-.cb-calls .sbc-more{margin:0 0 0 6px}
-.cb-note{font-size:13px;color:var(--text-d);margin-top:10px;line-height:1.55}
+.crisis-bar{margin-top:auto;border-top:1px solid var(--border2);background:var(--navy);padding:10px 32px;font-size:12.5px;color:var(--text-d);line-height:1.6}
+.cb-lbl{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:#E86A6A}
+.crisis-bar a{color:#FF7B7B;font-family:'Cinzel',serif;font-size:12px;font-weight:700;text-decoration:none;letter-spacing:1px}
+.crisis-bar a:hover{color:#fff}
+.cb-note{color:var(--text-d)}
 
 /* ── RESPONSIVE ── */
 @media(max-width:860px){
@@ -83,7 +75,7 @@ a.sb-day:hover{color:var(--gold-l)}
   .body,.hero{padding-left:16px!important;padding-right:16px!important}
   .two-col{grid-template-columns:1fr!important}
   .cards-row{grid-template-columns:1fr!important}
-  .crisis-bar{padding:14px 16px}
+  .crisis-bar{padding:10px 16px}
 }
 
 /* ── DAILY MESSAGE (devotion) ── */
