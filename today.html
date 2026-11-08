@@ -67,7 +67,7 @@ async function render() {
   app.innerHTML = `
   <article>
     <div class="day-head">
-      <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>${LD.esc(th.title || '')}, ${LD.t('week').toLowerCase()} ${th.week || ''}</span>
+      <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>${LD.t('week')} ${th.week || ''}: ${LD.esc(th.title || '')}</span>
       <span class="muted small">${LD.t('day')} ${day} ${LD.t('of')} ${LD.TOTAL_DAYS}</span>
     </div>
     ${!started ? `<div class="card amber" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div>You are previewing. Start your own journey and the app will bring you one message a day.</div><button class="btn sm" onclick="LD.start();location.href='today.html'">Start day 1 today</button></div>` : ''}
@@ -144,7 +144,7 @@ async function render() {
       document.getElementById('srcs').innerHTML = srcs.map(x => `<li>${LD.esc(x.citation || x.title)}${x.doi ? ` <a href="https://doi.org/${LD.esc(x.doi)}" target="_blank" rel="noopener">doi</a>` : ''}</li>`).join('') || '<li class="muted">Sources listed in the evidence library.</li>';
     } catch (e) {}
   }
-  document.title = `Day ${day}: ${m.title} — Light for Every Day`;
+  document.title = `${LD.t('day')} ${day}: ${m.title} — Light for Every Day`;
 }
 render().catch(err => { document.getElementById('loading').innerHTML = '<p class="muted">Something did not load. Please check your connection and try again.</p>'; console.error(err); });
 </script>
