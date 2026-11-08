@@ -93,7 +93,7 @@ window.LD = (function () {
     return settings.name ? `${g}, ${settings.name}` : g;
   }
   function shareText(m) {
-    return `${m.title}\n\n"${m.quote}"\n— ${m.quote_source}\n\n${m.explanation}\n\nToday's challenge: ${m.challenge}\n\nLight for Every Day · day ${m.day_number}\n${location.origin}/today.html?day=${m.day_number}`;
+    return `${m.title}\n\n"${m.quote}"\n— ${m.quote_source}\n\n${m.explanation}\n\nToday's challenge: ${m.challenge}\n\nLight for Every Day · day ${m.day_number}\n${new URL('today.html?day=' + m.day_number, location.href).href}`;
   }
 
   /* ---------- chrome ---------- */
