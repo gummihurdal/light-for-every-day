@@ -4,20 +4,22 @@ Daily encouragement grounded in research, for people living with depression. 84 
 
 ## Architecture
 
-Same shape as Grace: a static site on GitHub Pages, content and subscribers in Supabase, generators and senders run from GitHub Actions. No build step, no framework.
+A deliberate replica of graceforevery.day: the same navy-and-gold sidebar shell (`assets/grace.css`, `assets/shell.js`), the same page set with renamed links, and the depression content in place of devotionals. Static site on GitHub Pages, content and subscribers in Supabase. No build step, no framework.
 
 ```
-index.html        landing, start day 1
-today.html        the day's message (day N since the reader's start date; ?day=N to browse)
-journey.html      12 weeks, progress, mood chart
-tools.html        PHQ-9 self-check, breathing, three good things, activity menu
-help.html         crisis lines for 207 countries (crisis_lines.json), when to see a doctor
+index.html        landing (hero, today strip, feature cards, verse, twelve weeks, footer) — mirrors Grace index
+today.html        Today's Light = Grace devotion page (hero with flame, 3 cards, two-column body, reflection sidebar)
+topics.html       The Twelve Weeks list        ·  learn.html?topic=<slug>&day=N  week reader with 7 days (Grace learn)
+calendar.html     month calendar of the reader's 84 days with drawer preview + mood strip (Grace calendar)
+archive.html      card grid of all messages, week filter, search (Grace archive)
+tools.html        The Well: PHQ-9, breathing, three good things, activity menu
+help.html         Help Now: crisis lines for 207 countries, when to see a doctor
 subscribe.html    daily e-mail sign-up (double opt-in)  ·  confirm.html / unsubscribe.html
-settings.html     scripture on/off, text size, dark mode, start date, reminders, export/erase data
-about.html        method + evidence library (every source with DOI link)
-admin.html        editorial review queue (Supabase Auth magic link; e-mail must be in ld_admins)
-assets/app.js     shared client: Supabase REST reads, local storage, chrome, helpers
-assets/app.css    design system (light/dark, large type, phone-first)
+settings.html     profile, start date, language, text size, word-of-hope toggle, export/erase (Grace settings)
+contact.html      contact form (stored in ld_feedback) ·  about.html method + evidence library ·  privacy.html
+admin.html        editorial review queue with EN/DE/FR tabs (Supabase Auth magic link; e-mail must be in ld_admins)
+assets/grace.css  the Grace design system, consolidated    ·  assets/shell.js  sidebar/mobile bar/crisis bar
+assets/app.js     data layer: Supabase REST reads, local storage, language, helpers
 sw.js, manifest.json, icons/   PWA: offline shell, installable
 send-daily.js     hourly e-mail job (Resend)  ·  .github/workflows/send-daily.yml
 content/          the 84 messages as JSON (one file per theme) + SPEC.md + validate.py + import.py
