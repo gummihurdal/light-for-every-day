@@ -11,10 +11,10 @@
   const L = (window.LD && LD.lang()) || 'en';
   const DICT = {
     en: { sub: 'Small daily steps out of depression', today: "Today's Light", journey: 'The Journey', progress: 'My Progress', all: 'All Messages', toolbox: 'Toolbox', help: 'Help Now', email: 'Get It By E-mail', why: 'Why This Works', contact: 'Contact', settings: 'Settings',
-      crisisShort: 'In crisis? Call now', other: 'Other countries', crisisLong: 'If you are in crisis or thinking about ending your life, please reach out today.', youth: 'youth', emergency: 'emergency', disclaimer: 'Light for Every Day is daily encouragement grounded in research; it is not therapy and does not replace your doctor. Everything you write here stays on your device.', needHelp: 'If you need help now',
+      crisisShort: 'Are you in crisis?', crisisLine: 'If you are thinking of ending your life, call now. Free, 24 hours, confidential.', lineName143: 'Die Dargebotene Hand', lineName147: 'Pro Juventute · under 25', lineName144: 'Emergency', helpNow: 'Help now', other: 'Other countries', crisisLong: 'If you are in crisis or thinking about ending your life, please reach out today.', youth: 'youth', emergency: 'emergency', disclaimer: 'Light for Every Day is daily encouragement grounded in research; it is not therapy and does not replace your doctor. Everything you write here stays on your device.', needHelp: 'If you need help now',
       greet: ['Good Night', 'Good Morning', 'Good Morning', 'Good Afternoon', 'Good Evening'], week: 'Week', day: 'Day', of: 'of', today_: 'Today', explanation: 'Explanation', challenge: "Today's Challenge", hope: 'A Word of Hope', thisWeek: 'This Week', evidence: 'Evidence', studies: 'studies behind today', evidenceNote: 'Every message draws on peer-reviewed research. The references are listed below.', beginReading: 'Begin Reading', beginDayOne: 'Begin Day One', carry: 'Carry This With You', reflection: 'Reflection', question: 'Question', notes: 'Your private notes…', notesNote: 'Your notes are saved only on this device.', mood: 'How Are You Right Now?', moods: ['Very low', 'Low', 'Flat', 'Okay', 'Good'], moodNote: 'One tap a day. Your pattern appears under My Progress.', helpful: 'Was This Helpful?', yes: 'Yes', notToday: 'Not Today', share: 'Share', copy: 'Copy', sources: 'Sources', deeper: 'Go Deeper', sevenDays: "This Week's Seven Days", toolboxLink: 'Toolbox: Self-Check & More', didIt: 'I did this, or my smaller version', ahead: 'You are reading ahead · your journey is on day', inEnglish: 'Shown in English · translation under review', finish: 'Finish', thanks: 'Thank you.', preparing: "Preparing today's light", days: 'Days', overview: 'Overview', allWeeks: '← The Journey', openToday: "Open as Today's Light", prev: '← Previous', next: 'Next →', quote: 'Quote' },
     de: { sub: 'Kleine tägliche Schritte aus der Depression', today: 'Licht für heute', journey: 'Der Weg', progress: 'Mein Fortschritt', all: 'Alle Nachrichten', toolbox: 'Werkzeugkasten', help: 'Hilfe jetzt', email: 'Per E-Mail erhalten', why: 'Warum das wirkt', contact: 'Kontakt', settings: 'Einstellungen',
-      crisisShort: 'In einer Krise? Rufen Sie an', other: 'Andere Länder', crisisLong: 'Wenn Sie in einer Krise sind oder daran denken, sich das Leben zu nehmen, holen Sie sich bitte heute Hilfe.', youth: 'Jugendliche', emergency: 'Notruf', disclaimer: 'Light for Every Day ist tägliche Ermutigung auf Grundlage der Forschung; es ist keine Therapie und ersetzt nicht Ihren Arzt oder Ihre Ärztin. Alles, was Sie hier schreiben, bleibt auf Ihrem Gerät.', needHelp: 'Wenn Sie jetzt Hilfe brauchen',
+      crisisShort: 'Sind Sie in einer Krise?', crisisLine: 'Wenn Sie daran denken, sich das Leben zu nehmen, rufen Sie jetzt an. Kostenlos, rund um die Uhr, vertraulich.', lineName143: 'Die Dargebotene Hand', lineName147: 'Pro Juventute · unter 25', lineName144: 'Notruf', helpNow: 'Hilfe jetzt', other: 'Andere Länder', crisisLong: 'Wenn Sie in einer Krise sind oder daran denken, sich das Leben zu nehmen, holen Sie sich bitte heute Hilfe.', youth: 'Jugendliche', emergency: 'Notruf', disclaimer: 'Light for Every Day ist tägliche Ermutigung auf Grundlage der Forschung; es ist keine Therapie und ersetzt nicht Ihren Arzt oder Ihre Ärztin. Alles, was Sie hier schreiben, bleibt auf Ihrem Gerät.', needHelp: 'Wenn Sie jetzt Hilfe brauchen',
       greet: ['Gute Nacht', 'Guten Morgen', 'Guten Morgen', 'Guten Tag', 'Guten Abend'], week: 'Woche', day: 'Tag', of: 'von', today_: 'Heute', explanation: 'Erklärung', challenge: 'Die Aufgabe für heute', hope: 'Ein Wort der Hoffnung', thisWeek: 'Diese Woche', evidence: 'Belege', studies: 'Studien hinter dem heutigen Tag', evidenceNote: 'Jede Nachricht stützt sich auf begutachtete Forschung. Die Quellen stehen unten.', beginReading: 'Lesen beginnen', beginDayOne: 'Mit Tag eins beginnen', carry: 'Nehmen Sie das mit', reflection: 'Zum Nachdenken', question: 'Frage', notes: 'Ihre privaten Notizen…', notesNote: 'Ihre Notizen bleiben nur auf diesem Gerät.', mood: 'Wie geht es Ihnen gerade?', moods: ['Sehr tief', 'Tief', 'Flach', 'Okay', 'Gut'], moodNote: 'Ein Antippen pro Tag. Ihr Muster erscheint unter „Mein Fortschritt“.', helpful: 'War das hilfreich?', yes: 'Ja', notToday: 'Heute nicht', share: 'Teilen', copy: 'Kopieren', sources: 'Quellen', deeper: 'Weitergehen', sevenDays: 'Die sieben Tage dieser Woche', toolboxLink: 'Werkzeugkasten: Selbsttest & mehr', didIt: 'Das habe ich gemacht, oder meine kleinere Version', ahead: 'Sie lesen voraus · Ihr Weg ist bei Tag', inEnglish: 'Auf Englisch gezeigt · Übersetzung in Prüfung', finish: 'Abschluss', thanks: 'Danke.', preparing: 'Das Licht für heute wird vorbereitet', days: 'Tage', overview: 'Überblick', allWeeks: '← Der Weg', openToday: 'Als Licht für heute öffnen', prev: '← Zurück', next: 'Weiter →', quote: 'Zitat' },
     fr: { sub: 'Petits pas quotidiens pour sortir de la dépression', today: "La lumière du jour", journey: 'Le chemin', progress: 'Ma progression', all: 'Tous les messages', toolbox: 'Boîte à outils', help: 'Aide maintenant', email: 'Recevoir par e-mail', why: 'Pourquoi ça marche', contact: 'Contact', settings: 'Réglages',
       crisisShort: 'En crise ? Appelez', other: 'Autres pays', crisisLong: 'Si vous êtes en crise ou si vous pensez à mettre fin à vos jours, demandez de l’aide aujourd’hui.', youth: 'jeunes', emergency: 'urgences', disclaimer: 'Light for Every Day est un encouragement quotidien fondé sur la recherche ; ce n’est pas une thérapie et cela ne remplace pas votre médecin. Tout ce que vous écrivez ici reste sur votre appareil.', needHelp: 'Si vous avez besoin d’aide maintenant',
@@ -29,7 +29,8 @@
   const html = `
 <div class="mob-bar">
   <a class="mob-logo" href="index.html">Light for Every Day</a>
-  <button class="mob-ham" onclick="sbOpen()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <span style="display:flex;align-items:center;gap:10px"><a class="mob-sos" href="help.html">${T.helpNow}</a>
+  <button class="mob-ham" onclick="sbOpen()" aria-label="Menu"><span></span><span></span><span></span></button></span>
 </div>
 <div class="mob-overlay" id="mob-overlay" onclick="sbClose()"></div>
 <aside class="sb" id="sidebar">
@@ -55,7 +56,14 @@
     <a class="sb-link${on('contact.html')}" href="contact.html">${T.contact}</a>
     <a class="sb-link${on('settings.html')}" href="settings.html">${T.settings}</a>
   </nav>
-  <div class="sb-crisis"><div class="sbc-t">${T.crisisShort}</div>CH <b>143</b> · ${T.youth} <b>147</b> · ${T.emergency} <b>144</b><br><a href="help.html">${T.other} →</a></div>
+  <div class="sb-crisis">
+    <div class="sbc-t">${T.crisisShort}</div>
+    <div class="sbc-p">${T.crisisLine}</div>
+    <a class="sbc-call" href="tel:143"><b>143</b><span>${T.lineName143}</span></a>
+    <a class="sbc-call" href="tel:147"><b>147</b><span>${T.lineName147}</span></a>
+    <a class="sbc-call" href="tel:144"><b>144</b><span>${T.lineName144}</span></a>
+    <a class="sbc-more" href="help.html">${T.other} →</a>
+  </div>CH <b>143</b> · ${T.youth} <b>147</b> · ${T.emergency} <b>144</b><br><a href="help.html">${T.other} →</a></div>
   <div class="sb-foot"><div class="sb-foot-date" id="sb-date"></div></div>
 </aside>`;
   document.body.insertAdjacentHTML('afterbegin', html);
@@ -90,7 +98,9 @@
   function addCrisis() {
     const main = document.querySelector('main.main, .content');
     if (!main || main.querySelector('.crisis-bar')) return;
-    main.insertAdjacentHTML('beforeend', `<div class="crisis-bar"><span class="cb-lbl">${T.needHelp}</span><div>${T.crisisLong} CH <b>143</b> (Die Dargebotene Hand · La Main Tendue) · ${T.youth} <b>147</b> · ${T.emergency} <b>144</b> · <a href="help.html">${T.other}</a>. ${T.disclaimer}</div></div>`);
+    main.insertAdjacentHTML('beforeend', `<div class="crisis-bar"><div class="cb-head"><span class="cb-lbl">${T.crisisShort}</span><span class="cb-line">${T.crisisLine}</span></div>
+      <div class="cb-calls"><a class="sbc-call" href="tel:143"><b>143</b><span>${T.lineName143}</span></a><a class="sbc-call" href="tel:147"><b>147</b><span>${T.lineName147}</span></a><a class="sbc-call" href="tel:144"><b>144</b><span>${T.lineName144}</span></a><a class="sbc-more" href="help.html">${T.other} →</a></div>
+      <div class="cb-note">${T.disclaimer}</div></div>`);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addCrisis); else addCrisis();
   window.LDshell = { THEMES, addCrisis };

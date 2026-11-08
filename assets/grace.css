@@ -30,15 +30,20 @@ a{color:inherit}
 .sb-foot-date{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.5px;color:var(--text-d);line-height:1.9;font-weight:500}
 .sb-day{font-size:13px;letter-spacing:1.5px;color:var(--gold);font-weight:600;text-decoration:none}
 a.sb-day:hover{color:var(--gold-l)}
-.sb-crisis{margin:10px 14px 4px;padding:12px 14px;border:1px solid rgba(201,80,80,0.55);border-left:3px solid #D04848;background:rgba(192,64,64,0.14);font-size:13px;line-height:1.6;color:var(--text-b)}
-.sb-crisis .sbc-t{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#E86A6A;font-weight:700;margin-bottom:6px}
-.sb-crisis b{color:#FFFFFF;font-family:'Cinzel',serif;font-size:14px;font-weight:700;letter-spacing:1px}
-.sb-crisis a{color:#E86A6A;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-block;margin-top:6px;border-bottom:1px solid rgba(232,106,106,0.6)}
-.sb-crisis a:hover{color:#fff;border-bottom-color:#fff}
+.sb-crisis{margin:10px 12px 4px;padding:14px 14px 12px;border:1px solid rgba(208,72,72,0.6);border-left:3px solid #D04848;background:rgba(192,64,64,0.14)}
+.sbc-t{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#FF7B7B;font-weight:700;margin-bottom:6px}
+.sbc-p{font-size:13px;line-height:1.5;color:var(--text-b);margin-bottom:10px}
+.sbc-call{display:flex;align-items:center;gap:10px;text-decoration:none;background:#B23A3A;color:#fff;padding:7px 10px;margin-bottom:6px;border:1px solid rgba(255,255,255,0.12);transition:background .2s}
+.sbc-call:hover{background:#D04848}
+.sbc-call b{font-family:'Cinzel',serif;font-size:16px;font-weight:700;letter-spacing:1px;min-width:40px}
+.sbc-call span{font-size:12.5px;line-height:1.25;color:rgba(255,255,255,0.92)}
+.sbc-more{display:inline-block;margin-top:4px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#FF7B7B;text-decoration:none;border-bottom:1px solid rgba(255,123,123,0.6)}
+.sbc-more:hover{color:#fff;border-bottom-color:#fff}
 
 /* ── MOBILE BAR ── */
 .mob-bar{display:none;position:fixed;top:0;left:0;right:0;height:52px;background:var(--navy);border-bottom:1px solid var(--border2);z-index:400;align-items:center;justify-content:space-between;padding:0 20px}
 .mob-logo{font-family:'Cinzel',serif;font-size:12px;font-weight:600;letter-spacing:2px;color:var(--gold);text-decoration:none}
+.mob-sos{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#fff;background:#B23A3A;padding:7px 10px;text-decoration:none;border:1px solid rgba(255,255,255,0.15)}
 .mob-ham{background:none;border:none;cursor:pointer;padding:8px;display:flex;flex-direction:column;gap:5px}
 .mob-ham span{display:block;width:22px;height:2px;background:var(--gold-d)}
 .mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:290}
@@ -58,10 +63,14 @@ a.sb-day:hover{color:var(--gold-l)}
 .fade-in{animation:rise .3s ease both}
 
 /* ── CRISIS BAR (safety, present on every page) ── */
-.crisis-bar{margin-top:auto;border-top:2px solid #D04848;background:rgba(192,64,64,0.10);padding:16px 32px;font-size:15px;color:var(--text-b);display:flex;gap:14px;align-items:flex-start;line-height:1.65}
-.crisis-bar b{color:#fff;font-family:'Cinzel',serif;font-size:14px;letter-spacing:1px}
-.crisis-bar a{color:#E86A6A}
-.crisis-bar .cb-lbl{font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#E86A6A;font-weight:700;white-space:nowrap;margin-top:4px}
+.crisis-bar{margin-top:auto;border-top:2px solid #D04848;background:rgba(192,64,64,0.10);padding:18px 32px 16px}
+.cb-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:10px}
+.cb-lbl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#FF7B7B;font-weight:700}
+.cb-line{font-size:15px;color:var(--text-b)}
+.cb-calls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.cb-calls .sbc-call{margin:0}
+.cb-calls .sbc-more{margin:0 0 0 6px}
+.cb-note{font-size:13px;color:var(--text-d);margin-top:10px;line-height:1.55}
 
 /* ── RESPONSIVE ── */
 @media(max-width:860px){
@@ -74,7 +83,7 @@ a.sb-day:hover{color:var(--gold-l)}
   .body,.hero{padding-left:16px!important;padding-right:16px!important}
   .two-col{grid-template-columns:1fr!important}
   .cards-row{grid-template-columns:1fr!important}
-  .crisis-bar{padding:14px 16px;flex-direction:column;gap:4px}
+  .crisis-bar{padding:14px 16px}
 }
 
 /* ── DAILY MESSAGE (devotion) ── */
