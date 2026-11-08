@@ -1,0 +1,217 @@
+{
+  "theme": "alcohol_smoking",
+  "lang": "de",
+  "theme_intro": "Viele von uns greifen zu etwas, wenn der Tag zu schwer wird: zu einem Glas, einer Zigarette, zu allem, was schnell wirkt. Diese Woche schaut ehrlich und ohne Vorwurf darauf, was Alkohol und Nikotin mit Stimmung und Schlaf machen und warum die Erleichterung nach hinten losgeht. Sie zeigt auch, was die Forschung über den Aufschwung sagt, der nach dem Aufhören folgt. Am Ende stehen ein praktischer Plan und ein klares Wort dazu, wie Sie sicher Hilfe bekommen.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Warum wir zu etwas greifen",
+      "quote": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken.",
+      "quote_source": "Matthäus 11,28 (Luther 1912)",
+      "explanation": "Wenn der Abend kommt und die Last des Tages noch immer auf Ihrer Brust liegt, kann sich ein Glas oder eine Zigarette anfühlen wie das Einzige, was schnell wirkt. Für ein paar Minuten löst sich etwas. Wenn Sie sich darin wiedererkennen: Sie sind nicht schwach, und Sie sind nicht allein. Sie sind ein Mensch, der Schmerzen hat und nach Linderung sucht.\n\nDie Forschung nimmt dieses Greifen ernst. In einer Studie mit 1500 Rauchenden, die aufhören wollten, rauchten Menschen mit einer affektiven Störung oder einer Angststörung nicht mehr als die anderen. Aber sie stützten sich stärker auf Zigaretten, um mit schlechten Gefühlen fertigzuwerden. Unter 146 Personen mit riskantem Alkoholkonsum erzielten jene mit früheren Depressionen höhere Werte beim Trinken, um negative Gefühle zu unterdrücken. In vier grossen Bevölkerungsbefragungen in den USA, in Puerto Rico und in der Schweiz hatten Menschen mit Alkoholproblemen zwei- bis dreimal häufiger eine Depression oder eine Angststörung. Der Zusammenhang ist real, und vieles davon läuft über die Bewältigung.\n\nDoch es gibt einen Haken. Die Erleichterung ist echt, aber kurz, und der Rückschlag dauert länger. Nikotin lässt innerhalb von ein bis zwei Stunden nach und hinterlässt Reizbarkeit, Unruhe und gedrückte Stimmung. Die nächste Zigarette nimmt diese Gefühle weg und scheint deshalb zu helfen, obwohl sie sie in Wahrheit verursacht hat. Forschende, die 26 Studien ausgewertet haben, nannten das eine Fehlzuschreibung: Wir rechnen es der Zigarette an, dass sie ein Unbehagen lindert, das sie selbst erzeugt hat. Alkohol tut dasselbe, nur langsamer: heute Abend ruhiger, morgen matter und ängstlicher. In dieser Woche geht es nicht um Schuld. Es geht darum, den Kreislauf klar zu sehen. Denn was wir sehen können, können wir zu verändern beginnen.",
+      "challenge": "Halten Sie heute jedes Mal, wenn Sie zu einem Glas, einer Zigarette oder zu etwas anderem greifen, womit Sie sich Erleichterung verschaffen (Ihr Handy, Süsses, endloses Scrollen), zehn Sekunden inne, bevor Sie es tun. Halten Sie sich nicht davon ab. Benennen Sie mit einem Wort, was Sie gerade fühlen: müde, einsam, angespannt, gelangweilt, traurig. Sagen Sie es leise vor sich hin oder schreiben Sie es ins Tagebuch. Das ist die ganze Aufgabe. Wenn selbst das zu viel ist, bemerken Sie es heute ein einziges Mal und schreiben Sie ein Wort auf.",
+      "reflection_questions": [
+        "Wozu greifen Sie am häufigsten, wenn der Tag zu schwer ist, und was gibt es Ihnen in den ersten fünf Minuten?",
+        "Welches Gefühl liegt meistens darunter?",
+        "Wie fühlen Sie sich gewöhnlich eine Stunde später?"
+      ],
+      "scripture": {
+        "reference": "Psalm 103,13-14 (Luther 1912)",
+        "text": "Wie sich ein Vater über Kinder erbarmt, so erbarmt sich der HERR über die, so ihn fürchten. Denn er kennt, was für ein Gemächte wir sind; er gedenkt daran, daß wir Staub sind."
+      },
+      "sources": [
+        162,
+        63,
+        197,
+        200
+      ],
+      "keywords": [
+        "Bewältigung",
+        "Alkohol",
+        "Nikotin",
+        "Erleichterung",
+        "Entzug",
+        "Wahrnehmen"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Was kommt zuerst: das Trinken oder die Traurigkeit?",
+      "quote": "Alkoholbedingte Störungen bessern sich typischerweise innerhalb einiger Wochen der Abstinenz von selbst, ohne dass über eine unterstützende Begleitung hinaus eine Therapie nötig ist.",
+      "quote_source": "Shivani, Goldsmith & Anthenelli (2002) (übersetzt)",
+      "explanation": "Viele Menschen, die trinken und sich niedergeschlagen fühlen, nehmen an, die Traurigkeit sei zuerst da gewesen und das Trinken sei eine Antwort darauf. Manchmal stimmt das. Doch als Forschende in Neuseeland Studien mit Zehntausenden von Menschen zusammenführten, zeigte sich: Wer eines der beiden Probleme hatte, trug ein etwa doppelt so hohes Risiko für das andere. Und die Richtung, die am besten zu den Daten passte, war klar: Alkoholprobleme führen eher zu Depressionen als Depressionen zu Alkoholproblemen. Die Forschenden schätzten, dass bis zu jeder zehnte Fall von Depression in der Bevölkerung auf übermässigen Alkoholkonsum zurückgehen könnte.\n\nWarum? Alkohol ist eine dämpfende Droge. Starkes Trinken verändert die Hirnchemie der Stimmung, stört den Schlaf und die Stresshormone und belastet Beziehungen, Finanzen und Arbeit. Fachleuten ist seit Langem aufgefallen, dass viele depressive Episoden bei Menschen mit Alkoholabhängigkeit alkoholbedingt sind: Sie treten in Phasen starken Trinkens auf und klingen ab, wenn der Alkohol wegbleibt. In einer 30-jährigen Studie mit Männern in San Diego war etwa ein Drittel der depressiven Episoden bei Personen mit Alkoholproblemen von dieser Art. In einer griechischen Studie kamen 28 Menschen zum Entzug mit hohen Werten für Angst und Depression. Nach vier bis fünf Wochen ohne Alkohol waren alle Werte deutlich gesunken.\n\nDas ist eine gute Nachricht im Gewand einer harten. Bei manchen Menschen lichtet sich ein Teil der Dunkelheit, wenn sie mit dem Trinken aufhören, oft innerhalb weniger Wochen. Das heisst nicht, dass Ihre Depression nur vom Alkohol kommt. Und es ist kein Grund, eine laufende Behandlung zu ändern. Bleiben Sie bei Ihrer Ärztin oder Ihrem Arzt und bei Ihren Medikamenten, und sagen Sie ehrlich, wie viel Sie trinken. Beide Probleme verdienen Zuwendung, und sie heilen besser gemeinsam.",
+      "challenge": "Zählen Sie heute ehrlich. Schreiben Sie ohne Urteil auf, was Sie in den letzten sieben Tagen getrunken haben: wie viele Getränke, an welchen Tagen. Niemand sonst wird es sehen. Wenn Sie nicht trinken, schreiben Sie auf, womit Sie abschalten, und wie oft. Wenn Ihnen eine ganze Woche zu viel ist, schreiben Sie nur den gestrigen Tag auf. Die Zahl ist eine Information, kein Urteil.",
+      "reflection_questions": [
+        "Wenn Sie die Woche auf dem Papier sehen: Was überrascht Sie?",
+        "Wenn sich ohne den Alkohol auch nur ein wenig vom Nebel lichten würde, wovon würden Sie sich mehr wünschen?",
+        "Wem könnten Sie die ehrliche Zahl anvertrauen?"
+      ],
+      "scripture": {
+        "reference": "Psalm 34,19 (Luther 1912)",
+        "text": "Der HERR ist nahe bei denen, die zerbrochenen Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben."
+      },
+      "sources": [
+        46,
+        188,
+        131,
+        183
+      ],
+      "keywords": [
+        "Alkohol",
+        "Depression",
+        "Ursache",
+        "Abstinenz",
+        "Ehrlichkeit"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Der Schlummertrunk, der Ihnen die Nacht raubt",
+      "quote": "Weniger abstinente Teilnehmer berichteten über Angst und Depression.",
+      "quote_source": "Mackenzie, Funderburk & Allen (1999) (übersetzt)",
+      "explanation": "Ein Glas vor dem Schlafengehen wirkt, zunächst. Alkohol dämpft; man schläft schneller ein. Doch während der Körper den Alkohol in den folgenden Stunden abbaut, kippt die Dämpfung ins Gegenteil. In der zweiten Nachthälfte wird der Schlaf leichter und unruhiger. Der Traumschlaf wird erst unterdrückt und kehrt dann verstärkt zurück. Viele Menschen erwachen gegen drei oder vier Uhr morgens mit Herzklopfen und rasenden Gedanken. Sie haben geschlafen, aber Sie haben sich nicht erholt.\n\nWer an einer Depression leidet, für den zählt das doppelt. Denn gestörter Schlaf und gedrückte Stimmung nähren einander. In einer Studie wurden Männer, die wegen Alkoholproblemen behandelt worden waren, acht Jahre später befragt. Das eine Schlafmuster, das die abstinenten Männer von denen unterschied, die weiter tranken, war zugleich das Muster, das am engsten mit Angst und Depression verbunden war. Und weniger der abstinenten Männer berichteten über das eine oder das andere. Unter 1500 ambulanten Patienten mit einer schweren Depression berichteten diejenigen mit Anzeichen von Substanzkonsum häufiger, tagsüber zu viel zu schlafen: der erschöpfte Schlaf eines Körpers, der nie zu seiner richtigen Nacht gekommen ist.\n\nSchlafstörungen stehen auf der klinischen Liste der Beschwerden, die Alkohol verursachen kann und die sich bei Abstinenz bessern. Wenn Sie trinken, um schlafen zu können, ist das Trinken wahrscheinlich ein Teil des Grundes, warum Sie nicht schlafen. Die ersten alkoholfreien Nächte können unruhig sein; danach wird der Schlaf meist tiefer. Ein wichtiger Hinweis: Wenn Sie jeden Tag viel trinken und ohne Alkohol zittrig werden oder schwitzen, hören Sie nicht plötzlich und auf eigene Faust auf. Sprechen Sie zuerst mit Ihrer Ärztin oder Ihrem Arzt. Tag 7 sagt mehr dazu.",
+      "challenge": "Versuchen Sie heute Abend einen alkoholfreien Abend mit einem Ersatzritual: ein warmes Getränk ohne Koffein, eine Dusche, gedämpftes Licht, Bildschirme aus, zur gewohnten Zeit ins Bett. Bewerten Sie am Morgen im Tagebuch Ihren Schlaf von 1 bis 5, und bewerten Sie auch Ihre Stimmung. Wenn ein ganzer Abend ohne Glas heute nicht realistisch ist, trinken Sie Ihr letztes Glas drei Stunden früher als sonst und achten Sie am Morgen auf den Unterschied.",
+      "reflection_questions": [
+        "Um welche Zeit wachen Sie nachts gewöhnlich auf, und was geht Ihnen dann durch den Kopf?",
+        "Was würde ein erholter Morgen für Sie möglich machen?",
+        "Was könnte, ausser einem Glas, Ihr Zeichen an den Körper werden, dass der Tag vorbei ist?"
+      ],
+      "scripture": {
+        "reference": "Psalm 127,2 (Luther 1912)",
+        "text": "Es ist umsonst, daß ihr früh aufstehet und hernach lange sitzet und esset euer Brot mit Sorgen; denn seinen Freunden gibt er's schlafend."
+      },
+      "sources": [
+        135,
+        68,
+        188
+      ],
+      "keywords": [
+        "Schlaf",
+        "Alkohol",
+        "Schlummertrunk",
+        "Schlaflosigkeit",
+        "Abendritual"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Der Kreislauf: gedrückte Stimmung, Grübeln, ein Glas",
+      "quote": "Ich hatte viel Bekümmernisse in meinem Herzen; aber deine Tröstungen ergötzten meine Seele.",
+      "quote_source": "Psalm 94,19 (Luther 1912)",
+      "explanation": "Grübeln heisst: Der Kopf spielt immer wieder dieselben schmerzhaften Gedanken ab. Was schiefgelaufen ist, was Sie dagegen tun müssten, was als Nächstes schiefgehen wird. Die Depression dreht diese Wiederholung laut auf. Und genau eine solche laute Wiederholung scheint ein Glas Alkohol leiser zu machen.\n\nForschende untersuchten 403 junge Erwachsene, die mindestens einmal pro Woche tranken, und verfolgten die Kette. Depressive Symptome führten zu mehr problemfokussiertem Denken. Das ist jene Art von Grübeln, die um ein Problem kreist, ohne es zu lösen. Dieses Grübeln sagte Trinken zur Bewältigung voraus, und Trinken zur Bewältigung sagte Alkoholprobleme voraus: versäumte Verpflichtungen, Reue, noch mehr gedrückte Stimmung. Nicht jede Form des Grübelns hatte diese Wirkung. Es war gezielt das Kreisen um Probleme, das das Trinken nährte. Das ist wichtig, denn es zeigt, wo sich der Kreislauf unterbrechen lässt.\n\nDer Alkohol stoppt die Gedanken nicht. Er dämpft sie für einen Abend und gibt sie am nächsten Morgen zurück, lauter, und dazu einen müden Körper. Eine Übersichtsarbeit zur Forschung über Alkohol und Depression hält fest, dass Menschen, die ihre gedrückte Stimmung mit Alkohol selbst behandeln, oft nicht vollständig genesen, wenn nicht sowohl das Trinken als auch die Depression behandelt werden. Die Alternative ist nicht, die Gedanken mit Gewalt wegzudrängen. Das gelingt selten. Die Alternative ist, dem Kopf im Moment des Greifens für zehn Minuten etwas anderes zu tun zu geben: den Körper bewegen, den Raum wechseln, jemanden anrufen, den Kreislauf in einem einzigen Satz aufschreiben. Zehn Minuten reichen meist, damit die Welle des Verlangens ihren Höhepunkt überschreitet. Danach können Sie neu entscheiden. Und vielleicht entscheiden Sie dann anders.",
+      "challenge": "Wählen Sie Ihre Zehn-Minuten-Antwort jetzt, solange Sie ruhig sind. Nehmen Sie eine davon: ein Spaziergang bis ans Ende der Strasse und zurück, eine Dusche, das Geschirr von Hand abwaschen, eine Person anrufen oder ihr schreiben, oder den kreisenden Gedanken in einem einzigen Satz auf Papier bringen. Wenn Sie heute zum ersten Mal den Sog zu einem Glas oder einer Zigarette spüren, nehmen Sie sich zuerst Ihre zehn Minuten. Dann entscheiden Sie. Wenn zehn Minuten zu lang sind, nehmen Sie drei.",
+      "reflection_questions": [
+        "Um welches Problem kreisen Ihre Gedanken am meisten zu der Stunde, in der Sie gewöhnlich zu etwas greifen?",
+        "Was geschah mit dem Verlangen während Ihrer zehn Minuten?",
+        "Wer oder was hilft Ihren Gedanken, vorwärtszugehen statt sich im Kreis zu drehen?"
+      ],
+      "scripture": {
+        "reference": "Jesaja 26,3 (Luther 1912)",
+        "text": "Du erhältst stets Frieden nach gewisser Zusage; denn man verlässt sich auf dich."
+      },
+      "sources": [
+        51,
+        46,
+        63
+      ],
+      "keywords": [
+        "Grübeln",
+        "Trinken zur Bewältigung",
+        "Verlangen",
+        "Aufschub",
+        "Verhaltensaktivierung"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Rauchen, Stimmung und eine überraschende Richtung",
+      "quote": "Rauchende dürfen beruhigt sein: Mit dem Rauchen aufzuhören, geht mit Vorteilen für die psychische Gesundheit einher.",
+      "quote_source": "Taylor et al. (2014) (übersetzt)",
+      "explanation": "Die meisten Rauchenden mit Depression glauben, die Zigarette gebe ihnen Halt und ein Rauchstopp würde alles schlimmer machen. Die Forschung sagt etwas anderes. Es lohnt sich, ihr in Ruhe zuzuhören.\n\nZuerst zur Richtung. In einer norwegischen Studie wurden 1190 Erwachsene elf Jahre lang begleitet. Starke Raucher erkrankten viermal häufiger zum ersten Mal an einer Depression als Menschen, die nie geraucht hatten. Je mehr Zigaretten und je mehr Jahre, desto höher das Risiko. Eine neuseeländische Geburtskohorte mit mehr als tausend Menschen prüfte mit sorgfältiger Statistik beide Richtungen: Die Nikotinabhängigkeit führte zur Depression. Die Depression führte nicht zur Nikotinabhängigkeit. In Finnland bekamen unter mehr als 10 000 Erwachsenen täglich Rauchende im folgenden Jahrzehnt häufiger Antidepressiva verschrieben, sogar im Vergleich mit ihrem eigenen nichtrauchenden Zwilling. Und bei 1725 niederländischen Patientinnen und Patienten, die bereits wegen Depression oder Angst in Behandlung waren, hatten nikotinabhängige Rauchende stärkere Symptome und erholten sich über zwei Jahre langsamer.\n\nZweitens: Was geschieht, wenn Menschen aufhören? Forschende in Birmingham fassten 26 Studien zusammen, die die psychische Gesundheit vor dem Rauchstopp und mindestens sechs Wochen danach gemessen hatten. Im Vergleich zu denen, die weiterrauchten, hatten die Aufhörenden weniger Depression, weniger Angst, weniger Stress und eine bessere Stimmung. Die Verbesserung war bei Menschen mit psychischen Erkrankungen genauso gross wie bei allen anderen. Die Autoren hielten fest, dass die Effektstärken ähnlich gross oder grösser waren als die einer Behandlung mit Antidepressiva. Das ist kein Grund, Ihre Medikamente zu ändern. Es zeigt aber, wie viel Sie der Nikotinentzug gekostet hat, der sich zwanzigmal am Tag wiederholt.",
+      "challenge": "Wenn Sie rauchen: Schieben Sie heute eine Zigarette um fünfzehn Minuten hinaus, am besten jene, zu der Sie greifen, wenn Ihre Stimmung sinkt. Beobachten Sie, was das Verlangen in diesen Minuten tut. Meist steigt es an, erreicht einen Höhepunkt und klingt dann ab. Wenn Sie nicht rauchen: Wählen Sie etwas, von dem Sie sicher sind, dass es Ihrer Stimmung hilft. Fragen Sie sich, ob es vielleicht ein Unbehagen lindert, das es selbst verursacht hat. Wenn fünfzehn Minuten zu lang sind, nehmen Sie fünf.",
+      "reflection_questions": [
+        "Welche Zigarette des Tages fühlt sich für Sie am meisten wie ein Medikament an, und was geschieht in diesem Moment?",
+        "Was hat man Ihnen gesagt, oder was haben Sie sich selbst gesagt, darüber, was ein Rauchstopp mit Ihrer Stimmung machen würde?",
+        "Was empfinden Sie, wenn Sie lesen, dass Menschen nach dem Aufhören weniger depressiv waren und nicht mehr?"
+      ],
+      "scripture": {
+        "reference": "Jesaja 42,3 (Luther 1912)",
+        "text": "Das zerstoßene Rohr wird er nicht zerbrechen, und das glimmende Tocht wird er nicht auslöschen. Er wird das Recht wahrhaftiglich halten lehren."
+      },
+      "sources": [
+        115,
+        47,
+        117,
+        104,
+        200
+      ],
+      "keywords": [
+        "Rauchen",
+        "Nikotin",
+        "Depression",
+        "Rauchstopp",
+        "Stimmung"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Wie Menschen tatsächlich aufhören",
+      "quote": "Wir stellten fest, dass Rauchstopp-Behandlungen, die gezielt auf den Umgang mit Depression eingingen, Rauchenden mit Depression halfen, aufzuhören.",
+      "quote_source": "van der Meer et al. (2013) (übersetzt)",
+      "explanation": "Mit einer Depression ist es schwerer, mit dem Rauchen aufzuhören, als ohne. Das Verlangen packt härter zu. Das Stimmungstief nach der letzten Zigarette ist tiefer. Rückfälle sind häufiger. Das ist keine Charakterschwäche. Es ist ein Grund, anders aufzuhören: mit mehr Unterstützung statt mit mehr Willenskraft.\n\nEine Cochrane-Übersichtsarbeit hat 49 randomisierte Studien mit Rauchenden zusammengetragen, die aktuell oder früher an einer Depression litten. Das klarste Ergebnis: Wenn ein übliches Rauchstopp-Programm um Stimmungsmanagement ergänzt wurde, also um praktische psychologische Fertigkeiten im Umgang mit gedrückter Stimmung, stieg die langfristige Erfolgsquote um etwa die Hälfte. Bei Menschen mit aktueller Depression waren mit der üblichen Unterstützung nach sechs Monaten oder mehr rund 9 von 100 noch rauchfrei, mit zusätzlicher Unterstützung für die Stimmung etwa 13 von 100. Bei früherer Depression waren es etwa 14 und 20. Das sind ehrliche Zahlen: Die meisten Versuche gelingen nicht beim ersten Mal. Und wer es schliesslich schafft, hat es meist mehr als einmal versucht.\n\nIm Alltag helfen drei Dinge. Unterstützung: eine Rauchstopp-Linie, eine Gruppe, eine Beraterin oder ein Berater, ein Freund, der nachfragt. Ersatz: Nikotinersatz (Pflaster, Kaugummi, Lutschtabletten) und verschreibungspflichtige Rauchstopp-Medikamente können den Entzug abmildern. Welche davon zu Ihrem Antidepressivum passen, besprechen Sie mit Ihrer Ärztin, Ihrem Arzt oder in der Apotheke. Raten Sie nicht. Planung: ein Rauchstopp-Datum, Zigaretten und Feuerzeuge aus dem Haus und eine schriftliche Liste dessen, was Sie in den ersten zehn Minuten eines Verlangens tun werden. Und wenn Sie doch einmal rauchen, nehmen Sie es als Information: Wie spät war es, wie haben Sie sich gefühlt, mit wem waren Sie zusammen? Ein Ausrutscher ist ein Datenpunkt, nicht das Ende des Versuchs.",
+      "challenge": "Machen Sie heute einen Vorbereitungsschritt, nicht schon den Rauchstopp selbst: Vereinbaren Sie ein Gespräch mit Ihrer Ärztin, Ihrem Arzt oder in der Apotheke über Rauchstopp-Hilfen, die zu Ihren Medikamenten passen. Oder suchen Sie die kostenlose Rauchstopp-Linie Ihres Landes und speichern Sie die Nummer. Oder schreiben Sie Ihren eigenen Plan für die ersten zehn Minuten eines Verlangens. Wenn Sie nicht rauchen, bereiten Sie sich auf dieselbe Weise auf etwas vor, das Sie in Ihrem Leben weniger haben möchten. Wenn Ihnen all das zu viel ist, schreiben Sie die Nummer der Rauchstopp-Linie in Ihr Tagebuch.",
+      "reflection_questions": [
+        "Wem würden Sie es erzählen, wenn Sie sich entschieden, es zu versuchen?",
+        "Was hat Ihr letzter Versuch, etwas zu verändern, Ihnen über die Momente gezeigt, in denen Sie am ehesten aufgeben?",
+        "Was würde sich ändern, wenn Sie einen Ausrutscher als Information betrachteten statt als Beweis gegen sich selbst?"
+      ],
+      "scripture": {
+        "reference": "Micha 7,8 (Luther 1912)",
+        "text": "Freue dich nicht, meine Feindin, daß ich darniederliege! Ich werde wieder aufkommen; und so ich im Finstern sitze, so ist doch der HERR mein Licht."
+      },
+      "sources": [
+        139,
+        162,
+        104
+      ],
+      "keywords": [
+        "Rauchstopp",
+        "Unterstützung",
+        "Nikotinersatz",
+        "Rückfall",
+        "Planung"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Wonach Sie stattdessen greifen",
+      "quote": "Und er zog mich aus der grausamen Grube und aus dem Schlamm und stellte meine Füße auf einen Fels, daß ich gewiß treten kann.",
+      "quote_source": "Psalm 40,3 (Luther 1912)",
+      "explanation": "Diese Woche haben wir den Kreislauf nachgezeichnet: Schmerz, Greifen, kurze Erleichterung, längerer Rückschlag. Der Sog zum Glas oder zur Zigarette verschwindet nicht, nur weil Sie ihn verstehen. Er wird schwächer, wenn im entscheidenden Moment etwas anderes bereitliegt.\n\nLegen Sie deshalb eine Stattdessen-Liste an, solange Sie ruhig sind: fünf bis zehn Dinge, die zu der Stunde verfügbar sind, in der Sie sonst zu etwas greifen. Sie sollen wenig Kraft kosten und Ihren Zustand ein wenig verändern. Ein warmes Getränk. Eine Dusche. Zwei Minuten draussen. Ein Telefonanruf. Ein Psalm, ein Lied. Einen einzigen Teller abwaschen. Das Gefühl in einem einzigen Satz aufschreiben. Nichts davon wirkt so schnell wie ein Drink. Aber alles davon lässt Sie um Mitternacht besser dastehen als um neun Uhr abends.\n\nZwei Dinge müssen klar gesagt werden. Erstens: Wenn Sie jeden Tag viel trinken und zittrig werden, schwitzen oder sich krank fühlen, sobald Sie darauf verzichten, hören Sie nicht plötzlich und allein auf. Ein abrupter Entzug nach starkem täglichem Trinken kann Krampfanfälle und Verwirrtheit auslösen, und die WHO weist Fachleute an, ihn sorgfältig zu planen. Ärztinnen und Ärzte können das Aufhören sicher machen, und eine Entgiftung lindert Angst und Depression oft innerhalb weniger Wochen. Nennen Sie Ihrer Ärztin oder Ihrem Arzt die ehrliche Zahl von Tag 2; sie ist auch für Ihre Medikamente wichtig, denn Alkohol wird häufig zusammen mit Antidepressiva bei Todesfällen gefunden, an denen diese Medikamente beteiligt sind. Zweitens: Alkohol und Hoffnungslosigkeit sind eine gefährliche Verbindung; Menschen, die viel trinken, tragen ein um ein Mehrfaches erhöhtes Suizidrisiko. Wenn Sie daran denken, Ihr Leben zu beenden, rufen Sie bitte heute eine Krisenhotline an; die Nummer für Ihr Land finden Sie auf der Hilfe-Seite. Auch Hilfe ist etwas, wonach Sie greifen können.",
+      "challenge": "Schreiben Sie jetzt Ihre Stattdessen-Liste: fünf bis zehn Dinge, passend zu Ihrem Abend, die Sie auch mit wenig Energie wirklich tun können. Legen Sie sie dorthin, wo Sie zum Glas oder zu den Zigaretten greifen: an den Kühlschrank, in die Packung, auf den Sperrbildschirm Ihres Handys. Wählen Sie dann eine kleine Verpflichtung für die kommende Woche (einen alkoholfreien Abend, jeden Tag eine Zigarette hinauszögern oder einen Anruf bei Ihrer Ärztin oder Ihrem Arzt, um sicher aufzuhören) und schreiben Sie sie unten auf die Liste. Wenn die Liste zu viel ist, schreiben Sie drei Dinge auf.",
+      "reflection_questions": [
+        "Welche drei Punkte auf Ihrer Liste erscheinen Ihnen selbst an Ihrem schlimmsten Abend möglich?",
+        "Welchen ehrlichen Satz könnten Sie einer Ärztin, einem Arzt oder einem Freund über Ihr Trinken oder Rauchen sagen?",
+        "Wenn Sie auf die Woche zurückblicken: Was haben Sie darüber gelernt, wonach Sie eigentlich greifen?"
+      ],
+      "scripture": {
+        "reference": "Jesaja 43,18-19 (Luther 1912)",
+        "text": "Gedenket nicht an das Alte und achtet nicht auf das Vorige! Denn siehe, ich will ein Neues machen; jetzt soll es aufwachsen, und ihr werdet's erfahren, daß ich Weg in der Wüste mache und Wasserströme in der Einöde."
+      },
+      "sources": [
+        211,
+        131,
+        56,
+        163,
+        68
+      ],
+      "keywords": [
+        "Stattdessen-Liste",
+        "Alkoholentzug",
+        "Sicherheit",
+        "Suizidprävention",
+        "Verpflichtung"
+      ]
+    }
+  ]
+}

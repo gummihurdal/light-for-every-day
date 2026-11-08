@@ -1,0 +1,221 @@
+{
+  "theme": "nutrition",
+  "lang": "de",
+  "theme_intro": "Diese Woche geht es um Essen und Stimmung. Nicht um eine Diät, nicht um eine Liste verbotener Dinge, und um nichts, was Ihre Behandlung ersetzt. Ihr Gehirn ist aus dem aufgebaut, was Sie essen, und es lebt jede Stunde davon. Die Forschung der letzten fünfzehn Jahre zeigt: Das Gesamtmuster unserer Ernährung hängt damit zusammen, wie wir uns fühlen. Wir schauen uns an, was die Studien wirklich herausgefunden haben und was sie nicht beweisen konnten. Und wie Sie sich an Tagen, an denen Kochen unmöglich scheint, mit kleinen, günstigen Schritten selbst versorgen können.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Das Gehirn isst zuerst",
+      "quote": "Das menschliche Gehirn arbeitet mit einer sehr hohen Stoffwechselrate und verbraucht einen erheblichen Anteil der gesamten aufgenommenen Energie und Nährstoffe.",
+      "quote_source": "Sarris et al. (2015) (übersetzt)",
+      "explanation": "Lange Zeit galt Nahrung als Treibstoff und Baumaterial für den Körper, und als nichts weiter. Diese Sicht hat sich verändert. Eine Übersichtsarbeit des Neurowissenschaftlers Fernando Gómez-Pinilla beschreibt, wie die Nährstoffe einer Mahlzeit jene Moleküle erreichen, die Gehirnzellen beweglich und miteinander verbunden halten. Dazu gehört ein Wachstumsfaktor namens BDNF, der darauf reagiert, was wir essen. Eine Ernährung reich an Omega-3-Fetten unterstützt diese Systeme. Eine Ernährung mit viel gesättigtem Fett schwächt sie eher.\n\nIm Jahr 2015 schrieb eine internationale Gruppe von Psychiaterinnen, Psychiatern und Ernährungsforschenden in The Lancet Psychiatry, dass das Gehirn für seinen Aufbau und für seine Signalübertragung auf Aminosäuren, Fette, Vitamine und Mineralstoffe angewiesen ist. Die Ernährung verdiene in der Psychiatrie denselben Platz, den sie in der Herzmedizin bereits hat. Sie sagten auch etwas Ehrliches: Viele Menschen sind heute zugleich überernährt und mangelernährt. Kalorien gibt es reichlich, aber zu wenig von dem, was das Gehirn braucht.\n\nWenn Sie depressiv sind, wissen Sie wahrscheinlich, wie das Essen aus dem Gleichgewicht gerät. Der Appetit verschwindet, oder er kippt in Richtung Zucker. Kochen fühlt sich an wie ein Aufstieg am Berg. Nichts davon ist eine Charakterschwäche. Es gehört zur Krankheit. In dieser Woche geht es nicht um eine perfekte Ernährung. Es geht darum, Ihr Gehirn so zu nähren, dass es klein genug bleibt, um machbar zu sein, begleitend zu der Behandlung, die Sie bereits haben.",
+      "challenge": "Heute geht es ums Wahrnehmen. Ändern Sie noch nichts. Schreiben Sie heute dreimal, nachdem Sie etwas gegessen oder getrunken haben, eine Zeile in Ihr Tagebuch: was es war, ungefähr wann, und wie Sie sich etwa eine Stunde später gefühlt haben (benebelt, stabiler, schläfrig, ruhig). Das ist alles. Wenn drei Zeilen zu viel sind, schreiben Sie eine Zeile über eine einzige Mahlzeit. Wahrnehmen, ohne zu urteilen, ist die ganze Aufgabe.",
+      "reflection_questions": [
+        "Wann haben Sie zuletzt etwas gegessen und sich danach ein wenig stabiler gefühlt? Was war es?",
+        "Wie hat die Depression Ihr Essen verändert: mehr, weniger, andere Dinge, andere Zeiten?",
+        "Wenn Essen ein Teil dessen ist, wie Ihr Gehirn arbeitet: Was würde es bedeuten, das Essen als Fürsorge zu sehen statt als lästige Pflicht?"
+      ],
+      "scripture": {
+        "reference": "Psalm 145,15-16 (Luther 1912)",
+        "text": "Aller Augen warten auf dich, und du gibst ihnen ihre Speise zu seiner Zeit. Du tust deine Hand auf und erfüllest alles, was lebet, mit Wohlgefallen."
+      },
+      "sources": [
+        181,
+        94,
+        133
+      ],
+      "keywords": [
+        "Ernährung",
+        "Gehirn",
+        "Essen und Stimmung",
+        "BDNF",
+        "Appetit"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Muster, nicht perfekte Lebensmittel",
+      "quote": "Die Ergebnisse deuten darauf hin, dass ein hoher Verzehr von Obst, Gemüse, Fisch und Vollkornprodukten mit einem geringeren Depressionsrisiko verbunden sein könnte.",
+      "quote_source": "Lai et al. (2014) (übersetzt)",
+      "explanation": "In einer britischen Studie mit rund 3500 Staatsangestellten um die Mitte fünfzig untersuchten die Forschenden keine einzelnen Nährstoffe. Sie betrachteten die Ernährungsweise als Ganzes. Ein Muster bestand vor allem aus Gemüse, Obst und Fisch. Das andere aus gesüssten Desserts, Frittiertem, verarbeitetem Fleisch und Weissmehlprodukten. Fünf Jahre später hatten Menschen, die am stärksten dem Muster mit wenig verarbeiteten Lebensmitteln folgten, eine um etwa ein Viertel geringere Wahrscheinlichkeit für depressive Symptome. Bei Menschen, die am stärksten dem Muster mit stark verarbeiteten Lebensmitteln folgten, lag sie um fast 60 Prozent höher. Die Forschenden prüften auch, ob vielleicht die Depression die Essgewohnheiten verursacht hatte und nicht umgekehrt. Dafür fanden sie keine Anzeichen.\n\nAls 2014 die Ergebnisse von 21 Studien zusammengefasst wurden, ging ein gesundes Ernährungsmuster mit einer um rund 16 Prozent geringeren Wahrscheinlichkeit für eine Depression einher. Das westliche Ernährungsmuster wies in die andere Richtung, doch dieses Ergebnis war statistisch nicht gesichert. Es handelt sich um Zusammenhänge, nicht um Beweise. Eine australische Studie mit 3700 Erwachsenen zeigte, dass Einkommen, Bildung und körperliche Aktivität einen guten Teil des Zusammenhangs erklärten. Denn gut zu essen fällt leichter, wenn das Leben leichter ist. Trotzdem sagte eine langfristig ungesunde Ernährungsweise bei älteren Erwachsenen weiterhin mehr Symptome voraus.\n\nDie praktische Lehre daraus ist freundlich: Es gibt kein Superfood und kein verbotenes Lebensmittel. Entscheidend ist die Richtung des ganzen Musters. Schon ein unverarbeitetes Lebensmittel mehr in einer Mahlzeit verändert das Muster. Zuerst muss nichts weggelassen werden.",
+      "challenge": "Fügen Sie heute einer Mahlzeit ein unverarbeitetes Lebensmittel hinzu, ohne etwas wegzulassen. Eine Handvoll tiefgekühlte Erbsen oder Spinat, untergerührt in das, was Sie ohnehin essen. Ein Apfel oder eine Banane neben dem Mittagessen. Eine halbe Dose Bohnen, mit Ihren Teigwaren oder Ihrem Reis erwärmt. Wählen Sie die günstigste und einfachste Möglichkeit in Ihrer Küche. Wenn heute selbst das zu viel ist, legen Sie ein Stück Obst dorthin, wo Sie es morgen früh als Erstes sehen.",
+      "reflection_questions": [
+        "Welches unverarbeitete Lebensmittel mögen Sie bereits und könnten es ohne Mühe öfter essen?",
+        "Hatten Sie schon einmal das Gefühl, gesundes Essen sei nur etwas für Menschen mit mehr Zeit, Geld oder Kraft? Woher kommt dieses Gefühl?",
+        "Wie würde es sich anfühlen, etwas hinzuzufügen statt wegzunehmen?"
+      ],
+      "scripture": {
+        "reference": "1. Mose 1,29 (Luther 1912)",
+        "text": "Und Gott sprach: Sehet da, ich habe euch gegeben allerlei Kraut, das sich besamt, auf der ganzen Erde und allerlei fruchtbare Bäume, die sich besamen, zu eurer Speise."
+      },
+      "sources": [
+        18,
+        121,
+        103
+      ],
+      "keywords": [
+        "Ernährungsmuster",
+        "unverarbeitete Lebensmittel",
+        "verarbeitete Lebensmittel",
+        "Whitehall II",
+        "Hülsenfrüchte"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Mediterran essen – mit jedem Budget",
+      "quote": "Ein Land, darin Weizen, Gerste, Weinstöcke, Feigenbäume und Granatäpfel sind, ein Land, darin Ölbäume und Honig wachsen.",
+      "quote_source": "5. Mose 8,8 (Luther 1912)",
+      "explanation": "Das bekannteste Ernährungsmuster in dieser Forschung ist das traditionell mediterrane: Gemüse, Obst und Nüsse, Hülsenfrüchte, Vollkorn, Olivenöl, etwas Fisch, wenig Fleisch und wenig vollfette Milchprodukte. In Spanien begleiteten Forschende rund 10 000 Hochschulabsolventinnen und -absolventen, die zu Beginn nicht depressiv waren. In etwa vier Jahren erhielten 480 von ihnen die Diagnose Depression. Wer sich am stärksten an dieses Muster hielt, hatte ein um etwa 40 Prozent geringeres Risiko als jene, die es am wenigsten taten. Und das Risiko sank Schritt für Schritt, je konsequenter jemand so ass. Obst und Nüsse sowie Hülsenfrüchte wie Linsen und Kichererbsen zeigten die deutlichsten schützenden Tendenzen. Fisch für sich allein zeigte in dieser Kohorte keine klare Tendenz.\n\nEine spätere Auswertung mit 15 000 Personen aus derselben Studie über acht Jahre ergab etwas Ermutigendes. Der Schritt von geringer zu mässiger Umsetzung senkte das Risiko um etwa 25 bis 30 Prozent. Der Schritt von mässig zu nahezu perfekt brachte kaum noch etwas dazu. Der grösste Teil des Nutzens liegt im Mittelfeld. Eine zusammenfassende Analyse mehrerer Studien fand bei hoher Umsetzung ein um rund 30 Prozent geringeres Depressionsrisiko.\n\nEs handelt sich um Beobachtungsstudien. Menschen, die so essen, unterscheiden sich auch in anderem. Und eine grosse randomisierte Studie hat bisher nur eine Tendenz gezeigt. Trotzdem: Dieses Muster ist erschwinglich. Tomaten aus der Dose, getrocknete Linsen und Kichererbsen oder solche aus der Dose, Tiefkühlgemüse, Haferflocken, Brot, eine Flasche Oliven- oder Rapsöl, Nüsse in kleinen Beuteln, Obst der Saison. Für Menschen, die vegetarisch leben, ersetzen Baumnüsse und gemahlene Leinsamen den Fisch. Exotisches braucht es nicht.",
+      "challenge": "Machen Sie heute einen mediterranen Teller in etwa zehn Minuten: eine Dose Kichererbsen oder Linsen, erwärmt mit einer Dose gehackter Tomaten, einem Löffel Olivenöl und dem Tiefkühlgemüse, das Sie gerade haben. Essen Sie Brot dazu. Wenn Kochen heute zu viel ist, genügt die kleine Variante: eine Handvoll Nüsse und ein Stück Obst. Mässig ist genug. Heute geht es um einen Teller, nicht um ein neues Leben.",
+      "reflection_questions": [
+        "Welche Teile dieses Musters gibt es schon in Ihrer Küche oder in Ihrer Kultur?",
+        "Verändert das Wissen, dass schon eine mässige Umsetzung den grössten Nutzen bringt, wie Sie sich beim Ausprobieren fühlen?",
+        "Wer in Ihrem Leben isst so, und könnten Sie diese Woche mit dieser Person eine Mahlzeit teilen?"
+      ],
+      "scripture": {
+        "reference": "Psalm 23,5 (Luther 1912)",
+        "text": "Du bereitest vor mir einen Tisch im Angesicht meiner Feinde. Du salbest mein Haupt mit Öl und schenkest mir voll ein."
+      },
+      "sources": [
+        179,
+        180,
+        167,
+        181
+      ],
+      "keywords": [
+        "Mittelmeerdiät",
+        "SUN-Kohorte",
+        "Hülsenfrüchte",
+        "Olivenöl",
+        "kleines Budget"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Obst, Gemüse und die Stimmung von morgen",
+      "quote": "Der Verzehr von Obst und Gemüse kann das emotionale Wohlbefinden gesunder junger Erwachsener fördern.",
+      "quote_source": "White, Horwath & Conner (2013) (übersetzt)",
+      "explanation": "Die meisten Ernährungsstudien fragen nach Jahren. Eine fragte nach Tagen. In Neuseeland führten 281 junge Erwachsene drei Wochen lang ein Online-Tagebuch. Jeden Tag hielten sie fest, was sie gegessen hatten und wie sie sich fühlten. An Tagen, an denen sie mehr Obst und Gemüse assen, fühlten sie sich positiver. Dann prüften die Forschenden die Reihenfolge. Obst und Gemüse sagten eine bessere Stimmung am nächsten Tag voraus. Eine bessere Stimmung dagegen führte nicht zu mehr Obst und Gemüse. Das Essen kam zuerst. Am deutlichsten zeigten sich die Veränderungen bei etwa sieben bis acht Portionen am Tag. Das ist viel. Doch die Richtung stimmte auch bei kleineren Mengen.\n\nEs handelte sich um gesunde Studierende, nicht um Menschen mit Depression. Und die Wirkung betraf positive Gefühle, nicht eine Krankheit. Andere Studien weisen in dieselbe Richtung. Unter 9'255 Mitgliedern adventistischer Gemeinden in Nordamerika berichteten diejenigen, die mehr Gemüse, Obst, Nüsse und Hülsenfrüchte assen, von mehr positiven und weniger negativen Gefühlen. Unter 278 älteren Erwachsenen in den USA assen Menschen mit Depression weniger Obst und Gemüse und nahmen mit der Nahrung weniger Vitamin C auf. Antioxidantien in Tablettenform zeigten dagegen überhaupt keinen Zusammenhang. Der Nutzen scheint aus dem Essen zu kommen, nicht aus Kapseln. In Taiwan hatten ältere Menschen, die am häufigsten Gemüse assen, vier Jahre später ein um etwa 60 Prozent geringeres Risiko für neue depressive Symptome.\n\nEine Portion ist ungefähr eine Handvoll. Tiefgekühltes zählt. Konserven zählen. Eine Banane, eine Karotte, eine Tasse tiefgekühlter Spinat in der Suppe oder in den Teigwaren: Jedes davon zählt.",
+      "challenge": "Fügen Sie heute zwei Portionen hinzu: eine Frucht und ein Gemüse. Machen Sie es sich leicht. Rühren Sie eine Handvoll tiefgekühltes Gemüse in das, was Sie kochen oder aufwärmen. Und essen Sie zu einer festen Zeit ein Stück Obst, vielleicht zu Ihrem Nachmittagsgetränk. Tiefgekühltes und Konserven sind hier so gut wie Frisches, und günstiger. Wenn zwei Portionen heute zu viel sind, nehmen Sie eine. Und achten Sie morgen früh darauf, wie Sie sich fühlen.",
+      "reflection_questions": [
+        "Was haben Sie gestern gegessen? Gibt es einen Zusammenhang damit, wie Sie sich heute Morgen fühlen?",
+        "Welche Frucht oder welches Gemüse haben Sie als Kind geliebt? Ist es für Sie noch erhältlich?",
+        "Was hält Sie davon ab, Obst und Gemüse zu essen: die Kosten, die Energie, die Gewohnheit oder etwas anderes?"
+      ],
+      "scripture": {
+        "reference": "Sprüche 15,17 (Luther 1912)",
+        "text": "Es ist besser ein Gericht Kraut mit Liebe, denn ein gemästeter Ochse mit Hass."
+      },
+      "sources": [
+        222,
+        86,
+        158,
+        205
+      ],
+      "keywords": [
+        "Obst",
+        "Gemüse",
+        "Tagebuch",
+        "positive Gefühle",
+        "tiefgekühltes Gemüse"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Die Fette, aus denen Ihr Gehirn gebaut ist",
+      "quote": "Mehrfach ungesättigte Omega-3-Fettsäuren sind normale Bestandteile von Zellmembranen und für eine normale Gehirnfunktion unerlässlich.",
+      "quote_source": "Gómez-Pinilla (2008) (übersetzt)",
+      "explanation": "Die Wände Ihrer Gehirnzellen bestehen zum Teil aus Omega-3-Fetten. Der Körper stellt sie nur schlecht selbst her, also müssen sie über die Nahrung kommen. Die zwei wichtigsten heissen EPA und DHA. Hier ist die Forschung ungewöhnlich klar, was die Einzelheiten angeht. Eine Analyse aus dem Jahr 2011 mit 15 Studien und 916 Personen ergab: Präparate, die überwiegend aus EPA bestanden, linderten Depressionen, Präparate mit weniger EPA dagegen nicht. Für DHA allein fand sie keinen Hinweis auf eine Wirkung. Eine Übersichtsarbeit von 2014 fand den Nutzen vor allem bei Menschen mit diagnostizierter Depression, die Omega-3 zusätzlich zu ihrer üblichen Behandlung einnahmen. Bei gesunden Menschen und in der Schwangerschaft zeigte sich kaum ein Nutzen.\n\nEine internationale Leitlinie für Ärztinnen und Ärzte, veröffentlicht 2019, hält fest: Omega-3 wirkt als Ergänzung besser als allein. Auf Magenbeschwerden und Hautreaktionen sollte man achten, und eine Ärztin oder ein Arzt sollte einbezogen werden. Wenn Sie über ein Präparat nachdenken, ist das genau das Gespräch, das Sie führen sollten. Immer zusätzlich zu Ihrer Behandlung, nie an ihrer Stelle.\n\nBei den Lebensmitteln sind fettreiche Fische wie Sardinen, Makrelen und Lachs die reichste Quelle, und Fisch aus der Dose ist völlig in Ordnung. Baumnüsse, gemahlene Leinsamen, Chiasamen und Rapsöl liefern ein kürzeres Omega-3, das der Körper nur in kleinen Mengen in EPA und DHA umwandelt. Und doch: In einer Studie mit 138 Adventisten im Südwesten der USA berichteten Vegetarier, die fast kein EPA oder DHA zu sich nahmen, von besserer Stimmung als die Fleischesser. Eine pflanzliche Ernährung ist also kein Risiko für die Stimmung. Wer als Vegetarierin oder Vegetarier EPA und DHA direkt aufnehmen möchte, kann die Ärztin oder den Arzt nach Produkten auf Algenbasis fragen.",
+      "challenge": "Legen Sie heute ein Omega-3-Lebensmittel auf Ihren Teller. Wenn Sie Fisch essen: eine Dose Sardinen oder Makrelen auf Toast, fünf Minuten, ohne Kochen. Wenn Sie sich pflanzlich ernähren: einen Esslöffel gemahlene Leinsamen ins Porridge oder ins Joghurt rühren, oder eine kleine Handvoll Baumnüsse. Wenn Sie über ein Präparat nachdenken, schreiben Sie lieber eine Frage für Ihre Ärztin oder Ihren Arzt in Ihr Tagebuch, statt etwas zu kaufen. Und wenn Ihnen das alles zu viel ist, stecken Sie für morgen einen Beutel Baumnüsse in Ihre Manteltasche.",
+      "reflection_questions": [
+        "Welches Omega-3-Lebensmittel könnte realistischerweise einen Platz in Ihrer Woche finden?",
+        "Wurde Ihnen schon einmal eine schnelle Lösung aus der Flasche versprochen? Wie hat sich das danach angefühlt?",
+        "Welche Frage zu Nahrungsergänzungsmitteln möchten Sie Ihrer Ärztin oder Ihrem Arzt stellen?"
+      ],
+      "scripture": {
+        "reference": "Jesaja 55,2 (Luther 1912)",
+        "text": "Höret mir doch zu und esset das Gute, so wird eure Seele am Fetten ihre Lust haben."
+      },
+      "sources": [
+        94,
+        196,
+        97,
+        15,
+        39
+      ],
+      "keywords": [
+        "Omega-3",
+        "EPA",
+        "DHA",
+        "Baumnüsse",
+        "Leinsamen",
+        "vegetarisch"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Vitamin D, Folat, B12: Fragen Sie nach einem Test",
+      "quote": "Unsere Analysen stimmen mit der Hypothese überein, dass eine niedrige Vitamin-D-Konzentration mit Depression zusammenhängt, und zeigen, dass randomisierte kontrollierte Studien zu Vitamin D für die Vorbeugung und Behandlung von Depression nötig sind, um festzustellen, ob dieser Zusammenhang ursächlich ist.",
+      "quote_source": "Anglin et al. (2013) (übersetzt)",
+      "explanation": "Vitamin D wird in der Haut mithilfe von Sonnenlicht gebildet und steckt in fettem Fisch, Eigelb, manchen Pilzen und angereicherten Lebensmitteln. In Nordeuropa ist die Wintersonne zu schwach, um viel davon zu bilden. Eine Übersichtsarbeit über 14 Studien mit mehr als 31 000 Menschen fand bei Menschen mit Depression niedrigere Vitamin-D-Werte. In den Studien, die Menschen über längere Zeit begleiteten, hatten jene mit den niedrigsten Werten ein etwa doppelt so hohes Risiko, depressiv zu werden. In einer niederländischen Studie mit fast 2400 Erwachsenen hatte ein Drittel zu wenig Vitamin D, und die Werte waren bei den am schwersten Depressiven am niedrigsten.\n\nDoch Vorsicht mit der Richtung des Pfeils. Eine Depression hält Menschen drinnen, und drinnen heisst weniger Sonne. Studien mit Vitamin-D-Präparaten brachten gemischte Ergebnisse. Eine Übersichtsarbeit fand einen Nutzen vor allem in Studien, in denen die Teilnehmenden zu Beginn tatsächlich einen Mangel hatten und ihre Blutwerte tatsächlich anstiegen. Einen Mangel auszugleichen kann helfen. Mehr einzunehmen, wenn kein Mangel besteht, hat sich bisher nicht als hilfreich erwiesen.\n\nBei Folat und B12 sieht es ähnlich aus. In einer kleinen Studie mit 55 Menschen, bei denen das Antidepressivum nicht wirkte, sagte ein niedriger Folatspiegel ein schlechteres Ansprechen voraus. Menschen mit einer häufigen Genvariante, die den Folatspiegel senkt, haben eine um etwa ein Drittel höhere Chance, an einer Depression zu erkranken. Das betrifft eine Untergruppe, nicht alle. Folat steckt in Linsen, Bohnen, grünem Blattgemüse und Orangen. B12 stammt aus tierischen Lebensmitteln. Bei veganer Ernährung muss es deshalb aus angereicherten Lebensmitteln oder einem Präparat kommen, das Sie zusammen mit Ihrer Ärztin oder Ihrem Arzt auswählen. Ein Bluttest schafft Klarheit.",
+      "challenge": "Schreiben Sie diese Frage in Ihr Tagebuch, bereit für Ihren nächsten Termin: «Könnten Sie meine Werte für Vitamin D, B12 und Folat prüfen?» Wenn Sie keinen Termin haben, notieren Sie heute, wen Sie fragen würden und wie Sie einen Termin vereinbaren. Dann, wenn das Wetter es zulässt, stehen oder sitzen Sie um die Mittagszeit zehn Minuten draussen im Tageslicht, Gesicht und Hände unbedeckt. Wenn Hinausgehen zu viel ist, schreiben Sie die Frage auf und lassen Sie es dabei. Die Frage ist die Aufgabe.",
+      "reflection_questions": [
+        "Hatten Sie seit Beginn Ihrer Depression einen Bluttest? Wäre es beruhigend, Ihre Werte zu kennen?",
+        "Wie viel Tageslicht bekommt Ihre Haut in einer gewöhnlichen Woche ab?",
+        "Gibt es ein folatreiches Lebensmittel, das Sie bereits gerne essen?"
+      ],
+      "scripture": {
+        "reference": "Psalm 139,14 (Luther 1912)",
+        "text": "Ich danke dir darüber, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl."
+      },
+      "sources": [
+        21,
+        142,
+        193,
+        156,
+        93
+      ],
+      "keywords": [
+        "Vitamin D",
+        "Folat",
+        "B12",
+        "Bluttest",
+        "Sonnenlicht",
+        "vegan"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Zucker, sanfte Alternativen und Essen ohne Energie",
+      "quote": "Unsere Vorliebe für Süsses hat uns allerdings nicht gut gedient, denn die moderne Technik hat uns stark raffinierte Kohlenhydrate beschert, die appetitlich, günstig und im Überfluss vorhanden sind.",
+      "quote_source": "Gangwisch et al. (2015) (übersetzt)",
+      "explanation": "Wenn Sie depressiv sind, hilft Zucker. Für kurze Zeit. Das Verlangen danach ist ein Versuch, mit der Last fertigzuwerden, keine Schwäche. In einer Studie mit rund 70'000 amerikanischen Frauen, die drei Jahre lang begleitet wurden, hatten jene, deren Ernährung den Blutzucker am schnellsten ansteigen liess, ein um etwa 22 Prozent höheres Risiko für eine neue Depression. Bei jenen, die am meisten zugesetzten Zucker assen, waren es etwa 23 Prozent. Nahrungsfasern, Obst und Gemüse gingen mit einem geringeren Risiko einher. In einem streng kontrollierten Experiment assen 82 gesunde Erwachsene je 28 Tage lang eine Kost mit schnellem und eine mit langsamem Zucker, bei gleicher Kalorienmenge. Bei der Kost mit schnellem Zucker lagen ihre Depressionswerte um 38 Prozent höher, und sie fühlten sich müder. In Spanien hatten Menschen, die am meisten Fast Food assen, über sechs Jahre ein um etwa 40 Prozent höheres Risiko für eine Depression.\n\nDas Hoffnungsvolle daran: In Australien erhielten 76 junge Erwachsene mit depressiven Symptomen ein kurzes Video mit Ernährungstipps und einen kleinen Korb mit Lebensmitteln. Drei Wochen später hatten sich ihre Depressionswerte verbessert, jene der Vergleichsgruppe nicht.\n\nDenken Sie also an Alternativen, nicht an Verbote. Obst mit ein paar Nüssen statt nur Süssigkeiten. Haferflocken statt gezuckerter Frühstücksflocken. Wasser oder Tee statt Süssgetränken. Und wenn die Energie fehlt: Essen Sie wenig und regelmässig, etwa alle drei bis vier Stunden etwas. Halten Sie Lebensmittel im Haus, die nicht gekocht werden müssen: Bohnen aus der Dose, Haferflocken, Bananen, Nüsse, Eier, Brot, tiefgekühltes Gemüse. Kochen Sie an einem guten Tag die doppelte Menge und frieren Sie die Hälfte ein. Wenn Ihr Appetit über Wochen verschwindet oder sich Ihr Gewicht verändert, sagen Sie es Ihrer Ärztin oder Ihrem Arzt. Essen begleitet Ihre Behandlung, und ein Körper, der genährt ist, kann sie besser tragen.",
+      "challenge": "Nehmen Sie sich für die kommende Woche eine kleine Sache vor und schreiben Sie sie in Ihr Tagebuch. Wählen Sie eine Alternative, zum Beispiel Obst und Nüsse, wenn Sie sonst zu Süssigkeiten greifen würden, oder Wasser statt eines Süssgetränks. Und wählen Sie ein Grundnahrungsmittel ohne Kochen, das Sie im Haus haben möchten, etwa Bohnen aus der Dose, Haferflocken oder Bananen. Setzen Sie es noch heute auf Ihre Einkaufsliste. Wenn Ihnen eine Woche zu lang erscheint, nehmen Sie sich die Alternative nur für morgen vor.",
+      "reflection_questions": [
+        "Wenn Sie zu etwas Süssem greifen: Wonach hungern Sie in diesem Moment wirklich?",
+        "Welches Lebensmittel könnten Sie im Haus haben, das weder Kochen noch Entscheidungen verlangt?",
+        "Wenn Sie auf diese Woche zurückblicken: Welche kleine Veränderung erschien Ihnen am ehesten machbar?"
+      ],
+      "scripture": {
+        "reference": "1. Könige 19,7 (Luther 1912)",
+        "text": "Und der Engel des HERRN kam zum andernmal wieder und rührte ihn an und sprach: Steh auf und iß; denn du hast einen großen Weg vor dir."
+      },
+      "sources": [
+        90,
+        52,
+        178,
+        73,
+        17
+      ],
+      "keywords": [
+        "Zucker",
+        "glykämischer Index",
+        "Fast Food",
+        "Alternativen",
+        "Appetit",
+        "Mahlzeitenplanung"
+      ]
+    }
+  ]
+}

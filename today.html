@@ -9,13 +9,13 @@
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#FAF7F2" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171A1F" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#EDF1F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131920" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/app.css">
 <style>
-.day-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.day-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px;flex-wrap:wrap}
 .title{margin:6px 0 18px}
 .challenge-done{display:flex;align-items:center;gap:12px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(0,0,0,.06)}
 .q{margin-bottom:18px}
@@ -65,9 +65,9 @@ async function render() {
   const sourceIds = Array.isArray(m.sources) ? m.sources.filter(x => typeof x === 'number') : [];
 
   app.innerHTML = `
-  <article class="fade">
+  <article>
     <div class="day-head">
-      <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>${LD.t('week')} ${th.week || ''} · ${LD.esc(th.title || '')}</span>
+      <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>${LD.esc(th.title || '')}, ${LD.t('week').toLowerCase()} ${th.week || ''}</span>
       <span class="muted small">${LD.t('day')} ${day} ${LD.t('of')} ${LD.TOTAL_DAYS}</span>
     </div>
     ${!started ? `<div class="card amber" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div>You are previewing. Start your own journey and the app will bring you one message a day.</div><button class="btn sm" onclick="LD.start();location.href='today.html'">Start day 1 today</button></div>` : ''}
@@ -77,7 +77,7 @@ async function render() {
 
     <section class="card">
       <div class="card-lbl">${LD.t('quote')}</div>
-      <blockquote class="quote">“${LD.esc(m.quote)}”</blockquote>
+      <blockquote class="quote">${LD.esc(m.quote)}</blockquote>
       <div class="quote-by">— ${LD.esc(m.quote_source)}</div>
     </section>
 
@@ -121,11 +121,11 @@ async function render() {
       </div>
     </section>
 
-    ${sourceIds.length ? `<details class="card soft"><summary>${LD.t('sources')} · ${sourceIds.length}</summary><ol class="src-list" id="srcs" style="margin:14px 0 0 18px"><li class="muted">Loading…</li></ol></details>` : ''}
+    ${sourceIds.length ? `<details class="card soft"><summary>${LD.t('sources')} (${sourceIds.length})</summary><ol class="src-list" id="srcs" style="margin:14px 0 0 18px"><li class="muted">Loading…</li></ol></details>` : ''}
 
     <nav class="pager">
       ${day > 1 ? `<a class="btn ghost" href="today.html?day=${day - 1}">← ${LD.t('day')} ${day - 1}</a>` : '<span></span>'}
-      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1} →</a>` : '<a class="btn ghost" href="journey.html">Finish →</a>'}
+      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1}</a>` : '<a class="btn ghost" href="journey.html">Finish</a>'}
     </nav>
   </article>`;
 

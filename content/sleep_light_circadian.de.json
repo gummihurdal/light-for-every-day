@@ -1,0 +1,217 @@
+{
+  "theme": "sleep_light_circadian",
+  "lang": "de",
+  "theme_intro": "Diese Woche geht es um Schlaf, Licht und die innere Uhr. Schlechter Schlaf gehört zu den häufigsten Symptomen einer Depression. Die Forschung zeigt, dass er auch eine ihrer Ursachen ist. Gerade hier können deshalb schon kleine Veränderungen etwas bewirken. In sieben Tagen bauen wir einen einfachen Rhythmus auf, den Sie beibehalten können: eine feste Aufstehzeit, Tageslicht am Morgen und ein sanfterer Ausklang des Tages.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Schlaf und Depression: eine Strasse in beide Richtungen",
+      "quote": "Es besteht ein sehr starker Zusammenhang zwischen Schlafstörungen und schwerer Depression.",
+      "quote_source": "Nutt, Wilson & Paterson (2008) (übersetzt)",
+      "explanation": "Wenn die Depression Ihren Schlaf durcheinandergebracht hat, sind Sie damit in der Mehrheit. In einer britischen Umfrage unter 2800 Menschen mit Depression gaben 97 % an, während einer Depression Schlafprobleme zu haben. Die meisten sagten, die Schwierigkeiten hätten etwa zur gleichen Zeit begonnen wie die gedrückte Stimmung. Rund drei Viertel der Menschen mit Depression leiden an Schlaflosigkeit. Manche, vor allem jüngere Menschen, schlafen dagegen viel zu viel.\n\nDoch die Strasse führt in beide Richtungen. Schlechter Schlaf ist nicht nur ein Symptom. Er trägt auch dazu bei, dass eine Depression entsteht. In einer grossen amerikanischen Umfrage hatten 14 % der Menschen mit Schlaflosigkeit ein Jahr später eine neue Depression entwickelt. Junge Männer, die während des Studiums an Schlaflosigkeit litten, erkrankten in den folgenden dreissig Jahren doppelt so häufig an einer Depression. Und in einer Studie mit 351 älteren Erwachsenen hatten diejenigen, die sich von einer Depression erholt hatten, aber weiterhin schlecht schliefen, ein um ein Mehrfaches höheres Risiko, innerhalb von zwei Jahren einen Rückfall zu erleiden. Das galt auch dann noch, als ihre übrigen Symptome und ihre Medikamente berücksichtigt wurden.\n\nDas ist wichtig, weil der Schlaf einer der wenigen Bereiche der Depression ist, an denen Sie direkt arbeiten können. Und die Forschung deutet darauf hin: Wenn sich der Schlaf bessert, folgt die Stimmung oft nach. Nichts in dieser Woche verlangt von Ihnen, weniger zu schlafen oder sich mehr anzustrengen, um einzuschlafen. Es geht darum, behutsam auf Ihren eigenen Rhythmus zu schauen. Und dann ein paar Dinge zu verändern, die ihn prägen: wann Sie aufstehen, wann Ihre Augen Tageslicht sehen und wie Ihr Abend ausklingt.",
+      "challenge": "Schreiben Sie heute Abend, bevor Sie das Licht löschen, drei kurze Zeilen an einen Ort, an dem Sie sie wiederfinden: die Uhrzeit, zu der Sie heute Morgen aufgestanden sind, die Uhrzeit, zu der Sie jetzt ins Bett gehen, und ein Wort dafür, wie Ihre Energie heute war. Tun Sie das jeden Abend dieser Woche. Es dauert weniger als eine Minute und gibt Ihnen nach und nach ein Bild Ihres Rhythmus. Wenn das heute zu viel ist, notieren Sie nur die Uhrzeit, zu der Sie aufgestanden sind.",
+      "reflection_questions": [
+        "Wann hat sich Ihr Schlaf verändert: vor der gedrückten Stimmung, gleichzeitig mit ihr oder danach?",
+        "Was macht eine schlechte Nacht mit Ihrem darauffolgenden Tag?",
+        "Welcher Teil des Schlafs macht Ihnen am meisten zu schaffen: das Einschlafen, das Aufwachen in der Nacht, das zu frühe Erwachen oder das zu lange Schlafen?"
+      ],
+      "scripture": {
+        "reference": "Psalm 3,6 (Luther 1912)",
+        "text": "Ich liege und schlafe und erwache; denn der HERR hält mich."
+      },
+      "sources": [
+        150,
+        161,
+        60
+      ],
+      "keywords": [
+        "Schlaf",
+        "Schlaflosigkeit",
+        "Depression",
+        "Risikofaktor",
+        "beobachten"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Der Anker: eine feste Aufstehzeit",
+      "quote": "Der Schlaf depressiver Patienten reagiert möglicherweise empfindlicher auf Lebensereignisse, die den Tagesrhythmus stören.",
+      "quote_source": "Nutt, Wilson & Paterson (2008) (übersetzt)",
+      "explanation": "Zwei Systeme entscheiden darüber, wann Sie schlafen. Das eine ist der Schlafdruck: Je länger Sie wach sind, desto stärker zieht es Sie in den Schlaf. Er wächst wie eine Schuld, die sich über den Tag ansammelt. Das andere ist die innere Uhr, eine kleine Gruppe von Zellen tief im Gehirn. Sie gibt einen Rhythmus von ungefähr 24 Stunden vor und sagt jedem Organ, wie spät es ist. Guter Schlaf entsteht, wenn beide übereinstimmen.\n\nEine Depression bringt beide durcheinander. Menschen mit einer Depression schlafen oft spät ein, wachen in den frühen Morgenstunden auf und dann noch einmal zu früh. Ein Forschungsteam stellte fest: Depressive Patientinnen und Patienten, deren Alltag durch Ereignisse wie einen Stellenverlust, einen Umzug oder eine Trennung durcheinandergeraten war, lagen einen deutlich grösseren Teil der Nacht wach als depressive Patienten mit einem stabileren Alltag. Bei Menschen ohne Depression machten dieselben Ereignisse keinen Unterschied. Eine andere Studie zeigte: Je weiter der Schlaf eines Menschen aus dem Takt seiner inneren Uhr geraten war, desto schwerer war seine Depression.\n\nDeshalb ist die hilfreichste Gewohnheit überhaupt eine Aufstehzeit, die sich nicht verschiebt. Nach einer schlechten Nacht ist die Versuchung gross, auszuschlafen. Doch Ausschlafen verschiebt die innere Uhr nach hinten und verbraucht den Schlafdruck, den Sie für die nächste Nacht brauchen. So wiederholt sich die schlechte Nacht. Wer zur gleichen Zeit aufsteht, auch wenn er müde ist, hält den Anker an seinem Platz. Dann kann der Schlaf ihn wiederfinden. Es geht nicht darum, weniger zu schlafen, und nie darum, sich zum Wachbleiben zu zwingen. Es geht darum, zu einer festen Stunde aufzustehen und die Schlafenszeit folgen zu lassen.",
+      "challenge": "Wählen Sie eine Aufstehzeit, die Sie diese Woche jeden Tag einhalten können, auch am Wochenende, und stellen Sie einen Wecker darauf. Wenn er morgen klingelt, setzen Sie sich auf, stellen Sie die Füsse auf den Boden und öffnen Sie die Vorhänge, bevor Sie irgendetwas anderes entscheiden. Stellen Sie den Wecker nicht früher, als Sie normalerweise aufwachen. Es geht um Regelmässigkeit, nicht um weniger Schlaf. Wenn Ihnen eine feste Zeit im Moment unmöglich erscheint, versuchen Sie, höchstens eine Stunde von Ihrer üblichen Zeit abweichend aufzustehen.",
+      "reflection_questions": [
+        "Wie sieht Ihr Morgen meistens nach einer schlechten Nacht aus?",
+        "Welche Aufstehzeit wäre für Sie realistisch: nicht ideal, aber eine, die Sie einhalten könnten?",
+        "Was würde Ihnen das Aufstehen zu dieser Zeit ein wenig erleichtern: eine Lampe mit Zeitschaltuhr, ein bereitgestelltes Getränk, ein Grund, aufzustehen?"
+      ],
+      "scripture": {
+        "reference": "Klagelieder 3,22-23 (Luther 1912)",
+        "text": "Die Güte des HERRN ist's, dass wir nicht gar aus sind; seine Barmherzigkeit hat noch kein Ende, sondern sie ist alle Morgen neu, und deine Treue ist gross."
+      },
+      "sources": [
+        150,
+        81,
+        36
+      ],
+      "keywords": [
+        "Aufstehzeit",
+        "innere Uhr",
+        "Tagesablauf",
+        "Anker",
+        "zirkadian"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Morgenlicht stellt die innere Uhr",
+      "quote": "Helles Licht am Abend verzögert die Uhr, und helles Licht am Morgen ist nötig, um die Uhr auf einen 24-Stunden-Rhythmus abzustimmen; bei ständigem Licht oder ständiger Dunkelheit beträgt die Zykluslänge etwa 24,3 h.",
+      "quote_source": "Nutt, Wilson & Paterson (2008) (übersetzt)",
+      "explanation": "Ihre innere Uhr geht nicht ganz genau. Sich selbst überlassen, läuft sie etwas zu lang, etwa 24,3 Stunden. Deshalb muss sie jeden Tag neu gestellt werden. Das Signal dafür ist Licht, das in die Augen fällt. Und die Tageszeit spielt eine Rolle: Helles Licht am Morgen stellt die Uhr früher und macht sie stabiler. Helles Licht spät am Abend verschiebt sie nach hinten. Wenn die Depression Ihren Rhythmus immer später hat werden lassen, ist Morgenlicht die Korrektur.\n\nTageslicht ist viel stärker, als es sich anfühlt. Gewöhnliche Innenbeleuchtung bringt einige hundert Lux. Eine Lichttherapielampe gegen Winterdepression liefert etwa 10 000 Lux, rund zwanzigmal so viel wie ein beleuchteter Raum. Selbst ein bewölkter Himmel draussen gibt meist mehrere tausend Lux. In Basel ging es Menschen mit Winterdepression, die täglich eine Stunde draussen spazieren gingen, nach einer Woche deutlich besser als jenen, die eine halbe Stunde vor einem künstlichen hellen Licht sassen. Die Spaziergänger standen zudem früher auf. In Helsinki trainierten 160 berufstätige Erwachsene acht Wochen lang zwei- bis dreimal pro Woche am Morgen, die Hälfte von ihnen unter hellem Licht. Beide Gruppen fühlten sich besser, doch die Gruppe mit hellem Licht verbesserte sich stärker, besonders bei Müdigkeit am Morgen und Heisshunger auf Kohlenhydrate. Und unter 16 800 erwachsenen Amerikanern hatten jene, die depressiv waren und zwei Wochen mit wenig Sonnenlicht hinter sich hatten, mehr als doppelt so häufig Probleme mit Gedächtnis und Konzentration.\n\nDafür brauchen Sie kein Gerät. Sie brauchen Ihre Augen draussen oder an einem Fenster mit Blick zum Himmel, innerhalb von etwa einer Stunde nach dem Aufwachen.",
+      "challenge": "Verbringen Sie morgen innerhalb einer Stunde nach dem Aufstehen zehn Minuten draussen im Tageslicht: ein langsamer Spaziergang, der Garten, eine Bank, die Türschwelle mit einem heissen Getränk. Lassen Sie die Sonnenbrille weg, aber schauen Sie nie direkt in die Sonne. Wenn es beim Aufwachen noch dunkel ist, schalten Sie die hellsten Lampen ein, die Sie haben, und gehen Sie hinaus, sobald es hell ist. Wenn zehn Minuten draussen heute zu viel sind, öffnen Sie ein Fenster weit und setzen Sie sich drei Minuten lang mit Blick zum Himmel davor.",
+      "reflection_questions": [
+        "Wie viel Tageslicht haben Ihre Augen gestern vor Mittag tatsächlich gesehen?",
+        "Gibt es in der Nähe Ihrer Tür einen Platz, an dem Sie jeden Morgen ein paar Minuten stehen könnten?",
+        "Was haben Sie in Ihrem Körper oder in Ihrer Stimmung bemerkt, nachdem Sie heute Morgen draussen waren?"
+      ],
+      "scripture": {
+        "reference": "Psalm 143,8 (Luther 1912)",
+        "text": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir."
+      },
+      "sources": [
+        150,
+        144,
+        127,
+        111,
+        140
+      ],
+      "keywords": [
+        "Morgenlicht",
+        "Tageslicht",
+        "zirkadian",
+        "Spaziergang",
+        "Sonnenlicht"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Wochenend-Jetlag und Schichtarbeit",
+      "quote": "Unsere Ergebnisse deuten darauf hin, dass eine Fehlabstimmung zwischen zirkadianer und sozialer Zeit ein Risikofaktor für die Entwicklung einer Depression sein könnte, besonders bei 31- bis 40-Jährigen.",
+      "quote_source": "Levandovski et al. (2011) (übersetzt)",
+      "explanation": "Die meisten von uns leben nach zwei Fahrplänen. An Arbeitstagen weckt uns ein Wecker; an freien Tagen schlafen wir aus. Forschende nennen den Abstand zwischen beiden «sozialen Jetlag». Denn der Körper erlebt ihn ähnlich wie einen Flug über Zeitzonen hinweg, jede Woche, ohne Ferien am Ende.\n\nIn einer Studie mit etwas mehr als 4000 Menschen im ländlichen Brasilien hatten jene, deren Schlaf an freien Tagen um mehr als zwei Stunden verschoben war, deutlich höhere Depressionswerte als alle anderen. Auch ausgeprägte «Nachteulen» hatten höhere Werte. Andere Studien bringen sozialen Jetlag mit depressiven Symptomen in Verbindung, unabhängig davon, wie spät jemand von Natur aus ist oder wie lange er schläft. Das Ausschlafen am Samstag fühlt sich an wie eine Rückzahlung. Für die innere Uhr ist es eine weitere Verschiebung.\n\nBei der Schichtarbeit braucht es Ehrlichkeit. Etwa jede fünfte erwerbstätige Person arbeitet ausserhalb der üblichen Tageszeiten, und der Körper passt sich selten ganz an. In einer Laborstudie assen und schliefen zehn gesunde Erwachsene einige Tage lang um zwölf Stunden verschoben. Danach hatten sie einen höheren Blutzucker, weniger von dem Hormon, das Sättigung signalisiert, und einen um etwa ein Fünftel weniger effizienten Schlaf. Über zwölf Jahre hinweg mussten dänische Schichtarbeitende etwa ein Drittel häufiger wegen Herz-Kreislauf-Erkrankungen im Spital behandelt werden als Tagarbeitende. Wenn das Ihr Leben ist: Sie versagen nicht. Der Dienstplan ist schwer. Was hilft: den Schlaf so regelmässig halten, wie es der Plan zulässt, die Stunden, die Sie haben, mit einem dunklen, ruhigen Zimmer schützen und Ihrer Ärztin oder Ihrem Arzt von Ihren Arbeitszeiten erzählen.\n\nFür alle anderen ist das Ziel an diesem Wochenende klein: den Abstand unter einer Stunde halten.",
+      "challenge": "Schauen Sie in Ihre Notizen der letzten Tage und vergleichen Sie Ihre Aufstehzeit an Werktagen mit der üblichen am Wochenende. Beträgt der Abstand mehr als eine Stunde, stellen Sie den Wecker an diesem Wochenende höchstens eine Stunde später als an Werktagen. Nutzen Sie die stille frühe Stunde für etwas Freundliches: ein gemütliches Frühstück, das Morgenlicht von gestern. Wenn Sie Schicht arbeiten, wählen Sie die eine Schlafphase, die Sie auch an Ihren freien Tagen gleich halten können, und schützen Sie sie. Wenn das zu viel ist, rechnen Sie Ihren Abstand aus und schreiben Sie die Zahl auf.",
+      "reflection_questions": [
+        "Wie viele Stunden sozialen Jetlag tragen Sie jede Woche mit sich?",
+        "Was erhoffen Sie sich vom Ausschlafen, und bekommen Sie es?",
+        "Wenn Ihre Arbeitszeiten von einem Dienstplan bestimmt werden: Was liegt noch in Ihrer Hand, um Ihren Schlaf zu schützen?"
+      ],
+      "scripture": {
+        "reference": "Markus 2,27 (Luther 1912)",
+        "text": "Der Sabbat ist um des Menschen willen gemacht, und nicht der Mensch um des Sabbats willen."
+      },
+      "sources": [
+        129,
+        36,
+        182,
+        208
+      ],
+      "keywords": [
+        "sozialer Jetlag",
+        "Wochenende",
+        "Schichtarbeit",
+        "Chronotyp",
+        "Regelmässigkeit"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Der Abend: den Tag enden lassen",
+      "quote": "Ich liege und schlafe ganz mit Frieden; denn allein du, HERR, hilfst mir, daß ich sicher wohne.",
+      "quote_source": "Psalm 4,9 (Luther 1912)",
+      "explanation": "Wenn der Morgen die innere Uhr stellt, entscheidet der Abend, ob man sie hören kann. Drei Dinge stehen am häufigsten im Weg, und keines davon ist ein moralisches Versagen.\n\nDas Erste ist Licht. Die Helligkeit, die um acht Uhr morgens hilft, verzögert die innere Uhr um elf Uhr nachts, und die Bildschirme von Handy, Tablet und Fernseher sind hell. Das Zweite ist, was wir zu uns nehmen. Koffein bleibt viele Stunden im Körper, ein Kaffee am Nachmittag wirkt also beim Zubettgehen noch. Alkohol lässt uns schneller einschlafen, zerstückelt aber die zweite Nachthälfte; in einer langen Nachbeobachtung von Männern, die wegen Alkoholproblemen behandelt worden waren, schliefen diejenigen besser, die nüchtern blieben, und berichteten von weniger Angst und Depression. Nikotin ist ein Aufputschmittel. All das sind Hilfen, um mit dem Leben zurechtzukommen; sie stehlen aber auch leise den Schlaf. Das Dritte ist das Essen. Späte, schwere Mahlzeiten verlangen vom Körper, zu verdauen, wenn er zur Ruhe kommen will, und spätes Essen sagt den Uhren in Ihren Organen, dass noch Tag ist. In einer sorgfältigen stationären Studie mit 26 Erwachsenen folgte auf einen Tag mit mehr gesättigten Fetten und Zucker ein leichterer, unruhigerer Schlaf mit weniger von dem Tiefschlaf, der erholt; mehr Ballaststoffe bedeuteten mehr Tiefschlaf.\n\nEin Ausklang des Tages muss nicht aufwendig sein: die letzte Stunde bei gedämpftem Licht, Bildschirme weggelegt oder abgedunkelt, etwas Ruhiges und Gewöhnliches. Wenn Sie lange wach liegen, ist es besser, aufzustehen, sich irgendwo ins Halbdunkel zu setzen und zurückzukehren, wenn Sie müde sind, als im Dunkeln zu kämpfen. Das Bett soll Schlaf bedeuten, kein Schlachtfeld.",
+      "challenge": "Wählen Sie für heute Abend eine einzige Veränderung und tun Sie nur diese eine: in der letzten Stunde gedämpftes Licht und keine Bildschirme; kein Koffein nach dem frühen Nachmittag; keinen Alkohol als Einschlafhilfe; oder die letzte grössere Mahlzeit mindestens drei Stunden vor dem Zubettgehen. Entscheiden Sie sich jetzt, und schreiben Sie es auf oder erzählen Sie es jemandem. Wenn Ihnen heute Abend selbst das eine zu viel ist, schalten Sie eine Stunde vor dem Schlafengehen das Hauptlicht aus und lassen Sie nur eine einzelne Lampe brennen.",
+      "reflection_questions": [
+        "Was füllt gewöhnlich die letzte Stunde Ihres Tages?",
+        "Was davon – Licht, Koffein, Alkohol oder spätes Essen – wirkt sich, ehrlich gesagt, am stärksten auf Ihre Nächte aus?",
+        "Wie sähe für Sie ein freundlicheres Ende des Tages aus?"
+      ],
+      "scripture": {
+        "reference": "Psalm 127,2 (Luther 1912)",
+        "text": "Es ist umsonst, daß ihr früh aufstehet und hernach lange sitzet und esset euer Brot mit Sorgen; denn seinen Freunden gibt er's schlafend."
+      },
+      "sources": [
+        150,
+        36,
+        194,
+        135
+      ],
+      "keywords": [
+        "Abend",
+        "Bildschirme",
+        "Koffein",
+        "Alkohol",
+        "Ausklang des Tages",
+        "spätes Essen"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Wenn der Schlaf selbst das Problem ist",
+      "quote": "Es wurde berichtet, dass sich verschiedene Schlafstörungen negativ auf Depressionen auswirken, und diese Auswirkungen können umkehrbar sein.",
+      "quote_source": "Pigeon (2009) (übersetzt)",
+      "explanation": "Manchmal liegt das Problem nicht bei den Gewohnheiten, sondern bei einer Schlafstörung. Zwei davon verstecken sich besonders oft in einer Depression.\n\nDie erste ist die Schlafapnoe. Im Schlaf verengen oder verschliessen sich die Atemwege. Die Atmung setzt für Sekunden aus, und das Gehirn schreckt halb auf, manchmal hunderte Male pro Nacht, ohne dass man es merkt. Hinweise sind lautes Schnarchen, Nach-Luft-Schnappen oder Würgen im Schlaf, unerholtes Aufwachen und Einnicken am Tag. In einer Befragung von fast 19 000 Menschen in fünf europäischen Ländern hatte fast jede fünfte Person mit einer schweren Depression auch eine atmungsbezogene Schlafstörung, und umgekehrt galt dasselbe. In einer Studie mit 1400 Erwachsenen, die über mehrere Jahre in einem Schlaflabor begleitet wurden, erhöhte jede weitere Stufe im Schweregrad der Atemstörung die Wahrscheinlichkeit, eine Depression zu entwickeln, um etwa 80 %. Das Hoffnungsvolle kommt aus Australien: Von 426 Menschen, die wegen Verdacht auf Apnoe untersucht wurden, hatten drei Viertel deutliche depressive Symptome. Nach drei Monaten Behandlung mit einer Atemmaske (CPAP) sank der durchschnittliche Depressionswert von 11 auf 4 von 27 Punkten. Der Anteil mit deutlichen Symptomen fiel von 75 % auf 4 %. Und der Gedanke, man wäre tot besser dran, den zu Beginn fast jede fünfte Person hatte, war verschwunden. Bei niemandem wurden die Antidepressiva verändert.\n\nDie zweite ist eine Schlaflosigkeit, die bleibt, auch wenn sich die Stimmung hebt. Das betrifft etwa die Hälfte der Menschen, die sich erholen. Dafür gibt es eine gezielte, strukturierte Behandlung: die kognitive Verhaltenstherapie bei Insomnie (KVT-I, englisch CBT-I). In einer Studie verbesserte sie sowohl die Depression als auch den Schlaf stärker als Medikamente allein.\n\nKeine der beiden Störungen lässt sich anhand einer Nachricht wie dieser diagnostizieren. Beide sind ein Grund, mit Ihrer Ärztin oder Ihrem Arzt zu sprechen.",
+      "challenge": "Schreiben Sie drei Dinge auf, die eine Ärztin oder ein Arzt über Ihren Schlaf wissen möchte: ob Sie schnarchen oder nach Luft schnappen (fragen Sie jemanden, der Sie schlafen hört), wie lange Sie zum Einschlafen brauchen und wie oft Sie aufwachen, und ob Sie tagsüber einnicken. Wenn einer der Hinweise auf Apnoe auf Sie zutrifft, vereinbaren oder planen Sie noch heute einen Termin und nehmen Sie Ihre Notizen mit. Wenn das zu viel ist, schicken Sie eine einzige Nachricht und fragen Sie jemanden, ob Sie schnarchen.",
+      "reflection_questions": [
+        "Hat Ihnen schon einmal jemand gesagt, dass Sie schnarchen oder im Schlaf aufzuhören scheinen zu atmen?",
+        "Wenn Ihr Schlafproblem eine medizinische Erkrankung wäre und keine Schwäche, wie würden Sie dann anders mit sich umgehen?",
+        "Was hält Sie davon ab, Ihren Schlaf bei Ihrer Ärztin oder Ihrem Arzt anzusprechen, und was würde es leichter machen?"
+      ],
+      "scripture": {
+        "reference": "Matthäus 11,28 (Luther 1912)",
+        "text": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken."
+      },
+      "sources": [
+        152,
+        160,
+        79,
+        161
+      ],
+      "keywords": [
+        "Schlafapnoe",
+        "Schnarchen",
+        "CPAP",
+        "Schlaflosigkeit",
+        "KVT-I",
+        "Arzt"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Jahreszeiten, Licht und ein Rhythmus, der bleibt",
+      "quote": "Ein jegliches hat seine Zeit, und alles Vornehmen unter dem Himmel hat seine Stunde.",
+      "quote_source": "Prediger 3,1 (Luther 1912)",
+      "explanation": "Für manche Menschen ist die Dunkelheit ganz wörtlich gemeint. Die saisonal abhängige Depression kommt, wenn die Tage kürzer werden, und hebt sich im Frühling wieder. Typisch sind starke Müdigkeit, wenig Energie, Heisshunger auf Süsses und Stärkehaltiges und ein Rückzug von anderen Menschen. Frauen sind etwa viermal häufiger betroffen, und je weiter man vom Äquator entfernt lebt, desto häufiger tritt sie auf. In Grossbritannien haben rund 2 % das volle Krankheitsbild, und etwa ein Fünftel bemerkt ein milderes Wintertief. Auch viele Menschen mit einer gewöhnlichen Depression spüren, dass der Winter sie härter trifft.\n\nDie am besten untersuchte Behandlung ist helles Licht: eine Lampe mit etwa 10'000 Lux, jeden Morgen für eine festgelegte Zeit, vom Frühherbst bis in den Frühling. In zusammengefassten Studien wurde etwa die Hälfte der Menschen mit saisonaler Depression durch Licht vollständig gesund, und Licht am Morgen wirkte besser als am Abend. Die Nebenwirkungen sind meist mild: müde Augen, Kopfschmerzen, etwas Unruhe. Licht kann aber mit manchen Medikamenten zusammenwirken und wird bei bestimmten Augenerkrankungen oder einer früheren Manie nicht empfohlen. Deshalb gehört es unter fachliche Begleitung, als Ergänzung zu Ihrer bisherigen Behandlung und nie als Ersatz dafür. Eine auf den Winter zugeschnittene kognitive Verhaltenstherapie hat in Studien gleich gut abgeschnitten wie Licht, und auch Bewegung am Morgen bei Tageslicht hilft.\n\nGanz gleich, welche Jahreszeit gerade ist: Diese Woche hat eines aufgebaut, einen Rhythmus. Eine Aufstehzeit, die sich nicht verschiebt. Tageslicht in den Augen innerhalb einer Stunde nach dem Aufwachen. Ein Abend, der gedämpft wird. Das kostet nichts und verlangt am Abend keine Willenskraft, nur eine einzige Entscheidung am Morgen. Die Depression sagt, nichts, was Sie tun, spiele eine Rolle. Ihre innere Uhr sieht das anders: Sie reagiert auf das, was Sie heute tun.",
+      "challenge": "Schreiben Sie Ihren Rhythmus in drei Zeilen auf eine Karte oder in eine Notiz auf dem Handy: Meine Aufstehzeit ist ___; mein Morgenlicht ist ___ (wo und wie lange); mein Abend wird gedämpft um ___. Legen Sie sie dorthin, wo Sie sie morgen früh sehen. Wenn Ihre gedrückte Stimmung den Jahreszeiten folgt, ergänzen Sie eine vierte Zeile mit den Monaten, in denen sie meist beginnt, und nehmen Sie die Karte zu Ihrem nächsten Termin mit, um nach einer Lichttherapie zu fragen. Wenn drei Zeilen zu viel sind, schreiben Sie die eine auf, die Ihnen diese Woche schon gelungen ist.",
+      "reflection_questions": [
+        "Folgt Ihre Stimmung dem Kalender? Welche Monate sind am schwersten?",
+        "Welcher der drei Anker, Aufstehzeit, Morgenlicht und gedämpfter Abend, fiel Ihnen diese Woche am leichtesten, und welcher nicht?",
+        "Was bräuchte es, damit Sie einen davon auch nächste Woche beibehalten?"
+      ],
+      "scripture": {
+        "reference": "Psalm 74,16 (Luther 1912)",
+        "text": "Tag und Nacht ist dein; du machst, daß Sonne und Gestirn ihren gewissen Lauf haben."
+      },
+      "sources": [
+        140,
+        172,
+        127
+      ],
+      "keywords": [
+        "saisonal abhängige Depression",
+        "Lichttherapie",
+        "Winter",
+        "Rhythmus",
+        "Verbindlichkeit"
+      ]
+    }
+  ]
+}

@@ -126,10 +126,18 @@ window.LD = (function () {
     hdr.innerHTML = `<div class="hdr-in"><a class="logo" href="index.html">${ICONS.sun}<span>Light for Every Day</span></a>
       <nav class="nav" aria-label="Main">${nav.map(([h, l, i]) => `<a href="${h}" class="${i === active ? 'on ' : ''}${i === 'help' ? 'help' : ''}">${ICONS[i]}<span>${l}</span></a>`).join('')}</nav></div>`;
     document.body.prepend(hdr);
+    if (active === 'today' || active === 'home' || active === 'journey') {
+      const day = currentDay(); const frac = day ? (day - 1) / (TOTAL_DAYS - 1) : 0;
+      const x = 20 + frac * 560, y = day ? 44 - 26 * Math.sin(Math.PI * frac) : 52;
+      const hz = document.createElement('div'); hz.className = 'horizon'; hz.setAttribute('aria-hidden', 'true');
+      hz.innerHTML = `<svg viewBox="0 0 600 64" preserveAspectRatio="none"><line class="ground" x1="0" y1="48" x2="600" y2="48"/>${[1,2,3,4,5,6,7,8,9,10,11].map(w => `<line class="tick" x1="${20 + (w * 7) / (TOTAL_DAYS - 1) * 560}" y1="46" x2="${20 + (w * 7) / (TOTAL_DAYS - 1) * 560}" y2="50"/>`).join('')}<circle class="glow" cx="${x}" cy="${y}" r="22"/><circle class="disc" cx="${x}" cy="${y}" r="10"/><rect x="0" y="48.5" width="600" height="20" fill="var(--sky)"/></svg>
+        <div class="horizon-cap"><span>${day ? `${t('day')} ${day} ${t('of')} ${TOTAL_DAYS}` : ''}</span><span>${greeting()}</span></div>`;
+      hdr.after(hz);
+    }
     const f = document.createElement('footer');
     f.innerHTML = `<div class="foot-in">
       <div class="crisis"><span aria-hidden="true">☎</span><div><strong>${t('crisis')}</strong>
-        Schweiz · Suisse · Switzerland <b>143</b> (Die Dargebotene Hand · La Main Tendue) · <b>147</b> (Pro Juventute) · <b>144</b>. <a href="help.html">${t('other')}</a></div></div>
+        Schweiz · Suisse · Switzerland <b>143</b> (Die Dargebotene Hand · La Main Tendue) · <b>147</b> (Pro Juventute) · <b>144</b>. <a href="help.html">${t('other').replace(' →','')}</a></div></div>
       <div>${t('disclaimer')}</div>
       <div class="foot-links"><a href="about.html">About &amp; sources</a><a href="subscribe.html">Daily e-mail</a><a href="privacy.html">Privacy</a><a href="https://graceforevery.day" rel="noopener">Grace for Every Day</a></div>
     </div>`;

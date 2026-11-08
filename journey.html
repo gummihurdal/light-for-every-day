@@ -8,10 +8,10 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="theme-color" content="#FAF7F2" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171A1F" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#EDF1F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131920" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/app.css">
 <style>
 .week{border-left:6px solid var(--c);scroll-margin-top:80px}
@@ -51,7 +51,7 @@ LD.chrome('journey');
   document.getElementById('s-done').textContent = doneCount;
   document.getElementById('s-mood').textContent = Object.keys(moods).length || '–';
   document.getElementById('bar').style.width = (today ? (today / LD.TOTAL_DAYS * 100) : 0) + '%';
-  if (!today) document.getElementById('sub').innerHTML = 'Twelve weeks. Twelve areas where research shows real differences. <a href="today.html?start=1">Start day 1 today →</a>';
+  if (!today) document.getElementById('sub').innerHTML = 'Twelve weeks. Twelve areas where research shows real differences. <a href="today.html?start=1">Start day 1 today</a>';
   // mood chart
   const keys = Object.keys(moods).sort().slice(-56);
   if (keys.length >= 2) {

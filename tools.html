@@ -8,10 +8,10 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="theme-color" content="#FAF7F2" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171A1F" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#EDF1F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131920" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/app.css">
 <style>
 .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
@@ -114,7 +114,7 @@ document.getElementById('phq-go').addEventListener('click', () => {
   const q9 = vals[8] > 0;
   hist.push({ date: LD.todayISO(), score }); LD.store.set('phq9', hist.slice(-24));
   document.getElementById('phq-out').innerHTML = `<div class="card ${score >= 15 || q9 ? 'rose' : score >= 10 ? 'amber' : 'sage'}"><div class="result">Score ${score} of 27 · ${band[0]}</div><p style="margin-top:8px">${band[1]}</p>
-    ${q9 ? `<p><strong>You answered that you have had thoughts of being better off dead or of hurting yourself.</strong> Please talk to someone today. In Switzerland call <b>143</b> (24 hours) or <b>144</b> in an emergency. <a href="help.html">Find your country's line →</a> You matter, and these thoughts are a symptom that can lift with help.</p>` : ''}
+    ${q9 ? `<p><strong>You answered that you have had thoughts of being better off dead or of hurting yourself.</strong> Please talk to someone today. In Switzerland call <b>143</b> (24 hours) or <b>144</b> in an emergency. <a href="help.html">Find your country's line</a> You matter, and these thoughts are a symptom that can lift with help.</p>` : ''}
     ${hist.length > 1 ? `<p class="small muted">Previous: ${hist.slice(-6, -1).map(h => `${h.date.slice(5)}: ${h.score}`).join(' · ')}</p>` : ''}
     <p class="small muted" style="margin:0">Screening only. Only a clinician can diagnose. Take a screenshot to show your doctor.</p></div>`;
   document.getElementById('phq-out').scrollIntoView({ behavior: 'smooth', block: 'start' });

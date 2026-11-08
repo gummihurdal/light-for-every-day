@@ -40,11 +40,15 @@ Schema lives in Supabase migrations (`light_for_every_day_schema`, `ld_messages_
 
 To add a language: write `content/<theme>.<lang>.json` with the same shape, import with `lang`, and the app reads `?lang=` (not yet wired in the UI).
 
+## Languages
+
+English is the source. German and French were machine-translated with Claude (`content/translate.mjs`, Opus 5.5, Luther 1912 / Segond 1910 for Scripture) and loaded with `content/import_lang.py`. They are marked as drafts under review in Settings; editors correct them in `admin.html`. The UI, e-mails and crisis footer are translated in `assets/app.js` (`UI`) and `send-daily.js` (`L`). A reader's language comes from Settings, `?lang=`, or the browser.
+
 ## Deploy
 
-- Push to `main` → `.github/workflows/pages.yml` deploys to GitHub Pages. Set the custom domain in repo settings and add a `CNAME` file.
-- Secrets for the e-mail job: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `FROM_EMAIL`; variable `SITE_URL`. Verify the sending domain in Resend.
-- Add editors: `INSERT INTO ld_admins(email, name) VALUES ('valerie@…', 'Valérie');` and enable the Email (magic link) provider in Supabase Auth with the site URL in the redirect allow-list.
+- Live at https://gummihurdal.github.io/light-for-every-day/ — GitHub Pages deploys straight from `main` (branch mode; the repo token lacks the `workflow` scope, so the Actions workflows wait under `ops/github-workflows/`). For a custom domain add a `CNAME` file and a DNS CNAME to `gummihurdal.github.io`.
+- E-mail job: runs hourly from the server cron (`ops/cron.sh`, env in `ops/.env`). It needs no service-role key; it calls the `ld_job_*` RPCs with `LD_JOB_SECRET` (table `ld_config`). Add `RESEND_API_KEY` and verify a sending domain in Resend to switch on real sending; until then it logs what it would send. GitHub secrets `SUPABASE_URL`, `LD_JOB_SECRET`, `FROM_EMAIL` and variable `SITE_URL` are already set for the Actions variant.
+- Editors: `ld_admins` holds the owner and Valérie. In the Supabase dashboard enable the Email provider (magic link) and add `https://gummihurdal.github.io/light-for-every-day/admin.html` to Authentication → URL configuration → Redirect URLs.
 
 ## Local
 
