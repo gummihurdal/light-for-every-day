@@ -67,7 +67,7 @@
   if (el) {
     const d = window.LD && LD.currentDay();
     const dayLine = d ? `<span class="sb-day">${T.day} ${d} ${T.of} ${LD.TOTAL_DAYS}</span>` : `<a class="sb-day" href="today.html?start=1">${T.beginDayOne}</a>`;
-    el.innerHTML = dayLine + '<br>' + cap(DAYNAME) + ', ' + (L === 'en' ? MONNAME + ' ' + now.getDate() : now.getDate() + '. ' + cap(MONNAME)) + ' ' + now.getFullYear();
+    el.innerHTML = dayLine;
   }
   var _so = false;
   window.sbStudy = function () {
