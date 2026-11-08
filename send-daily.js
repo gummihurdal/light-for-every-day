@@ -18,7 +18,7 @@ const SB = (process.env.SUPABASE_URL || 'https://mjphpctvuxmbjhmcscoj.supabase.c
 const ANON = process.env.SUPABASE_ANON_KEY || 'sb_publishable_MDPfXyMjG0eadmvp7uoqdg_EHwj4Alm';
 const SECRET = process.env.LD_JOB_SECRET;
 const FROM = process.env.FROM_EMAIL || 'Light for Every Day <hello@lightforevery.day>';
-const SITE = (process.env.SITE_URL || 'https://gummihurdal.github.io/light-for-every-day').replace(/\/$/, '');
+const SITE = (process.env.SITE_URL || 'https://light.azurenexus.com').replace(/\/$/, '');
 const TOTAL = 84;
 const DRY = process.argv.includes('--dry');
 if (!SECRET) { console.error('LD_JOB_SECRET missing'); process.exit(1); }

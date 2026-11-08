@@ -48,9 +48,9 @@ English is the source. German and French were machine-translated with Claude (`c
 
 ## Deploy
 
-- Live at https://gummihurdal.github.io/light-for-every-day/ — GitHub Pages deploys straight from `main` (branch mode; the repo token lacks the `workflow` scope, so the Actions workflows wait under `ops/github-workflows/`). For a custom domain add a `CNAME` file and a DNS CNAME to `gummihurdal.github.io`.
+- Live at https://light.azurenexus.com/ — GitHub Pages deploys straight from `main` (branch mode; the repo token lacks the `workflow` scope, so the Actions workflows wait under `ops/github-workflows/`). For a custom domain add a `CNAME` file and a DNS CNAME to `gummihurdal.github.io`.
 - E-mail job: runs hourly from the server cron (`ops/cron.sh`, env in `ops/.env`). It needs no service-role key; it calls the `ld_job_*` RPCs with `LD_JOB_SECRET` (table `ld_config`). Add `RESEND_API_KEY` and verify a sending domain in Resend to switch on real sending; until then it logs what it would send. GitHub secrets `SUPABASE_URL`, `LD_JOB_SECRET`, `FROM_EMAIL` and variable `SITE_URL` are already set for the Actions variant.
-- Editors: `ld_admins` holds the owner and Valérie. In the Supabase dashboard enable the Email provider (magic link) and add `https://gummihurdal.github.io/light-for-every-day/admin.html` to Authentication → URL configuration → Redirect URLs.
+- Editors: `ld_admins` holds the owner and Valérie. In the Supabase dashboard enable the Email provider (magic link) and add `https://light.azurenexus.com/admin.html` to Authentication → URL configuration → Redirect URLs.
 
 ## Local
 
