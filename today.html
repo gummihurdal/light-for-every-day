@@ -35,7 +35,7 @@ LD.chrome('today');
 const params = new URLSearchParams(location.search);
 if (params.get('start') === '1' && !LD.startedOn()) { LD.start(); history.replaceState(null, '', 'today.html'); }
 
-const MOODS = [['😞', 'Very low'], ['😔', 'Low'], ['😐', 'Flat'], ['🙂', 'Okay'], ['😊', 'Good']];
+const MOODS = ['😞', '😔', '😐', '🙂', '😊'].map((e, i) => [e, LD.t('moods')[i]]);
 
 async function render() {
   const today = LD.currentDay();
@@ -50,7 +50,7 @@ async function render() {
   document.getElementById('loading').style.display = 'none';
   app.style.display = 'block';
   if (!m) {
-    app.innerHTML = `<div class="card soft" style="text-align:center;padding:48px 24px"><h2>Day ${day} is not ready yet</h2><p class="muted">This part of the journey is still being written and reviewed. ${day > 1 ? `<a href="today.html?day=${day - 1}">Go back a day</a>` : ''}</p><a class="btn ghost" href="journey.html">See the whole journey</a></div>`;
+    app.innerHTML = `<div class="card soft" style="text-align:center;padding:48px 24px"><h2>${LD.t('day')} ${day} ${LD.t('notready')}</h2><p class="muted">${LD.t('notready2')} ${day > 1 ? `<a href="today.html?day=${day - 1}">Go back a day</a>` : ''}</p><a class="btn ghost" href="journey.html">See the whole journey</a></div>`;
     return;
   }
   const themes = await LD.getThemes();
@@ -67,64 +67,65 @@ async function render() {
   app.innerHTML = `
   <article class="fade">
     <div class="day-head">
-      <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>Week ${th.week || ''} · ${LD.esc(th.title || '')}</span>
-      <span class="muted small">Day ${day} of ${LD.TOTAL_DAYS}${day === today ? ' · today' : ''}</span>
+      <span class="chip"><span class="dot" style="background:${th.color || 'var(--amber)'}"></span>${LD.t('week')} ${th.week || ''} · ${LD.esc(th.title || '')}</span>
+      <span class="muted small">${LD.t('day')} ${day} ${LD.t('of')} ${LD.TOTAL_DAYS}</span>
     </div>
     ${!started ? `<div class="card amber" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div>You are previewing. Start your own journey and the app will bring you one message a day.</div><button class="btn sm" onclick="LD.start();location.href='today.html'">Start day 1 today</button></div>` : ''}
     ${ahead ? `<div class="card soft small muted">You are reading ahead. Your journey is on day ${today}; this one will be your message in ${day - today} day${day - today > 1 ? 's' : ''}.</div>` : ''}
+    ${m.fallback ? `<div class="card soft small muted">${LD.t('inEnglish')}</div>` : ''}
     <h1 class="title">${LD.esc(m.title)}</h1>
 
     <section class="card">
-      <div class="card-lbl">Quote</div>
+      <div class="card-lbl">${LD.t('quote')}</div>
       <blockquote class="quote">“${LD.esc(m.quote)}”</blockquote>
       <div class="quote-by">— ${LD.esc(m.quote_source)}</div>
     </section>
 
     <section class="card">
-      <div class="card-lbl">Explanation</div>
+      <div class="card-lbl">${LD.t('expl')}</div>
       <div class="body-text">${LD.paras(m.explanation)}</div>
     </section>
 
     <section class="card sage">
-      <div class="card-lbl">Today's challenge</div>
+      <div class="card-lbl">${LD.t('chal')}</div>
       <div class="body-text">${LD.paras(m.challenge)}</div>
-      <label class="challenge-done check"><input type="checkbox" id="done" ${doneMap[day] ? 'checked' : ''}> <span>I did this (or my smaller version of it)</span></label>
+      <label class="challenge-done check"><input type="checkbox" id="done" ${doneMap[day] ? 'checked' : ''}> <span>${LD.t('did')}</span></label>
     </section>
 
     <section class="card">
-      <div class="card-lbl">Questions for reflection</div>
-      <p class="small muted">Write as little or as much as you like. Your notes are saved only on this device.</p>
+      <div class="card-lbl">${LD.t('refl')}</div>
+      <p class="small muted">${LD.t('notes')}</p>
       ${qs.map((q, i) => `<div class="q"><p>${LD.esc(q)}</p><textarea data-i="${i}" placeholder="…" aria-label="Your reflection">${LD.esc(j[i] || '')}</textarea></div>`).join('')}
       <div class="small muted" id="saved"></div>
     </section>
 
-    ${scripture && s.scripture ? `<section class="card amber"><div class="card-lbl">A word of hope</div><p class="serif" style="font-size:1.15em;line-height:1.5;margin-bottom:6px">${LD.esc(scripture.text)}</p><div class="muted small">${LD.esc(scripture.reference)} · <a href="settings.html">hide these</a></div></section>` : ''}
+    ${scripture && s.scripture ? `<section class="card amber"><div class="card-lbl">${LD.t('hope')}</div><p class="serif" style="font-size:1.15em;line-height:1.5;margin-bottom:6px">${LD.esc(scripture.text)}</p><div class="muted small">${LD.esc(scripture.reference)} · <a href="settings.html">${LD.t('hide')}</a></div></section>` : ''}
 
     <section class="card soft">
-      <div class="card-lbl">How are you right now?</div>
+      <div class="card-lbl">${LD.t('mood')}</div>
       <div class="moods" id="moods">${MOODS.map((x, i) => `<button data-v="${i + 1}" class="${moodToday === i + 1 ? 'on' : ''}" aria-label="${x[1]}">${x[0]}<small>${x[1]}</small></button>`).join('')}</div>
       <p class="small muted" style="margin:10px 0 0">A one-tap check-in. Over the weeks you will see your pattern on the Journey page. Stored only on your device.</p>
     </section>
 
     <section class="card">
       <div class="fb">
-        <span class="muted">Was this helpful?</span>
-        <button class="btn ghost sm" data-fb="1">Yes</button>
-        <button class="btn ghost sm" data-fb="0">Not today</button>
+        <span class="muted">${LD.t('helpful')}</span>
+        <button class="btn ghost sm" data-fb="1">${LD.t('yes')}</button>
+        <button class="btn ghost sm" data-fb="0">${LD.t('no')}</button>
         <span class="small muted" id="fb-thanks"></span>
       </div>
       <div class="btn-row" style="margin-top:14px">
-        <button class="btn ghost sm" id="share">Share</button>
+        <button class="btn ghost sm" id="share">${LD.t('share')}</button>
         <a class="btn ghost sm" href="https://wa.me/?text=${encodeURIComponent(LD.shareText(m))}" target="_blank" rel="noopener">WhatsApp</a>
-        <button class="btn ghost sm" id="copy">Copy text</button>
+        <button class="btn ghost sm" id="copy">${LD.t('copy')}</button>
       </div>
     </section>
 
-    ${sourceIds.length ? `<details class="card soft"><summary>Where this comes from · ${sourceIds.length} source${sourceIds.length > 1 ? 's' : ''}</summary><ol class="src-list" id="srcs" style="margin:14px 0 0 18px"><li class="muted">Loading…</li></ol></details>` : ''}
+    ${sourceIds.length ? `<details class="card soft"><summary>${LD.t('sources')} · ${sourceIds.length}</summary><ol class="src-list" id="srcs" style="margin:14px 0 0 18px"><li class="muted">Loading…</li></ol></details>` : ''}
 
     <nav class="pager">
-      ${day > 1 ? `<a class="btn ghost" href="today.html?day=${day - 1}">← Day ${day - 1}</a>` : '<span></span>'}
-      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">Day ${day + 1} →</a>` : '<a class="btn ghost" href="journey.html">Finish →</a>'}
+      ${day > 1 ? `<a class="btn ghost" href="today.html?day=${day - 1}">← ${LD.t('day')} ${day - 1}</a>` : '<span></span>'}
+      ${day < LD.TOTAL_DAYS ? `<a class="btn ghost" href="today.html?day=${day + 1}">${LD.t('day')} ${day + 1} →</a>` : '<a class="btn ghost" href="journey.html">Finish →</a>'}
     </nav>
   </article>`;
 

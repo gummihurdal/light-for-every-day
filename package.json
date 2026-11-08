@@ -10,7 +10,8 @@
     "send:dry": "node send-daily.js --dry"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
     "@supabase/supabase-js": "^2.49.1",
-    "resend": "^4.0.0"
+    "resend": "^4.8.0"
   }
 }

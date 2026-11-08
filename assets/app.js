@@ -13,7 +13,16 @@ window.LD = (function () {
   };
 
   /* ---------- settings ---------- */
-  const settings = Object.assign({ scripture: true, size: 'normal', theme: 'auto', name: '' }, store.get('settings', {}));
+  const LANGS = { en: 'English', de: 'Deutsch', fr: 'Français' };
+  const settings = Object.assign({ scripture: true, size: 'normal', theme: 'auto', name: '', lang: '' }, store.get('settings', {}));
+  (function () { const q = new URLSearchParams(location.search).get('lang'); if (q && LANGS[q] && q !== settings.lang) { settings.lang = q; store.set('settings', settings); } })();
+  function lang() { if (settings.lang && LANGS[settings.lang]) return settings.lang; const b = (navigator.language || 'en').slice(0, 2); return LANGS[b] ? b : 'en'; }
+  const UI = {
+    en: { today: 'Today', journey: 'Journey', tools: 'Tools', help: 'Help', more: 'More', week: 'Week', day: 'Day', of: 'of', quote: 'Quote', expl: 'Explanation', chal: "Today's challenge", refl: 'Questions for reflection', hope: 'A word of hope', did: 'I did this (or my smaller version of it)', notes: 'Write as little or as much as you like. Your notes are saved only on this device.', mood: 'How are you right now?', helpful: 'Was this helpful?', yes: 'Yes', no: 'Not today', share: 'Share', copy: 'Copy text', sources: 'Where this comes from', hide: 'hide these', crisis: 'If you are in crisis or thinking about ending your life, please reach out now.', other: 'Other countries and more help →', disclaimer: 'Light for Every Day offers daily encouragement grounded in research. It is not therapy and does not replace your doctor. Everything you write here stays on your device.', moods: ['Very low', 'Low', 'Flat', 'Okay', 'Good'], notready: 'is not ready yet', notready2: 'This part of the journey is still being written and reviewed.', inEnglish: 'This day is not yet available in your language; shown in English.' },
+    de: { today: 'Heute', journey: 'Weg', tools: 'Werkzeuge', help: 'Hilfe', more: 'Mehr', week: 'Woche', day: 'Tag', of: 'von', quote: 'Zitat', expl: 'Erklärung', chal: 'Die Aufgabe für heute', refl: 'Fragen zum Nachdenken', hope: 'Ein Wort der Hoffnung', did: 'Das habe ich gemacht (oder meine kleinere Version)', notes: 'Schreiben Sie so wenig oder so viel Sie möchten. Ihre Notizen bleiben nur auf diesem Gerät.', mood: 'Wie geht es Ihnen gerade?', helpful: 'War das hilfreich?', yes: 'Ja', no: 'Heute nicht', share: 'Teilen', copy: 'Text kopieren', sources: 'Woher das kommt', hide: 'ausblenden', crisis: 'Wenn Sie in einer Krise sind oder daran denken, sich das Leben zu nehmen, holen Sie sich bitte jetzt Hilfe.', other: 'Andere Länder und weitere Hilfe →', disclaimer: 'Light for Every Day bietet tägliche Ermutigung auf Grundlage der Forschung. Es ist keine Therapie und ersetzt nicht Ihren Arzt oder Ihre Ärztin. Alles, was Sie hier schreiben, bleibt auf Ihrem Gerät.', moods: ['Sehr tief', 'Tief', 'Flach', 'Okay', 'Gut'], notready: 'ist noch nicht bereit', notready2: 'Dieser Teil des Weges wird noch geschrieben und geprüft.', inEnglish: 'Dieser Tag ist in Ihrer Sprache noch nicht verfügbar; er wird auf Englisch gezeigt.' },
+    fr: { today: "Aujourd'hui", journey: 'Chemin', tools: 'Outils', help: 'Aide', more: 'Plus', week: 'Semaine', day: 'Jour', of: 'sur', quote: 'Citation', expl: 'Explication', chal: 'Le défi du jour', refl: 'Questions pour la réflexion', hope: "Une parole d'espérance", did: "Je l'ai fait (ou ma version plus petite)", notes: 'Écrivez aussi peu ou autant que vous voulez. Vos notes restent uniquement sur cet appareil.', mood: 'Comment allez-vous en ce moment ?', helpful: 'Cela vous a-t-il aidé ?', yes: 'Oui', no: "Pas aujourd'hui", share: 'Partager', copy: 'Copier le texte', sources: "D'où cela vient", hide: 'masquer', crisis: 'Si vous êtes en crise ou si vous pensez à mettre fin à vos jours, demandez de l’aide maintenant.', other: 'Autres pays et plus d’aide →', disclaimer: 'Light for Every Day propose un encouragement quotidien fondé sur la recherche. Ce n’est pas une thérapie et cela ne remplace pas votre médecin. Tout ce que vous écrivez ici reste sur votre appareil.', moods: ['Très bas', 'Bas', 'Neutre', 'Ça va', 'Bien'], notready: "n'est pas encore prêt", notready2: 'Cette partie du chemin est encore en cours d’écriture et de relecture.', inEnglish: "Ce jour n'est pas encore disponible dans votre langue ; il est affiché en anglais." }
+  };
+  function t(k) { return (UI[lang()] || UI.en)[k] ?? UI.en[k]; }
   function saveSettings(patch) { Object.assign(settings, patch); store.set('settings', settings); applySettings(); }
   function applySettings() {
     document.documentElement.dataset.theme = settings.theme === 'auto' ? '' : settings.theme;
@@ -47,21 +56,26 @@ window.LD = (function () {
     return r.json();
   }
   async function getThemes() {
-    if (cache.themes) return cache.themes;
-    const t = await sb('ld_themes?select=*&order=week');
-    cache.themes = t; return t;
+    const L = lang(); const k = 'themes_' + L; if (cache[k]) return cache[k];
+    const base = await sb('ld_themes?select=*&order=week');
+    if (L !== 'en') {
+      try { const tr = await sb(`ld_theme_i18n?select=*&lang=eq.${L}`); base.forEach(th => { const x = tr.find(y => y.slug === th.slug); if (x) { th.title = x.title; th.subtitle = x.subtitle || th.subtitle; th.description = x.intro || th.description; } }); } catch (e) {}
+    }
+    cache[k] = base; return base;
   }
-  async function getMessage(day, lang) {
-    lang = lang || 'en';
-    const k = 'msg_' + lang + '_' + day; if (cache[k]) return cache[k];
-    const rows = await sb(`ld_messages?select=*&lang=eq.${lang}&day_number=eq.${day}&status=eq.published&limit=1`);
+  async function getMessage(day, L) {
+    L = L || lang();
+    const k = 'msg_' + L + '_' + day; if (cache[k]) return cache[k];
+    let rows = await sb(`ld_messages?select=*&lang=eq.${L}&day_number=eq.${day}&status=eq.published&limit=1`);
+    if (!rows.length && L !== 'en') { rows = await sb(`ld_messages?select=*&lang=eq.en&day_number=eq.${day}&status=eq.published&limit=1`); if (rows[0]) rows[0].fallback = true; }
     cache[k] = rows[0] || null; return cache[k];
   }
-  async function getMessagesIndex(lang) {
-    lang = lang || 'en';
-    if (cache.index) return cache.index;
-    const rows = await sb(`ld_messages?select=day_number,theme,title&lang=eq.${lang}&status=eq.published&order=day_number`);
-    cache.index = rows; return rows;
+  async function getMessagesIndex(L) {
+    L = L || lang();
+    const k = 'index_' + L; if (cache[k]) return cache[k];
+    let rows = await sb(`ld_messages?select=day_number,theme,title&lang=eq.${L}&status=eq.published&order=day_number`);
+    if (L !== 'en') { const en = await sb(`ld_messages?select=day_number,theme,title&lang=eq.en&status=eq.published&order=day_number`); const have = new Set(rows.map(r => r.day_number)); rows = rows.concat(en.filter(r => !have.has(r.day_number))).sort((a, b) => a.day_number - b.day_number); }
+    cache[k] = rows; return rows;
   }
   async function getSources(ids) {
     if (!ids || !ids.length) return [];
@@ -70,12 +84,12 @@ window.LD = (function () {
   async function sendFeedback(message_id, helpful, note) {
     try {
       await fetch(SB + '/rest/v1/ld_feedback', { method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json', Prefer: 'return=minimal' }, H),
-        body: JSON.stringify({ message_id, helpful, note: note || null, lang: 'en' }) });
+        body: JSON.stringify({ message_id, helpful, note: note || null, lang: lang() }) });
     } catch (e) {}
   }
   async function subscribe(email, send_hour, timezone) {
     const r = await fetch(SB + '/rest/v1/ld_subscribers', { method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json', Prefer: 'return=minimal' }, H),
-      body: JSON.stringify({ email, channel: 'email', lang: 'en', send_hour, timezone, started_on: startedOn() || todayISO() }) });
+      body: JSON.stringify({ email, channel: 'email', lang: lang(), send_hour, timezone, started_on: startedOn() || todayISO() }) });
     if (r.status === 409) return 'exists';
     if (!r.ok) throw new Error('subscribe ' + r.status);
     return 'ok';
@@ -106,17 +120,17 @@ window.LD = (function () {
     more: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>'
   };
   function chrome(active) {
-    const nav = [['today.html', 'Today', 'today'], ['journey.html', 'Journey', 'journey'], ['tools.html', 'Tools', 'tools'], ['help.html', 'Help', 'help'], ['settings.html', 'More', 'more']];
+    const nav = [['today.html', t('today'), 'today'], ['journey.html', t('journey'), 'journey'], ['tools.html', t('tools'), 'tools'], ['help.html', t('help'), 'help'], ['settings.html', t('more'), 'more']];
+    document.documentElement.lang = lang();
     const hdr = document.createElement('header'); hdr.className = 'hdr';
     hdr.innerHTML = `<div class="hdr-in"><a class="logo" href="index.html">${ICONS.sun}<span>Light for Every Day</span></a>
       <nav class="nav" aria-label="Main">${nav.map(([h, l, i]) => `<a href="${h}" class="${i === active ? 'on ' : ''}${i === 'help' ? 'help' : ''}">${ICONS[i]}<span>${l}</span></a>`).join('')}</nav></div>`;
     document.body.prepend(hdr);
     const f = document.createElement('footer');
     f.innerHTML = `<div class="foot-in">
-      <div class="crisis"><span aria-hidden="true">☎</span><div><strong>If you are in crisis or thinking about ending your life, please reach out now.</strong>
-        Switzerland <b>143</b> (Die Dargebotene Hand) · youth <b>147</b> · emergency <b>144</b>. <a href="help.html">Other countries and more help →</a></div></div>
-      <div>Light for Every Day offers daily encouragement grounded in research. It is not therapy and does not replace your doctor.
-      Everything you write here stays on your device.</div>
+      <div class="crisis"><span aria-hidden="true">☎</span><div><strong>${t('crisis')}</strong>
+        Schweiz · Suisse · Switzerland <b>143</b> (Die Dargebotene Hand · La Main Tendue) · <b>147</b> (Pro Juventute) · <b>144</b>. <a href="help.html">${t('other')}</a></div></div>
+      <div>${t('disclaimer')}</div>
       <div class="foot-links"><a href="about.html">About &amp; sources</a><a href="subscribe.html">Daily e-mail</a><a href="privacy.html">Privacy</a><a href="https://graceforevery.day" rel="noopener">Grace for Every Day</a></div>
     </div>`;
     document.body.appendChild(f);
@@ -124,6 +138,6 @@ window.LD = (function () {
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(() => {});
   }
 
-  return { TOTAL_DAYS, store, settings, saveSettings, applySettings, todayISO, startedOn, start, currentDay, unlockedDay, done, markDone, journal, saveJournal, moods, saveMood, eraseAll,
+  return { TOTAL_DAYS, LANGS, lang, t, store, settings, saveSettings, applySettings, todayISO, startedOn, start, currentDay, unlockedDay, done, markDone, journal, saveJournal, moods, saveMood, eraseAll,
     getThemes, getMessage, getMessagesIndex, getSources, sendFeedback, subscribe, esc, paras, toast, greeting, shareText, chrome, ICONS, SB, KEY };
 })();

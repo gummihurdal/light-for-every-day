@@ -68,7 +68,7 @@ LD.chrome('journey');
     const days = Array.from({ length: 7 }, (_, i) => (t.week - 1) * 7 + i + 1);
     const wdone = days.filter(d => done[d]).length;
     return `<section class="card week" id="week-${t.week}" style="--c:${t.color}">
-      <div class="week-head"><div><div class="eyebrow">Week ${t.week}</div><h2 style="margin:4px 0 2px">${LD.esc(t.title)}</h2><div class="muted">${LD.esc(t.subtitle || '')}</div></div><span class="chip">${wdone}/7</span></div>
+      <div class="week-head"><div><div class="eyebrow">${LD.t('week')} ${t.week}</div><h2 style="margin:4px 0 2px">${LD.esc(t.title)}</h2><div class="muted">${LD.esc(t.subtitle || '')}</div></div><span class="chip">${wdone}/7</span></div>
       ${t.description ? `<p class="muted small" style="margin-top:10px">${LD.esc(t.description)}</p>` : ''}
       <div class="days">${days.map(d => {
         const m = byDay[d]; const cls = done[d] ? 'done' : (today === d ? 'now' : (today && d > today ? 'locked' : ''));

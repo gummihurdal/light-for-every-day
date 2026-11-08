@@ -20,6 +20,7 @@
 
   <section class="card">
     <div class="card-lbl">Reading</div>
+    <div class="toggle-row"><div><strong>Language · Sprache · Langue</strong><div class="small muted">Messages, menus and e-mails. German and French are machine-translated drafts under review.</div></div><select id="lang" style="max-width:160px"></select></div>
     <div class="toggle-row"><div><strong>Show "A word of hope"</strong><div class="small muted">A short Scripture verse at the end of each day. Switch off if you prefer the message alone.</div></div><button class="switch" role="switch" id="t-scripture" aria-checked="true"></button></div>
     <div class="toggle-row"><div><strong>Text size</strong></div><div class="seg" id="size"><button data-v="small">A</button><button data-v="normal">A</button><button data-v="large">A</button></div></div>
     <div class="toggle-row"><div><strong>Appearance</strong></div><div class="seg" id="theme"><button data-v="auto">Auto</button><button data-v="light">Light</button><button data-v="dark">Dark</button></div></div>
@@ -52,6 +53,8 @@
 <script>
 LD.chrome('more');
 const s = LD.settings;
+const langSel = document.getElementById('lang'); langSel.innerHTML = Object.entries(LD.LANGS).map(([k, v]) => `<option value="${k}" ${k === LD.lang() ? 'selected' : ''}>${v}</option>`).join('');
+langSel.addEventListener('change', () => { LD.saveSettings({ lang: langSel.value }); location.reload(); });
 const sw = document.getElementById('t-scripture'); sw.setAttribute('aria-checked', String(s.scripture));
 sw.addEventListener('click', () => { const v = sw.getAttribute('aria-checked') !== 'true'; sw.setAttribute('aria-checked', String(v)); LD.saveSettings({ scripture: v }); });
 ['size', 'theme'].forEach(k => { const el = document.getElementById(k); el.querySelectorAll('button').forEach(b => { b.classList.toggle('on', b.dataset.v === s[k]); b.addEventListener('click', () => { el.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b)); LD.saveSettings({ [k]: b.dataset.v }); }); }); });

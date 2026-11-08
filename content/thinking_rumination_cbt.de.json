@@ -1,0 +1,210 @@
+{
+  "theme": "thinking_rumination_cbt",
+  "lang": "de",
+  "theme_intro": "Eine Depression verändert nicht nur, wie Sie sich fühlen. Sie verändert auch, wie Sie denken, und diese Gedanken nähren dann wiederum die Gefühle. In dieser Woche geht es um diesen Kreislauf: um die automatischen Gedanken, die ungebeten kommen, um das ständige Grübeln, das sich immer wieder abspielt, um die Denkfallen, denen Fachleute Namen gegeben haben, und um die praktischen Fertigkeiten der kognitiven Verhaltenstherapie. Mit ihnen können Sie einen Gedanken bemerken, ihn an den Tatsachen prüfen und ihm etwas Freundlicheres und Wahreres entgegensetzen. Am Ende steht ein kleiner Schritt, denn Denken und Handeln gehören zusammen.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Gedanken sind keine Tatsachen",
+      "quote": "Gedanken geschehen einfach in meinem Gehirn; sie sind nicht DIE WAHRHEIT.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression (übersetzt)",
+      "explanation": "Wenn Sie depressiv sind, produziert Ihr Kopf einen steten Strom von Kommentaren über Sie. «Ich bin eine Last.» «Nichts, was ich tue, gelingt.» «Alle sehen, dass ich versage.» Sie kommen schnell, und sie fühlen sich an wie nüchterne Beschreibungen der Wirklichkeit. Das sind sie nicht. Es sind Gedanken, und Gedanken sind Ereignisse im Kopf, keine Urteile über Ihr Leben.\n\nDie kognitive Therapie, eine der am besten erforschten Behandlungen bei Depression, geht von einer Beobachtung aus: Zwischen einer Situation und einem Gefühl liegt ein Zwischenschritt, nämlich das, was wir uns über die Situation sagen. Das Centre for Clinical Interventions, ein australischer klinischer Dienst, veranschaulicht das mit einem Beispiel. Sie lernen an einer Party einen Mann kennen, und er blickt immer wieder im Raum umher. Denken Sie «Er ist unhöflich», fühlen Sie sich gereizt. Denken Sie «Er findet mich langweilig; niemand will mit mir reden», fühlen Sie sich klein und traurig. Denken Sie «Er wartet wahrscheinlich auf einen Freund», fühlen Sie fast nichts. Derselbe Raum, derselbe Mann, drei Gefühle, weil drei Gedanken.\n\nDie Depression lenkt den Strom in Richtung der zweiten Art von Gedanken, und zwar automatisch, unterhalb der Ebene, auf der Sie es normalerweise bemerken würden. Sie haben sich das nicht ausgesucht. Aber die Gedanken sind da, und sie prägen, wie Sie sich fühlen. In dieser Woche geht es darum, sie wahrnehmen zu lernen. Das ist der erste Schritt, um ihren Griff zu lockern. Nichts hiervon ersetzt Ihre Ärztin oder Ihren Arzt, Ihre Medikamente oder Ihre Therapie; es wirkt ergänzend dazu.",
+      "challenge": "Fangen Sie heute ein einziges Mal ein Gefühl ein und den Gedanken dahinter. Wenn Sie merken, dass Ihre Stimmung sinkt, auch nur ein wenig, halten Sie inne und fragen Sie sich: Was ist mir gerade eben durch den Kopf gegangen? Schreiben Sie das Gefühl in einem Wort auf (traurig, beschämt, leer, ängstlich) und den Gedanken in einem Satz. Widersprechen Sie ihm noch nicht; die Aufgabe ist nur, ihn zu sehen. Wenn Schreiben zu viel ist, sprechen Sie den Gedanken laut aus und fügen Sie hinzu: «Das ist ein Gedanke.»",
+      "reflection_questions": [
+        "Welcher Gedanke über sich selbst ist Ihnen heute am häufigsten begegnet?",
+        "Als Sie diesen Gedanken hörten, was hat Ihr Körper getan?",
+        "Wenn ein guter Freund oder eine gute Freundin genau diesen Satz über sich sagen würde, was würden Sie für diese Person empfinden?"
+      ],
+      "scripture": {
+        "reference": "Psalm 139,23 (Luther 1912)",
+        "text": "Erforsche mich, Gott, und erfahre mein Herz; prüfe mich und erfahre, wie ich's meine."
+      },
+      "sources": [
+        28,
+        229,
+        26
+      ],
+      "keywords": [
+        "Gedanken",
+        "Gefühle",
+        "automatische Gedanken",
+        "KVT",
+        "Wahrnehmen"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Grübeln: die Endlosschleife im Kopf",
+      "quote": "Anhaltende negative Gedanken gelten als ein Kennzeichen der Depression.",
+      "quote_source": "Koster, De Lissnyder, Derakshan & De Raedt (2011) (übersetzt)",
+      "explanation": "Es gibt eine Art des Denkens, die die meisten Menschen mit Depression gut kennen. Sie liegen im Bett und gehen immer wieder dieselben Gedanken durch: warum Sie sich so fühlen, was mit Ihnen nicht stimmt, was Sie letztes Jahr falsch gemacht haben, was es bedeutet, dass es Ihnen immer noch so geht. Nichts wird entschieden. Die Gedanken kommen wieder. Die Forschung nennt das Rumination, auf Deutsch Grübeln: das wiederholte Nachdenken über Ursachen, Folgen und Symptome der eigenen gedrückten Stimmung.\n\nEs fühlt sich an wie Problemlösen, und genau deshalb ist es so schwer, damit aufzuhören. Doch in einer breit angelegten Übersicht über die Forschung stellten Smith und Alloy fest: Grübeln ist weniger auf echte Lösungen ausgerichtet als gewöhnliches Sich-Sorgen. Es verweilt bei der Vergangenheit und beim Verlust statt bei der Frage, was als Nächstes zu tun ist. Und es geht mit weniger Zuversicht einher, Probleme überhaupt lösen zu können. Studien, die Menschen über längere Zeit begleiten, zeigen: Wer mehr grübelt, ist später eher depressiv.\n\nWarum hält es sich so hartnäckig? Koster und Kollegen argumentieren, dass das Problem nicht die Willenskraft ist, sondern die Aufmerksamkeit. Ein depressives Gehirn kann sich schwerer von negativen Informationen über sich selbst lösen. Hat ein schmerzhafter Gedanke einmal Ihre Aufmerksamkeit, arbeitet der Mechanismus, der ihn normalerweise loslassen würde, weniger gut. Das ist keine Charakterschwäche. Es ist ein bekanntes Merkmal der Krankheit, und man kann daran arbeiten. Aktivität, so betonen die CCI-Module, gibt dem Geist einen anderen Ort, an den er gehen kann. Deshalb ist «etwas Kleines tun» kein banaler Vorschlag. Es ist eine direkte Antwort auf die Schleife.",
+      "challenge": "Bemerken Sie heute eine Grübelschleife, während sie geschieht. Das Signal: Ihre Gedanken kreisen immer um dasselbe, «warum bin ich so», «was habe ich falsch gemacht». Wenn Sie es bemerken, sagen Sie: «Ich grüble.» Geben Sie dann Ihrer Aufmerksamkeit eine Aufgabe für zwei Minuten: Spülen Sie eine Tasse ab, stellen Sie sich ans Fenster und nennen Sie fünf Dinge, die Sie sehen, oder hören Sie ein Lied bis zum Ende. Die Schleife beginnt vielleicht wieder; das ist normal. Einmal bemerken ist schon der Erfolg. Wenn zwei Minuten zu viel sind, benennen Sie es und ändern Sie Ihre Haltung: Setzen Sie sich auf oder wechseln Sie den Stuhl.",
+      "reflection_questions": [
+        "Wann beginnt die Grübelschleife bei Ihnen am häufigsten: zu einer bestimmten Tageszeit, an einem bestimmten Ort, in einem Moment der Stille?",
+        "Was will die Schleife angeblich erreichen? Kommt sie jemals dort an?",
+        "Welche kleine Sache hat Sie früher schon einmal herausgeholt, und sei es nur für eine Minute?"
+      ],
+      "scripture": {
+        "reference": "Psalm 94,19 (Luther 1912)",
+        "text": "Ich hatte viel Bekümmernisse in meinem Herzen; aber deine Tröstungen ergötzten meine Seele."
+      },
+      "sources": [
+        191,
+        118,
+        27
+      ],
+      "keywords": [
+        "Grübeln",
+        "Gedankenkreisen",
+        "Aufmerksamkeit",
+        "Gedankenschleife",
+        "Loslösung"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Den Denkfallen einen Namen geben",
+      "quote": "100 % der Verantwortung zu tragen, ist eine ziemlich grosse Last, und eine, die Sie wahrscheinlich entmutigt oder überfordert zurücklässt.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (übersetzt)",
+      "explanation": "Depressives Denken ist nicht zufällig. Fachleute, die Tausenden von Menschen zugehört haben, wenn sie ihre Gedanken beschreiben, erkennen immer wieder dieselben Muster. Wenn man ihnen Namen gibt, lassen sie sich leichter erkennen. Hier sind die Muster, die bei einer Depression am meisten ins Gewicht fallen, so wie sie in den CCI-Modulen «Back from the Bluez» und in Shapiros Arbeitsbuch vermittelt werden.\n\nMentaler Filter: Ein einziges negatives Detail füllt den ganzen Bildschirm, und der Rest des Tages verschwindet. Voreilige Schlüsse: Gedankenlesen («Sie hält mich für erbärmlich») und Vorhersagen («Das wird schiefgehen»). Personalisierung: Was auch immer schiefläuft, ist Ihre Schuld, selbst wenn Sie kaum beteiligt waren. Katastrophisieren: Aus einem kleinen Fehler wird das Ende Ihrer Stelle, Ihrer Ehe, Ihrer Zukunft. Schwarz-Weiss-Denken: Nicht perfekt heisst gescheitert. Sollte- und Muss-Sätze: ein Regelwerk, das niemand einhalten könnte. Übergeneralisieren: Aus einem schlechten Nachmittag wird «immer» und «nie». Etikettieren: Ihnen fällt ein Glas herunter, und schon sind Sie «ein Idiot». Emotionale Beweisführung: «Ich fühle mich wertlos, also muss ich es auch sein.» Herunterspielen: Ihre eigenen guten Seiten «zählen nicht»; Sie hatten einfach Glück; die anderen waren nur höflich.\n\nWahrscheinlich erkennen Sie mehrere davon wieder. Das ist kein Zeichen dafür, dass mit Ihnen etwas nicht stimmt. Die CCI-Autorinnen und -Autoren halten fest, dass dies Gewohnheiten sind, die ausserhalb unseres Bewusstseins ablaufen, und dass fast alle Menschen einige davon nutzen. Die Depression dreht nur die Lautstärke auf. Es geht beim Benennen nicht darum, sich für schlechtes Denken zu tadeln. Es geht darum, dass ein Gedanke mit Namen («Das ist Katastrophisieren») ein wenig weiter von Ihnen weg steht als ein Gedanke, den Sie für eine Tatsache gehalten haben.",
+      "challenge": "Fangen Sie heute einen Gedanken ein und geben Sie ihm einen Namen aus der Liste. Sie müssen ihn nicht verändern. Wenn Sie merken, dass Ihre Stimmung absinkt oder Angst aufkommt, suchen Sie den Gedanken dazu und fragen Sie sich: Welches Muster ist das? Schreiben Sie den Gedanken und den Namen nebeneinander auf, zum Beispiel: «Ich habe den ganzen Abend verdorben – mentaler Filter, Katastrophisieren.» Einer genügt. Wenn das heute zu viel ist, wählen Sie das eine Muster, das Sie beim Lesen am stärksten wiedererkannt haben, und achten Sie nur auf dieses.",
+      "reflection_questions": [
+        "Welche zwei oder drei Muster haben Sie am deutlichsten wiedererkannt?",
+        "Wo haben Sie vielleicht gelernt, so zu denken? Wer hat so mit Ihnen gesprochen?",
+        "Was verändert sich, und sei es nur ein wenig, wenn Sie einen Gedanken bei seinem Namen nennen?"
+      ],
+      "scripture": {
+        "reference": "Philipper 4,8 (Luther 1912)",
+        "text": "Weiter, liebe Brüder, was wahrhaftig ist, was ehrbar, was gerecht, was keusch, was lieblich, was wohl lautet, ist etwa eine Tugend, ist etwa ein Lob, dem denket nach!"
+      },
+      "sources": [
+        30,
+        229
+      ],
+      "keywords": [
+        "Denkstile",
+        "kognitive Verzerrungen",
+        "Katastrophisieren",
+        "Schwarz-Weiss-Denken",
+        "Gedankenlesen"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Das ABC, um einen Gedanken einzufangen",
+      "quote": "Halten Sie die Situation so fest, wie eine Videokamera sie aufzeichnen würde – nur die Fakten.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (übersetzt)",
+      "explanation": "Gedanken im Moment selbst zu bemerken, ist schwer, besonders wenn die Konzentration schwach ist. Kognitive Therapeutinnen und Therapeuten nutzen dafür eine kleine Struktur, das ABC. Es funktioniert, weil es mechanisch ist. Sie müssen nicht besonders einsichtig sein. Sie füllen drei Felder aus.\n\nA ist das auslösende Ereignis: was geschehen ist, so beschrieben, wie eine Videokamera es aufzeichnen würde. «Meine Schwester hat angerufen und das Gespräch nach vier Minuten beendet.» Nicht «Meine Schwester wollte mich so schnell wie möglich loswerden» – das ist bereits ein Gedanke. C ist die Konsequenz: was Sie gefühlt und getan haben. Benennen Sie das Gefühl mit einem oder zwei Wörtern, geben Sie seiner Stärke eine Zahl bis 100 und notieren Sie, was Sie danach getan haben (wieder ins Bett gegangen, die Verabredung abgesagt). B ist die Überzeugung dazwischen: was Ihnen durch den Kopf ging. Schreiben Sie jeden Gedanken auf, den Sie finden können. Unterstreichen Sie dann den, der am meisten Hitze in sich trägt – den heissen Gedanken – und schätzen Sie ein, wie stark Sie ihn glauben, von 0 bis 100.\n\nOft ist der erste Gedanke, den Sie finden, nicht der heisse. Die Module schlagen vor, mit einer Frage tiefer zu graben, etwa: «Und was sagt das über mich aus?» Unter «Sie hatte es eilig» kann «Ich bin für alle eine Last» liegen. Der heisse Gedanke ist meistens der, bei dem sich Ihre Brust zusammenzieht.\n\nEin schriftliches ABC bewirkt zweierlei. Es trennt die Fakten von der Geschichte, die die Depression ständig miteinander vermischt. Und es gibt Ihnen etwas Konkretes, das Sie morgen prüfen können, wenn wir beginnen, die Belege abzuwägen. Gedanken auf Papier sind kleiner als Gedanken im Dunkeln.",
+      "challenge": "Machen Sie heute ein ABC, auf Papier oder im Journal der App. Warten Sie auf einen Moment, in dem Ihre Stimmung sinkt, und schreiben Sie dann drei Zeilen. A: was geschehen ist, nur Fakten, ein Satz. C: was Sie gefühlt haben, in einem Wort mit einer Zahl bis 100, und was Sie getan haben. B: was Ihnen durch den Kopf ging, mit dem heissesten Gedanken unterstrichen und einer Einschätzung, wie stark Sie ihn glauben. Fünf Minuten genügen. Wenn das zu viel ist, machen Sie nur A und C: eine Tatsache und ein Gefühl. B kann auf einen anderen Tag warten.",
+      "reflection_questions": [
+        "Was war heute Ihr heisser Gedanke, und wie stark haben Sie ihn geglaubt?",
+        "Wie sehr unterschieden sich die Fakten (A) von der Geschichte, die Sie sich darüber erzählt haben (B)?",
+        "Wozu hat Sie das Gefühl gebracht – oder wovon hat es Sie abgehalten?"
+      ],
+      "scripture": {
+        "reference": "Klagelieder 3,21-22 (Luther 1912)",
+        "text": "Das nehme ich zu Herzen; darum hoffe ich noch. Die Güte des HERRN ist's, daß wir nicht gar aus sind; seine Barmherzigkeit hat noch kein Ende."
+      },
+      "sources": [
+        29,
+        28,
+        32
+      ],
+      "keywords": [
+        "ABC",
+        "Gedankentagebuch",
+        "heisser Gedanke",
+        "Journal",
+        "auslösendes Ereignis"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Detektivarbeit: Den Gedanken vor Gericht stellen",
+      "quote": "Wie alle guten Detektive müssen wir die Fakten herausfinden und die Beweise sammeln.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (übersetzt)",
+      "explanation": "Gestern haben Sie einen heissen Gedanken eingefangen. Heute untersuchen Sie ihn. Die CCI-Module bitten Sie, zwei Rollen zu spielen: den Detektiv, der Beweise sammelt, und den Anwalt, der unbequeme Fragen stellt. Der Gedanke ist noch weder schuldig noch unschuldig. Er wird untersucht.\n\nFragen des Detektivs: Was spricht dafür, dass dieser Gedanke stimmt? Was spricht dagegen? Welche Tatsachen lasse ich weg? Welche anderen Erklärungen gibt es? Fragen des Anwalts: Wie würde jemand, der mich liebt, das sehen? Wenn ich nicht depressiv wäre, wie würde ich es sehen? Wie wahrscheinlich ist realistisch betrachtet das, was ich vorhersage? Hilft es mir, so zu denken?\n\nDas Beispiel in den Modulen ist ein Mann, dessen Partnerin nach Hause kommt und ihn nicht wie üblich küsst. Heisser Gedanke: «Sie liebt mich nicht mehr», Überzeugung 90 von 100. Was dafür spricht: Sie hat ihn einmal gedrängt, zu einem Psychologen zu gehen. Was dagegen spricht: Sie hat gesagt, dass sie ihn in dieser Zeit unterstützen wird, und sie hat gestern Abend ein besonderes Essen gekocht. Andere Erklärungen: ein harter Tag, Einkäufe, die versorgt werden mussten. Sein ausgewogener Gedanke lautet nicht «Alles ist gut». Er lautet: Ein ausgebliebener Kuss ist kein Beweis dafür, dass sie mich nicht mehr liebt; sie war wahrscheinlich müde, und sie zeigt ihre Zuneigung auf andere Weise. Er bewertet das Gefühl neu. Es ist schwächer geworden, nicht verschwunden.\n\nGenau das leistet diese Fähigkeit. Sie löscht einen schmerzhaften Gedanken selten aus; sie stutzt ihn auf seine wahre Grösse zurück. Und das Wiederholen ist nicht sinnlos. Forschende, die mit bildgebenden Verfahren das Gehirn untersuchen, stellen fest, dass sich die verminderte Durchblutung, die man bei depressiven Gehirnen sieht, durch Behandlung verbessert, auch durch kognitive Verhaltenstherapie. Üben verändert etwas Körperliches.",
+      "challenge": "Nehmen Sie den heissen Gedanken von gestern oder fangen Sie einen neuen ein, und schenken Sie ihm zehn Minuten. Ziehen Sie einen senkrechten Strich über eine Seite. Links: jede Tatsache, die den Gedanken stützt. Rechts: jede Tatsache, die dagegen spricht, auch Dinge, die Sie sonst abtun würden. Beantworten Sie dann eine Frage des Anwalts: Wie würde jemand, der mich liebt, das sehen? Schliessen Sie mit einem ausgewogenen Satz und bewerten Sie Ihre Überzeugung neu, auf einer Skala von 0 bis 100. Wenn zehn Minuten zu viel sind, füllen Sie nur die rechte Spalte aus: drei Tatsachen, die dagegen sprechen.",
+      "reflection_questions": [
+        "Welche Spalte war schwerer zu füllen, und woran liegt das Ihrer Meinung nach?",
+        "Hat sich Ihre Überzeugung vom heissen Gedanken verändert, und sei es nur um ein paar Punkte?",
+        "Wessen Stimme haben Sie gehört, als Sie sich fragten, wie jemand, der Sie liebt, das sehen würde?"
+      ],
+      "scripture": {
+        "reference": "1. Thessalonicher 5,21 (Luther 1912)",
+        "text": "Prüfet aber alles, und das Gute behaltet."
+      },
+      "sources": [
+        31,
+        32,
+        217
+      ],
+      "keywords": [
+        "Beweise",
+        "Disputation",
+        "ausgewogener Gedanke",
+        "Detektiv",
+        "neu bewerten"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Eine freundlichere Stimme im Kopf",
+      "quote": "Statt auf die kritischen Stimmen in Ihrem Kopf zu hören, können Sie eine fürsorgliche innere Stimme entwickeln, auf die Sie hören können, wenn es Ihnen schlecht geht und Sie an Ihrem Selbstwert zweifeln.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression (übersetzt)",
+      "explanation": "Manche Gedanken rühren sich nicht, auch wenn Sie die Beweise abwägen. Sie können zehn Fakten gegen «Ich bin wertlos» aufschreiben und es trotzdem zu 95 glauben. Die CCI-Module erklären, warum: Unter den heissen Gedanken des Alltags liegt oft eine Grundüberzeugung. Ein kurzer Satz über sich selbst, vor langer Zeit gelernt, meist in der Kindheit. «Ich bin nicht liebenswert.» «Ich genüge nicht.» «Ich bin eine Last.» Grundüberzeugungen bleiben am Leben, indem sie alles bemerken, was zu ihnen passt, und alles verwerfen, was nicht passt. Nach Jahren fühlen sie sich deshalb weniger wie Überzeugungen an als wie der Boden, auf dem Sie stehen.\n\nViele Menschen mit Depression tragen ausserdem eine kritische innere Stimme in sich, die genau diese Sätze spricht. Der Psychologe Lawrence Shapiro weist darauf hin, dass diese Stimme meist eine Geschichte hat: ein Elternteil, eine Lehrperson, ein strenger Erwachsener. Sie ist geliehen. Sie müssen sie nicht behalten.\n\nDie Alternative ist kein erzwungenes positives Denken. Im CCI-Beispiel prüft Erica den Satz «Ich bin nicht liebenswert» an ihrem tatsächlichen Leben: vier enge Freundinnen und Freunde in der Schule, eine Nachbarin, die sich ihr anvertraut hat, ein Arbeitskollege, mit dem sie Kaffee trinkt. Ihre ausgewogene Überzeugung ist bescheiden und wahr: «Nicht alle werden mich immer mögen, aber manche Menschen mögen mich.» Diesen Satz kann sie glauben. Genau das macht ihn nützlich.\n\nShapiros Übung geht noch weiter: Schreiben Sie auf, was ein Mensch sagen würde, dem Sie wirklich am Herzen liegen, und stellen Sie sich vor, wie er es sagt. Für viele ist das anfangs unangenehm. Das Unbehagen zeigt, wie lange die andere Stimme den Raum für sich allein hatte. Wenn das heute mehr in Ihnen aufwühlt, als Sie tragen können, bringen Sie es zu Ihrer Therapeutin, Ihrem Therapeuten oder Ihrer Ärztin, Ihrem Arzt.",
+      "challenge": "Schreiben Sie einen Satz auf, den ein freundlicher Mensch Ihnen über den heutigen Tag sagen würde. Keinen Slogan, sondern etwas Wahres und Konkretes: «Sie sind aufgestanden und haben das gelesen, obwohl es Ihnen elend ging. Das zählt.» Legen Sie ihn dorthin, wo Sie ihn sehen: auf den Sperrbildschirm Ihres Handys, auf eine Karte in Ihrer Tasche, ins Tagebuch der App. Lesen Sie ihn einmal, sobald die kritische Stimme anfängt. Wenn es zu schwer ist, selbst einen zu schreiben, leihen Sie sich Ericas Satz: «Nicht alle werden mich immer mögen, aber manche Menschen mögen mich.» Lesen Sie ihn zweimal.",
+      "reflection_questions": [
+        "Wessen Stimme gleicht Ihr innerer Kritiker am meisten?",
+        "Welchen kurzen Satz sagt er am häufigsten über Sie, und wann haben Sie ihn zum ersten Mal geglaubt?",
+        "Welchen einen Menschen, echt oder vorgestellt, könnten Sie sich vorstellen, wie er etwas Freundliches zu Ihnen sagt?"
+      ],
+      "scripture": {
+        "reference": "Psalm 103,14 (Luther 1912)",
+        "text": "Denn er kennt, was für ein Gemächte wir sind; er gedenkt daran, daß wir Staub sind."
+      },
+      "sources": [
+        33,
+        229,
+        32
+      ],
+      "keywords": [
+        "Selbstmitgefühl",
+        "innerer Kritiker",
+        "Grundüberzeugungen",
+        "fürsorgliche Stimme",
+        "Selbstgespräch"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Tun Sie es, bevor Sie Lust dazu haben",
+      "quote": "Jede Aufgabe lässt sich in immer kleinere Schritte zerlegen, bis man etwas findet, das machbar ist.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (übersetzt)",
+      "explanation": "In dieser Woche ging es um Gedanken. Wir schliessen mit dem Körper, denn die beiden lassen sich nicht trennen. Wenn Sie depressiv sind, kommt der Gedanke «Das wird mir keine Freude machen» oder «Das ist zu schwer» noch vor jeder Tätigkeit. Und meistens gewinnt er. Sie tun weniger. Wenn es weniger zu tun gibt, hat die Gedankenschleife mehr Raum. Weniger tun bedeutet auch weniger Momente von Freude oder Erfolg. So sinkt die Stimmung weiter, und der Gedanke «Nichts hilft» sammelt weitere Belege. Die CCI-Module nennen das den Teufelskreis. Verhaltensaktivierung ist die bewusste Umkehrung davon.\n\nDie Reihenfolge ist wichtig. Die meisten Menschen warten, bis sie sich motiviert fühlen, und handeln erst dann. In einer Depression kann dieses Warten Monate dauern. Verhaltensaktivierung dreht es um: zuerst handeln, in ganz kleinem Rahmen, und das Gefühl danach folgen lassen – oder auch nicht. Bei der Grösse sind die Module unmissverständlich. Putzen Sie nicht die Küche; waschen Sie fünf Teller ab. Lesen Sie kein Kapitel; lesen Sie fünf Minuten. Wenn das Aufstehen die Aufgabe ist, nehmen Sie sich zehn Minuten ausserhalb des Bettes vor. Legen Sie eine Zeit fest statt eines Ziels. Und zählen Sie es als Erfolg, dass Sie es getan haben, ganz gleich, wie es sich angefühlt hat.\n\nZwei Arten von Tätigkeiten helfen: solche, die ein Fünkchen Freude schenken (ein Spaziergang, Musik, ein Anruf), und solche, die ein Gefühl von Erfolg geben (eine Rechnung bezahlt, ein Bett gemacht). Beide unterbrechen das Grübeln, denn ein Kopf, der etwas tut, hat weniger Raum für die Endlosschleife. Nächste Woche geht es um Bewegung. Sie gehört zu den am besten erforschten dieser kleinen Handlungen. Heute geht es nur darum, eine davon einzuplanen.",
+      "challenge": "Wählen Sie eine Tätigkeit für morgen, zehn Minuten oder weniger, und schreiben Sie auf, wann: «9:30 Uhr, bis zum Ende der Strasse gehen und zurück» oder «nach dem Mittagessen fünf Teller abwaschen». Bewerten Sie Ihre Stimmung vorher und nachher auf einer Skala bis 10 – als Experiment, nicht als Prüfung. Der Gedanke «Das hilft sowieso nicht» meldet sich vielleicht; lassen Sie ihn einfach mitkommen. Wenn zehn Minuten zu viel sind, machen Sie zwei daraus: Öffnen Sie die Vorhänge und stellen Sie sich ins Licht, während das Wasser kocht.",
+      "reflection_questions": [
+        "Was haben Sie diese Woche getan, wozu Sie keine Lust hatten, und sei es noch so klein?",
+        "Welcher Gedanke hält Sie am häufigsten auf, bevor Sie anfangen?",
+        "Wie sähe die Zehn-Minuten-Version von etwas aus, das Ihnen früher Freude gemacht hat?"
+      ],
+      "scripture": {
+        "reference": "Psalm 37,23-24 (Luther 1912)",
+        "text": "Von dem HERRN wird des Mannes Gang gefördert, und er hat Lust an seinem Wege. Fällt er, so wird er nicht weggeworfen; denn der HERR hält ihn bei der Hand."
+      },
+      "sources": [
+        27,
+        32,
+        34,
+        191
+      ],
+      "keywords": [
+        "Verhaltensaktivierung",
+        "Handeln",
+        "Motivation",
+        "kleine Schritte",
+        "Planung"
+      ]
+    }
+  ]
+}
