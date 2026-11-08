@@ -27,7 +27,9 @@ a{color:inherit}
 .sb-sub .sb-link:hover,.sb-sub .sb-link.on{color:var(--gold)}
 .sb-divider{height:1px;background:rgba(201,164,58,0.2);margin:8px 16px}
 .sb-foot{padding:20px 24px;border-top:1px solid var(--border2);margin-top:auto}
-.sb-foot-date{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.5px;color:var(--text-b);line-height:2.1;font-weight:500}
+.sb-foot-date{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.5px;color:var(--text-d);line-height:1.9;font-weight:500}
+.sb-day{font-size:13px;letter-spacing:1.5px;color:var(--gold);font-weight:600;text-decoration:none}
+a.sb-day:hover{color:var(--gold-l)}
 .sb-crisis{margin:10px 14px 4px;padding:12px 14px;border:1px solid rgba(201,80,80,0.55);border-left:3px solid #D04848;background:rgba(192,64,64,0.14);font-size:13px;line-height:1.6;color:var(--text-b)}
 .sb-crisis .sbc-t{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#E86A6A;font-weight:700;margin-bottom:6px}
 .sb-crisis b{color:#FFFFFF;font-family:'Cinzel',serif;font-size:14px;font-weight:700;letter-spacing:1px}

@@ -64,7 +64,11 @@
   var DAYNAME = now.toLocaleDateString(LOC, { weekday: 'long' }), MONNAME = now.toLocaleDateString(LOC, { month: 'long' });
   var cap = x => x.charAt(0).toUpperCase() + x.slice(1);
   var el = document.getElementById('sb-date');
-  if (el) el.innerHTML = cap(DAYNAME) + '<br>' + (L === 'en' ? MONNAME + ' ' + now.getDate() : now.getDate() + '. ' + cap(MONNAME)) + '<br>' + now.getFullYear();
+  if (el) {
+    const d = window.LD && LD.currentDay();
+    const dayLine = d ? `<span class="sb-day">${T.day} ${d} ${T.of} ${LD.TOTAL_DAYS}</span>` : `<a class="sb-day" href="today.html?start=1">${T.beginDayOne}</a>`;
+    el.innerHTML = dayLine + '<br>' + cap(DAYNAME) + ', ' + (L === 'en' ? MONNAME + ' ' + now.getDate() : now.getDate() + '. ' + cap(MONNAME)) + ' ' + now.getFullYear();
+  }
   var _so = false;
   window.sbStudy = function () {
     _so = !_so;
