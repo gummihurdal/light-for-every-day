@@ -63,7 +63,7 @@
     <a class="sbc-call" href="tel:147"><b>147</b><span>${T.lineName147}</span></a>
     <a class="sbc-call" href="tel:144"><b>144</b><span>${T.lineName144}</span></a>
     <a class="sbc-more" href="help.html">${T.other} →</a>
-  </div>CH <b>143</b> · ${T.youth} <b>147</b> · ${T.emergency} <b>144</b><br><a href="help.html">${T.other} →</a></div>
+  </div>
   <div class="sb-foot"><div class="sb-foot-date" id="sb-date"></div></div>
 </aside>`;
   document.body.insertAdjacentHTML('afterbegin', html);
