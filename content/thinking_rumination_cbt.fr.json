@@ -1,0 +1,210 @@
+{
+  "theme": "thinking_rumination_cbt",
+  "lang": "fr",
+  "theme_intro": "La dépression ne change pas seulement ce que vous ressentez ; elle change aussi votre façon de penser, et ces pensées nourrissent à leur tour les émotions. Cette semaine, nous regardons cette boucle de plus près : les pensées automatiques qui surgissent sans y avoir été invitées, la rumination qui repasse sans cesse le même film, les pièges de la pensée auxquels les cliniciens ont donné un nom, et les outils concrets de la thérapie cognitivo-comportementale pour repérer une pensée, la confronter aux faits et lui répondre par quelque chose de plus doux et de plus juste. La semaine se termine par une petite action, parce que penser et agir ne sont pas deux choses séparées.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Les pensées ne sont pas des faits",
+      "quote": "Les pensées ne font que se produire dans mon cerveau ; elles ne sont pas LA VÉRITÉ.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression (traduction)",
+      "explanation": "Quand vous êtes déprimé, votre esprit produit un flot continu de commentaires sur vous. « Je suis un fardeau. » « Rien de ce que je fais ne marche. » « Tout le monde voit que j’échoue. » Ils arrivent vite, et ils ressemblent à de simples descriptions de la réalité. Ce n’en sont pas. Ce sont des pensées, et les pensées sont des événements de l’esprit, pas des verdicts sur votre vie.\n\nLa thérapie cognitive, l’un des traitements de la dépression les mieux étudiés, part d’un constat : entre une situation et un sentiment, il y a une étape intermédiaire, ce que nous nous disons à propos de la situation. Le Centre for Clinical Interventions, un service clinique australien, l’enseigne à l’aide d’un exemple. Vous rencontrez un homme à une fête, et il ne cesse de jeter des regards autour de la pièce. Si vous pensez « Il est impoli », vous vous sentez agacé. Si vous pensez « Il me trouve ennuyeux ; personne ne veut me parler », vous vous sentez petit et triste. Si vous pensez « Il attend sans doute un ami », vous ne ressentez presque rien. Même pièce, même homme, trois sentiments, parce que trois pensées.\n\nLa dépression fait pencher ce flot vers le deuxième type de pensée, et elle le fait automatiquement, en dessous du niveau où vous le remarqueriez d’ordinaire. Vous ne l’avez pas choisi. Mais ces pensées sont là, et elles façonnent ce que vous ressentez. Cette semaine, il s’agit d’apprendre à les remarquer, ce qui est le premier pas pour desserrer leur emprise. Rien de ce qui est proposé ici ne remplace votre médecin, votre traitement médicamenteux ou votre thérapeute ; cela vient en complément.",
+      "challenge": "Aujourd’hui, une fois, saisissez un sentiment et la pensée qui se cache derrière. Quand vous remarquez que votre humeur baisse, même un peu, faites une pause et demandez-vous : qu’est-ce qui m’a traversé l’esprit il y a un instant ? Notez le sentiment en un mot (triste, honteux, éteint, anxieux) et la pensée en une phrase. Ne la contestez pas encore ; il s’agit seulement de la voir. Si écrire vous demande trop, dites la pensée à voix haute, puis ajoutez : « C’est une pensée. »",
+      "reflection_questions": [
+        "Quelle pensée sur vous-même est revenue le plus souvent aujourd’hui ?",
+        "Quand vous avez entendu cette pensée, qu’a fait votre corps ?",
+        "Si un ami proche disait cette même phrase sur lui-même, qu’éprouveriez-vous pour lui ?"
+      ],
+      "scripture": {
+        "reference": "Psaume 139:23 (Segond 1910)",
+        "text": "Sonde-moi, ô Dieu, et connais mon cœur ! Éprouve-moi, et connais mes pensées !"
+      },
+      "sources": [
+        28,
+        229,
+        26
+      ],
+      "keywords": [
+        "pensées",
+        "sentiments",
+        "pensées automatiques",
+        "TCC",
+        "remarquer"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "La rumination : quand l’esprit tourne en boucle",
+      "quote": "Les pensées négatives persistantes sont considérées comme une caractéristique centrale de la dépression.",
+      "quote_source": "Koster, De Lissnyder, Derakshan & De Raedt (2011) (traduction)",
+      "explanation": "Il existe une manière de penser que la plupart des personnes atteintes de dépression connaissent bien. Vous êtes couché et vous repassez toujours par les mêmes chemins : pourquoi vous vous sentez ainsi, ce qui ne va pas chez vous, ce que vous avez raté l’an dernier, ce que cela signifie de vous sentir encore comme ça. Rien ne se décide. Les pensées reviennent. Les chercheurs appellent cela la rumination : penser de façon répétitive aux causes, aux conséquences et aux symptômes de sa propre tristesse.\n\nCela ressemble à une manière de résoudre un problème, et c’est pour cela qu’il est si difficile d’arrêter. Pourtant, dans une vaste revue de la recherche, Smith et Alloy ont constaté que la rumination se concentre moins sur de vraies solutions que l’inquiétude ordinaire. Elle s’attarde sur le passé et sur la perte plutôt que sur la prochaine chose à faire. Et elle va de pair avec une moindre confiance en sa capacité à résoudre les problèmes. Les études qui suivent des personnes dans le temps montrent que celles qui ruminent davantage ont plus de risques d’être déprimées par la suite.\n\nPourquoi est-ce si tenace ? Pour Koster et ses collègues, le problème n’est pas la volonté, mais l’attention. Un cerveau déprimé a plus de mal à se détacher des informations négatives qui le concernent. Dès qu’une pensée douloureuse a capté votre attention, le mécanisme qui permettrait normalement de la lâcher fonctionne moins bien. Ce n’est pas un défaut de caractère. C’est une caractéristique connue de la maladie, et on peut y travailler. Comme le soulignent les modules du CCI, l’activité offre à l’esprit un autre endroit où aller. C’est pourquoi « faire une petite chose » n’est pas une suggestion anodine : c’est une réponse directe à la boucle.",
+      "challenge": "Aujourd’hui, repérez une boucle pendant qu’elle se produit. Le signal : vous repassez par les mêmes chemins, « pourquoi suis-je comme ça », « qu’ai-je fait de mal ». Quand vous la remarquez, dites-vous : « Je suis en train de ruminer. » Puis confiez à votre attention une tâche de deux minutes : laver une tasse, vous tenir à une fenêtre et nommer cinq choses que vous voyez, ou écouter une chanson jusqu’au bout. La boucle peut recommencer ; c’est normal. La remarquer une fois, c’est déjà une victoire. Si deux minutes vous semblent trop, nommez-la et changez de position : redressez-vous, ou changez de chaise.",
+      "reflection_questions": [
+        "Quand la boucle commence-t-elle le plus souvent pour vous : à un moment de la journée, dans un lieu, dans un moment d’immobilité ?",
+        "Que prétend-elle chercher à obtenir ? Y parvient-elle jamais ?",
+        "Quelle petite chose vous en a déjà sorti, ne serait-ce qu’une minute, par le passé ?"
+      ],
+      "scripture": {
+        "reference": "Psaume 94:19 (Segond 1910)",
+        "text": "Quand les pensées s’agitent en foule au dedans de moi, tes consolations réjouissent mon âme."
+      },
+      "sources": [
+        191,
+        118,
+        27
+      ],
+      "keywords": [
+        "rumination",
+        "pensées en boucle",
+        "attention",
+        "ressassement",
+        "désengagement"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Nommer les pièges de la pensée",
+      "quote": "Porter 100 % de la responsabilité est un fardeau bien lourd, et qui risque fort de vous laisser découragé ou submergé.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traduction)",
+      "explanation": "La pensée dépressive n'a rien de hasardeux. Les cliniciens qui ont écouté des milliers de personnes décrire leurs pensées voient revenir les mêmes schémas. Leur donner un nom permet de les repérer plus facilement. Voici ceux qui comptent le plus dans la dépression, tels qu'ils sont enseignés dans les modules « Back from the Bluez » du CCI et dans le cahier d'exercices de Shapiro.\n\nLe filtre mental : un seul détail négatif occupe tout l'écran, et le reste de la journée disparaît. Les conclusions hâtives : la lecture de pensée (« elle me trouve pitoyable ») et la prédiction (« ça va mal se passer »). La personnalisation : tout ce qui tourne mal est de votre faute, même quand vous n'y étiez presque pour rien. La dramatisation : une petite erreur devient la fin de votre emploi, de votre mariage, de votre avenir. La pensée en noir et blanc : ce qui n'est pas parfait est un échec. Les « il faut » et les « je dois » : un règlement que personne ne pourrait respecter. La surgénéralisation : un mauvais après-midi devient « toujours » et « jamais ». L'étiquetage : vous laissez tomber un verre, et vous voilà « un idiot ». Le raisonnement émotionnel : « Je me sens nul, donc je dois l'être. » La minimisation : vos qualités « ne comptent pas » ; vous avez eu de la chance ; les autres étaient simplement polis.\n\nVous en reconnaîtrez sans doute plusieurs. Ce n'est pas le signe que quelque chose ne va pas chez vous. Les auteurs du CCI relèvent que ce sont des habitudes qui fonctionnent en dehors de notre conscience, et que presque tout le monde en utilise certaines ; la dépression ne fait qu'en monter le volume. Les nommer ne sert pas à vous reprocher de mal penser. Cela sert à ceci : une pensée qui porte un nom (« ça, c'est de la dramatisation ») se tient un peu plus loin de vous qu'une pensée que vous preniez pour un fait.",
+      "challenge": "Aujourd'hui, attrapez une pensée et donnez-lui un nom tiré de la liste. Vous n'avez pas besoin de la changer. Quand vous remarquez un creux, un moment de tristesse ou d'inquiétude, cherchez la pensée et demandez-vous : de quel schéma s'agit-il ? Écrivez la pensée et son nom côte à côte, par exemple « J'ai gâché toute la soirée — filtre mental, dramatisation. » Une seule suffit. Si c'est trop pour aujourd'hui, choisissez le schéma que vous avez le plus reconnu en lisant, et guettez seulement celui-là.",
+      "reflection_questions": [
+        "Quels sont les deux ou trois schémas que vous avez le plus fortement reconnus ?",
+        "Où avez-vous pu apprendre à penser ainsi ? Qui vous parlait de cette manière ?",
+        "Qu'est-ce qui change, même un peu, quand vous appelez une pensée par son nom ?"
+      ],
+      "scripture": {
+        "reference": "Philippiens 4:8 (Segond 1910)",
+        "text": "Au reste, frères, que tout ce qui est vrai, tout ce qui est honorable, tout ce qui est juste, tout ce qui est pur, tout ce qui est aimable, tout ce qui mérite l'approbation, ce qui est vertueux et digne de louange, soit l'objet de vos pensées."
+      },
+      "sources": [
+        30,
+        229
+      ],
+      "keywords": [
+        "styles de pensée",
+        "distorsions cognitives",
+        "dramatisation",
+        "noir et blanc",
+        "lecture de pensée"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "L'ABC pour saisir une pensée",
+      "quote": "Notez la situation comme une caméra vidéo l'enregistrerait : seulement les faits.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traduction)",
+      "explanation": "Remarquer ses pensées sur le moment est difficile, surtout quand la concentration fait défaut. Les thérapeutes cognitifs utilisent pour cela une petite structure, l'ABC. Elle fonctionne parce qu'elle est mécanique. Pas besoin d'avoir une grande lucidité. Vous remplissez trois cases.\n\nA, c'est l'événement déclencheur : ce qui s'est passé, décrit comme une caméra vidéo l'enregistrerait. « Ma sœur m'a appelée et a raccroché au bout de quatre minutes. » Pas « ma sœur avait hâte de se débarrasser de moi » : c'est déjà une pensée. C, c'est la conséquence : ce que vous avez ressenti et fait. Nommez l'émotion en un ou deux mots, donnez-lui une note d'intensité sur 100, et notez ce que vous avez fait ensuite (retourner vous coucher, annuler un projet). B, c'est la croyance entre les deux : ce qui vous a traversé l'esprit. Écrivez toutes les pensées que vous trouvez, puis soulignez celle qui porte le plus de charge, la pensée chaude, et évaluez à quel point vous y croyez, de 0 à 100.\n\nSouvent, la première pensée que l'on trouve n'est pas la pensée chaude. Les modules suggèrent de creuser avec une question comme « et qu'est-ce que cela dit de moi ? ». « Elle était pressée » peut recouvrir « Je suis un poids pour tout le monde. » La pensée chaude est généralement celle qui vous serre la poitrine.\n\nUn ABC écrit fait deux choses. Il sépare les faits de l'histoire, ce que la dépression ne cesse de brouiller. Et il vous donne quelque chose de concret à examiner demain, quand nous commencerons à peser les preuves. Les pensées sur le papier sont plus petites que les pensées dans le noir.",
+      "challenge": "Faites un ABC aujourd'hui, sur papier ou dans le journal de l'application. Attendez un moment où votre humeur baisse, puis écrivez trois lignes. A : ce qui s'est passé, uniquement les faits, en une phrase. C : ce que vous avez ressenti, en un mot avec une note sur 100, et ce que vous avez fait. B : ce qui vous a traversé l'esprit, avec la pensée la plus chaude soulignée et une note de croyance. Cinq minutes suffisent largement. Si c'est trop, faites seulement A et C : un fait et une émotion. B peut attendre un autre jour.",
+      "reflection_questions": [
+        "Quelle a été votre pensée chaude aujourd'hui, et à quel point y avez-vous cru ?",
+        "Quelle différence y avait-il entre les faits (A) et l'histoire que vous vous êtes racontée à leur sujet (B) ?",
+        "Qu'est-ce que l'émotion vous a poussé à faire, ou à ne plus faire ?"
+      ],
+      "scripture": {
+        "reference": "Lamentations 3:21-22 (Segond 1910)",
+        "text": "Voici ce que je veux repasser en mon cœur, ce qui me donnera de l'espérance. Les bontés de l'Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme."
+      },
+      "sources": [
+        29,
+        28,
+        32
+      ],
+      "keywords": [
+        "ABC",
+        "journal des pensées",
+        "pensée chaude",
+        "journal",
+        "événement déclencheur"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Travail de détective : faire le procès de la pensée",
+      "quote": "Comme tout bon détective, nous devons établir les faits et rassembler les preuves.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traduction)",
+      "explanation": "Hier, vous avez attrapé une pensée brûlante. Aujourd'hui, vous l'examinez. Les modules du CCI vous demandent de jouer deux rôles : le détective, qui rassemble les preuves, et l'avocat, qui pose les questions qui dérangent. La pensée n'est encore ni coupable ni innocente. Elle fait l'objet d'une enquête.\n\nQuestions du détective : Quelles preuves montrent que cette pensée est vraie ? Quelles preuves vont contre elle ? Quels faits suis-je en train de laisser de côté ? Quelles autres explications y a-t-il ? Questions de l'avocat : Comment une personne qui m'aime verrait-elle cela ? Si je n'étais pas déprimé(e), comment le verrais-je ? De façon réaliste, quelle est la probabilité que ce que je prédis arrive ? Penser ainsi m'aide-t-il ?\n\nL'exemple donné dans les modules est celui d'un homme dont la compagne rentre à la maison et ne l'embrasse pas comme d'habitude. Pensée brûlante : « Elle ne m'aime plus », à laquelle il croit à 90 sur 100. Preuves pour : elle l'a un jour poussé à consulter un psychologue. Preuves contre : elle lui a dit qu'elle le soutiendrait dans cette épreuve, et elle a préparé un dîner spécial hier soir. Autres explications : une journée difficile, des courses à ranger. Sa pensée équilibrée n'est pas « tout va bien ». C'est : un baiser manqué ne prouve pas qu'elle a cessé de m'aimer ; elle était sans doute fatiguée, et elle me montre son affection d'autres façons. Il réévalue le sentiment. Celui-ci a baissé, sans disparaître.\n\nVoilà ce que fait cette compétence. Elle efface rarement une pensée douloureuse ; elle la ramène à sa juste taille. Et la répétition n'est pas vaine. Des chercheurs en imagerie cérébrale notent que la diminution du flux sanguin observée dans le cerveau des personnes déprimées s'améliore avec le traitement, y compris avec la thérapie cognitivo-comportementale. La pratique change quelque chose de physique.",
+      "challenge": "Reprenez la pensée brûlante d'hier, ou attrapez-en une nouvelle, et accordez-lui dix minutes. Tracez une ligne verticale au milieu d'une page. À gauche : tous les faits qui soutiennent la pensée. À droite : tous les faits qui vont contre elle, y compris ceux que vous écarteriez d'habitude. Puis répondez à une question d'avocat : comment une personne qui m'aime verrait-elle cela ? Terminez par une phrase équilibrée et réévaluez votre croyance sur 100. Si dix minutes, c'est trop, remplissez seulement la colonne de droite : trois faits contre.",
+      "reflection_questions": [
+        "Quelle colonne a été la plus difficile à remplir, et pourquoi, selon vous ?",
+        "Votre croyance en la pensée brûlante a-t-elle bougé, ne serait-ce que de quelques points ?",
+        "Quelle voix avez-vous entendue en vous demandant comment une personne qui vous aime verrait cela ?"
+      ],
+      "scripture": {
+        "reference": "1 Thessaloniciens 5:21 (Segond 1910)",
+        "text": "Mais examinez toutes choses ; retenez ce qui est bon."
+      },
+      "sources": [
+        31,
+        32,
+        217
+      ],
+      "keywords": [
+        "preuves",
+        "remise en question",
+        "pensée équilibrée",
+        "détective",
+        "réévaluer"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Une voix intérieure plus douce",
+      "quote": "Au lieu d’écouter les voix critiques dans votre tête, vous pouvez développer une voix intérieure bienveillante, que vous pourrez écouter lorsque vous vous sentez au plus bas et que vous doutez de votre propre valeur.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression (traduction)",
+      "explanation": "Certaines pensées ne bougent pas, même quand on examine les preuves. Vous pouvez aligner dix faits contre « Je ne vaux rien » et y croire encore à 95. Les modules du CCI expliquent pourquoi : sous les pensées « chaudes » du quotidien se cache souvent une croyance fondamentale. C’est une courte phrase sur vous-même, apprise il y a longtemps, le plus souvent dans l’enfance. « Je ne suis pas digne d’être aimé. » « Je ne suis pas à la hauteur. » « Je suis un fardeau. » Ces croyances survivent en remarquant tout ce qui les confirme et en écartant tout le reste. Au fil des années, elles ressemblent moins à des croyances qu’au sol sur lequel vous vous tenez.\n\nBeaucoup de personnes souffrant de dépression portent aussi une voix intérieure critique qui prononce exactement ces phrases-là. Le psychologue Lawrence Shapiro souligne que cette voix a généralement une histoire : un parent, un enseignant, un adulte dur. Elle est empruntée. Vous n’êtes pas obligé de la garder.\n\nL’alternative n’est pas de se forcer à voir tout en rose. Dans l’exemple du CCI, Erica confronte « Je ne suis pas digne d’être aimée » à sa vie réelle : quatre amies proches à l’école, une voisine qui s’est confiée à elle, une collègue avec qui elle prend le café. Sa croyance équilibrée est modeste et vraie : « Tout le monde ne m’appréciera pas tout le temps, mais certaines personnes m’apprécient. » Elle peut croire cette phrase. C’est ce qui la rend utile.\n\nL’exercice de Shapiro va plus loin : écrivez ce que vous dirait quelqu’un qui tient profondément à vous, et imaginez-le en train de vous le dire. Pour beaucoup, c’est d’abord inconfortable. Cet inconfort montre depuis combien de temps l’autre voix occupe seule la pièce. Si cela remue plus que ce que vous pouvez porter aujourd’hui, parlez-en à votre thérapeute ou à votre médecin.",
+      "challenge": "Écrivez une phrase qu’une personne bienveillante vous dirait à propos d’aujourd’hui. Pas un slogan ; quelque chose de vrai et de précis : « Vous vous êtes levé et vous avez lu ceci alors que vous vous sentiez très mal. Cela compte. » Placez-la là où vous la verrez : l’écran de verrouillage de votre téléphone, une carte dans votre poche, le journal de l’application. Lisez-la une fois quand la voix critique se fait entendre. Si en écrire une vous semble trop difficile, empruntez celle d’Erica : « Tout le monde ne m’appréciera pas tout le temps, mais certaines personnes m’apprécient », et lisez-la deux fois.",
+      "reflection_questions": [
+        "À la voix de qui votre critique intérieur ressemble-t-il le plus ?",
+        "Quelle courte phrase vous répète-t-il le plus souvent à votre sujet, et quand avez-vous commencé à y croire ?",
+        "Quelle personne, réelle ou imaginaire, pourriez-vous vous représenter en train de vous dire quelque chose de bienveillant ?"
+      ],
+      "scripture": {
+        "reference": "Psaume 103:14 (Segond 1910)",
+        "text": "Car il sait de quoi nous sommes formés, il se souvient que nous sommes poussière."
+      },
+      "sources": [
+        33,
+        229,
+        32
+      ],
+      "keywords": [
+        "autocompassion",
+        "critique intérieur",
+        "croyances fondamentales",
+        "voix bienveillante",
+        "dialogue intérieur"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Agir avant d'en avoir envie",
+      "quote": "Toute tâche peut être découpée en étapes de plus en plus petites, jusqu'à trouver quelque chose de réalisable.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traduction)",
+      "explanation": "Cette semaine a porté sur les pensées. Nous la terminons avec le corps, car les deux ne sont pas séparés. Quand vous êtes déprimé, la pensée « ça ne me plaira pas » ou « c'est trop difficile » arrive avant toute activité, et la plupart du temps, elle l'emporte. Vous en faites moins. Avec moins à faire, la boucle des ruminations a plus de place. En faire moins, c'est aussi vivre moins de moments de plaisir ou de réussite. L'humeur baisse encore, et la pensée « rien n'aide » accumule de nouvelles preuves. Les modules du CCI appellent cela le cercle vicieux. L'activation comportementale consiste à l'inverser, délibérément.\n\nL'ordre compte. La plupart des gens attendent d'être motivés pour agir. Dans la dépression, cette attente peut durer des mois. L'activation comportementale renverse l'ordre : agir d'abord, à toute petite échelle, et laisser le ressenti suivre après, ou pas. Les modules sont francs sur la taille. Ne nettoyez pas la cuisine ; lavez cinq assiettes. Ne lisez pas un chapitre ; lisez cinq minutes. Si se lever est la tâche, visez dix minutes hors du lit. Fixez-vous une durée plutôt qu'un objectif, et considérez le fait de l'avoir fait comme la réussite, quel qu'ait été votre ressenti.\n\nDeux sortes d'activités aident : celles qui apportent une étincelle de plaisir (une promenade, de la musique, un appel) et celles qui donnent un sentiment d'accomplissement (une facture payée, un lit fait). Les deux interrompent la rumination, car un esprit occupé à faire quelque chose a moins de place pour ressasser. La semaine prochaine portera sur le mouvement, qui se révèle être l'une des petites actions les mieux étudiées. Aujourd'hui, votre seule tâche est d'en planifier une.",
+      "challenge": "Choisissez une activité pour demain, de dix minutes ou moins, et notez quand vous la ferez : « 9 h 30, marcher jusqu'au bout de la rue et revenir » ou « après le déjeuner, laver cinq assiettes ». Notez votre humeur sur 10 avant et après, comme une expérience, pas comme un examen. La pensée « ça ne servira à rien » viendra peut-être ; laissez-la vous accompagner. Si dix minutes, c'est trop, réduisez à deux : ouvrez les rideaux et restez dans la lumière le temps que l'eau chauffe.",
+      "reflection_questions": [
+        "Qu'avez-vous fait cette semaine sans en avoir envie, même quelque chose de tout petit ?",
+        "Quelle pensée vous arrête le plus souvent avant même de commencer ?",
+        "Quelle serait la version de dix minutes d'une chose que vous aimiez faire autrefois ?"
+      ],
+      "scripture": {
+        "reference": "Psaume 37:23-24 (Segond 1910)",
+        "text": "L'Éternel affermit les pas de l'homme, et il prend plaisir à sa voie ; s'il tombe, il n'est pas terrassé, car l'Éternel lui prend la main."
+      },
+      "sources": [
+        27,
+        32,
+        34,
+        191
+      ],
+      "keywords": [
+        "activation comportementale",
+        "action",
+        "motivation",
+        "petits pas",
+        "planification"
+      ]
+    }
+  ]
+}

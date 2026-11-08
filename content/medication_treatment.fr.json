@@ -1,0 +1,221 @@
+{
+  "theme": "medication_treatment",
+  "lang": "fr",
+  "theme_intro": "Cette dernière semaine est consacrée à la recherche d'aide, et à ce que la recherche dit honnêtement de ce que cette aide peut apporter. Nous verrons comment se passe un premier rendez-vous, ce que font réellement les thérapies par la parole et les médicaments, ce qui se passe lorsque le premier traitement ne fonctionne pas, et comment construire un plan pour la route qui s'ouvre devant vous. Rien de tout cela ne remplace ce que vous avez déjà mis en pratique ; cela vient s'y ajouter.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Demander de l'aide fait partie du traitement",
+      "quote": "Le fait de souffrir de dépression ne signifie pas que la personne est faible ou paresseuse.",
+      "quote_source": "Organisation mondiale de la Santé (2016), Guide d'intervention mhGAP (traduction)",
+      "explanation": "Depuis onze semaines, vous êtes là, jour après jour. Aujourd'hui, il s'agit d'un pas de plus, celui que beaucoup repoussent pendant des mois : en parler à un médecin.\n\nL'Organisation mondiale de la Santé forme des soignants du monde entier à l'aide d'un guide appelé mhGAP. Ses premiers messages pour une personne dépressive sont sans détour. La dépression est très fréquente et peut toucher n'importe qui. En souffrir ne veut pas dire que vous êtes faible ou paresseux. On vous dit « ressaisissez-vous » parce qu'on ne la voit pas comme on voit un bras cassé. Et le regard dur et désespéré que la dépression vous fait porter sur vous-même a de bonnes chances de s'éclaircir quand la dépression s'éclaircira. C'est une affirmation médicale, pas un discours d'encouragement.\n\nUn premier rendez-vous est plus simple que vous ne le craignez. Le médecin vous demandera depuis combien de temps vous vous sentez abattu ou avez perdu l'intérêt pour les choses (deux semaines ou plus, cela compte). Il vous interrogera sur votre sommeil, votre appétit, votre énergie, votre concentration, la culpabilité et les pensées sans espoir, et vous demandera si vous avez pensé à vous faire du mal. Il pourra vérifier s'il existe une cause physique, comme un problème de thyroïde ou une anémie. Ensuite, vous déciderez ensemble : un soutien et une structure au quotidien, une psychothérapie, un médicament, ou une combinaison, avec une deuxième consultation dans un délai d'une à deux semaines.\n\nVous n'avez pas besoin de trouver les mots justes. Voici un texte possible : « Depuis plusieurs semaines, je me sens abattu presque tous les jours et je n'ai plus de plaisir à rien. Je dors mal et j'ai du mal à fonctionner. Je pense que je suis peut-être dépressif, et j'aimerais être aidé. » Si vous pensez à mettre fin à vos jours, appelez s'il vous plaît une ligne d'écoute de crise aujourd'hui ; la page Aide indique le numéro de votre pays.",
+      "challenge": "Copiez le texte d'aujourd'hui dans l'application de notes de votre téléphone et modifiez-le jusqu'à ce que chaque phrase soit vraie pour vous. Puis cherchez le numéro de téléphone de votre médecin ou sa page de réservation en ligne, et enregistrez-le à côté du texte, pour que l'appel ne soit plus qu'à un geste. Si vous voyez déjà un médecin ou un thérapeute, notez une chose que vous ne lui avez pas encore dite. Si même cela vous paraît trop aujourd'hui, répondez par écrit à une seule question : « En quoi ma vie change-t-elle quand je suis déprimé ? »",
+      "reflection_questions": [
+        "Qu'est-ce qui vous a retenu jusqu'ici de demander de l'aide, et quelle part de cela vient de la dépression elle-même ?",
+        "Qui, dans votre entourage, serait soulagé d'apprendre que vous avez pris rendez-vous ?",
+        "Si un ami vous racontait votre dernier mois comme le sien, que lui conseilleriez-vous de faire ?"
+      ],
+      "scripture": {
+        "reference": "Marc 2:17 (Segond 1910)",
+        "text": "Ce ne sont pas ceux qui se portent bien qui ont besoin de médecin, mais les malades."
+      },
+      "sources": [
+        211,
+        26,
+        98
+      ],
+      "keywords": [
+        "demander de l'aide",
+        "médecin",
+        "premier rendez-vous",
+        "mhGAP",
+        "stigmatisation",
+        "texte préparé"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Ce que fait vraiment une psychothérapie",
+      "quote": "Le but de la thérapie cognitive est d’aider les personnes à prendre conscience qu’elles peuvent influencer leur humeur en repérant et en modifiant leurs pensées et leurs croyances.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traduction)",
+      "explanation": "Le mot « psychothérapie » peut évoquer l’idée de payer quelqu’un pour vous écouter pleurer. Les thérapies dont l’efficacité contre la dépression est la mieux établie sont plus concrètes que cela. Et vous en avez déjà eu un avant-goût dans ce programme.\n\nLa thérapie cognitive part d’un constat formulé par le Centre for Clinical Interventions : les personnes déprimées ont des pensées très négatives sur elles-mêmes, sur leur vie et sur leur avenir, et cela aggrave leur humeur. En thérapie, vous apprenez à repérer ces pensées, à examiner les faits et à construire des pensées plus nuancées. C’est un travail structuré, limité dans le temps et centré sur le présent. L’activation comportementale l’accompagne : planifier de petites activités, résoudre les problèmes pas à pas, agir avant que la motivation n’arrive. La thérapie interpersonnelle, elle, travaille sur les relations qui entourent la dépression. Elle distingue quatre déclencheurs fréquents : le deuil, les conflits, les changements de vie et la solitude. Elle vous aide à travailler sur un ou deux d’entre eux.\n\nPas besoin d’un spécialiste dans un cabinet privé pour que cela fonctionne. En 2016, une étude menée à Peshawar, au Pakistan, a proposé à 346 adultes en détresse cinq séances hebdomadaires de résolution de problèmes, de planification d’activités et de soutien social. Elles étaient animées par des agents de santé locaux sans formation clinique préalable. Trois mois plus tard, leur score de dépression était en moyenne d’environ 6 sur une échelle de 21 points, contre environ 9 chez les personnes qui avaient seulement vu leur médecin. L’OMS forme aujourd’hui des agents communautaires à animer des groupes de thérapie interpersonnelle en huit séances. En 2015, son comité d’experts a conclu que pour une dépression modérée à sévère, la psychothérapie et les médicaments sont tous deux des premiers choix raisonnables ; pour une dépression légère, la thérapie passe en premier.\n\nUn conseiller, un groupe, un programme d’Église sérieusement encadré : tout cela compte.",
+      "challenge": "Prenez 10 minutes pour découvrir quelles possibilités de psychothérapie existent près de chez vous : demandez au secrétariat de votre médecin, consultez le site de votre assurance maladie ou du service de santé de votre pays, ou interrogez une personne de votre entourage qui a suivi une thérapie. Notez une possibilité concrète, avec un numéro de téléphone ou un lien. Si c’est trop pour aujourd’hui, écrivez sur une feuille les quatre déclencheurs de la thérapie interpersonnelle, deuil, conflit, changement de vie, solitude, et entourez celui qui correspond le mieux à votre dernière année. Gardez cette feuille pour votre premier rendez-vous.",
+      "reflection_questions": [
+        "Lequel des quatre déclencheurs, le deuil, un conflit, un changement de vie ou la solitude, est le plus proche de votre propre baisse de moral ?",
+        "Qu’aimeriez-vous qu’un thérapeute comprenne de vous dans les dix premières minutes ?",
+        "Parmi les petites pratiques des onze dernières semaines, lesquelles vous ont déjà semblé être une forme de thérapie ?"
+      ],
+      "scripture": {
+        "reference": "Proverbes 15:22 (Segond 1910)",
+        "text": "Les projets échouent, faute d’une assemblée qui délibère ; mais ils réussissent quand il y a de nombreux conseillers."
+      },
+      "sources": [
+        26,
+        98,
+        168,
+        157
+      ],
+      "keywords": [
+        "psychothérapie",
+        "TCC",
+        "activation comportementale",
+        "thérapie interpersonnelle",
+        "conseillers non professionnels",
+        "thérapie de groupe"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Les médicaments, en toute franchise",
+      "quote": "Les médicaments ne doivent jamais être arrêtés simplement parce que la personne constate une certaine amélioration.",
+      "quote_source": "Organisation mondiale de la Santé (2016), Guide d'intervention mhGAP (traduction)",
+      "explanation": "Voici le débat sur les antidépresseurs, en toute franchise.\n\nEn 2008, Irving Kirsch et ses collègues ont obtenu tous les essais que les laboratoires pharmaceutiques avaient transmis à l'autorité de régulation américaine pour quatre antidépresseurs, publiés ou non : 35 essais, environ 5 000 personnes. Sur l'échelle de dépression de référence, les personnes sous médicament se sont améliorées d'environ 9,6 points, et celles sous pilule factice d'environ 7,8. Les deux groupes allaient nettement mieux. L'écart entre eux était faible, et ne se creusait qu'à mesure que la dépression devenait sévère. En 2010, Fournier et ses collègues ont regroupé les données individuelles des patients de six essais et ont retrouvé le même profil : peu ou pas de bénéfice supplémentaire dans la dépression légère à modérée, un bénéfice important dans la dépression très sévère.\n\nD'autres ont contesté ces conclusions. Penn et Tracy relèvent qu'une nouvelle analyse des mêmes données a trouvé un écart plus grand, que les moyennes masquent les nombreuses personnes qui répondent à un médicament et pas à un autre, et que poursuivre le traitement après la guérison réduisait le risque de rechute d'environ 70 pour cent. Kirsch réserverait les comprimés aux cas les plus sévères. L'OMS et la plupart des recommandations nationales, au contraire, placent le médicament et la psychothérapie à égalité comme options de première intention dans la dépression modérée et sévère. Dans la dépression légère, la psychothérapie, l'activité et le soutien viennent en premier.\n\nTrois faits comptent davantage que la controverse. Les antidépresseurs ne créent pas de dépendance. Ils mettent généralement plusieurs semaines à agir. Et il ne faut jamais les arrêter brusquement, ni parce que vous vous sentez un peu mieux ; l'OMS conseille de les poursuivre neuf à douze mois une fois que vous allez bien. Si vous prenez un traitement et que vous avez des doutes, parlez-en à votre médecin.",
+      "challenge": "Notez deux questions sur les médicaments à poser à votre médecin, que vous en preniez ou non. « Combien de temps faut-il avant de remarquer quelque chose ? » « Que dois-je faire si j'ai des effets secondaires les premiers jours ? » « Une fois que j'irai bien, combien de temps devrai-je continuer, et comment l'arrêterons-nous ensemble ? » Gardez ces questions pour votre prochain rendez-vous. Si vous prenez un traitement, vérifiez ce soir que la dose de demain est prête. Si c'est trop pour aujourd'hui, dites simplement à une personne lequel des trois faits du jour vous a surpris.",
+      "reflection_questions": [
+        "Qu'avez-vous entendu dire des antidépresseurs par votre famille, vos amis ou votre Église, et comment cela se situe-t-il par rapport à ce que les études ont réellement montré ?",
+        "Si vous prenez un traitement, qu'est-ce qui vous aiderait à le prendre chaque jour comme prescrit ? Si vous n'en prenez pas, que voudriez-vous demander avant de décider ?",
+        "D'où vous vient l'espérance : d'un médicament, d'une personne, d'une pratique, d'une prière, ou de plusieurs à la fois ?"
+      ],
+      "scripture": {
+        "reference": "Luc 10:34 (Segond 1910)",
+        "text": "Il s'approcha, et banda ses plaies, en y versant de l'huile et du vin ; puis il le mit sur sa propre monture, le conduisit à une hôtellerie, et prit soin de lui."
+      },
+      "sources": [
+        114,
+        88,
+        159,
+        211
+      ],
+      "keywords": [
+        "antidépresseurs",
+        "placebo",
+        "sévérité",
+        "Kirsch",
+        "des semaines, pas des jours",
+        "ne jamais arrêter brusquement"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Quand le premier traitement ne fonctionne pas",
+      "quote": "Il est clair qu'un traitement actif, poursuivi, raisonné et optimisé individuellement fonctionne pour beaucoup.",
+      "quote_source": "Penn & Tracy (2012) (traduction)",
+      "explanation": "Si le premier traitement que vous avez essayé n'a pas fonctionné, vous faites partie de la majorité. Et l'histoire ne s'arrête pas là.\n\nLa plus grande étude menée en conditions réelles sur le traitement de la dépression, STAR*D, a suivi 3 671 adultes. Après cette première étape, environ 37 pour cent étaient en rémission, c'est-à-dire presque sans symptômes. Ceux qui ne l'étaient pas sont passés à une deuxième étape : changer de médicament, en ajouter un second ou ajouter une thérapie cognitive. Environ 31 pour cent d'entre eux ont atteint la rémission. Les troisième et quatrième étapes ont aidé moins de personnes, environ 13 pour cent chacune. Au total, à peu près deux personnes sur trois ont atteint la rémission au fil des quatre étapes. Il fallait cinq à sept semaines par étape pour y parvenir, et les personnes qui avaient eu besoin de plus d'étapes rechutaient plus souvent au cours de l'année suivante.\n\nDeux leçons. « Le premier n'a pas marché » est fréquent, et l'étape suivante a de réelles chances de réussir. Et il faut des semaines, pas des jours, pour le savoir.\n\nPour les personnes qui ont essayé plusieurs médicaments, il existe d'autres options. La stimulation magnétique transcrânienne (SMT) utilise une bobine magnétique placée contre le cuir chevelu, lors de séances quotidiennes pendant trois à six semaines. Chez 307 patients qui ne s'étaient pas améliorés après en moyenne deux médicaments et demi, 58 pour cent ont répondu au traitement et 37 pour cent sont entrés en rémission. Un an plus tard, environ six sur dix de ceux qui avaient répondu en gardaient le bénéfice. Dans les essais contrôlés, la SMT est environ deux fois plus efficace qu'une bobine factice.\n\nCe n'est pas à vous de tout organiser sans aide. C'est une liste de questions à poser à votre médecin. Et la permission de ne pas abandonner après un seul essai.",
+      "challenge": "Si vous êtes en traitement et qu'il ne semble pas vous aider, notez aujourd'hui quand vous avez commencé, ce qui a changé, même légèrement, et ce qui n'a pas changé. Apportez cette note à votre prochain rendez-vous et demandez : « Quelle est notre prochaine étape si cela ne suffit pas ? » Si vous n'êtes pas en traitement, notez un traitement dont vous pensiez qu'il n'était pas pour vous, et une question à son sujet. Si c'est trop, évaluez votre humeur de 0 à 10 et notez la date, pour comparer dans un mois.",
+      "reflection_questions": [
+        "Quand quelque chose n'a pas fonctionné par le passé, que vous êtes-vous dit à ce sujet, et à votre propre sujet ?",
+        "À quoi ressemblerait concrètement « un peu mieux » pour vous, dans quatre semaines ?",
+        "Qui pourrait vous aider à continuer de vous renseigner sur les prochaines étapes, pendant les semaines où vous n'avez pas l'énergie de le faire ?"
+      ],
+      "scripture": {
+        "reference": "Psaume 27:14 (Segond 1910)",
+        "text": "Espère en l'Éternel ! Fortifie-toi et que ton cœur s'affermisse ! Espère en l'Éternel !"
+      },
+      "sources": [
+        176,
+        55,
+        78,
+        125,
+        92
+      ],
+      "keywords": [
+        "STAR*D",
+        "résistance au traitement",
+        "changement de traitement",
+        "potentialisation",
+        "SMT",
+        "persévérance"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Constituer votre équipe de soins",
+      "quote": "Souvent, les problèmes paraissent plus grands qu’ils ne le sont vraiment lorsqu’une personne essaie d’y faire face seule.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traduction)",
+      "explanation": "Personne ne guérit seul d’une dépression, et personne n’attend cela de vous.\n\nLe guide de l’OMS destiné aux professionnels de santé décrit la prise en charge de la dépression comme un ensemble de rôles, et non comme l’affaire d’un seul sauveur. Le médecin évalue la situation, vérifie la santé physique, discute d’un médicament si c’est indiqué et assure le suivi : une deuxième consultation dans la semaine, puis un contact régulier pendant les trois premiers mois. Un thérapeute ou un conseiller formé mène le travail structuré sur les pensées, les activités et les relations. La famille et les proches aidants sont associés avec votre accord. Le guide demande aussi au professionnel de santé de vous aider à réactiver votre ancien réseau social : les rencontres, les voisins et les activités qui vous portaient autrefois.\n\nUne revue de la prise en charge de la dépression dans les pays à revenu faible et intermédiaire a montré que les « soins collaboratifs » sont efficaces. Dans ce modèle, une équipe de soins primaires, un gestionnaire de cas et un spécialiste superviseur suivent ensemble un même patient. La revue a aussi montré que les traitements de la dépression sont tout aussi efficaces dans les contextes défavorisés. Au Chili, des soins par paliers proposés à des femmes souffrant de dépression ont conduit à une amélioration à six mois chez environ 70 pour cent d’entre elles, contre 30 pour cent avec les soins habituels.\n\nLes non-professionnels comptent d’une autre manière. Le Centre for Clinical Interventions le dit simplement : trouvez quelqu’un avec qui vous pouvez vous asseoir et avoir une bonne conversation. Pas une séance de thérapie, mais l’occasion de parler de ce qui se passe. Un ami ou un pasteur n’est pas votre thérapeute, et n’a pas besoin de l’être. Son rôle est d’écouter, de marcher à vos côtés, peut-être de vous accompagner à un rendez-vous. Votre rôle aujourd’hui est de voir qui fait déjà partie de votre équipe, et où se trouvent les manques.",
+      "challenge": "Dessinez un petit tableau de quatre lignes : Médecin, Thérapeute ou conseiller, Ami ou pasteur, Famille. En face de chaque ligne, écrivez un nom, ou « personne pour l’instant ». Choisissez un manque et un petit pas pour le combler : une prise de rendez-vous, un message, une question à quelqu’un qui pourrait savoir. Faites ce pas aujourd’hui si vous le pouvez. Si c’est trop, écrivez le nom d’une personne qui vous a bien écouté au cours de l’année écoulée, et envoyez-lui un remerciement de deux lignes.",
+      "reflection_questions": [
+        "Qui porte déjà une part de ce fardeau avec vous, même si vous ne l’avez jamais appelé une équipe ?",
+        "Qu’avez-vous attendu d’une seule personne alors que cela relève en réalité du rôle de plusieurs ?",
+        "Qu’est-ce qui vous aiderait à laisser un professionnel et un ami jouer chacun leur propre rôle ?"
+      ],
+      "scripture": {
+        "reference": "Ecclésiaste 4:9–10 (Segond 1910)",
+        "text": "Deux valent mieux qu’un, parce qu’ils retirent un bon salaire de leur travail. Car, s’ils tombent, l’un relève son compagnon ; mais malheur à celui qui est seul et qui tombe, sans avoir un second pour le relever !"
+      },
+      "sources": [
+        211,
+        157,
+        34
+      ],
+      "keywords": [
+        "équipe de soins",
+        "soins collaboratifs",
+        "famille",
+        "pasteur",
+        "ami",
+        "suivi"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Votre plan d’alerte précoce",
+      "quote": "Les faux pas font partie du chemin. Ils peuvent survenir à tout moment, et il faut s’y attendre.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traduction)",
+      "explanation": "La dépression a tendance à revenir. Ce n’est pas une menace. C’est justement la raison de préparer un plan maintenant, pendant que vous avez les idées claires.\n\nDans l’étude STAR*D, les personnes qui avaient eu besoin de davantage d’étapes de traitement ont rechuté plus souvent au cours de l’année suivante, et les chercheurs ont indiqué qu’il fallait s’y attendre. Le guide de l’OMS demande aux soignants de continuer à suivre les personnes jusqu’à ce qu’elles soient sans symptômes depuis neuf à douze mois. Si un médicament fait partie du traitement, il doit être poursuivi pendant cette période. Toute modification de votre médication se discute avec votre médecin.\n\nLe Centre for Clinical Interventions termine son programme sur la dépression par un module consacré au maintien du mieux-être. Il retient trois points. D’abord, attendez-vous à des faux pas et à des jours sans, et refusez le piège qui consiste à croire qu’une mauvaise journée vous ramène « à la case départ ». Ensuite, continuez à pratiquer les stratégies jusqu’à ce qu’elles deviennent des habitudes. Enfin, gardez une personne à qui parler. Sa fiche « Healthy Me » énumère les domaines à surveiller : des pensées équilibrées, des activités agréables, des activités sociales, l’exercice physique, la détente, le soin de soi, des objectifs, le soutien social.\n\nUn plan de prévention de la rechute comporte trois parties. Les signes précoces, ceux qui vous sont propres : chez beaucoup de personnes, c’est le sommeil qui change, des projets que l’on annule, les petites pratiques que l’on abandonne, ou des pensées qui deviennent dures. Les actions : ce qui vous a le plus aidé pendant ces douze semaines, noté par écrit pour que vous n’ayez pas à vous en souvenir quand le moral est bas. Les personnes : à qui en parler, et le numéro de votre médecin. Si un jour des pensées de mettre fin à votre vie vous viennent, appelez s’il vous plaît une ligne d’écoute de crise le jour même ; la page Aide indique le numéro de votre pays.",
+      "challenge": "Prenez une feuille et écrivez trois titres : Mes signes précoces, Ce qui m’aide, À qui j’en parle. Sous le premier, notez trois changements qui ont précédé votre dernière période difficile. Sous le deuxième, notez les trois pratiques de ce programme qui vous ont le plus aidé. Sous le troisième, écrivez deux noms et le numéro de votre médecin. Photographiez la feuille pour l’avoir sur votre téléphone. Si c’est trop, écrivez seulement les trois signes précoces aujourd’hui et terminez le reste demain.",
+      "reflection_questions": [
+        "En repensant à la dernière fois, quels ont été les premiers petits signes, des semaines avant que vous parliez de dépression ?",
+        "Laquelle des pratiques de ce programme regretteriez-vous le plus de perdre, et qu’est-ce qui risquerait le plus de vous la faire abandonner ?",
+        "Qui aimeriez-vous voir remarquer que vous commencez à glisser, et lui avez-vous dit à quoi être attentif ?"
+      ],
+      "scripture": {
+        "reference": "Psaume 40:3 (Segond 1910)",
+        "text": "Il m’a retiré de la fosse de destruction, Du fond de la boue ; Et il a dressé mes pieds sur le roc, Il a affermi mes pas."
+      },
+      "sources": [
+        34,
+        211,
+        176
+      ],
+      "keywords": [
+        "prévention de la rechute",
+        "signes d’alerte précoces",
+        "rester en bonne santé",
+        "autogestion",
+        "plan"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Trois choses à emporter avec vous",
+      "quote": "Il est toutefois très important de garder ceci à l’esprit : la dépression se soigne.",
+      "quote_source": "Organisation mondiale de la Santé & Columbia University (2016), Group Interpersonal Therapy for Depression (traduction)",
+      "explanation": "Il y a quatre-vingt-quatre jours, vous avez ouvert le premier message de ce programme. Quel que soit votre état aujourd’hui, vous êtes revenu assez souvent pour arriver jusqu’au dernier. Cela compte.\n\nLe manuel de thérapie de l’OMS résume l’essentiel en une ligne : la dépression se soigne. Les données qui soutiennent cette phrase ne promettent pas que tout se résout. Elles montrent une tendance. Dans la plus grande étude menée en conditions réelles, environ deux personnes sur trois ont atteint la rémission lorsqu’elles ont poursuivi les étapes du traitement. Dans une ville touchée par un conflit, des conseillers non professionnels ont atténué la dépression en cinq séances. Lorsqu’Irving Kirsch, le critique le plus sévère des antidépresseurs, a regroupé des essais portant sur les médicaments, la psychothérapie, leur combinaison et l’activité physique, il n’a trouvé aucune différence significative entre eux. Lisez-y un espoir : il existe plus d’un chemin pour en sortir, et ces chemins peuvent se combiner.\n\nCes semaines, vous avez parcouru une partie de nombreux chemins : accueillir vos pensées autrement, bouger, dormir, manger, boire de l’eau, sortir dehors, réduire l’alcool, rendre grâce, aller vers les autres, prier ou vous reposer, et maintenant demander de l’aide. Le Centre for Clinical Interventions dit qu’après un programme, la tâche consiste à continuer de pratiquer quelques choses jusqu’à ce qu’elles deviennent des habitudes. Il ajoute que le progrès peut être une route cahoteuse, mais qu’au bout du compte, le voyage en vaut la peine.\n\nAlors choisissez-en trois. Pas douze. Les trois qui ont fait bouger quelque chose en vous, même un tout petit peu. Écrivez-les là où vous les verrez. Si vous retombez dans la fosse, recommencez au Jour 1, et parlez-en à quelqu’un. Recommencer n’est pas un échec. C’est le plan.",
+      "challenge": "Relisez votre journal, ou repensez à ces douze semaines, et choisissez trois pratiques à garder : une pour votre corps, une pour votre esprit, une qui implique une autre personne. Formulez chacune en une phrase avec un moment précis : « Marcher dix minutes après le petit-déjeuner. » Placez la liste là où vous la verrez chaque matin. Dites à une personne lesquelles vous avez choisies. Si c’est trop pour aujourd’hui, choisissez-en une seule, et que ce soit celle qui vous est venue le plus facilement.",
+      "reflection_questions": [
+        "Quelle semaine de ce programme vous a le plus surpris, et pourquoi ?",
+        "Que savez-vous aujourd’hui de votre dépression que vous ne saviez pas il y a 84 jours ?",
+        "Si une personne que vous aimez commençait le Jour 1 demain, que voudriez-vous avant tout qu’elle sache ?"
+      ],
+      "scripture": {
+        "reference": "Lamentations 3:22–23 (Segond 1910)",
+        "text": "Les bontés de l’Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin. Oh ! que ta fidélité est grande !"
+      },
+      "sources": [
+        98,
+        176,
+        168,
+        113,
+        34
+      ],
+      "keywords": [
+        "espoir",
+        "regard en arrière",
+        "habitudes",
+        "recommencer",
+        "rétablissement"
+      ]
+    }
+  ]
+}
