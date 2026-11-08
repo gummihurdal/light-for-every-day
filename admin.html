@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review — Light for Every Day</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+main{max-width:980px}
+.row{display:grid;grid-template-columns:60px 1fr 120px 110px;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);cursor:pointer;font-size:15px}
+.row:hover{background:var(--bg3)}
+.st{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:999px;text-align:center}
+.st.draft{background:var(--bg3);color:var(--ink2)}.st.review{background:var(--amber-soft);color:var(--amber)}.st.published{background:var(--sage-soft);color:var(--sage)}.st.retired{background:var(--rose-soft);color:var(--rose)}
+.editor{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:800px){.editor{grid-template-columns:1fr}.row{grid-template-columns:50px 1fr 90px}}
+.editor textarea{min-height:60px}
+#explanation{min-height:220px}
+.preview .card{margin-bottom:12px}
+.stats{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--ink2)}
+</style>
+</head>
+<body>
+<main>
+  <h1 style="margin-bottom:6px">Review queue</h1>
+  <p class="muted">For the editorial team. Messages are visible to readers only when their status is <strong>published</strong>.</p>
+
+  <section class="card" id="login">
+    <h3>Sign in</h3>
+    <p class="small muted">Enter your e-mail and we will send you a sign-in link. Only addresses on the editors list can change anything.</p>
+    <div class="field"><input type="email" id="email" placeholder="you@example.org"></div>
+    <div class="btn-row"><button class="btn primary" id="send">Send sign-in link</button><span class="small muted" id="login-msg"></span></div>
+  </section>
+
+  <section id="app" style="display:none">
+    <div class="card">
+      <div class="btn-row" style="justify-content:space-between">
+        <div class="stats" id="stats"></div>
+        <div class="btn-row"><select id="filter" style="width:auto"><option value="">All statuses</option><option>draft</option><option>review</option><option>published</option><option>retired</option></select><button class="btn ghost sm" id="logout">Sign out</button></div>
+      </div>
+    </div>
+    <div class="card" id="list" style="padding:0;overflow:hidden"></div>
+    <div class="card" id="edit" style="display:none"></div>
+    <div class="card soft">
+      <h3>Reader feedback</h3>
+      <div id="feedback" class="small muted">Loading…</div>
+    </div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.js"></script>
+<script src="assets/app.js"></script>
+<script>
+LD.chrome('more');
+const sb = supabase.createClient(LD.SB, LD.KEY);
+let themes = [], rows = [], current = null;
+const $ = id => document.getElementById(id);
+
+$('send').addEventListener('click', async () => {
+  const email = $('email').value.trim(); if (!email) return;
+  $('login-msg').textContent = 'Sending…';
+  const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + location.pathname } });
+  $('login-msg').textContent = error ? error.message : 'Check your inbox for the link.';
+});
+$('logout').addEventListener('click', async () => { await sb.auth.signOut(); location.reload(); });
+
+async function boot() {
+  const { data: { session } } = await sb.auth.getSession();
+  if (!session) return;
+  const { data: admin } = await sb.from('ld_admins').select('email').limit(1);
+  if (!admin || !admin.length) { $('login').innerHTML = `<p>Signed in as ${LD.esc(session.user.email)}, but this address is not on the editors list. Ask the administrator to add it.</p><button class="btn ghost sm" onclick="sb.auth.signOut().then(()=>location.reload())">Sign out</button>`; return; }
+  $('login').style.display = 'none'; $('app').style.display = 'block';
+  themes = (await sb.from('ld_themes').select('*').order('week')).data || [];
+  await load();
+  loadFeedback();
+}
+async function load() {
+  rows = (await sb.from('ld_messages').select('*').order('day_number')).data || [];
+  const c = {}; rows.forEach(r => c[r.status] = (c[r.status] || 0) + 1);
+  $('stats').innerHTML = Object.entries(c).map(([k, v]) => `<span><span class="st ${k}">${k}</span> ${v}</span>`).join('') + `<span>${rows.length} of 84</span>`;
+  renderList();
+}
+function renderList() {
+  const f = $('filter').value;
+  $('list').innerHTML = rows.filter(r => !f || r.status === f).map(r => {
+    const t = themes.find(x => x.slug === r.theme) || {};
+    return `<div class="row" data-id="${r.id}"><strong>${r.day_number}</strong><div>${LD.esc(r.title)}<div class="small muted">${LD.esc(t.title || r.theme)}${r.reviewed_by ? ' · reviewed by ' + LD.esc(r.reviewed_by) : ''}</div></div><span class="st ${r.status}">${r.status}</span><span class="small muted">${r.updated_at ? r.updated_at.slice(0, 10) : ''}</span></div>`;
+  }).join('') || '<div style="padding:16px" class="muted">Nothing here.</div>';
+  $('list').querySelectorAll('.row').forEach(el => el.addEventListener('click', () => openEditor(parseInt(el.dataset.id))));
+}
+$('filter').addEventListener('change', renderList);
+
+function openEditor(id) {
+  current = rows.find(r => r.id === id); if (!current) return;
+  const m = current, sc = m.scripture || {};
+  $('edit').style.display = 'block';
+  $('edit').innerHTML = `
+    <div class="btn-row" style="justify-content:space-between;margin-bottom:14px"><h2 style="margin:0">Day ${m.day_number} · ${LD.esc(m.title)}</h2><a class="small" href="today.html?day=${m.day_number}" target="_blank">preview as reader ↗</a></div>
+    <div class="editor">
+      <div>
+        <div class="field"><label>Title</label><input type="text" id="title" value="${LD.esc(m.title)}"></div>
+        <div class="field"><label>Quote</label><textarea id="quote">${LD.esc(m.quote)}</textarea></div>
+        <div class="field"><label>Quote source</label><input type="text" id="quote_source" value="${LD.esc(m.quote_source)}"></div>
+        <div class="field"><label>Explanation</label><textarea id="explanation">${LD.esc(m.explanation)}</textarea></div>
+        <div class="field"><label>Challenge</label><textarea id="challenge">${LD.esc(m.challenge)}</textarea></div>
+        <div class="field"><label>Reflection questions (one per line)</label><textarea id="questions">${LD.esc((m.reflection_questions || []).join('\n'))}</textarea></div>
+        <div class="field"><label>Scripture reference</label><input type="text" id="sc_ref" value="${LD.esc(sc.reference || '')}"></div>
+        <div class="field"><label>Scripture text</label><textarea id="sc_text">${LD.esc(sc.text || '')}</textarea></div>
+      </div>
+      <div>
+        <div class="field"><label>Status</label><select id="status">${['draft', 'review', 'published', 'retired'].map(s => `<option ${s === m.status ? 'selected' : ''}>${s}</option>`).join('')}</select></div>
+        <div class="field"><label>Reviewer note (internal)</label><textarea id="note">${LD.esc(m.reviewer_note || '')}</textarea></div>
+        <div class="field"><label>Sources (ids)</label><input type="text" id="sources" value="${LD.esc((m.sources || []).join(', '))}"></div>
+        <div class="btn-row"><button class="btn primary" id="save">Save</button><button class="btn ghost" id="publish">Save &amp; publish</button><button class="btn ghost" id="close">Close</button><span class="small muted" id="save-msg"></span></div>
+        <p class="small muted" style="margin-top:14px">Checklist before publishing: quote is real and attributed · no advice against medication or therapy · no dosages · challenge has a smaller version · tone is kind · sources match the text.</p>
+      </div>
+    </div>`;
+  $('close').addEventListener('click', () => { $('edit').style.display = 'none'; });
+  $('save').addEventListener('click', () => save(false));
+  $('publish').addEventListener('click', () => save(true));
+}
+async function save(publish) {
+  const { data: { session } } = await sb.auth.getSession();
+  const patch = {
+    title: $('title').value.trim(), quote: $('quote').value.trim(), quote_source: $('quote_source').value.trim(), explanation: $('explanation').value.trim(), challenge: $('challenge').value.trim(),
+    reflection_questions: $('questions').value.split('\n').map(s => s.trim()).filter(Boolean),
+    scripture: $('sc_ref').value.trim() ? { reference: $('sc_ref').value.trim(), text: $('sc_text').value.trim() } : null,
+    sources: $('sources').value.split(/[,\s]+/).map(Number).filter(n => n > 0),
+    status: publish ? 'published' : $('status').value, reviewer_note: $('note').value.trim() || null,
+    reviewed_by: session.user.email, updated_at: new Date().toISOString(), published_at: (publish || $('status').value === 'published') ? (current.published_at || new Date().toISOString()) : current.published_at
+  };
+  const { error } = await sb.from('ld_messages').update(patch).eq('id', current.id);
+  $('save-msg').textContent = error ? 'Error: ' + error.message : 'Saved.';
+  if (!error) { await load(); }
+}
+async function loadFeedback() {
+  const { data } = await sb.from('ld_feedback').select('message_id,helpful,note,created_at').order('created_at', { ascending: false }).limit(300);
+  if (!data) { $('feedback').textContent = 'No feedback yet.'; return; }
+  const agg = {}; data.forEach(f => { const a = agg[f.message_id] = agg[f.message_id] || { y: 0, n: 0, notes: [] }; f.helpful ? a.y++ : a.n++; if (f.note) a.notes.push(f.note); });
+  const ids = Object.keys(agg).sort((a, b) => a - b);
+  $('feedback').innerHTML = ids.length ? `<table><tr><th>Day</th><th>Helpful</th><th>Not today</th><th>Notes</th></tr>${ids.map(id => { const m = rows.find(r => r.id == id); return `<tr><td>${m ? m.day_number : id}</td><td>${agg[id].y}</td><td>${agg[id].n}</td><td>${agg[id].notes.map(LD.esc).join(' · ')}</td></tr>`; }).join('')}</table>` : 'No feedback yet.';
+}
+sb.auth.onAuthStateChange(() => boot());
+boot();
+</script>
+</body>
+</html>

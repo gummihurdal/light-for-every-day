@@ -1,0 +1,220 @@
+{
+  "theme": "nutrition",
+  "theme_intro": "This week is about food and mood. Not a diet, not a list of forbidden things, and nothing that replaces your treatment. Your brain is built from what you eat and runs on it every hour, and research over the last fifteen years shows that the overall pattern of what we eat is linked to how we feel. We will look at what the studies really found, what they could not prove, and how to feed yourself in small, affordable ways on days when cooking feels impossible.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "The brain eats first",
+      "quote": "The human brain operates at a very high metabolic rate, and uses a substantial proportion of total energy and nutrient intake.",
+      "quote_source": "Sarris et al. (2015)",
+      "explanation": "For a long time food was thought of as fuel and building material for the body, and nothing more. That view has changed. A review by the neuroscientist Fernando Gómez-Pinilla describes how the nutrients in a meal reach the molecules that keep brain cells flexible and connected, including a growth factor called BDNF that responds to what we eat. Diets rich in omega-3 fats support those systems; diets heavy in saturated fat tend to weaken them.\n\nIn 2015 an international group of psychiatrists and nutrition researchers wrote in The Lancet Psychiatry that the brain depends on amino acids, fats, vitamins and minerals for both its structure and its signalling, and that diet deserves the same place in psychiatry that it already has in heart medicine. They also said something honest: many people today are both overfed and undernourished. Plenty of calories, not enough of what the brain needs.\n\nIf you are depressed, you probably know how food goes wrong. Appetite disappears, or swings towards sugar. Cooking feels like climbing a hill. None of that is a character flaw. It is part of the illness. This week is not about a perfect diet. It is about feeding your brain in ways that are small enough to manage, alongside whatever treatment you already have.",
+      "challenge": "Today, notice. Do not change anything yet. Three times today, after you eat or drink something, write one line in your journal: what it was, roughly when, and how you felt about an hour later (foggy, steadier, sleepy, calm). That is all. If three lines are too many, write one line about one meal. Noticing without judging is the whole task.",
+      "reflection_questions": [
+        "When did you last eat something and feel a little steadier afterwards? What was it?",
+        "How has depression changed the way you eat: more, less, different things, different times?",
+        "If food is part of how your brain works, what would it mean to treat eating as care rather than a chore?"
+      ],
+      "scripture": {
+        "reference": "Psalm 145:15-16 (WEB)",
+        "text": "The eyes of all wait for you. You give them their food in due season. You open your hand, and satisfy the desire of every living thing."
+      },
+      "sources": [
+        181,
+        94,
+        133
+      ],
+      "keywords": [
+        "nutrition",
+        "brain",
+        "food and mood",
+        "BDNF",
+        "appetite"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Patterns, not perfect foods",
+      "quote": "The results suggest that high intakes of fruit, vegetables, fish, and whole grains may be associated with a reduced depression risk.",
+      "quote_source": "Lai et al. (2014)",
+      "explanation": "In a British study of about 3,500 civil servants in their mid-fifties, researchers did not look at single nutrients. They looked at overall eating patterns. One pattern was built around vegetables, fruit and fish; the other around sweetened desserts, fried food, processed meat and refined grains. Five years later, people who ate most from the whole-food pattern had about a quarter lower odds of depressive symptoms. People who ate most from the processed pattern had nearly 60 percent higher odds. The researchers checked whether depression had caused the eating habits rather than the other way round, and found no sign of it.\n\nWhen 21 studies were pooled in 2014, a healthy pattern was linked to roughly 16 percent lower odds of depression. The Western pattern pointed the other way, but the result was not statistically firm. These are associations, not proof. An Australian study of 3,700 adults found that money, education and physical activity explained a good part of the link, because eating well is easier when life is easier. Even so, a long-term unhealthy pattern still predicted more symptoms in older adults.\n\nThe practical lesson is kind: there is no superfood and no forbidden food. What matters is the direction of the whole pattern. Adding one whole food to a meal moves the pattern. Nothing has to be taken away first.",
+      "challenge": "Add one whole food to one meal today, without removing anything. A handful of frozen peas or spinach stirred into whatever you are already eating. An apple or a banana beside your lunch. Half a tin of beans heated with your pasta or rice. Choose the cheapest, easiest option in your kitchen. If even that is too much today, put one piece of fruit where you will see it first thing tomorrow.",
+      "reflection_questions": [
+        "What is one whole food you already like and could eat more often without effort?",
+        "Have you ever felt that eating well is only for people with more time, money or energy? Where does that feeling come from?",
+        "What would it feel like to add rather than subtract?"
+      ],
+      "scripture": {
+        "reference": "Genesis 1:29 (WEB)",
+        "text": "God said, \"Behold, I have given you every herb yielding seed, which is on the surface of all the earth, and every tree, which bears fruit yielding seed. It will be your food.\""
+      },
+      "sources": [
+        18,
+        121,
+        103
+      ],
+      "keywords": [
+        "dietary pattern",
+        "whole food",
+        "processed food",
+        "Whitehall II",
+        "legumes"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "A Mediterranean pattern on any budget",
+      "quote": "A land of wheat and barley, and vines and fig trees and pomegranates; a land of olive oil and honey.",
+      "quote_source": "Deuteronomy 8:8 (WEB)",
+      "explanation": "The best-known eating pattern in this research is the traditional Mediterranean one: vegetables, fruit and nuts, legumes, whole grains, olive oil, some fish, little meat and little full-fat dairy. In Spain, researchers followed about 10,000 university graduates who were free of depression at the start. Over roughly four years, 480 of them were diagnosed with depression. Those who followed the pattern most closely had about 40 percent lower risk than those who followed it least, and the risk fell step by step as adherence rose. Fruit and nuts, and legumes such as lentils and chickpeas, showed the clearest protective trends. Fish, on its own, did not show a clear trend in that cohort.\n\nA later analysis of 15,000 people in the same study over eight years found something encouraging. Moving from low to moderate adherence cut risk by about 25 to 30 percent. Moving from moderate to near-perfect added almost nothing. Moderate is where most of the benefit lives. A pooled analysis of several studies found around 30 percent lower depression risk with high adherence.\n\nThese are observational studies; people who eat this way differ in other ways too, and a large randomised trial has only shown a trend. Still, the pattern is affordable. Tinned tomatoes, dried or tinned lentils and chickpeas, frozen vegetables, oats, bread, a bottle of olive or rapeseed oil, nuts bought in small bags, seasonal fruit. For vegetarians, walnuts and ground flaxseed stand in for fish. Nothing exotic is needed.",
+      "challenge": "Make one Mediterranean-style plate today in about ten minutes: a tin of chickpeas or lentils warmed with a tin of chopped tomatoes, a spoon of olive oil, and whatever frozen vegetables you have. Eat it with bread. If cooking is beyond you today, the scaled-down version is a small handful of nuts and one piece of fruit. Moderate is enough; today is one plate, not a new life.",
+      "reflection_questions": [
+        "Which parts of this pattern are already in your kitchen or your culture?",
+        "Does knowing that moderate adherence carries most of the benefit change how you feel about trying?",
+        "Who in your life eats this way, and could you share a meal with them this week?"
+      ],
+      "scripture": {
+        "reference": "Psalm 23:5 (WEB)",
+        "text": "You prepare a table before me in the presence of my enemies. You anoint my head with oil. My cup runs over."
+      },
+      "sources": [
+        179,
+        180,
+        167,
+        181
+      ],
+      "keywords": [
+        "Mediterranean diet",
+        "SUN cohort",
+        "legumes",
+        "olive oil",
+        "budget"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Fruit, vegetables, and tomorrow's mood",
+      "quote": "Eating fruit and vegetables may promote emotional well-being among healthy young adults.",
+      "quote_source": "White, Horwath & Conner (2013)",
+      "explanation": "Most diet studies ask about years. One asked about days. In New Zealand, 281 young adults kept an online diary for three weeks, recording what they ate and how they felt each day. On days when they ate more fruit and vegetables, they felt more positive. Then the researchers checked the order of events. Eating fruit and vegetables predicted a better mood the next day; a better mood did not predict more fruit and vegetables. The food came first. The clearest changes appeared around seven to eight servings a day, which is a lot, but the direction held at lower amounts too.\n\nThese were healthy students, not people with depression, and the effect was on positive feelings rather than on illness. Other studies point the same way. Among 9,255 Adventist church members in North America, people who ate more vegetables, fruit, nuts and legumes reported more positive and fewer negative feelings. Among 278 older adults in the United States, those with depression ate fewer fruits and vegetables and got less vitamin C from food, while antioxidant pills showed no link at all. The benefit seems to come from food, not from capsules. In Taiwan, older people who ate vegetables most often had about 60 percent lower odds of new depressive symptoms four years later.\n\nA serving is roughly a handful. Frozen counts. Tinned counts. A banana, a carrot, a cup of frozen spinach dropped into soup or pasta: each one counts.",
+      "challenge": "Add two servings today: one fruit and one vegetable. Make it easy. Stir a handful of frozen vegetables into whatever you cook or reheat, and eat one piece of fruit at a set time, perhaps with your afternoon drink. Frozen and tinned are as good as fresh here, and cheaper. If two is too many today, make it one, and notice tomorrow morning how you feel.",
+      "reflection_questions": [
+        "What did you eat yesterday? Is there any link to how you feel this morning?",
+        "Which fruit or vegetable did you love as a child? Is it still available to you?",
+        "What gets in the way of eating fruit and vegetables for you: cost, energy, habit, or something else?"
+      ],
+      "scripture": {
+        "reference": "Proverbs 15:17 (WEB)",
+        "text": "Better is a dinner of herbs, where love is, than a fattened calf with hatred."
+      },
+      "sources": [
+        222,
+        86,
+        158,
+        205
+      ],
+      "keywords": [
+        "fruit",
+        "vegetables",
+        "daily diary",
+        "positive affect",
+        "frozen vegetables"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "The fats your brain is built from",
+      "quote": "Omega-3 polyunsaturated fatty acids are normal constituents of cell membranes and are essential for normal brain function.",
+      "quote_source": "Gómez-Pinilla (2008)",
+      "explanation": "The walls of your brain cells are built partly from omega-3 fats, and the body makes them poorly, so they have to come from food. The two that matter most are called EPA and DHA. Here the research is unusually clear about the details. A 2011 analysis of 15 trials with 916 people found that supplements made mostly of EPA eased depression, while supplements with less EPA did not, and it found no evidence that DHA on its own helps. A 2014 review found the benefit mainly in people with diagnosed depression who took omega-3 alongside their usual treatment, and little benefit in healthy people or in pregnancy.\n\nAn international guideline for doctors, published in 2019, says omega-3 works better as an add-on than on its own, that stomach upset and skin reactions should be watched for, and that a doctor should be involved. If you are curious about a supplement, that is the conversation to have, alongside your treatment, never instead of it.\n\nFor food, oily fish such as sardines, mackerel and salmon are the richest source, and tinned is fine. Walnuts, ground flaxseed, chia seeds and rapeseed oil give a shorter omega-3 that the body converts to EPA and DHA only in small amounts. And yet, in a study of 138 Adventists in the American south-west, vegetarians who ate almost no EPA or DHA reported better mood than the meat-eaters. A plant-based diet is not a mood risk. Vegetarians who want EPA and DHA directly can ask their doctor about algae-based products.",
+      "challenge": "Put one omega-3 food on your plate today. Fish eaters: a tin of sardines or mackerel on toast, five minutes, no cooking. Plant-based: a tablespoon of ground flaxseed stirred into porridge or yoghurt, or a small handful of walnuts. If you are thinking about a supplement, write one question for your doctor in your journal instead of buying anything. If all of that is too much, put a bag of walnuts in your coat pocket for tomorrow.",
+      "reflection_questions": [
+        "Which omega-3 food could realistically become part of your week?",
+        "Have you ever been promised a quick fix in a bottle? How did that feel afterwards?",
+        "What question about supplements would you like to ask your doctor?"
+      ],
+      "scripture": {
+        "reference": "Isaiah 55:2 (WEB)",
+        "text": "Listen diligently to me, and eat that which is good, and let your soul delight itself in fatness."
+      },
+      "sources": [
+        94,
+        196,
+        97,
+        15,
+        39
+      ],
+      "keywords": [
+        "omega-3",
+        "EPA",
+        "DHA",
+        "walnuts",
+        "flaxseed",
+        "vegetarian"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Vitamin D, folate, B12: ask for a test",
+      "quote": "Our analyses are consistent with the hypothesis that low vitamin D concentration is associated with depression, and highlight the need for randomised controlled trials of vitamin D for the prevention and treatment of depression to determine whether this association is causal.",
+      "quote_source": "Anglin et al. (2013)",
+      "explanation": "Vitamin D is made in the skin from sunlight and found in oily fish, egg yolks, some mushrooms and fortified foods. In northern Europe the winter sun is too weak to make much of it. A review of 14 studies with over 31,000 people found lower vitamin D in people with depression, and in the studies that followed people over time, those with the lowest levels had about twice the risk of becoming depressed. In a Dutch study of nearly 2,400 adults, a third had low vitamin D, and levels were lowest in the most severely depressed.\n\nBut be careful with the arrow. Depression keeps people indoors, and indoors means less sun. Trials of vitamin D supplements have given mixed results. One review found benefit mainly in trials where people were actually low to begin with and their blood levels actually rose. Correcting a deficiency may help; taking more when you are not deficient has not been shown to.\n\nFolate and B12 tell a similar story. In a small study of 55 people whose antidepressant was not working, low folate predicted a poorer response. People who carry a common gene variant that lowers folate have roughly a third higher odds of depression. This matters for a subset, not everyone. Folate is in lentils, beans, leafy greens and oranges. B12 comes from animal foods, so on a vegan diet it must come from fortified foods or a supplement, chosen with your doctor. A blood test settles the question.",
+      "challenge": "Write this question in your journal, ready for your next appointment: \"Could you check my vitamin D, B12 and folate levels?\" If you have no appointment, note today who you would ask and how to book. Then, if the weather allows, stand or sit outside in daylight for ten minutes around midday, face and hands uncovered. If going out is too much, write the question and leave it at that. The question is the task.",
+      "reflection_questions": [
+        "Have you had a blood test since your depression began? Would it feel reassuring to know your levels?",
+        "How much daylight does your skin see in an ordinary week?",
+        "Is there a food rich in folate that you already enjoy?"
+      ],
+      "scripture": {
+        "reference": "Psalm 139:14 (WEB)",
+        "text": "I will give thanks to you, for I am fearfully and wonderfully made. Your works are wonderful. My soul knows that very well."
+      },
+      "sources": [
+        21,
+        142,
+        193,
+        156,
+        93
+      ],
+      "keywords": [
+        "vitamin D",
+        "folate",
+        "B12",
+        "blood test",
+        "sunlight",
+        "vegan"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Sugar, gentle swaps, and no-energy eating",
+      "quote": "Our sweet tooth has not served us well, though, since modern technology has provided us with highly refined carbohydrates that are appetizing, inexpensive, and plentiful.",
+      "quote_source": "Gangwisch et al. (2015)",
+      "explanation": "When you are depressed, sugar works, briefly. The craving is a coping attempt, not a weakness. In a study of about 70,000 American women followed for three years, those whose diet raised blood sugar fastest had about 22 percent higher odds of new depression, and those eating the most added sugar about 23 percent higher. Fibre, fruit and vegetables went with lower odds. In a tightly controlled experiment, 82 healthy adults ate a fast-sugar diet and a slow-sugar diet for 28 days each, with the same calories. On the fast-sugar diet their depression scores were 38 percent higher and they felt more tired. In Spain, people eating the most fast food had about 40 percent higher risk of depression over six years.\n\nThe hopeful part: in Australia, 76 young adults with depressive symptoms were given a short video of diet advice and a small hamper of food. Three weeks later their depression scores had improved; the comparison group's had not.\n\nSo think swaps, not bans. Fruit with a few nuts instead of sweets alone. Oats instead of sugary cereal. Water or tea instead of fizzy drinks. And when energy is gone: eat small and regular, something every three or four hours. Keep no-cook foods in the house: tinned beans, oats, bananas, nuts, eggs, bread, frozen vegetables. Cook double on a good day and freeze half. If appetite vanishes for weeks or your weight is changing, tell your doctor. Food is alongside your treatment, and a body that is fed can carry it better.",
+      "challenge": "Make one small commitment for the coming week and write it in your journal. Choose one swap, for example fruit and nuts when you would usually have sweets, or water instead of a fizzy drink, and one no-cook staple to keep in the house, such as tinned beans, oats or bananas. Add that staple to your shopping list today. If a week feels too long, commit to the swap for tomorrow only.",
+      "reflection_questions": [
+        "When you reach for something sweet, what are you really hungry for in that moment?",
+        "What is one food you could keep in the house that needs no cooking and no decisions?",
+        "Looking back over this week, which small change felt most possible for you?"
+      ],
+      "scripture": {
+        "reference": "1 Kings 19:7 (WEB)",
+        "text": "Yahweh's angel came again the second time, and touched him, and said, \"Arise and eat, because the journey is too great for you.\""
+      },
+      "sources": [
+        90,
+        52,
+        178,
+        73,
+        17
+      ],
+      "keywords": [
+        "sugar",
+        "glycaemic index",
+        "fast food",
+        "swaps",
+        "appetite",
+        "meal planning"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Journey — Light for Every Day</title>
+<meta name="description" content="Twelve weeks, twelve themes: the full 84-day journey and your progress.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#FAF7F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171A1F" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+.week{border-left:6px solid var(--c);scroll-margin-top:80px}
+.week-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.days{display:grid;gap:6px;margin-top:14px}
+.dayrow{display:flex;align-items:center;gap:12px;padding:8px 10px;border-radius:10px;color:inherit}
+.dayrow:hover{background:var(--bg3);text-decoration:none}
+.dayrow .n{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:var(--bg3);color:var(--ink2);flex:none}
+.dayrow.done .n{background:var(--sage-soft);color:var(--sage)}
+.dayrow.now .n{background:var(--amber);color:#fff}
+.dayrow.locked{opacity:.55}
+.stat{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center;margin-top:14px}
+.stat b{display:block;font-family:var(--serif);font-size:26px;font-weight:500}
+.stat span{font-size:13px;color:var(--ink2)}
+#mood{width:100%;height:90px;display:block;margin-top:10px}
+</style>
+</head>
+<body>
+<main>
+  <h1 style="margin-bottom:6px">Your journey</h1>
+  <p class="muted" id="sub">Twelve weeks. Twelve areas where research shows real differences for people with depression.</p>
+  <section class="card" id="progress-card">
+    <div class="card-lbl">Progress</div>
+    <div class="progress"><span id="bar" style="width:0%"></span></div>
+    <div class="stat"><div><b id="s-day">–</b><span>current day</span></div><div><b id="s-done">0</b><span>challenges done</span></div><div><b id="s-mood">–</b><span>check-ins</span></div></div>
+    <div id="moodwrap" style="display:none"><div class="card-lbl" style="margin-top:18px">Mood check-ins, last 8 weeks</div><svg id="mood" viewBox="0 0 560 90" preserveAspectRatio="none" aria-label="Mood over time"></svg><div class="small muted">Lower is harder, higher is lighter. Patterns matter more than single days. If the line stays low for weeks, please show it to your doctor.</div></div>
+  </section>
+  <div id="weeks"><div class="skeleton" style="height:8em"></div><div class="skeleton" style="height:8em"></div></div>
+</main>
+<script src="assets/app.js"></script>
+<script>
+LD.chrome('journey');
+(async () => {
+  const today = LD.currentDay(), done = LD.done(), moods = LD.moods();
+  const doneCount = Object.keys(done).length;
+  document.getElementById('s-day').textContent = today || '–';
+  document.getElementById('s-done').textContent = doneCount;
+  document.getElementById('s-mood').textContent = Object.keys(moods).length || '–';
+  document.getElementById('bar').style.width = (today ? (today / LD.TOTAL_DAYS * 100) : 0) + '%';
+  if (!today) document.getElementById('sub').innerHTML = 'Twelve weeks. Twelve areas where research shows real differences. <a href="today.html?start=1">Start day 1 today →</a>';
+  // mood chart
+  const keys = Object.keys(moods).sort().slice(-56);
+  if (keys.length >= 2) {
+    document.getElementById('moodwrap').style.display = 'block';
+    const first = new Date(keys[0] + 'T00:00:00'), last = new Date(keys[keys.length - 1] + 'T00:00:00');
+    const span = Math.max(1, (last - first) / 86400000);
+    const pts = keys.map(k => { const x = 10 + ((new Date(k + 'T00:00:00') - first) / 86400000) / span * 540; const y = 80 - (moods[k] - 1) / 4 * 70; return [x, y]; });
+    const path = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+    document.getElementById('mood').innerHTML = `<line x1="10" y1="80" x2="550" y2="80" stroke="var(--line2)"/><line x1="10" y1="10" x2="550" y2="10" stroke="var(--line)" stroke-dasharray="3 4"/><path d="${path}" fill="none" stroke="var(--amber)" stroke-width="2.5" stroke-linejoin="round"/>${pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="var(--amber)"/>`).join('')}`;
+  }
+  const [themes, index] = await Promise.all([LD.getThemes(), LD.getMessagesIndex().catch(() => [])]);
+  const byDay = {}; index.forEach(r => byDay[r.day_number] = r);
+  document.getElementById('weeks').innerHTML = themes.map(t => {
+    const days = Array.from({ length: 7 }, (_, i) => (t.week - 1) * 7 + i + 1);
+    const wdone = days.filter(d => done[d]).length;
+    return `<section class="card week" id="week-${t.week}" style="--c:${t.color}">
+      <div class="week-head"><div><div class="eyebrow">Week ${t.week}</div><h2 style="margin:4px 0 2px">${LD.esc(t.title)}</h2><div class="muted">${LD.esc(t.subtitle || '')}</div></div><span class="chip">${wdone}/7</span></div>
+      ${t.description ? `<p class="muted small" style="margin-top:10px">${LD.esc(t.description)}</p>` : ''}
+      <div class="days">${days.map(d => {
+        const m = byDay[d]; const cls = done[d] ? 'done' : (today === d ? 'now' : (today && d > today ? 'locked' : ''));
+        return `<a class="dayrow ${cls}" href="today.html?day=${d}"><span class="n">${done[d] ? '✓' : d}</span><span>${m ? LD.esc(m.title) : '<span class="muted">Coming soon</span>'}</span></a>`;
+      }).join('')}</div>
+    </section>`;
+  }).join('');
+  if (location.hash) { const el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
+})();
+</script>
+</body>
+</html>

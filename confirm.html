@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Confirmed — Light for Every Day</title><meta name="robots" content="noindex">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml"><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/app.css"></head>
+<body><main><section class="card" style="text-align:center;padding:48px 24px" id="box"><h1>One moment…</h1></section></main>
+<script src="assets/app.js"></script>
+<script>
+LD.chrome('subscribe');
+(async () => {
+  const t = new URLSearchParams(location.search).get('t'); const box = document.getElementById('box');
+  if (!t) { box.innerHTML = '<h1>Missing link</h1><p class="muted">Please open the link from your e-mail again.</p>'; return; }
+  try {
+    const r = await fetch(LD.SB + '/rest/v1/rpc/ld_confirm', { method: 'POST', headers: { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_token: t }) });
+    const ok = r.ok && (await r.json()) === true;
+    box.innerHTML = ok ? '<h1>You are in</h1><p>Your first message arrives tomorrow morning at the time you chose. Until then, you can <a href="today.html?start=1">read day 1 now</a>.</p>' : '<h1>Link not recognised</h1><p class="muted">It may have been used already, or the subscription was removed. <a href="subscribe.html">Sign up again</a>.</p>';
+  } catch (e) { box.innerHTML = '<h1>Something went wrong</h1><p class="muted">Please try the link again in a minute.</p>'; }
+})();
+</script></body></html>

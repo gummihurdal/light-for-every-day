@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Settings — Light for Every Day</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FAF7F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171A1F" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>.seg{display:flex;gap:6px}.seg button{padding:8px 14px;border-radius:999px;border:1px solid var(--line2);background:var(--bg2);font-size:14px}.seg button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.more a{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);color:inherit;font-weight:600}.more a:last-child{border-bottom:none}.more a:hover{text-decoration:none;color:var(--amber)}</style>
+</head>
+<body>
+<main>
+  <h1 style="margin-bottom:18px">Settings</h1>
+
+  <section class="card">
+    <div class="card-lbl">Reading</div>
+    <div class="toggle-row"><div><strong>Show "A word of hope"</strong><div class="small muted">A short Scripture verse at the end of each day. Switch off if you prefer the message alone.</div></div><button class="switch" role="switch" id="t-scripture" aria-checked="true"></button></div>
+    <div class="toggle-row"><div><strong>Text size</strong></div><div class="seg" id="size"><button data-v="small">A</button><button data-v="normal">A</button><button data-v="large">A</button></div></div>
+    <div class="toggle-row"><div><strong>Appearance</strong></div><div class="seg" id="theme"><button data-v="auto">Auto</button><button data-v="light">Light</button><button data-v="dark">Dark</button></div></div>
+    <div class="toggle-row"><div><strong>Your first name</strong><div class="small muted">Only for the greeting. Stays on this device.</div></div><input type="text" id="name" style="max-width:160px" placeholder="optional"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-lbl">Your journey</div>
+    <div class="toggle-row"><div><strong>Started on</strong><div class="small muted" id="started-sub">Change this to move your current day.</div></div><input type="date" id="started" style="max-width:180px"></div>
+    <div class="toggle-row"><div><strong>Daily reminder</strong><div class="small muted" id="rem-sub">A gentle notification each morning while the app is open or installed. Works on Android and desktop; iPhone requires adding the app to the Home Screen first.</div></div><button class="switch" role="switch" id="t-remind" aria-checked="false"></button></div>
+    <div class="toggle-row"><div><strong>Install as an app</strong><div class="small muted">Add to your Home Screen for one-tap access and offline reading. On iPhone: Share → Add to Home Screen.</div></div><button class="btn ghost sm" id="install" style="display:none">Install</button></div>
+  </section>
+
+  <section class="card">
+    <div class="card-lbl">Your data</div>
+    <p class="small muted">Everything you write (journal, moods, check-ins, three good things) is stored only in this browser. We cannot see it. If you clear the browser's data it is gone, so export a copy now and then.</p>
+    <div class="btn-row"><button class="btn ghost sm" id="export">Export my data</button><button class="btn ghost sm" id="erase" style="color:var(--rose)">Erase everything</button></div>
+  </section>
+
+  <section class="card soft more">
+    <div class="card-lbl">More</div>
+    <a href="about.html">About this project &amp; the evidence library <span>→</span></a>
+    <a href="subscribe.html">Daily e-mail <span>→</span></a>
+    <a href="help.html">Help now <span>→</span></a>
+    <a href="privacy.html">Privacy <span>→</span></a>
+    <a href="https://graceforevery.day" rel="noopener">Grace for Every Day (daily devotional) <span>↗</span></a>
+  </section>
+</main>
+<script src="assets/app.js"></script>
+<script>
+LD.chrome('more');
+const s = LD.settings;
+const sw = document.getElementById('t-scripture'); sw.setAttribute('aria-checked', String(s.scripture));
+sw.addEventListener('click', () => { const v = sw.getAttribute('aria-checked') !== 'true'; sw.setAttribute('aria-checked', String(v)); LD.saveSettings({ scripture: v }); });
+['size', 'theme'].forEach(k => { const el = document.getElementById(k); el.querySelectorAll('button').forEach(b => { b.classList.toggle('on', b.dataset.v === s[k]); b.addEventListener('click', () => { el.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b)); LD.saveSettings({ [k]: b.dataset.v }); }); }); });
+const name = document.getElementById('name'); name.value = s.name || ''; name.addEventListener('change', () => LD.saveSettings({ name: name.value.trim().slice(0, 30) }));
+const st = document.getElementById('started'); st.value = LD.startedOn() || ''; st.max = LD.todayISO();
+st.addEventListener('change', () => { if (st.value) { LD.start(st.value); LD.toast('Journey moved to day ' + LD.currentDay()); } });
+if (!LD.startedOn()) document.getElementById('started-sub').innerHTML = 'You have not started yet. <a href="today.html?start=1">Start day 1 today</a> or pick a date.';
+// reminders
+const rem = document.getElementById('t-remind'); rem.setAttribute('aria-checked', String(!!LD.store.get('remind', false)));
+if (!('Notification' in window)) document.getElementById('rem-sub').textContent = 'Notifications are not available in this browser.';
+rem.addEventListener('click', async () => {
+  const v = rem.getAttribute('aria-checked') !== 'true';
+  if (v && 'Notification' in window) { const p = await Notification.requestPermission(); if (p !== 'granted') { LD.toast('Notifications were not allowed'); return; } }
+  rem.setAttribute('aria-checked', String(v)); LD.store.set('remind', v); LD.toast(v ? 'Reminder on' : 'Reminder off');
+});
+// install
+let deferred; window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); deferred = e; document.getElementById('install').style.display = 'inline-flex'; });
+document.getElementById('install').addEventListener('click', async () => { if (deferred) { deferred.prompt(); deferred = null; } });
+// data
+document.getElementById('export').addEventListener('click', () => {
+  const data = {}; ['started_on', 'done', 'journal', 'moods', 'settings', 'phq9', 'gratitude'].forEach(k => data[k] = LD.store.get(k, null));
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'light-for-every-day-' + LD.todayISO() + '.json'; a.click();
+});
+document.getElementById('erase').addEventListener('click', () => { if (confirm('Erase your journey, journal, moods and settings from this device? This cannot be undone.')) { LD.eraseAll(); location.href = 'index.html'; } });
+</script>
+</body>
+</html>

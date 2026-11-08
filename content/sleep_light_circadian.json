@@ -1,0 +1,118 @@
+{
+  "theme": "sleep_light_circadian",
+  "theme_intro": "This week is about sleep, light and the body clock. Poor sleep is one of the most common symptoms of depression, and the research shows it is also one of its causes, which makes it a place where small changes can matter. Over seven days we build a simple rhythm you can keep: a steady wake time, daylight in the morning, and a gentler end to the day.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Sleep and depression: a two-way street",
+      "quote": "There is a very strong association between sleep disturbance and major depression.",
+      "quote_source": "Nutt, Wilson & Paterson (2008)",
+      "explanation": "If depression has wrecked your sleep, you are in the majority. In a UK survey of 2,800 people with depression, 97% said they had sleep difficulties when depressed, and most said the trouble began at about the same time as the low mood. Roughly three quarters of people with depression have insomnia; some, especially younger people, sleep far too much instead.\n\nBut the road runs both ways. Poor sleep is not only a symptom; it also helps cause depression. In a large American survey, 14% of people with insomnia had developed new depression a year later. Young men who had insomnia at college were twice as likely to become depressed over the following thirty years. And in a study of 351 older adults, those who had recovered from depression but still slept badly were several times more likely to fall back into it within two years, even after allowing for their other symptoms and their medication.\n\nThis matters because sleep is one of the few parts of depression you can work on directly, and the evidence suggests that when sleep improves, mood tends to follow. Nothing this week asks you to sleep less or to try harder to sleep. It asks you to look, gently, at your own rhythm, and then to change a few of the things that shape it: when you get up, when your eyes see daylight, and how your evening ends.",
+      "challenge": "Tonight, before you turn the light off, write three short lines somewhere you will find them again: the time you got up this morning, the time you are going to bed, and one word for how your energy was today. Do this each night this week; it takes under a minute and slowly gives you a picture of your rhythm. If that is too much today, write down only the time you got up.",
+      "reflection_questions": [
+        "When did your sleep start to change: before the low mood, alongside it, or after?",
+        "What does a bad night do to the following day for you?",
+        "Which part of sleep troubles you most: falling asleep, waking in the night, waking too early, or sleeping too much?"
+      ],
+      "scripture": {"reference": "Psalm 3:5 (KJV)", "text": "I laid me down and slept; I awaked; for the LORD sustained me."},
+      "sources": [150, 161, 60],
+      "keywords": ["sleep", "insomnia", "depression", "risk factor", "observe"]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "The anchor: a fixed wake time",
+      "quote": "Sleep in depressed patients may be more sensitive to life events which disrupt daily rhythms.",
+      "quote_source": "Nutt, Wilson & Paterson (2008)",
+      "explanation": "Two systems decide when you sleep. One is sleep pressure: the longer you have been awake, the stronger the pull towards sleep, like a debt that builds through the day. The other is the body clock, a small group of cells deep in the brain that runs a rhythm of roughly 24 hours and tells every organ what time it is. Good sleep happens when the two agree.\n\nDepression unsettles both. People who are depressed often fall asleep late, wake in the small hours and wake again too early. One research team found that depressed patients whose routine had been knocked about by events such as losing a job, a move or a separation spent much more of the night awake than depressed patients with a steadier routine; the same events made no difference to people without depression. Another study found that the further a person's sleep had drifted out of step with their internal clock, the more severe their depression.\n\nThis is why the single most useful habit is a wake time that does not move. After a bad night the temptation is to sleep in. But sleeping in pushes the clock later and spends the sleep pressure you need for the next night, so the bad night repeats itself. Getting up at the same time, even tired, keeps the anchor in place and lets sleep find it again. This is not about sleeping less, and it is never about forcing yourself to stay awake. It is about rising at a steady hour and letting bedtime follow.",
+      "challenge": "Choose a wake time you can keep every day this week, including the weekend, and set an alarm for it. When it rings tomorrow, sit up, put your feet on the floor and open the curtains before you decide anything else. Do not set it earlier than you normally wake; this is about steadiness, not less sleep. If a fixed time feels impossible right now, aim to be up within one hour of your usual time.",
+      "reflection_questions": [
+        "What usually happens to your morning after a bad night?",
+        "What wake time would be realistic for you: not ideal, but one you could keep?",
+        "What would make getting up at that time a little easier: a lamp on a timer, a drink ready, a reason to be up?"
+      ],
+      "scripture": {"reference": "Lamentations 3:22-23 (KJV)", "text": "It is of the LORD's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness."},
+      "sources": [150, 81, 36],
+      "keywords": ["wake time", "body clock", "routine", "anchor", "circadian"]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Morning light sets the clock",
+      "quote": "Bright light in the evening will delay the clock, and bright light in the morning is necessary to synchronize the clock to a 24-hour rhythm; in constant light or darkness the cycle length is about 24.3 h.",
+      "quote_source": "Nutt, Wilson & Paterson (2008)",
+      "explanation": "Your body clock does not keep perfect time. Left to itself it runs slightly long, about 24.3 hours, so it needs resetting every day. The signal that resets it is light reaching the eyes, and the hour matters: bright light in the morning pulls the clock earlier and steadies it; bright light late in the evening pushes it later. For someone whose depression has let their rhythm drift late, morning light is the correction.\n\nDaylight is far stronger than it feels. Ordinary indoor lighting is a few hundred lux; a light box used to treat winter depression gives about 10,000 lux, roughly twenty times a lit room; even a cloudy sky outdoors usually gives several thousand. In Basel, people with winter depression who took a one-hour walk outdoors each day improved more after a week than those who sat in front of an artificial bright light for half an hour, and the walkers got up earlier too. In Helsinki, 160 working adults exercised two or three mornings a week for eight weeks, half of them under bright lights; both groups felt better, but the bright-light group improved more, especially in morning tiredness and craving carbohydrates. And among 16,800 American adults, those who were depressed and had lived through two weeks of low sunlight were more than twice as likely to show problems with memory and concentration.\n\nYou do not need a device for this. You need your eyes outside, or at a window facing the sky, within about an hour of waking.",
+      "challenge": "Within an hour of getting up tomorrow, spend ten minutes outdoors in daylight: a slow walk, the garden, a bench, the doorstep with a hot drink. Leave sunglasses off, but never look straight at the sun. If it is still dark when you wake, turn on the brightest lights you have and go out as soon as it is light. If ten minutes outside is too much today, open a window wide and sit facing the sky for three minutes.",
+      "reflection_questions": [
+        "How much daylight did your eyes actually see yesterday before noon?",
+        "Is there a spot near your door where you could stand for a few minutes each morning?",
+        "What did you notice in your body or mood after being outside this morning?"
+      ],
+      "scripture": {"reference": "Psalm 143:8 (KJV)", "text": "Cause me to hear thy lovingkindness in the morning; for in thee do I trust: cause me to know the way wherein I should walk; for I lift up my soul unto thee."},
+      "sources": [150, 144, 127, 111, 140],
+      "keywords": ["morning light", "daylight", "circadian", "walk", "sunlight"]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Weekend jetlag and shift work",
+      "quote": "Our results indicate that misalignment of circadian and social time may be a risk factor for developing depression, especially in 31- to 40-yr-olds.",
+      "quote_source": "Levandovski et al. (2011)",
+      "explanation": "Most of us live on two timetables. On workdays an alarm gets us up; on free days we sleep in. Researchers call the gap between the two \"social jetlag\", because the body experiences it much as it experiences flying across time zones every week, with no holiday at the end.\n\nIn a study of a little over 4,000 people in rural Brazil, those whose free-day sleep was shifted by more than two hours had clearly higher depression scores than everyone else, and natural \"night owls\" scored higher too. Other studies link social jetlag to depressive symptoms over and above how late a person naturally is or how long they sleep. A Saturday lie-in feels like repayment; to the clock it is one more move.\n\nShift work deserves honesty. About one worker in five works outside daytime hours, and the body rarely adapts fully. In a laboratory study, ten healthy adults who ate and slept twelve hours out of phase for a few days had higher blood sugar, lower levels of the hormone that signals fullness, and sleep about a fifth less efficient. Over twelve years, Danish shift workers had about a third more hospital treatment for heart and circulation disease than day workers. If this is your life, you are not failing; the schedule is hard. What helps is keeping sleep as consistent as the roster allows, protecting the hours you do have with a dark, quiet room, and telling your doctor about your hours.\n\nFor everyone else, this weekend's goal is small: keep the gap under an hour.",
+      "challenge": "Look at your notes from the past days and compare your weekday wake time with your usual weekend one. If the gap is more than an hour, set this weekend's alarm within one hour of your weekday time, and spend the quiet early hour on something kind: a slow breakfast, yesterday's morning light. If you work shifts, pick the one sleep period you can keep steady across your days off and protect it. If that is too much, work out your gap and write the number down.",
+      "reflection_questions": [
+        "How many hours of social jetlag do you carry each week?",
+        "What do you hope a lie-in will give you, and does it?",
+        "If your hours are set by a roster, what one thing that protects your sleep is still within your control?"
+      ],
+      "scripture": {"reference": "Mark 2:27 (WEB)", "text": "The Sabbath was made for man, not man for the Sabbath."},
+      "sources": [129, 36, 182, 208],
+      "keywords": ["social jetlag", "weekend", "shift work", "chronotype", "consistency"]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "The evening: letting the day end",
+      "quote": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
+      "quote_source": "Psalm 4:8 (KJV)",
+      "explanation": "If the morning sets the clock, the evening decides whether it can be heard. Three things most often get in the way, and none of them is a moral failing.\n\nThe first is light. The brightness that helps at eight in the morning delays the clock at eleven at night, and phone, tablet and television screens are bright. The second is what we take in. Caffeine stays in the body for many hours, so an afternoon coffee is still working at bedtime. Alcohol brings sleep on faster but breaks up the second half of the night; in a long follow-up of men treated for alcohol problems, those who stayed sober slept better and reported less anxiety and depression. Nicotine is a stimulant. These are coping tools; they also quietly steal sleep. The third is food. Late, heavy meals ask the body to digest when it wants to wind down, and eating late tells the clocks in your organs that it is still daytime. In a careful inpatient study of 26 adults, a day of eating more saturated fat and sugar was followed by lighter, more broken sleep with less of the deep sleep that restores; more fibre meant more deep sleep.\n\nA wind-down does not need to be elaborate: the last hour at lower light, screens put away or dimmed, something slow and ordinary. If you lie awake for a long time, it is better to get up, sit somewhere dim, and return when sleepy than to fight in the dark. The bed should mean sleep, not a battlefield.",
+      "challenge": "Choose one evening change for tonight and do only that one: lights dimmed and screens away for the last hour; no caffeine after early afternoon; alcohol not used to get to sleep; or your last substantial meal at least three hours before bed. Decide now, and write it down or tell someone. If even one feels like too much tonight, turn off the main light an hour before bed and use a single lamp.",
+      "reflection_questions": [
+        "What does the last hour of your day usually contain?",
+        "Which of these, light, caffeine, alcohol or late food, is doing the most to your nights, honestly?",
+        "What would a kinder end to the day look like for you?"
+      ],
+      "scripture": {"reference": "Psalm 127:2 (KJV)", "text": "It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: for so he giveth his beloved sleep."},
+      "sources": [150, 36, 194, 135],
+      "keywords": ["evening", "screens", "caffeine", "alcohol", "wind-down", "late eating"]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "When sleep itself is the problem",
+      "quote": "A variety of sleep disturbances have been reported to negatively impact on depression, and these effects can be reversible.",
+      "quote_source": "Pigeon (2009)",
+      "explanation": "Sometimes the problem is not habits but a sleep disorder, and two in particular hide inside depression.\n\nThe first is sleep apnoea. During sleep the airway narrows or closes, breathing stops for seconds at a time, and the brain jolts half-awake, sometimes hundreds of times a night, unnoticed. The clues are loud snoring, gasping or choking in sleep, waking unrefreshed, and dozing off in the day. In a survey of nearly 19,000 people in five European countries, almost one in five of those with major depression also had a breathing-related sleep disorder, and the reverse was also true. In a study of 1,400 adults followed in a sleep laboratory over several years, each step up in the severity of disordered breathing raised the odds of developing depression by about 80%. The hopeful part comes from Australia: of 426 people assessed for suspected apnoea, three quarters had significant depressive symptoms. After three months of treatment with a breathing mask (CPAP), average depression scores fell from 11 to 4 out of 27, the share with significant symptoms dropped from 75% to 4%, and thoughts of being better off dead, present in nearly one in five at the start, had gone. Nobody's antidepressants were changed.\n\nThe second is insomnia that persists even as mood lifts, which happens to about half of people who recover. A specific, structured treatment exists, cognitive behavioural therapy for insomnia (CBT-I), and in a trial it improved both depression and sleep more than medication alone.\n\nNeither can be diagnosed from a message like this. Both are reasons to talk to your doctor.",
+      "challenge": "Write down three things a doctor would want to know about your sleep: whether you snore or gasp (ask whoever hears you sleep), how long it takes you to fall asleep and how often you wake, and whether you doze off in the day. If any of the apnoea clues fit you, make or plan an appointment today and take the notes with you. If that is too much, send one message asking someone whether you snore.",
+      "reflection_questions": [
+        "Has anyone ever told you that you snore or seem to stop breathing in your sleep?",
+        "If your sleep problem were a medical condition rather than a weakness, how would you treat yourself differently?",
+        "What stops you raising sleep with your doctor, and what would make it easier?"
+      ],
+      "scripture": {"reference": "Matthew 11:28 (WEB)", "text": "Come to me, all you who labor and are heavily burdened, and I will give you rest."},
+      "sources": [152, 160, 79, 161],
+      "keywords": ["sleep apnoea", "snoring", "CPAP", "insomnia", "CBT-I", "doctor"]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Seasons, light and a rhythm to keep",
+      "quote": "To every thing there is a season, and a time to every purpose under the heaven.",
+      "quote_source": "Ecclesiastes 3:1 (KJV)",
+      "explanation": "For some people the darkness is literal. Seasonal affective disorder is depression that arrives as the days shorten and lifts in spring, with heavy sleepiness, low energy, craving for sweet and starchy food, and pulling away from people. It is about four times more common in women and more common far from the equator: in Britain roughly 2% have the full disorder and about a fifth notice a milder winter dip. Many people with ordinary depression also feel winter bite harder.\n\nThe best-studied treatment is bright light: a lamp of about 10,000 lux used for a set time each morning from early autumn into spring. In pooled trials about half of people with seasonal depression recovered fully with light, and morning light worked better than evening. Side effects are usually mild, eyestrain, headache, a little restlessness, but light can interact with some medicines and is not advised with certain eye conditions or a history of mania, so it belongs under a professional's guidance, alongside your current treatment and never in place of it. Cognitive behavioural therapy adapted for winter has matched light in trials, and morning exercise in daylight helps too.\n\nWhatever the season, this week has built one thing: a rhythm. A wake time that does not move. Daylight on your eyes within an hour of waking. An evening that dims. These cost nothing and ask for no willpower at night, only one decision in the morning. Depression says nothing you do will matter. Your body clock disagrees: it responds to what you do today.",
+      "challenge": "Write your rhythm on a card or a phone note in three lines: my wake time is ___; my morning light is ___ (where, and for how long); my evening dims at ___. Put it where you will see it tomorrow morning. If your low mood follows the seasons, add a fourth line with the months it usually starts, and take the card to your next appointment to ask about light therapy. If three lines is too much, write the one you have already managed this week.",
+      "reflection_questions": [
+        "Does your mood follow the calendar? Which months are hardest?",
+        "Of the three anchors, wake time, morning light and evening dimming, which came most easily this week, and which did not?",
+        "What would it take to keep one of them going next week?"
+      ],
+      "scripture": {"reference": "Psalm 74:16 (KJV)", "text": "The day is thine, the night also is thine: thou hast prepared the light and the sun."},
+      "sources": [140, 172, 127],
+      "keywords": ["seasonal affective disorder", "light therapy", "winter", "rhythm", "commitment"]
+    }
+  ]
+}

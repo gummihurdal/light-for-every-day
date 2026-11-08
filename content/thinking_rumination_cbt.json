@@ -1,0 +1,139 @@
+{
+  "theme": "thinking_rumination_cbt",
+  "theme_intro": "Depression does not only change how you feel; it changes how you think, and the thoughts then feed the feelings. This week looks at that loop: the automatic thoughts that arrive uninvited, the replay of rumination, the thinking traps that clinicians have named, and the practical skills of cognitive behavioural therapy for catching a thought, weighing it against the evidence, and answering it with something kinder and truer. It ends with one small action, because thinking and doing are not separate.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Thoughts are not facts",
+      "quote": "Thoughts are just happening in my brain; they are not THE TRUTH.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression",
+      "explanation": "When you are depressed, your mind produces a steady stream of comments about you. “I’m a burden.” “Nothing I do works.” “Everyone can see I’m failing.” They arrive fast, and they feel like plain descriptions of reality. They are not. They are thoughts, and thoughts are events in the mind, not verdicts on your life.\n\nCognitive therapy, one of the best-studied treatments for depression, starts from one observation: between a situation and a feeling there is a step in between, which is what we tell ourselves about the situation. The Centre for Clinical Interventions, an Australian clinical service, teaches it with an example. You meet a man at a party and he keeps glancing around the room. Think “He’s rude” and you feel irritated. Think “He finds me boring; nobody wants to talk to me” and you feel small and sad. Think “He’s probably waiting for a friend” and you feel almost nothing. Same room, same man, three feelings, because three thoughts.\n\nDepression tilts the stream towards the second kind of thought, and it does so automatically, below the level where you would normally notice. You did not choose this. But the thoughts are there, and they are shaping how you feel. This week is about learning to notice them, which is the first step in loosening their grip. Nothing here replaces your doctor, your medication or your therapist; it works alongside them.",
+      "challenge": "Today, once, catch a feeling and the thought behind it. When you notice your mood drop, even slightly, pause and ask: what went through my mind a moment ago? Write down the feeling in one word (sad, ashamed, flat, anxious) and the thought in one sentence. Do not argue with it yet; the task is only to see it. If writing is too much, say the thought out loud, then add: “That is a thought.”",
+      "reflection_questions": [
+        "Which thought about yourself showed up most often today?",
+        "When you heard that thought, what did your body do?",
+        "If a close friend said that same sentence about themselves, what would you feel for them?"
+      ],
+      "scripture": {
+        "reference": "Psalm 139:23 (WEB)",
+        "text": "Search me, God, and know my heart. Try me, and know my thoughts."
+      },
+      "sources": [28, 229, 26],
+      "keywords": ["thoughts", "feelings", "automatic thoughts", "CBT", "noticing"]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Rumination: the mind’s replay loop",
+      "quote": "Persisting negative thoughts are considered a hallmark of depression.",
+      "quote_source": "Koster, De Lissnyder, Derakshan & De Raedt (2011)",
+      "explanation": "There is a kind of thinking that most people with depression know well. You lie in bed and go over the same ground: why you feel like this, what is wrong with you, what you got wrong last year, what it means that you still feel this way. Nothing gets decided. The thoughts come round again. Researchers call this rumination: repetitively thinking about the causes, consequences and symptoms of your own low mood.\n\nIt feels like problem-solving, which is why it is so hard to stop. But in a wide review of the research, Smith and Alloy found that rumination has less focus on actual solutions than ordinary worry does, dwells on the past and on loss rather than on what to do next, and goes with less confidence in solving problems at all. Studies that follow people over time find that those who ruminate more are more likely to be depressed later.\n\nWhy is it so sticky? Koster and colleagues argue that the problem is not willpower but attention. A depressed brain finds it harder to disengage from negative information about itself. Once a painful thought has your attention, the mechanism that would normally let go of it is working less well. That is not a character flaw. It is a known feature of the illness, and it can be worked on. Activity, as the CCI modules point out, gives the mind somewhere else to go. That is why “do something small” is not a trivial suggestion; it is a direct answer to the loop.",
+      "challenge": "Today, notice one replay loop while it is happening. The signal is going round the same ground: “why am I like this”, “what did I do wrong”. When you catch it, say “I’m ruminating,” then give your attention a two-minute job: wash a cup, stand at a window and name five things you can see, or play one song to the end. The loop may restart; that is normal. Noticing once is the win. If two minutes is too much, name it and change position: sit up, or move chairs.",
+      "reflection_questions": [
+        "When does the replay loop most often start for you: a time of day, a place, a moment of stillness?",
+        "What does the loop tell you it is trying to achieve? Does it ever get there?",
+        "What small thing has pulled you out of it, even for a minute, in the past?"
+      ],
+      "scripture": {
+        "reference": "Psalm 94:19 (WEB)",
+        "text": "In the multitude of my thoughts within me, your comforts delight my soul."
+      },
+      "sources": [191, 118, 27],
+      "keywords": ["rumination", "overthinking", "attention", "replay", "disengagement"]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Naming the thinking traps",
+      "quote": "Carrying 100% of the responsibility is a rather large burden to bear, and one that’s likely to leave you feeling discouraged or overwhelmed.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez",
+      "explanation": "Depressed thinking is not random. Clinicians who have listened to thousands of people describe their thoughts notice the same patterns coming back, and giving them names makes them easier to spot. These are the ones that matter most in depression, as taught in the CCI “Back from the Bluez” modules and in Shapiro’s workbook.\n\nMental filter: one negative detail fills the whole screen and the rest of the day disappears. Jumping to conclusions: mind reading (“she thinks I’m pathetic”) and predicting (“it will go badly”). Personalisation: whatever goes wrong is your fault, even when you were barely involved. Catastrophising: a small mistake becomes the end of your job, your marriage, your future. Black-and-white thinking: not perfect means failure. Shoulds and musts: a rulebook nobody could keep. Overgeneralising: one bad afternoon becomes “always” and “never”. Labelling: you drop a glass and you are “an idiot”. Emotional reasoning: “I feel worthless, so I must be.” Minimising: your own good points “don’t count”; you were lucky; they were only being polite.\n\nYou will probably recognise several. That is not a sign that something is wrong with you. The CCI authors note that these are habits that run outside awareness, and that nearly everyone uses some of them; depression turns the volume up. The point of naming them is not to scold yourself for thinking badly. It is that a thought with a name (“that’s catastrophising”) sits a little further away from you than a thought you took as fact.",
+      "challenge": "Today, catch one thought and give it a name from the list. You do not need to change it. When you notice a low or anxious dip, find the thought and ask: which pattern is this? Write the thought and the name side by side, for example “I ruined the whole evening — mental filter, catastrophising.” One is enough. If that is too much today, pick the single pattern you recognised most while reading, and watch for that one only.",
+      "reflection_questions": [
+        "Which two or three patterns did you recognise most strongly?",
+        "Where might you have learned to think that way? Who spoke to you like that?",
+        "What changes, even slightly, when you call a thought by its name?"
+      ],
+      "scripture": {
+        "reference": "Philippians 4:8 (WEB)",
+        "text": "Finally, brothers, whatever things are true, whatever things are honorable, whatever things are just, whatever things are pure, whatever things are lovely, whatever things are of good report: if there is any virtue and if there is any praise, think about these things."
+      },
+      "sources": [30, 229],
+      "keywords": ["thinking styles", "cognitive distortions", "catastrophising", "black and white", "mind reading"]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "The ABC of catching a thought",
+      "quote": "Record the situation the same way a video camera might record it – just the facts.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez",
+      "explanation": "Noticing thoughts in the moment is hard, especially when your concentration is poor. Cognitive therapists use a small structure for it, the ABC, and it works because it is mechanical. You do not need to feel insightful. You fill in three boxes.\n\nA is the activating event: what happened, described the way a video camera would record it. “My sister rang and ended the call after four minutes.” Not “my sister couldn’t wait to get rid of me”; that is already a thought. C is the consequence: what you felt and did. Name the feeling in a word or two, give it a number out of 100 for strength, and note what you did next (went back to bed, cancelled the plan). B is the belief in between: what went through your mind. Write down every thought you can find, then underline the one that carries the most heat, the hot thought, and rate how far you believe it, 0 to 100.\n\nOften the first thought you find is not the hot one. The modules suggest digging with a question like “and what does that mean about me?” “She was in a hurry” may sit on top of “I’m a drain on everyone.” The hot thought is usually the one that makes your chest tighten.\n\nA written ABC does two things. It separates the facts from the story, which depression is constantly blurring. And it gives you something concrete to examine tomorrow, when we start weighing the evidence. Thoughts on paper are smaller than thoughts in the dark.",
+      "challenge": "Do one ABC today, on paper or in the app’s journal. Wait for a moment when your mood drops, then write three lines. A: what happened, facts only, one sentence. C: what you felt, in one word with a number out of 100, and what you did. B: what went through your mind, with the hottest thought underlined and a belief rating. Five minutes is plenty. If that is too much, do only A and C: one fact and one feeling. B can wait for another day.",
+      "reflection_questions": [
+        "What was your hot thought today, and how far did you believe it?",
+        "How different were the facts (A) from the story you told yourself about them (B)?",
+        "What did the feeling make you do, or stop doing?"
+      ],
+      "scripture": {
+        "reference": "Lamentations 3:21-22 (WEB)",
+        "text": "This I recall to my mind; therefore I have hope. It is because of Yahweh’s loving kindnesses that we are not consumed, because his compassion doesn’t fail."
+      },
+      "sources": [29, 28, 32],
+      "keywords": ["ABC", "thought diary", "hot thought", "journal", "activating event"]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Detective work: put the thought on trial",
+      "quote": "Like all good detectives, we need to find out the facts, and gather the evidence.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez",
+      "explanation": "Yesterday you caught a hot thought. Today you examine it. The CCI modules ask you to play two roles: detective, who gathers evidence, and lawyer, who asks awkward questions. The thought is neither guilty nor innocent yet. It is investigated.\n\nDetective questions: What is the evidence that this thought is true? What is the evidence against it? What facts am I leaving out? What other explanations are there? Lawyer questions: How would someone who loves me see this? If I were not depressed, how would I see it? Realistically, how likely is what I am predicting? Does thinking this way help me?\n\nThe example in the modules is a man whose partner comes home and does not kiss him as usual. Hot thought: “She doesn’t love me any more,” believed at 90 of 100. Evidence for: she once urged him to see a psychologist. Evidence against: she has said she will support him through this, and she cooked a special dinner last night. Other explanations: a hard day, groceries to put away. His balanced thought is not “everything is fine”. It is: one missed kiss is no evidence she has stopped loving me; she was probably tired, and she shows affection in other ways. He re-rates the feeling. It has dropped, not vanished.\n\nThat is what this skill does. It rarely deletes a painful thought; it cuts it down to size. And the repetition is not pointless. Brain-imaging researchers note that the reduced blood flow seen in depressed brains improves with treatment, including cognitive behavioural therapy. Practice changes something physical.",
+      "challenge": "Take yesterday’s hot thought, or catch a new one, and give it ten minutes. Draw a line down a page. Left: every fact that supports the thought. Right: every fact that goes against it, including things you would normally dismiss. Then answer one lawyer question: how would someone who loves me see this? Finish with one balanced sentence and re-rate your belief out of 100. If ten minutes is too much, fill only the right-hand column: three facts against.",
+      "reflection_questions": [
+        "Which column was harder to fill, and why do you think that is?",
+        "Did your belief in the hot thought move, even by a few points?",
+        "Whose voice did you hear when you asked how someone who loves you would see this?"
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 5:21 (WEB)",
+        "text": "Test all things, and hold firmly that which is good."
+      },
+      "sources": [31, 32, 217],
+      "keywords": ["evidence", "disputation", "balanced thought", "detective", "re-rate"]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "A kinder voice in your head",
+      "quote": "Instead of listening to the critical voices in your head, you can develop a nurturing inner voice that you can listen to when you are feeling low and you are questioning your self-worth.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression",
+      "explanation": "Some thoughts do not budge when you weigh the evidence. You can list ten facts against “I’m worthless” and still believe it at 95. The CCI modules explain why: under the daily hot thoughts there is often a core belief, a short sentence about yourself learned long ago, usually in childhood. “I’m unlovable.” “I’m not enough.” “I’m a burden.” Core beliefs stay alive by noticing everything that fits them and discarding everything that does not, so after years they feel less like beliefs than like the floor you stand on.\n\nMany people with depression also carry a critical inner voice that speaks in exactly these sentences. Psychologist Lawrence Shapiro points out that this voice usually has a history: a parent, a teacher, a harsh adult. It is borrowed. You need not keep it.\n\nThe alternative is not forced positivity. In the CCI example, Erica tests “I’m unlovable” against her actual life: four close friends at school, a neighbour who confided in her, a colleague she has coffee with. Her balanced belief is modest and true: “Not everyone will like me all the time, but I am likeable to some people.” She can believe that sentence, which is what makes it useful.\n\nShapiro’s exercise goes further: write down what someone who cared deeply about you would say, and picture them saying it. For many people this is uncomfortable at first; the discomfort shows how long the other voice has had the room to itself. If this stirs up more than you can hold today, bring it to your therapist or doctor.",
+      "challenge": "Write one sentence a kind person would say to you about today. Not a slogan; something true and specific: “You got up and read this while feeling awful. That counts.” Put it where you will see it: your phone’s lock screen, a card in your pocket, the app’s journal. Read it once when the critical voice starts. If writing one is too hard, borrow Erica’s: “Not everyone will like me all the time, but I am likeable to some people,” and read it twice.",
+      "reflection_questions": [
+        "Whose voice does your inner critic most sound like?",
+        "What short sentence does it say about you most often, and when did you first believe it?",
+        "Which one person, real or imagined, could you picture saying something kind to you?"
+      ],
+      "scripture": {
+        "reference": "Psalm 103:14 (WEB)",
+        "text": "For he knows how we are made. He remembers that we are dust."
+      },
+      "sources": [33, 229, 32],
+      "keywords": ["self-compassion", "inner critic", "core beliefs", "nurturing voice", "self-talk"]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Do the thing before you feel like it",
+      "quote": "Any task can be broken down into smaller and smaller steps until you find something achievable.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez",
+      "explanation": "This week has been about thoughts. We end with the body, because the two are not separate. When you are depressed, the thought “I won’t enjoy it” or “it’s too hard” arrives before any activity, and most of the time it wins. You do less. With less to do, the replay loop has more room. Doing less also means fewer moments of pleasure or achievement, so the mood sinks further and the thought “nothing helps” collects more evidence. The CCI modules call this the vicious cycle, and behavioural activation is the deliberate reversal of it.\n\nThe order matters. Most people wait to feel motivated before they act. In depression that wait can last months. Behavioural activation turns it round: act first, in a very small way, and let the feeling follow, or not, afterwards. The modules are blunt about size. Do not clean the kitchen; wash five plates. Do not read a chapter; read for five minutes. If getting up is the task, aim for ten minutes out of bed. Set a time rather than a target, and count doing it as the success, whatever it felt like.\n\nTwo kinds of activity help: things that give a flicker of pleasure (a walk, music, a call) and things that give a sense of achievement (one bill paid, one bed made). Both interrupt rumination, because a mind that is doing something has less room for replay. Next week is about movement, which turns out to be one of the best-studied of these small actions. Today’s job is only to schedule one.",
+      "challenge": "Choose one activity for tomorrow, ten minutes or less, and write down when: “9:30, walk to the end of the street and back” or “after lunch, wash five plates”. Rate your mood out of 10 before and after, as an experiment, not a test. The thought “it won’t help” may show up; let it come along. If ten minutes is too much, make it two: open the curtains and stand in the light while the kettle boils.",
+      "reflection_questions": [
+        "What did you do this week that you did not feel like doing, however small?",
+        "Which thought most often stops you before you start?",
+        "What is the ten-minute version of something you used to enjoy?"
+      ],
+      "scripture": {
+        "reference": "Psalm 37:23-24 (KJV)",
+        "text": "The steps of a good man are ordered by the LORD: and he delighteth in his way. Though he fall, he shall not be utterly cast down: for the LORD upholdeth him with his hand."
+      },
+      "sources": [27, 32, 34, 191],
+      "keywords": ["behavioural activation", "action", "motivation", "small steps", "scheduling"]
+    }
+  ]
+}

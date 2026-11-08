@@ -1,0 +1,16 @@
+{
+  "name": "light-for-every-day",
+  "version": "0.1.0",
+  "description": "Daily encouragement grounded in research, for people living with depression. Static site + Supabase.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "send": "node send-daily.js",
+    "send:dry": "node send-daily.js --dry"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "resend": "^4.0.0"
+  }
+}

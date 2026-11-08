@@ -1,0 +1,25 @@
+name: Send daily e-mails
+
+on:
+  schedule:
+    - cron: "5 * * * *"   # every hour; the script sends to subscribers whose local hour matches
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install @supabase/supabase-js resend
+      - name: Send
+        env:
+          SUPABASE_URL:   ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY:   ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          FROM_EMAIL:     ${{ secrets.FROM_EMAIL }}
+          SITE_URL:       ${{ vars.SITE_URL }}
+        run: node send-daily.js
