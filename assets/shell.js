@@ -18,21 +18,22 @@
   <div class="sb-logo">
     <a href="index.html">
       <div class="sb-logo-text">Light for Every Day</div>
-      <div class="sb-logo-sub">Daily Hope &amp; Reflection</div>
+      <div class="sb-logo-sub">Daily Hope &amp; Small Steps</div>
     </a>
   </div>
   <nav class="sb-nav">
     <a class="sb-link${on('today.html')}" href="today.html">Today's Light</a>
-    <button class="sb-btn" id="study-btn" onclick="sbStudy()">Twelve Weeks</button>
+    <button class="sb-btn" id="study-btn" onclick="sbStudy()">The Journey</button>
     <div class="sb-sub" id="study-sub">
       ${THEMES.map(([s, n]) => `<a class="sb-link${topicOn(s)}" href="learn.html?topic=${s}">${n}</a>`).join('')}
     </div>
     <div class="sb-divider"></div>
-    <a class="sb-link${on('calendar.html')}" href="calendar.html">Calendar</a>
-    <a class="sb-link${on('archive.html')}" href="archive.html">Archive</a>
-    <a class="sb-link${on('tools.html')}" href="tools.html">The Well</a>
+    <a class="sb-link${on('calendar.html')}" href="calendar.html">My Progress</a>
+    <a class="sb-link${on('archive.html')}" href="archive.html">All Messages</a>
+    <a class="sb-link${on('tools.html')}" href="tools.html">Toolbox</a>
     <a class="sb-link${on('help.html')}" href="help.html">Help Now</a>
-    <a class="sb-link${on('subscribe.html')}" href="subscribe.html">Daily E-mail</a>
+    <a class="sb-link${on('subscribe.html')}" href="subscribe.html">Get It By E-mail</a>
+    <a class="sb-link${on('about.html')}" href="about.html">Why This Works</a>
     <a class="sb-link${on('contact.html')}" href="contact.html">Contact</a>
     <a class="sb-link${on('settings.html')}" href="settings.html">Settings</a>
   </nav>

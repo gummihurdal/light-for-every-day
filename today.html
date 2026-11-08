@@ -41,7 +41,7 @@ async function init() {
   const app = document.getElementById('app');
   document.getElementById('loading').style.display = 'none';
   app.style.display = 'flex';
-  if (!m) { app.innerHTML = `<div class="hero"><div class="hero-eyebrow">Day ${day}</div><div class="hero-theme">This day is still being written</div><a class="hero-cta" href="topics.html">See the Twelve Weeks</a></div>`; LDshell.addCrisis(); return; }
+  if (!m) { app.innerHTML = `<div class="hero"><div class="hero-eyebrow">Day ${day}</div><div class="hero-theme">This day is still being written</div><a class="hero-cta" href="topics.html">See the Journey</a></div>`; LDshell.addCrisis(); return; }
   const themes = await LD.getThemes();
   const th = themes.find(t => t.slug === m.theme) || {};
   const doneMap = LD.done(), j = LD.journal()[day] || {}, s = LD.settings;
@@ -113,7 +113,7 @@ async function init() {
           <div class="sp">
             <div class="sp-lbl">How Are You Right Now?</div>
             <div class="moods" id="moods">${MOODS.map((x, i) => `<button data-v="${i + 1}" class="${moodToday === i + 1 ? 'on' : ''}" aria-label="${x[1]}">${x[0]}<small>${x[1]}</small></button>`).join('')}</div>
-            <div class="sp-note">One tap a day. Your pattern appears on the Calendar.</div>
+            <div class="sp-note">One tap a day. Your pattern appears under My Progress.</div>
           </div>
           <div class="sp">
             <div class="sp-lbl">Was This Helpful?</div>
@@ -124,9 +124,10 @@ async function init() {
           <div class="sp">
             <div class="sp-lbl">Go Deeper</div>
             <a class="sp-link" href="learn.html?topic=${m.theme}">This Week's Seven Days</a>
-            <a class="sp-link" href="topics.html">All Twelve Weeks</a>
-            <a class="sp-link" href="tools.html">The Well: Self-Check &amp; Tools</a>
-            <a class="sp-link" href="subscribe.html">Receive It By E-mail</a>
+            <a class="sp-link" href="topics.html">The Journey</a>
+            <a class="sp-link" href="tools.html">Toolbox: Self-Check &amp; More</a>
+            <a class="sp-link" href="about.html">Why This Works</a>
+            <a class="sp-link" href="subscribe.html">Get It By E-mail</a>
           </div>
         </div>
       </div>
