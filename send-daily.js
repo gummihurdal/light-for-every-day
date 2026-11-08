@@ -53,7 +53,7 @@ function layout(t, inner, footer) {
   return `<!doctype html><html><body style="margin:0;background:#FAF7F2;font-family:Georgia,'Times New Roman',serif;color:#2B3440">
   <div style="max-width:600px;margin:0 auto;padding:28px 18px">
     <div style="text-align:center;margin-bottom:18px"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#D98E3B;vertical-align:middle"></span>
-      <span style="font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#8A9099;vertical-align:middle;margin-left:8px">Light for Every Day · small daily steps through depression</span></div>
+      <span style="font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#8A9099;vertical-align:middle;margin-left:8px">Light for Every Day · small daily steps out of depression</span></div>
     ${inner}
     <div style="margin-top:28px;padding:14px 16px;border-radius:12px;background:#F8E7E7;font-size:14px;line-height:1.5;font-family:Arial,sans-serif">
       <strong style="color:#C96F6F">${t.crisis}</strong> Schweiz/Suisse/Switzerland <b>143</b> · <b>147</b> · <b>144</b>. <a href="${SITE}/help.html" style="color:#5E86B5">${t.other}</a>
