@@ -28,9 +28,11 @@ a{color:inherit}
 .sb-divider{height:1px;background:rgba(201,164,58,0.2);margin:8px 16px}
 .sb-foot{padding:20px 24px;border-top:1px solid var(--border2);margin-top:auto}
 .sb-foot-date{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.5px;color:var(--text-b);line-height:2.1;font-weight:500}
-.sb-crisis{padding:12px 24px;border-top:1px solid var(--border2);font-size:12px;line-height:1.5;color:var(--text-d)}
-.sb-crisis b{color:var(--gold)}
-.sb-crisis a{color:var(--text-d)}
+.sb-crisis{margin:10px 14px 4px;padding:12px 14px;border:1px solid rgba(201,80,80,0.55);border-left:3px solid #D04848;background:rgba(192,64,64,0.14);font-size:13px;line-height:1.6;color:var(--text-b)}
+.sb-crisis .sbc-t{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#E86A6A;font-weight:700;margin-bottom:6px}
+.sb-crisis b{color:#FFFFFF;font-family:'Cinzel',serif;font-size:14px;font-weight:700;letter-spacing:1px}
+.sb-crisis a{color:#E86A6A;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-block;margin-top:6px;border-bottom:1px solid rgba(232,106,106,0.6)}
+.sb-crisis a:hover{color:#fff;border-bottom-color:#fff}
 
 /* ── MOBILE BAR ── */
 .mob-bar{display:none;position:fixed;top:0;left:0;right:0;height:52px;background:var(--navy);border-bottom:1px solid var(--border2);z-index:400;align-items:center;justify-content:space-between;padding:0 20px}
@@ -54,10 +56,10 @@ a{color:inherit}
 .fade-in{animation:rise .3s ease both}
 
 /* ── CRISIS BAR (safety, present on every page) ── */
-.crisis-bar{margin-top:auto;border-top:1px solid var(--border2);background:var(--navy);padding:14px 32px;font-size:14px;color:var(--text-d);display:flex;gap:10px;align-items:flex-start;line-height:1.6}
-.crisis-bar b{color:var(--gold)}
-.crisis-bar a{color:var(--text-d)}
-.crisis-bar .cb-lbl{font-family:'Cinzel',serif;font-size:8px;letter-spacing:4px;text-transform:uppercase;color:var(--gold-d);white-space:nowrap;margin-top:4px}
+.crisis-bar{margin-top:auto;border-top:2px solid #D04848;background:rgba(192,64,64,0.10);padding:16px 32px;font-size:15px;color:var(--text-b);display:flex;gap:14px;align-items:flex-start;line-height:1.65}
+.crisis-bar b{color:#fff;font-family:'Cinzel',serif;font-size:14px;letter-spacing:1px}
+.crisis-bar a{color:#E86A6A}
+.crisis-bar .cb-lbl{font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#E86A6A;font-weight:700;white-space:nowrap;margin-top:4px}
 
 /* ── RESPONSIVE ── */
 @media(max-width:860px){
