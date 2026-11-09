@@ -14,10 +14,11 @@ const PRICE = { in: 4 / 1e6, out: 20 / 1e6, cacheRead: 0.2 / 1e6, cacheWrite: 5 
 const COST_CAP_USD = parseFloat(process.env.COST_CAP_USD || '30');
 const CONCURRENCY = 3;
 const WEEKS = ['understanding_depression', 'thinking_rumination_cbt', 'exercise', 'sleep_light_circadian', 'nutrition', 'hydration', 'nature', 'alcohol_smoking', 'gratitude_positive_psych', 'social_connection', 'faith_spirituality', 'medication_treatment'];
-const LANGS = { de: { name: 'German (Swiss/standard German, formal "Sie")', bible: 'Luther 1912 or Schlachter 1951 (public domain); tag the reference e.g. "Psalm 34,18 (Luther 1912)"' },
-                fr: { name: 'French (formal "vous")', bible: 'Louis Segond 1910 (public domain); tag the reference e.g. "Psaume 34:18 (Segond 1910)"' } };
+const LANGS = { de: { name: 'German (Swiss/standard German, formal "Sie")', adj: 'German', translated: '(übersetzt)', bible: 'Luther 1912 or Schlachter 1951 (public domain); tag the reference e.g. "Psalm 34,18 (Luther 1912)"' },
+                fr: { name: 'French (formal "vous")', adj: 'French', translated: '(traduction)', bible: 'Louis Segond 1910 (public domain); tag the reference e.g. "Psaume 34:18 (Segond 1910)"' },
+                es: { name: 'Spanish (neutral, understood in Spain and Latin America, formal "usted")', adj: 'Spanish', translated: '(traducción)', bible: 'Reina-Valera 1909 (public domain); tag the reference e.g. "Salmos 34:18 (Reina-Valera 1909)"' } };
 const targets = process.argv.slice(2).filter(l => LANGS[l]);
-if (!targets.length) { console.error('usage: node translate.mjs de fr'); process.exit(1); }
+if (!targets.length) { console.error('usage: node translate.mjs de fr es'); process.exit(1); }
 
 const client = new Anthropic();
 let spent = 0, calls = 0;
@@ -32,9 +33,9 @@ function addUsage(u) {
 const SYSTEM = (lang) => `You are a careful literary translator for "Light for Every Day", a programme of daily messages for people living with depression, written in English for a Swiss and European church-affiliated audience. You translate into ${LANGS[lang].name}.
 
 Rules:
-- Translate meaning and tone faithfully: warm, direct, unhurried, never preachy. Short sentences. Natural ${lang === 'de' ? 'German' : 'French'}, not word-for-word. Keep paragraph breaks (\\n\\n) exactly.
+- Translate meaning and tone faithfully: warm, direct, unhurried, never preachy. Short sentences. Natural ${LANGS[lang].adj}, not word-for-word. Keep paragraph breaks (\\n\\n) exactly.
 - Keep every number, study detail, author name and year exactly as in the English. Do not add or remove claims.
-- "quote": if it is a sentence from a research paper or an author, translate it and append " (übersetzt)" / " (traduction)" to quote_source. If it is a Bible verse, use ${LANGS[lang].bible} and put the translation name in quote_source instead of (WEB)/(KJV).
+- "quote": if it is a sentence from a research paper or an author, translate it and append " ${LANGS[lang].translated}" to quote_source. If it is a Bible verse, use ${LANGS[lang].bible} and put the translation name in quote_source instead of (WEB)/(KJV).
 - "scripture": give the verse in ${LANGS[lang].bible}; "reference" in the target language's book-name convention with the translation tag.
 - Keep JSON keys, "day_in_theme", "sources" and "keywords" unchanged (translate keyword words, keep the array).
 - Crisis line numbers and "talk to your doctor" style safety sentences must survive intact.

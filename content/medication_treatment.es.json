@@ -1,0 +1,221 @@
+{
+  "theme": "medication_treatment",
+  "lang": "es",
+  "theme_intro": "Esta última semana trata de buscar ayuda y de lo que la investigación dice, con honestidad, que la ayuda puede hacer. Veremos cómo es una primera cita, qué hacen realmente las terapias basadas en la conversación y la medicación, qué ocurre cuando el primer tratamiento no funciona y cómo trazar un plan para el camino que queda por delante. Nada de esto sustituye lo que usted ya ha practicado; se suma a ello.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Pedir ayuda ya es tratamiento",
+      "quote": "Padecer depresión no significa que la persona sea débil o perezosa.",
+      "quote_source": "Organización Mundial de la Salud (2016), mhGAP Intervention Guide (traducción)",
+      "explanation": "Usted ha seguido presente durante once semanas. Hoy se trata de un paso más, ese que muchas personas aplazan durante meses: decírselo a un médico.\n\nLa Organización Mundial de la Salud forma a profesionales sanitarios de todo el mundo con una guía llamada mhGAP. Sus primeros mensajes para una persona con depresión son directos. La depresión es muy frecuente y le puede ocurrir a cualquiera. Tenerla no significa que usted sea débil o perezoso. La gente dice «anímate, haz un esfuerzo» porque no puede verla como ve un brazo roto. Y las ideas duras y sin esperanza que la depresión le hace tener sobre usted mismo probablemente se disiparán cuando la depresión remita. Es una afirmación médica, no una frase para darle ánimos.\n\nUna primera consulta es más sencilla de lo que usted teme. El médico le preguntará desde cuándo se siente decaído o ha perdido el interés (que sean dos semanas o más es importante), cómo duerme, cómo come, cómo está su energía y su concentración, si siente culpa o tiene pensamientos sin esperanza, y si ha pensado en hacerse daño. Puede que compruebe si hay causas físicas, como problemas de tiroides o anemia. Después deciden juntos: apoyo y una estructura para el día a día, una terapia psicológica, medicación o una combinación de todo ello, con una segunda visita en un plazo de una o dos semanas.\n\nNo necesita encontrar las palabras exactas. Aquí tiene un guion: «Desde hace varias semanas me siento decaído casi todos los días y he dejado de disfrutar de las cosas. No duermo bien y me cuesta funcionar. Creo que puedo tener depresión y me gustaría recibir ayuda». Si está pensando en quitarse la vida, llame hoy mismo a una línea de crisis; en la página de Ayuda encontrará el número de su país.",
+      "challenge": "Copie el guion de hoy en la aplicación de notas de su teléfono y modifíquelo hasta que cada frase sea verdad para usted. Después busque el número de teléfono de su médico o su página de citas en línea y guárdelo junto al guion, para que pedir la cita esté a un solo toque. Si ya acude a un médico o a un terapeuta, anote una cosa que todavía no le haya contado. Si incluso eso es demasiado hoy, responda por escrito a una sola pregunta: «¿Cómo cambia mi vida cuando estoy deprimido?».",
+      "reflection_questions": [
+        "¿Qué le ha impedido hasta ahora pedir ayuda, y cuánto de eso es la depresión hablando?",
+        "¿Quién en su vida sentiría alivio al saber que usted ha pedido una cita?",
+        "Si un amigo le describiera su último mes como si fuera el suyo propio, ¿qué le aconsejaría usted hacer?"
+      ],
+      "scripture": {
+        "reference": "Marcos 2:17 (Reina-Valera 1909)",
+        "text": "Los sanos no tienen necesidad de médico, mas los que tienen mal."
+      },
+      "sources": [
+        211,
+        26,
+        98
+      ],
+      "keywords": [
+        "buscar ayuda",
+        "médico",
+        "primera consulta",
+        "mhGAP",
+        "estigma",
+        "guion"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Lo que realmente hace la terapia de conversación",
+      "quote": "El objetivo de la terapia cognitiva es ayudar a las personas a darse cuenta de que pueden influir en su estado de ánimo identificando y cambiando sus pensamientos y creencias.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "«Terapia de conversación» puede sonar a pagarle a alguien para que le escuche mientras usted llora. Las terapias con mejor respaldo científico para la depresión son más prácticas que eso, y usted ya las ha probado en este programa.\n\nLa terapia cognitiva parte de una observación del Centre for Clinical Interventions: las personas deprimidas tienen pensamientos muy negativos sobre sí mismas, sobre su vida y sobre su futuro, y eso empeora su estado de ánimo. En terapia se aprende a detectar esos pensamientos, a sopesar las pruebas y a construir otros más equilibrados. Es estructurada, tiene una duración limitada y se centra en el aquí y el ahora. La activación conductual es su compañera: programar pequeñas actividades, resolver problemas paso a paso, actuar antes de que llegue la motivación. La terapia interpersonal trabaja sobre las relaciones que rodean a la depresión. Señala cuatro desencadenantes frecuentes: el duelo, los conflictos, los cambios vitales y la soledad. Y le ayuda a trabajar uno o dos de ellos.\n\nNo hace falta un especialista en una consulta privada para que esto funcione. En 2016, un ensayo en Peshawar, Pakistán, ofreció a 346 adultos con malestar psicológico cinco sesiones semanales de resolución de problemas, programación de actividades y apoyo social, impartidas por trabajadores sanitarios locales sin formación clínica previa. Tres meses después, sus puntuaciones de depresión eran de unos 6 de media en una escala de 21 puntos, frente a unos 9 en quienes solo habían visto a su médico. La OMS forma ahora a trabajadores comunitarios para dirigir grupos de terapia interpersonal de ocho sesiones, y en 2015 su panel de directrices concluyó que, para la depresión de moderada a grave, la terapia de conversación y la medicación son ambas primeras opciones razonables; para la depresión leve, la terapia va primero.\n\nUn consejero, un grupo, un programa eclesial con la formación adecuada: todo eso cuenta.",
+      "challenge": "Dedique 10 minutos a averiguar qué opciones de terapia de conversación existen donde usted vive: pregunte en la recepción de la consulta de su médico, busque en la página web de su seguro de salud o del servicio nacional de salud, o pregunte a una persona conocida que haya hecho terapia. Anote una opción concreta con un número de teléfono o un enlace. Si hoy eso es demasiado, escriba en un papel los cuatro desencadenantes de la terapia interpersonal (duelo, conflicto, cambio vital, soledad) y rodee con un círculo el que mejor describa su último año. Guarde el papel para su primera cita.",
+      "reflection_questions": [
+        "¿Cuál de los cuatro desencadenantes (el duelo, un conflicto, un cambio vital o la soledad) ha estado más cerca de su propio bajo estado de ánimo?",
+        "¿Qué le gustaría que un terapeuta entendiera sobre usted en los primeros diez minutos?",
+        "¿Cuál de las pequeñas prácticas de las últimas once semanas ya le pareció una especie de terapia?"
+      ],
+      "scripture": {
+        "reference": "Proverbios 15:22 (Reina-Valera 1909)",
+        "text": "Los pensamientos son frustrados donde no hay consejo; mas en la multitud de consejeros se afirman."
+      },
+      "sources": [
+        26,
+        98,
+        168,
+        157
+      ],
+      "keywords": [
+        "psicoterapia",
+        "TCC",
+        "activación conductual",
+        "terapia interpersonal",
+        "consejeros no profesionales",
+        "terapia de grupo"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "La medicación, con honestidad",
+      "quote": "Los medicamentos nunca deben suspenderse solo porque la persona experimente cierta mejoría.",
+      "quote_source": "Organización Mundial de la Salud (2016), Guía de intervención mhGAP (traducción)",
+      "explanation": "Este es el debate sobre los antidepresivos, contado con honestidad.\n\nEn 2008, Irving Kirsch y sus colegas obtuvieron todos los ensayos que las farmacéuticas habían enviado al organismo regulador de Estados Unidos sobre cuatro antidepresivos, publicados o no: 35 ensayos, unas 5000 personas. En la escala de depresión habitual, quienes tomaban el fármaco mejoraron unos 9.6 puntos y quienes tomaban una pastilla sin principio activo, unos 7.8. Ambos grupos mejoraron mucho. La diferencia entre ellos era pequeña y solo aumentaba a medida que la depresión era más grave. En 2010, Fournier y sus colegas reunieron los datos individuales de los pacientes de seis ensayos y encontraron el mismo patrón: poco o ningún beneficio añadido en la depresión leve o moderada, y un beneficio considerable en la depresión muy grave.\n\nOtros lo rebatieron. Penn y Tracy señalan que un nuevo análisis de los mismos datos encontró una diferencia mayor. También señalan que los promedios ocultan a las muchas personas que responden a un fármaco y no a otro, y que seguir con la medicación después de recuperarse redujo el riesgo de recaída en un 70 por ciento aproximadamente. Kirsch reservaría las pastillas para los casos más graves. La OMS y la mayoría de las guías nacionales, en cambio, mantienen la medicación y la terapia psicológica como opciones de primera línea equivalentes en la depresión moderada y grave. En la depresión leve, lo primero son la terapia, la actividad y el apoyo.\n\nTres hechos importan más que la discusión. Los antidepresivos no crean adicción. Normalmente tardan varias semanas en hacer efecto. Y nunca deben suspenderse de golpe ni porque usted se sienta un poco mejor: la OMS aconseja continuar entre nueve y doce meses después de encontrarse bien. Si usted toma medicación y tiene dudas, coménteselas a su médico.",
+      "challenge": "Anote dos preguntas para su médico sobre la medicación, la tome usted o no. «¿Cuánto tiempo pasará hasta que deba notar algo?» «¿Qué hago si tengo efectos secundarios en los primeros días?» «Cuando me encuentre bien, ¿cuánto tiempo seguiría tomándola y cómo la dejaríamos juntos?» Guarde las preguntas para su próxima cita. Si toma medicación, compruebe esta noche que la dosis de mañana esté preparada. Si eso le resulta demasiado, cuéntele a una persona cuál de los tres hechos de hoy le ha sorprendido.",
+      "reflection_questions": [
+        "¿Qué ha oído sobre los antidepresivos en su familia, entre sus amigos o en su iglesia, y cómo encaja eso con lo que realmente encontraron los estudios?",
+        "Si toma medicación, ¿qué le ayudaría a tomarla cada día tal como se la recetaron? Si no la toma, ¿qué querría preguntar antes de decidir?",
+        "¿De dónde le viene la esperanza: de una pastilla, de una persona, de una práctica, de una oración, o de varias cosas a la vez?"
+      ],
+      "scripture": {
+        "reference": "Lucas 10:34 (Reina-Valera 1909)",
+        "text": "Y llegándose, vendó sus heridas, echándoles aceite y vino; y poniéndole sobre su cabalgadura, llevóle al mesón, y cuidó de él."
+      },
+      "sources": [
+        114,
+        88,
+        159,
+        211
+      ],
+      "keywords": [
+        "antidepresivos",
+        "placebo",
+        "gravedad",
+        "Kirsch",
+        "semanas, no días",
+        "nunca suspender de golpe"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Cuando el primer tratamiento no funciona",
+      "quote": "Está claro que un tratamiento activo, continuado, razonado y optimizado de forma individual sí funciona para muchas personas.",
+      "quote_source": "Penn & Tracy (2012) (traducción)",
+      "explanation": "Si lo primero que probó no funcionó, usted forma parte de la mayoría. Y la historia no termina ahí.\n\nEl mayor estudio sobre el tratamiento de la depresión en condiciones reales, STAR*D, hizo un seguimiento a 3.671 adultos. Tras ese primer paso, alrededor del 37 por ciento estaba en remisión, es decir, casi sin síntomas. Quienes no lo estaban pasaron a un segundo paso: cambiar a otro medicamento, añadir un segundo medicamento o añadir terapia cognitiva. Alrededor del 31 por ciento de ellos alcanzó la remisión. El tercer y el cuarto paso ayudaron a menos personas, en torno al 13 por ciento cada uno. En conjunto, aproximadamente dos de cada tres personas alcanzaron la remisión a lo largo de los cuatro pasos. La remisión tardó de cinco a siete semanas en cada paso, y quienes necesitaron más pasos recayeron con más frecuencia durante el año siguiente.\n\nDos lecciones: «el primero no funcionó» es algo frecuente, y el siguiente paso tiene una posibilidad real; y hacen falta semanas, no días, para saberlo.\n\nPara quienes han probado varios medicamentos existen otras opciones. La estimulación magnética transcraneal (EMT) utiliza una bobina magnética que se coloca sobre el cuero cabelludo, en sesiones diarias durante tres a seis semanas. En 307 pacientes que no habían mejorado con una media de dos medicamentos y medio, el 58 por ciento respondió y el 37 por ciento alcanzó la remisión; un año después, unos seis de cada diez de quienes respondieron mantenían el beneficio. En ensayos controlados, la EMT es aproximadamente el doble de eficaz que una bobina simulada.\n\nNada de esto tiene que organizarlo usted solo. Es una lista de preguntas para su médico. Y un permiso para no rendirse tras un solo intento.",
+      "challenge": "Si está en tratamiento y no parece que le esté ayudando, anote hoy: cuándo empezó, qué ha cambiado aunque sea un poco y qué no ha cambiado. Lleve esa nota a su próxima cita y pregunte: «¿Cuál es nuestro siguiente paso si esto no es suficiente?». Si no está en tratamiento, anote un tratamiento que daba por hecho que no era para usted, y una pregunta sobre él. Si eso es demasiado, puntúe su estado de ánimo del 0 al 10 y ponga la fecha, para compararlo dentro de un mes.",
+      "reflection_questions": [
+        "Cuando algo no ha funcionado en el pasado, ¿qué se dijo usted sobre ello, y sobre usted mismo?",
+        "¿Cómo sería para usted, en concreto, estar «un poco mejor» dentro de cuatro semanas?",
+        "¿Quién podría ayudarle a seguir preguntando por los siguientes pasos en las semanas en que no tenga energía para preguntar?"
+      ],
+      "scripture": {
+        "reference": "Salmos 27:14 (Reina-Valera 1909)",
+        "text": "Aguarda a Jehová; esfuérzate, y aliéntese tu corazón: sí, espera a Jehová."
+      },
+      "sources": [
+        176,
+        55,
+        78,
+        125,
+        92
+      ],
+      "keywords": [
+        "STAR*D",
+        "resistente al tratamiento",
+        "cambio de medicación",
+        "potenciación",
+        "EMT",
+        "perseverancia"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Formar su equipo de cuidado",
+      "quote": "A menudo, los problemas parecen más grandes de lo que realmente son cuando una persona intenta afrontarlos por su cuenta.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "Nadie se recupera de la depresión en soledad, y nadie espera que usted lo haga.\n\nLa guía de la OMS para trabajadores de la salud describe la atención de la depresión como un conjunto de funciones, no como la tarea de un único salvador. El médico evalúa, revisa la salud física, habla sobre la medicación si es adecuado y mantiene el seguimiento: una segunda visita en el plazo de una semana y luego contacto regular durante los tres primeros meses. Un terapeuta o un consejero capacitado realiza el trabajo estructurado sobre los pensamientos, la actividad y las relaciones. La familia y los cuidadores participan con su consentimiento, y la guía pide al trabajador de la salud que le ayude a reactivar su red social anterior: las reuniones, los vecinos y las actividades que antes le sostenían.\n\nUna revisión sobre la atención de la depresión en países de ingresos bajos y medios encontró que la «atención colaborativa», en la que un equipo de atención primaria, un gestor de casos y un especialista supervisor comparten a un mismo paciente, funciona, y que los tratamientos para la depresión son igual de eficaces en entornos desfavorecidos. En Chile, la atención escalonada para mujeres con depresión llevó a una mejoría a los seis meses en aproximadamente el 70 por ciento, frente al 30 por ciento con la atención habitual.\n\nLas personas que no son profesionales importan de otra manera. El Centre for Clinical Interventions lo dice con sencillez: busque a alguien con quien pueda sentarse y tener una buena conversación; no una sesión de terapia, sino la oportunidad de hablar de lo que le está pasando. Un amigo o un pastor no es su terapeuta, y no necesita serlo. Su papel es escuchar, acompañar, quizá ir con usted a una cita. Su papel hoy es ver quién ya forma parte de su equipo y dónde están los huecos.",
+      "challenge": "Dibuje una pequeña tabla con cuatro filas: Médico, Terapeuta o consejero, Amigo o pastor, Familia. Junto a cada una escriba un nombre, o «todavía nadie». Elija un hueco y un pequeño paso para empezar a llenarlo: pedir una cita, enviar un mensaje, hacer una pregunta a alguien que pueda saber. Dé ese paso hoy si puede. Si le resulta demasiado, escriba el nombre de una persona que le haya escuchado bien en el último año y envíele un agradecimiento de dos líneas.",
+      "reflection_questions": [
+        "¿Quién lleva ya una parte de esto con usted, aunque nunca lo haya llamado equipo?",
+        "¿Qué ha esperado que le dé una sola persona cuando en realidad corresponde a varias?",
+        "¿Qué le facilitaría dejar que un profesional y un amigo hagan cada uno su propia parte?"
+      ],
+      "scripture": {
+        "reference": "Eclesiastés 4:9–10 (Reina-Valera 1909)",
+        "text": "Mejores son dos que uno; porque tienen mejor paga de su trabajo. Porque si cayeren, el uno levantará a su compañero: mas ¡ay del solo! que cuando cayere, no habrá segundo que lo levante."
+      },
+      "sources": [
+        211,
+        157,
+        34
+      ],
+      "keywords": [
+        "equipo de cuidado",
+        "atención colaborativa",
+        "familia",
+        "pastor",
+        "amigo",
+        "seguimiento"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Su plan de alerta temprana",
+      "quote": "Los tropiezos en el progreso pueden ocurrir en cualquier momento y son de esperar.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "La depresión tiende a volver. No es una amenaza. Es la razón para hacer un plan ahora, mientras puede pensar con claridad.\n\nEn el estudio STAR*D, las personas que habían necesitado más pasos de tratamiento recayeron con más frecuencia durante el año siguiente, y los investigadores dijeron que esto era de esperar. La guía de la OMS pide a los profesionales de la salud que sigan viendo a las personas hasta que lleven entre nueve y doce meses sin síntomas y, si la medicación forma parte del tratamiento, que la mantengan durante ese período. Cualquier cambio en la medicación debe hablarse con su médico.\n\nEl Centre for Clinical Interventions cierra su programa sobre la depresión con un módulo dedicado a mantenerse bien. Son tres puntos. Cuente con tropiezos y días bajos, y no caiga en la trampa de creer que un mal día significa que ha «vuelto a la casilla de salida». Siga practicando las estrategias hasta que se conviertan en hábitos. Tenga siempre a alguien con quien hablar. La hoja de trabajo «Healthy Me» del centro enumera las áreas que conviene vigilar: pensamientos equilibrados, actividades agradables, actividades sociales, ejercicio, relajación, autocuidado, metas y apoyo social.\n\nUn plan de prevención de recaídas tiene tres partes. Primero, las señales tempranas, las suyas en concreto. Para muchas personas son cambios en el sueño, cancelar planes, abandonar las pequeñas prácticas o pensamientos que se vuelven duros. Segundo, las acciones: lo que más le ayudó en estas doce semanas, por escrito, para no tener que recordarlo cuando esté mal. Tercero, las personas: a quién avisar y el número de su médico. Si alguna vez piensa en quitarse la vida, por favor llame a una línea de crisis ese mismo día. En la página de Ayuda encontrará el número de su país.",
+      "challenge": "Tome una hoja y escriba tres encabezados: Mis señales tempranas, Lo que me ayuda, A quién se lo digo. Bajo el primero, anote tres cambios que aparecieron antes de su último período de bajón. Bajo el segundo, anote las tres prácticas de este programa que más le ayudaron. Bajo el tercero, escriba dos nombres y el número de su médico. Haga una foto de la hoja para tenerla en el móvil. Si le resulta demasiado, escriba hoy solo las tres señales tempranas y termine el resto mañana.",
+      "reflection_questions": [
+        "Mirando atrás, ¿cuáles fueron las primeras señales pequeñas la última vez, semanas antes de que lo llamara depresión?",
+        "¿Qué práctica de este programa le dolería más perder, y qué es lo que más probablemente le haría abandonarla?",
+        "¿Quién le gustaría que se diera cuenta si usted empezara a decaer, y le ha dicho ya en qué fijarse?"
+      ],
+      "scripture": {
+        "reference": "Salmos 40:2 (Reina-Valera 1909)",
+        "text": "Y me hizo sacar de un lago de miseria, del lodo cenagoso; y puso mis pies sobre peña, y enderezó mis pasos."
+      },
+      "sources": [
+        34,
+        211,
+        176
+      ],
+      "keywords": [
+        "prevención de recaídas",
+        "señales de alerta temprana",
+        "mantenerse bien",
+        "autogestión",
+        "plan"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Tres cosas para llevar consigo",
+      "quote": "Sin embargo, es muy importante tener esto presente: la depresión es tratable.",
+      "quote_source": "World Health Organization & Columbia University (2016), Group Interpersonal Therapy for Depression (traducción)",
+      "explanation": "Hace ochenta y cuatro días usted abrió el primer mensaje de este programa. Sea cual sea su estado hoy, volvió las veces suficientes para llegar al último. Eso importa.\n\nEl manual de terapia de la OMS resume el hecho central en una sola línea: la depresión es tratable. La evidencia detrás de esa línea no es una promesa de que todo se resuelve. Es un patrón. En el mayor estudio realizado en condiciones reales, aproximadamente dos de cada tres personas alcanzaron la remisión cuando siguieron adelante a través de las distintas etapas del tratamiento. En una ciudad afectada por un conflicto, consejeros no profesionales aliviaron la depresión con cinco sesiones. Cuando Irving Kirsch, el crítico más incisivo de los antidepresivos, reunió ensayos de medicación, psicoterapia, su combinación y ejercicio, no encontró ninguna diferencia significativa entre ellos. Léalo como esperanza: hay más de un camino de salida, y los caminos pueden combinarse.\n\nEn estas semanas usted ha recorrido tramos de muchos caminos: relacionarse de otra manera con sus pensamientos, moverse, dormir, comer, beber agua, salir al aire libre, reducir el alcohol, dar gracias, buscar a otros, orar o descansar, y ahora pedir ayuda. El Centre for Clinical Interventions dice que la tarea, después de un programa, es seguir practicando unas pocas cosas hasta que se conviertan en hábitos, y que el progreso puede ser un camino lleno de baches, pero, en conjunto, un viaje que vale la pena.\n\nAsí que elija tres. No doce. Las tres que movieron algo en usted, aunque fuera muy poco. Escríbalas donde las vea. Si vuelve a caer en el pozo, empiece de nuevo en el Día 1 y cuénteselo a alguien. Volver a empezar no es un fracaso. Es el plan.",
+      "challenge": "Repase su diario, o su recuerdo de estas doce semanas, y elija tres prácticas que va a mantener: una para su cuerpo, una para su mente y una que incluya a otra persona. Escriba cada una como una frase con un cuándo: «Caminar diez minutos después del desayuno». Ponga la lista donde la vea cada mañana. Dígale a una persona cuáles son las tres que eligió. Si hoy eso es demasiado, elija una, y que sea la que le resultó más fácil.",
+      "reflection_questions": [
+        "¿Qué semana de este programa le sorprendió más, y por qué?",
+        "¿Qué sabe ahora sobre su depresión que no sabía hace 84 días?",
+        "Si alguien a quien usted quiere empezara mañana el Día 1, ¿qué es lo que más querría que supiera?"
+      ],
+      "scripture": {
+        "reference": "Lamentaciones 3:22–23 (Reina-Valera 1909)",
+        "text": "Es por la misericordia de Jehová que no somos consumidos, porque nunca decayeron sus misericordias. Nuevas son cada mañana; grande es tu fidelidad."
+      },
+      "sources": [
+        98,
+        176,
+        168,
+        113,
+        34
+      ],
+      "keywords": [
+        "esperanza",
+        "mirar atrás",
+        "hábitos",
+        "volver a empezar",
+        "recuperación"
+      ]
+    }
+  ]
+}

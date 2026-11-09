@@ -1,0 +1,221 @@
+{
+  "theme": "nutrition",
+  "lang": "es",
+  "theme_intro": "Esta semana trata sobre la alimentación y el estado de ánimo. No es una dieta, ni una lista de cosas prohibidas, ni nada que sustituya su tratamiento. Su cerebro está hecho de lo que usted come y funciona gracias a ello a cada hora. Las investigaciones de los últimos quince años muestran que el patrón general de lo que comemos está relacionado con cómo nos sentimos. Veremos lo que los estudios encontraron realmente, lo que no pudieron demostrar y cómo alimentarse de maneras pequeñas y asequibles en los días en que cocinar parece imposible.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "El cerebro come primero",
+      "quote": "El cerebro humano funciona con una tasa metabólica muy elevada y consume una proporción considerable de la energía y los nutrientes que ingerimos.",
+      "quote_source": "Sarris et al. (2015) (traducción)",
+      "explanation": "Durante mucho tiempo se pensó que la comida era solo combustible y material de construcción para el cuerpo. Nada más. Esa idea ha cambiado. Una revisión del neurocientífico Fernando Gómez-Pinilla describe cómo los nutrientes de una comida llegan a las moléculas que mantienen las células cerebrales flexibles y conectadas. Entre ellas hay un factor de crecimiento llamado BDNF, que responde a lo que comemos. Las dietas ricas en grasas omega-3 sostienen esos sistemas. Las dietas cargadas de grasas saturadas tienden a debilitarlos.\n\nEn 2015, un grupo internacional de psiquiatras e investigadores en nutrición escribió en The Lancet Psychiatry que el cerebro depende de aminoácidos, grasas, vitaminas y minerales, tanto para su estructura como para sus señales. Y que la alimentación merece en la psiquiatría el mismo lugar que ya tiene en la medicina del corazón. También dijeron algo honesto: hoy muchas personas están a la vez sobrealimentadas y mal nutridas. Muchas calorías, pero no suficiente de lo que el cerebro necesita.\n\nSi usted tiene depresión, probablemente sabe cómo se tuerce la relación con la comida. El apetito desaparece, o se inclina hacia el azúcar. Cocinar se siente como subir una cuesta. Nada de eso es un defecto de carácter. Es parte de la enfermedad. Esta semana no se trata de una dieta perfecta. Se trata de alimentar su cerebro con pasos lo bastante pequeños como para poder darlos, junto con el tratamiento que ya esté siguiendo.",
+      "challenge": "Hoy, observe. No cambie nada todavía. Tres veces a lo largo del día, después de comer o beber algo, escriba una línea en su diario: qué fue, más o menos a qué hora y cómo se sintió aproximadamente una hora después (con la mente nublada, más estable, con sueño, tranquilo). Eso es todo. Si tres líneas le parecen demasiado, escriba una sola línea sobre una sola comida. Observar sin juzgar es toda la tarea.",
+      "reflection_questions": [
+        "¿Cuándo fue la última vez que comió algo y se sintió un poco más estable después? ¿Qué era?",
+        "¿Cómo ha cambiado la depresión su manera de comer: más, menos, otras cosas, a otras horas?",
+        "Si la comida forma parte de cómo funciona su cerebro, ¿qué significaría tratar el comer como un cuidado y no como una obligación?"
+      ],
+      "scripture": {
+        "reference": "Salmos 145:15-16 (Reina-Valera 1909)",
+        "text": "Los ojos de todos esperan en ti, y tú les das su comida en su tiempo. Abres tu mano, y colmas de bendición a todo viviente."
+      },
+      "sources": [
+        181,
+        94,
+        133
+      ],
+      "keywords": [
+        "nutrición",
+        "cerebro",
+        "alimentación y estado de ánimo",
+        "BDNF",
+        "apetito"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Patrones, no alimentos perfectos",
+      "quote": "Los resultados sugieren que un consumo elevado de fruta, verdura, pescado y cereales integrales puede estar asociado a un menor riesgo de depresión.",
+      "quote_source": "Lai et al. (2014) (traducción)",
+      "explanation": "En un estudio británico con unos 3.500 funcionarios de alrededor de cincuenta y cinco años, los investigadores no se fijaron en nutrientes aislados. Observaron los patrones de alimentación en su conjunto. Un patrón giraba en torno a la verdura, la fruta y el pescado. El otro, en torno a los postres azucarados, los fritos, la carne procesada y los cereales refinados. Cinco años después, quienes más comían según el patrón de alimentos integrales tenían alrededor de una cuarta parte menos de probabilidades de presentar síntomas depresivos. Quienes más comían según el patrón de alimentos procesados tenían casi un 60 por ciento más de probabilidades. Los investigadores comprobaron si era la depresión la que había causado esos hábitos alimentarios, y no al revés, y no encontraron indicios de ello.\n\nCuando en 2014 se combinaron 21 estudios, un patrón saludable se asoció a unas probabilidades de depresión aproximadamente un 16 por ciento menores. El patrón occidental apuntaba en sentido contrario, pero el resultado no era estadísticamente sólido. Son asociaciones, no pruebas. Un estudio australiano con 3.700 adultos encontró que el dinero, la formación y la actividad física explicaban buena parte de esa relación, porque comer bien es más fácil cuando la vida es más fácil. Aun así, un patrón poco saludable mantenido en el tiempo seguía prediciendo más síntomas en las personas mayores.\n\nLa lección práctica es amable: no existe ningún superalimento ni ningún alimento prohibido. Lo que importa es hacia dónde va el patrón en su conjunto. Añadir un alimento integral a una comida ya mueve el patrón. No hace falta quitar nada primero.",
+      "challenge": "Añada hoy un alimento integral a una comida, sin quitar nada. Un puñado de guisantes o espinacas congelados mezclados con lo que ya vaya a comer. Una manzana o un plátano junto a su almuerzo. Media lata de alubias calentadas con su pasta o su arroz. Elija la opción más barata y más sencilla que tenga en su cocina. Si hoy incluso eso le resulta demasiado, deje una pieza de fruta donde la vea nada más levantarse mañana.",
+      "reflection_questions": [
+        "¿Qué alimento integral que ya le gusta podría comer más a menudo sin esfuerzo?",
+        "¿Ha sentido alguna vez que comer bien es solo para quienes tienen más tiempo, dinero o energía? ¿De dónde viene esa sensación?",
+        "¿Cómo se sentiría al añadir en lugar de quitar?"
+      ],
+      "scripture": {
+        "reference": "Génesis 1:29 (Reina-Valera 1909)",
+        "text": "Y dijo Dios: He aquí que os he dado toda hierba que da simiente, que está sobre la haz de toda la tierra; y todo árbol en que hay fruto de árbol que da simiente, seros ha para comer."
+      },
+      "sources": [
+        18,
+        121,
+        103
+      ],
+      "keywords": [
+        "patrón alimentario",
+        "alimento integral",
+        "alimento procesado",
+        "Whitehall II",
+        "legumbres"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Un patrón mediterráneo para cualquier presupuesto",
+      "quote": "Tierra de trigo y cebada, y de vides, e higueras, y granados; tierra de olivas, de aceite, y de miel.",
+      "quote_source": "Deuteronomio 8:8 (Reina-Valera 1909)",
+      "explanation": "El patrón alimentario más conocido en esta investigación es el mediterráneo tradicional: verduras, fruta y frutos secos, legumbres, cereales integrales, aceite de oliva, algo de pescado, poca carne y pocos lácteos enteros. En España, unos investigadores siguieron a unos 10.000 titulados universitarios que no tenían depresión al comienzo del estudio. A lo largo de unos cuatro años, 480 de ellos recibieron un diagnóstico de depresión. Quienes seguían el patrón más de cerca tenían un riesgo aproximadamente un 40 por ciento menor que quienes menos lo seguían, y el riesgo bajaba paso a paso a medida que aumentaba la adherencia. La fruta y los frutos secos, y las legumbres como las lentejas y los garbanzos, mostraron las tendencias protectoras más claras. El pescado, por sí solo, no mostró una tendencia clara en esa cohorte.\n\nUn análisis posterior de 15.000 personas del mismo estudio, a lo largo de ocho años, encontró algo alentador. Pasar de una adherencia baja a una moderada redujo el riesgo entre un 25 y un 30 por ciento, aproximadamente. Pasar de moderada a casi perfecta apenas añadía nada. La mayor parte del beneficio está en lo moderado. Un análisis conjunto de varios estudios encontró un riesgo de depresión alrededor de un 30 por ciento menor con una adherencia alta.\n\nSe trata de estudios observacionales; las personas que comen así también se diferencian en otros aspectos, y un gran ensayo aleatorizado solo ha mostrado una tendencia. Aun así, este patrón es asequible. Tomate en conserva, lentejas y garbanzos secos o en conserva, verduras congeladas, copos de avena, pan, una botella de aceite de oliva o de colza, frutos secos comprados en bolsitas, fruta de temporada. Para las personas vegetarianas, las nueces y la linaza molida sustituyen al pescado. No hace falta nada exótico.",
+      "challenge": "Prepare hoy un plato de estilo mediterráneo en unos diez minutos: una lata de garbanzos o lentejas calentada con una lata de tomate troceado, una cucharada de aceite de oliva y las verduras congeladas que tenga. Cómalo con pan. Si hoy cocinar le resulta demasiado, la versión reducida es un puñado pequeño de frutos secos y una pieza de fruta. Lo moderado basta; hoy se trata de un plato, no de una vida nueva.",
+      "reflection_questions": [
+        "¿Qué partes de este patrón ya están en su cocina o en su cultura?",
+        "¿Saber que una adherencia moderada aporta la mayor parte del beneficio cambia lo que siente al intentarlo?",
+        "¿Quién de su entorno come de esta manera, y podría compartir una comida con esa persona esta semana?"
+      ],
+      "scripture": {
+        "reference": "Salmos 23:5 (Reina-Valera 1909)",
+        "text": "Aderezarás mesa delante de mí, en presencia de mis angustiadores: ungiste mi cabeza con aceite: mi copa está rebosando."
+      },
+      "sources": [
+        179,
+        180,
+        167,
+        181
+      ],
+      "keywords": [
+        "dieta mediterránea",
+        "cohorte SUN",
+        "legumbres",
+        "aceite de oliva",
+        "presupuesto"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Frutas, verduras y el ánimo de mañana",
+      "quote": "Comer frutas y verduras puede favorecer el bienestar emocional en adultos jóvenes sanos.",
+      "quote_source": "White, Horwath & Conner (2013) (traducción)",
+      "explanation": "La mayoría de los estudios sobre alimentación preguntan por años. Uno preguntó por días. En Nueva Zelanda, 281 adultos jóvenes llevaron un diario en línea durante tres semanas. Anotaban cada día qué comían y cómo se sentían. Los días en que comían más frutas y verduras, se sentían más positivos. Después, los investigadores comprobaron el orden de los hechos. Comer frutas y verduras predecía un mejor ánimo al día siguiente; un mejor ánimo no predecía comer más frutas y verduras. Primero venía la comida. Los cambios más claros aparecieron con unas siete u ocho raciones al día, que es mucho, pero la tendencia se mantenía también con cantidades menores.\n\nEran estudiantes sanos, no personas con depresión, y el efecto se observó en los sentimientos positivos, no en la enfermedad. Otros estudios apuntan en la misma dirección. Entre 9.255 miembros de la Iglesia Adventista en Norteamérica, quienes comían más verduras, frutas, frutos secos y legumbres decían tener más sentimientos positivos y menos negativos. Entre 278 adultos mayores en Estados Unidos, quienes tenían depresión comían menos frutas y verduras y obtenían menos vitamina C de los alimentos, mientras que las pastillas de antioxidantes no mostraron ninguna relación. El beneficio parece venir de la comida, no de las cápsulas. En Taiwán, las personas mayores que comían verduras con más frecuencia tenían alrededor de un 60 por ciento menos de probabilidades de presentar nuevos síntomas depresivos cuatro años después.\n\nUna ración es más o menos un puñado. Lo congelado cuenta. Lo enlatado cuenta. Un plátano, una zanahoria, una taza de espinacas congeladas echadas en una sopa o en la pasta: cada cosa cuenta.",
+      "challenge": "Añada hoy dos raciones: una fruta y una verdura. Hágalo fácil. Eche un puñado de verduras congeladas en lo que cocine o recaliente, y coma una pieza de fruta a una hora fija, quizá con su bebida de la tarde. Aquí lo congelado y lo enlatado valen tanto como lo fresco, y son más baratos. Si hoy dos le parecen demasiadas, que sea una, y fíjese mañana por la mañana en cómo se siente.",
+      "reflection_questions": [
+        "¿Qué comió ayer? ¿Ve alguna relación con cómo se siente esta mañana?",
+        "¿Qué fruta o verdura le encantaba de niño? ¿Sigue estando a su alcance?",
+        "¿Qué le impide a usted comer frutas y verduras: el precio, la falta de energía, la costumbre u otra cosa?"
+      ],
+      "scripture": {
+        "reference": "Proverbios 15:17 (Reina-Valera 1909)",
+        "text": "Mejor es la comida de legumbres donde hay amor, que de buey engordado donde hay odio."
+      },
+      "sources": [
+        222,
+        86,
+        158,
+        205
+      ],
+      "keywords": [
+        "fruta",
+        "verduras",
+        "diario personal",
+        "afecto positivo",
+        "verduras congeladas"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Las grasas de las que está hecho su cerebro",
+      "quote": "Los ácidos grasos poliinsaturados omega-3 son componentes normales de las membranas celulares y son esenciales para el funcionamiento normal del cerebro.",
+      "quote_source": "Gómez-Pinilla (2008) (traducción)",
+      "explanation": "Las paredes de sus células cerebrales están hechas en parte de grasas omega-3. El cuerpo las produce mal, así que tienen que venir de los alimentos. Las dos más importantes se llaman EPA y DHA. Aquí la investigación es inusualmente clara en los detalles. Un análisis de 2011, con 15 ensayos y 916 personas, encontró que los suplementos compuestos sobre todo de EPA aliviaban la depresión, mientras que los que tenían menos EPA no lo hacían. Tampoco encontró pruebas de que el DHA por sí solo ayude. Una revisión de 2014 halló el beneficio sobre todo en personas con depresión diagnosticada que tomaban omega-3 junto con su tratamiento habitual, y poco beneficio en personas sanas o durante el embarazo.\n\nUna guía internacional para médicos, publicada en 2019, dice que el omega-3 funciona mejor como complemento que por sí solo, que hay que vigilar las molestias de estómago y las reacciones en la piel, y que debe intervenir un médico. Si le interesa un suplemento, esa es la conversación que conviene tener: junto con su tratamiento, nunca en lugar de él.\n\nEn cuanto a los alimentos, el pescado azul, como las sardinas, la caballa y el salmón, es la fuente más rica, y en lata también sirve. Las nueces, la linaza molida, las semillas de chía y el aceite de colza aportan un omega-3 más corto que el cuerpo convierte en EPA y DHA solo en pequeñas cantidades. Y, sin embargo, en un estudio con 138 adventistas del suroeste de Estados Unidos, los vegetarianos que casi no consumían EPA ni DHA dijeron tener mejor estado de ánimo que quienes comían carne. Una alimentación basada en plantas no es un riesgo para el ánimo. Los vegetarianos que quieran EPA y DHA directamente pueden preguntar a su médico por productos a base de algas.",
+      "challenge": "Ponga hoy en su plato un alimento con omega-3. Si come pescado: una lata de sardinas o de caballa sobre una tostada, cinco minutos, sin cocinar. Si su alimentación es vegetal: una cucharada de linaza molida mezclada con avena o yogur, o un puñadito de nueces. Si está pensando en un suplemento, en lugar de comprar nada, escriba en su diario una pregunta para su médico. Si todo eso le parece demasiado, meta una bolsa de nueces en el bolsillo del abrigo para mañana.",
+      "reflection_questions": [
+        "¿Qué alimento con omega-3 podría formar parte de su semana de forma realista?",
+        "¿Alguna vez le prometieron una solución rápida en un frasco? ¿Cómo se sintió después?",
+        "¿Qué pregunta sobre suplementos le gustaría hacerle a su médico?"
+      ],
+      "scripture": {
+        "reference": "Isaías 55:2 (Reina-Valera 1909)",
+        "text": "Oídme atentamente, y comed del bien, y deleitaráse vuestra alma con grosura."
+      },
+      "sources": [
+        94,
+        196,
+        97,
+        15,
+        39
+      ],
+      "keywords": [
+        "omega-3",
+        "EPA",
+        "DHA",
+        "nueces",
+        "linaza",
+        "vegetariano"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Vitamina D, folato, B12: pida un análisis",
+      "quote": "Nuestros análisis concuerdan con la hipótesis de que una baja concentración de vitamina D se asocia con la depresión, y ponen de relieve la necesidad de ensayos controlados aleatorizados de vitamina D para la prevención y el tratamiento de la depresión, a fin de determinar si esta asociación es causal.",
+      "quote_source": "Anglin et al. (2013) (traducción)",
+      "explanation": "La vitamina D se produce en la piel gracias a la luz del sol. También se encuentra en el pescado azul, la yema de huevo, algunas setas y los alimentos enriquecidos. En el norte de Europa, el sol de invierno es demasiado débil para producir mucha. Una revisión de 14 estudios con más de 31.000 personas encontró niveles más bajos de vitamina D en las personas con depresión. En los estudios que siguieron a las personas a lo largo del tiempo, quienes tenían los niveles más bajos tenían aproximadamente el doble de riesgo de deprimirse. En un estudio neerlandés con casi 2.400 adultos, un tercio tenía la vitamina D baja, y los niveles eran más bajos en quienes tenían la depresión más grave.\n\nPero cuidado con la dirección de la flecha. La depresión hace que uno se quede en casa, y quedarse dentro significa menos sol. Los ensayos con suplementos de vitamina D han dado resultados dispares. Una revisión encontró beneficio sobre todo en los ensayos en los que las personas tenían realmente niveles bajos al principio y en los que sus niveles en sangre aumentaron de verdad. Corregir una carencia puede ayudar; tomar más cuando no hay carencia no ha demostrado hacerlo.\n\nEl folato y la B12 cuentan una historia parecida. En un pequeño estudio con 55 personas cuyo antidepresivo no funcionaba, un folato bajo predecía una peor respuesta. Las personas portadoras de una variante genética común que reduce el folato tienen una probabilidad de depresión aproximadamente un tercio mayor. Esto importa para una parte de las personas, no para todas. El folato está en las lentejas, las alubias, las verduras de hoja verde y las naranjas. La B12 procede de alimentos de origen animal, así que con una dieta vegana debe obtenerse de alimentos enriquecidos o de un suplemento, elegido junto con su médico. Un análisis de sangre resuelve la duda.",
+      "challenge": "Escriba esta pregunta en su diario, lista para su próxima cita: «¿Podría revisar mis niveles de vitamina D, B12 y folato?». Si no tiene ninguna cita, anote hoy a quién se lo preguntaría y cómo pedir hora. Después, si el tiempo lo permite, quédese de pie o sentado al aire libre, a la luz del día, durante diez minutos hacia el mediodía, con la cara y las manos descubiertas. Si salir le resulta demasiado, escriba la pregunta y déjelo ahí. La pregunta es la tarea.",
+      "reflection_questions": [
+        "¿Se ha hecho un análisis de sangre desde que empezó su depresión? ¿Le tranquilizaría conocer sus niveles?",
+        "¿Cuánta luz del día recibe su piel en una semana normal?",
+        "¿Hay algún alimento rico en folato que ya disfrute?"
+      ],
+      "scripture": {
+        "reference": "Salmos 139:14 (Reina-Valera 1909)",
+        "text": "Te alabaré; porque formidables, maravillosas son tus obras: Estoy maravillado, Y mi alma lo conoce mucho."
+      },
+      "sources": [
+        21,
+        142,
+        193,
+        156,
+        93
+      ],
+      "keywords": [
+        "vitamina D",
+        "folato",
+        "B12",
+        "análisis de sangre",
+        "luz solar",
+        "vegano"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Azúcar, cambios suaves y comer sin energía",
+      "quote": "Sin embargo, nuestro gusto por lo dulce no nos ha favorecido, ya que la tecnología moderna nos ha proporcionado carbohidratos altamente refinados que son apetitosos, baratos y abundantes.",
+      "quote_source": "Gangwisch et al. (2015) (traducción)",
+      "explanation": "Cuando uno está deprimido, el azúcar funciona, por un momento. El antojo es un intento de sobrellevar el malestar, no una debilidad. En un estudio con unas 70 000 mujeres estadounidenses, seguidas durante tres años, aquellas cuya alimentación elevaba más rápido el azúcar en sangre tenían alrededor de un 22 por ciento más de probabilidades de desarrollar una nueva depresión. Las que más azúcar añadido consumían, alrededor de un 23 por ciento más. La fibra, la fruta y la verdura se asociaban con probabilidades más bajas. En un experimento rigurosamente controlado, 82 adultos sanos siguieron una dieta de azúcares rápidos y otra de azúcares lentos durante 28 días cada una, con las mismas calorías. Con la dieta de azúcares rápidos, sus puntuaciones de depresión fueron un 38 por ciento más altas y se sentían más cansados. En España, las personas que más comida rápida consumían tenían alrededor de un 40 por ciento más de riesgo de depresión a lo largo de seis años.\n\nLa parte esperanzadora: en Australia, 76 jóvenes adultos con síntomas depresivos recibieron un breve vídeo con consejos de alimentación y una pequeña cesta de alimentos. Tres semanas después, sus puntuaciones de depresión habían mejorado. Las del grupo de comparación, no.\n\nAsí que piense en cambios, no en prohibiciones. Fruta con unos pocos frutos secos en lugar de solo dulces. Avena en lugar de cereales azucarados. Agua o té en lugar de refrescos con gas. Y cuando no le quede energía: coma poco y con regularidad, algo cada tres o cuatro horas. Tenga en casa alimentos que no necesiten cocinarse: legumbres en conserva, avena, plátanos, frutos secos, huevos, pan, verduras congeladas. En un buen día, cocine el doble y congele la mitad. Si el apetito desaparece durante semanas o su peso está cambiando, dígaselo a su médico. La comida acompaña a su tratamiento, y un cuerpo alimentado puede sostenerlo mejor.",
+      "challenge": "Asuma un pequeño compromiso para la próxima semana y escríbalo en su diario. Elija un cambio, por ejemplo fruta y frutos secos cuando normalmente tomaría dulces, o agua en lugar de un refresco con gas, y un alimento básico que no requiera cocinar para tener en casa, como legumbres en conserva, avena o plátanos. Añada ese alimento a su lista de la compra hoy mismo. Si una semana le parece demasiado, comprométase con el cambio solo para mañana.",
+      "reflection_questions": [
+        "Cuando busca algo dulce, ¿de qué tiene hambre realmente en ese momento?",
+        "¿Qué alimento podría tener en casa que no necesite cocinarse ni exija decisiones?",
+        "Mirando atrás esta semana, ¿qué pequeño cambio le ha parecido más posible?"
+      ],
+      "scripture": {
+        "reference": "1 Reyes 19:7 (Reina-Valera 1909)",
+        "text": "Y volviendo el ángel de Jehová la segunda vez, tocóle, diciendo: Levántate y come: porque grande camino te resta."
+      },
+      "sources": [
+        90,
+        52,
+        178,
+        73,
+        17
+      ],
+      "keywords": [
+        "azúcar",
+        "índice glucémico",
+        "comida rápida",
+        "cambios",
+        "apetito",
+        "planificación de comidas"
+      ]
+    }
+  ]
+}

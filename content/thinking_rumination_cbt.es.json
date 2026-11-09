@@ -1,0 +1,210 @@
+{
+  "theme": "thinking_rumination_cbt",
+  "lang": "es",
+  "theme_intro": "La depresión no solo cambia cómo se siente usted; también cambia cómo piensa, y luego esos pensamientos alimentan los sentimientos. Esta semana miramos ese círculo: los pensamientos automáticos que llegan sin ser invitados, la repetición de la rumiación, las trampas del pensamiento a las que los especialistas han puesto nombre, y las habilidades prácticas de la terapia cognitivo-conductual para atrapar un pensamiento, sopesarlo frente a las pruebas y responderle con algo más amable y más verdadero. Termina con una pequeña acción, porque pensar y hacer no van por separado.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Los pensamientos no son hechos",
+      "quote": "Los pensamientos simplemente ocurren en mi cerebro; no son LA VERDAD.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression (traducción)",
+      "explanation": "Cuando usted está deprimido, su mente produce un flujo constante de comentarios sobre usted. «Soy una carga». «Nada de lo que hago sale bien». «Todos ven que estoy fracasando». Llegan rápido y parecen simples descripciones de la realidad. No lo son. Son pensamientos, y los pensamientos son sucesos de la mente, no veredictos sobre su vida.\n\nLa terapia cognitiva, uno de los tratamientos para la depresión mejor estudiados, parte de una observación: entre una situación y un sentimiento hay un paso intermedio, que es lo que nos decimos sobre esa situación. El Centre for Clinical Interventions, un servicio clínico australiano, lo enseña con un ejemplo. Usted conoce a un hombre en una fiesta y él no deja de mirar a su alrededor. Si piensa «Es un maleducado», siente irritación. Si piensa «Le parezco aburrido; nadie quiere hablar conmigo», se siente pequeño y triste. Si piensa «Seguramente está esperando a un amigo», casi no siente nada. La misma sala, el mismo hombre, tres sentimientos, porque hubo tres pensamientos.\n\nLa depresión inclina ese flujo hacia el segundo tipo de pensamiento, y lo hace de forma automática, por debajo del nivel en el que normalmente se daría cuenta. Usted no lo ha elegido. Pero los pensamientos están ahí, y están dando forma a cómo se siente. Esta semana se trata de aprender a notarlos, que es el primer paso para que pierdan fuerza. Nada de esto sustituye a su médico, a su medicación ni a su terapeuta; funciona junto con ellos.",
+      "challenge": "Hoy, una sola vez, atrape un sentimiento y el pensamiento que hay detrás. Cuando note que su ánimo baja, aunque sea un poco, haga una pausa y pregúntese: ¿qué me pasó por la mente hace un momento? Escriba el sentimiento en una palabra (triste, avergonzado, apagado, ansioso) y el pensamiento en una frase. Todavía no discuta con él; la tarea es solo verlo. Si escribir le resulta demasiado, diga el pensamiento en voz alta y luego añada: «Eso es un pensamiento».",
+      "reflection_questions": [
+        "¿Qué pensamiento sobre usted mismo apareció con más frecuencia hoy?",
+        "Cuando escuchó ese pensamiento, ¿qué hizo su cuerpo?",
+        "Si un amigo cercano dijera esa misma frase sobre sí mismo, ¿qué sentiría usted por él?"
+      ],
+      "scripture": {
+        "reference": "Salmos 139:23 (Reina-Valera 1909)",
+        "text": "Examíname, oh Dios, y conoce mi corazón: Pruébame y conoce mis pensamientos."
+      },
+      "sources": [
+        28,
+        229,
+        26
+      ],
+      "keywords": [
+        "pensamientos",
+        "sentimientos",
+        "pensamientos automáticos",
+        "TCC",
+        "darse cuenta"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Rumiación: el bucle de repetición de la mente",
+      "quote": "Los pensamientos negativos persistentes se consideran un rasgo distintivo de la depresión.",
+      "quote_source": "Koster, De Lissnyder, Derakshan & De Raedt (2011) (traducción)",
+      "explanation": "Hay una forma de pensar que la mayoría de las personas con depresión conocen bien. Usted está acostado en la cama y vuelve una y otra vez sobre lo mismo: por qué se siente así, qué le pasa, en qué se equivocó el año pasado, qué significa que todavía se sienta así. No se decide nada. Los pensamientos vuelven a dar la vuelta. Los investigadores llaman a esto rumiación: pensar de forma repetitiva en las causas, las consecuencias y los síntomas del propio bajo estado de ánimo.\n\nParece una manera de resolver problemas, y por eso cuesta tanto detenerla. Pero en una amplia revisión de la investigación, Smith y Alloy encontraron que la rumiación se centra menos en soluciones reales que la preocupación común. Se detiene en el pasado y en la pérdida, en lugar de en qué hacer a continuación. Y va acompañada de menos confianza en poder resolver problemas en absoluto. Los estudios que siguen a las personas a lo largo del tiempo observan que quienes rumian más tienen más probabilidades de estar deprimidos más adelante.\n\n¿Por qué cuesta tanto soltarla? Koster y sus colegas sostienen que el problema no es la fuerza de voluntad, sino la atención. A un cerebro deprimido le cuesta más desprenderse de la información negativa sobre sí mismo. Una vez que un pensamiento doloroso capta su atención, el mecanismo que normalmente le permitiría soltarlo funciona peor. Eso no es un defecto de carácter. Es un rasgo conocido de la enfermedad, y se puede trabajar. La actividad, como señalan los módulos del CCI, le da a la mente otro lugar adonde ir. Por eso «haga algo pequeño» no es una sugerencia trivial: es una respuesta directa al bucle.",
+      "challenge": "Hoy, observe un bucle de repetición mientras está ocurriendo. La señal es dar vueltas sobre lo mismo: «¿por qué soy así?», «¿qué hice mal?». Cuando lo detecte, dígase «estoy rumiando» y luego dele a su atención una tarea de dos minutos: lave una taza, quédese junto a una ventana y nombre cinco cosas que pueda ver, o escuche una canción hasta el final. Es posible que el bucle vuelva a empezar; es normal. Darse cuenta una sola vez ya es un logro. Si dos minutos le parecen demasiado, póngale nombre y cambie de postura: incorpórese o cámbiese de silla.",
+      "reflection_questions": [
+        "¿Cuándo suele empezar el bucle de repetición en su caso: a una hora del día, en un lugar, en un momento de quietud?",
+        "¿Qué le dice el bucle que intenta conseguir? ¿Llega alguna vez a conseguirlo?",
+        "¿Qué pequeña cosa le ha sacado de él en el pasado, aunque fuera por un minuto?"
+      ],
+      "scripture": {
+        "reference": "Salmos 94:19 (Reina-Valera 1909)",
+        "text": "En la multitud de mis pensamientos dentro de mí, tus consolaciones alegraban mi alma."
+      },
+      "sources": [
+        191,
+        118,
+        27
+      ],
+      "keywords": [
+        "rumiación",
+        "pensar demasiado",
+        "atención",
+        "repetición",
+        "desconexión"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Poner nombre a las trampas del pensamiento",
+      "quote": "Cargar con el 100 % de la responsabilidad es un peso bastante grande, y es probable que le haga sentirse desanimado o abrumado.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "El pensamiento depresivo no es aleatorio. Los profesionales que han escuchado a miles de personas describir sus pensamientos ven que los mismos patrones vuelven una y otra vez. Darles un nombre ayuda a reconocerlos. Estos son los que más pesan en la depresión, tal como se enseñan en los módulos «Back from the Bluez» del CCI y en el cuaderno de trabajo de Shapiro.\n\nFiltro mental: un solo detalle negativo ocupa toda la pantalla y el resto del día desaparece. Sacar conclusiones precipitadas: leer la mente («ella piensa que soy patético») y adivinar el futuro («va a salir mal»). Personalización: todo lo que sale mal es culpa suya, aunque apenas haya tenido que ver. Catastrofismo: un pequeño error se convierte en el fin de su trabajo, de su matrimonio, de su futuro. Pensamiento en blanco y negro: si no es perfecto, es un fracaso. Los «debería» y los «tengo que»: un reglamento que nadie podría cumplir. Generalización excesiva: una mala tarde se convierte en «siempre» y «nunca». Etiquetado: se le cae un vaso y usted es «un idiota». Razonamiento emocional: «Me siento inútil, así que debo de serlo». Minimización: sus propios puntos fuertes «no cuentan»; tuvo suerte; solo estaban siendo amables.\n\nProbablemente reconocerá varios. Eso no significa que haya algo mal en usted. Los autores del CCI señalan que son hábitos que funcionan sin que nos demos cuenta, y que casi todo el mundo usa algunos. La depresión les sube el volumen. Ponerles nombre no sirve para reprocharse que piensa mal. Sirve porque un pensamiento con nombre («esto es catastrofismo») queda un poco más lejos de usted que un pensamiento que tomó como un hecho.",
+      "challenge": "Hoy, atrape un pensamiento y póngale un nombre de la lista. No hace falta cambiarlo. Cuando note un bajón de ánimo o de ansiedad, busque el pensamiento y pregúntese: ¿qué patrón es este? Escriba el pensamiento y el nombre uno al lado del otro, por ejemplo: «He arruinado toda la velada: filtro mental, catastrofismo». Con uno basta. Si hoy le resulta demasiado, elija el patrón que más reconoció al leer y esté atento solo a ese.",
+      "reflection_questions": [
+        "¿Qué dos o tres patrones reconoció con más fuerza?",
+        "¿Dónde pudo aprender a pensar así? ¿Quién le hablaba de esa manera?",
+        "¿Qué cambia, aunque sea un poco, cuando llama a un pensamiento por su nombre?"
+      ],
+      "scripture": {
+        "reference": "Filipenses 4:8 (Reina-Valera 1909)",
+        "text": "Por lo demás, hermanos, todo lo que es verdadero, todo lo honesto, todo lo justo, todo lo puro, todo lo amable, todo lo que es de buen nombre; si hay virtud alguna, si alguna alabanza, en esto pensad."
+      },
+      "sources": [
+        30,
+        229
+      ],
+      "keywords": [
+        "estilos de pensamiento",
+        "distorsiones cognitivas",
+        "catastrofismo",
+        "blanco y negro",
+        "leer la mente"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "El ABC para atrapar un pensamiento",
+      "quote": "Registre la situación tal como la registraría una cámara de vídeo: solo los hechos.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "Darse cuenta de los pensamientos en el momento es difícil, sobre todo cuando cuesta concentrarse. Los terapeutas cognitivos usan para ello una pequeña estructura, el ABC, y funciona precisamente porque es mecánica. No hace falta tener una gran revelación. Basta con rellenar tres casillas.\n\nA es el acontecimiento activador: lo que ocurrió, descrito como lo grabaría una cámara de vídeo. «Mi hermana me llamó y colgó a los cuatro minutos». No «mi hermana estaba deseando librarse de mí»: eso ya es un pensamiento. C es la consecuencia: lo que usted sintió e hizo. Nombre el sentimiento con una o dos palabras, póngale un número del 0 al 100 según su intensidad y anote qué hizo después (volvió a la cama, canceló el plan). B es la creencia que hay entre ambos: lo que se le pasó por la cabeza. Escriba todos los pensamientos que encuentre y luego subraye el que tiene más carga, el pensamiento caliente, y puntúe hasta qué punto se lo cree, del 0 al 100.\n\nA menudo, el primer pensamiento que aparece no es el caliente. Los módulos sugieren excavar con una pregunta como «¿y qué dice eso de mí?». Debajo de «tenía prisa» puede esconderse «soy una carga para todos». El pensamiento caliente suele ser el que le encoge el pecho.\n\nUn ABC por escrito consigue dos cosas. Separa los hechos de la historia, algo que la depresión no deja de difuminar. Y le da algo concreto que examinar mañana, cuando empecemos a sopesar las pruebas. Los pensamientos en el papel son más pequeños que los pensamientos en la oscuridad.",
+      "challenge": "Haga hoy un ABC, en papel o en el diario de la aplicación. Espere a un momento en que su ánimo decaiga y escriba tres líneas. A: qué ocurrió, solo hechos, en una frase. C: qué sintió, en una palabra con un número del 0 al 100, y qué hizo. B: qué se le pasó por la cabeza, con el pensamiento más caliente subrayado y una puntuación de cuánto se lo cree. Cinco minutos son más que suficientes. Si le resulta demasiado, haga solo A y C: un hecho y un sentimiento. B puede esperar a otro día.",
+      "reflection_questions": [
+        "¿Cuál fue hoy su pensamiento caliente y hasta qué punto se lo creyó?",
+        "¿Qué diferencia había entre los hechos (A) y la historia que usted se contó sobre ellos (B)?",
+        "¿Qué le llevó a hacer ese sentimiento, o qué le llevó a dejar de hacer?"
+      ],
+      "scripture": {
+        "reference": "Lamentaciones 3:21-22 (Reina-Valera 1909)",
+        "text": "Esto reduciré a mi corazón, por lo cual esperaré. Es por la misericordia de Jehová que no somos consumidos, porque nunca decayeron sus misericordias."
+      },
+      "sources": [
+        29,
+        28,
+        32
+      ],
+      "keywords": [
+        "ABC",
+        "diario de pensamientos",
+        "pensamiento caliente",
+        "diario",
+        "acontecimiento activador"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Trabajo de detective: lleve el pensamiento a juicio",
+      "quote": "Como todo buen detective, necesitamos averiguar los hechos y reunir las pruebas.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "Ayer usted atrapó un pensamiento caliente. Hoy lo examina. Los módulos del CCI le piden que desempeñe dos papeles: el de detective, que reúne pruebas, y el de abogado, que hace preguntas incómodas. El pensamiento todavía no es culpable ni inocente. Se investiga.\n\nPreguntas de detective: ¿Qué pruebas hay de que este pensamiento es cierto? ¿Qué pruebas hay en su contra? ¿Qué hechos estoy dejando fuera? ¿Qué otras explicaciones existen? Preguntas de abogado: ¿Cómo vería esto alguien que me quiere? Si yo no estuviera deprimido, ¿cómo lo vería? Siendo realista, ¿qué probabilidad hay de que ocurra lo que estoy prediciendo? ¿Me ayuda pensar de esta manera?\n\nEl ejemplo de los módulos es el de un hombre cuya pareja llega a casa y no le da un beso como de costumbre. Pensamiento caliente: «Ya no me quiere», creído en un 90 sobre 100. Pruebas a favor: una vez ella le insistió en que fuera a ver a un psicólogo. Pruebas en contra: ella le ha dicho que lo apoyará en todo esto, y anoche le preparó una cena especial. Otras explicaciones: un día duro, la compra por guardar. Su pensamiento equilibrado no es «todo va bien». Es este: un beso que faltó no prueba que ella haya dejado de quererme; probablemente estaba cansada, y me muestra su cariño de otras maneras. Vuelve a puntuar el sentimiento. Ha bajado, no ha desaparecido.\n\nEso es lo que hace esta habilidad. Rara vez borra un pensamiento doloroso; lo reduce a su justa medida. Y la repetición no es inútil. Los investigadores que estudian el cerebro mediante imágenes señalan que la disminución del flujo sanguíneo que se observa en los cerebros deprimidos mejora con el tratamiento, incluida la terapia cognitivo-conductual. La práctica cambia algo físico.",
+      "challenge": "Tome el pensamiento caliente de ayer, o atrape uno nuevo, y dedíquele diez minutos. Trace una línea vertical en una hoja. A la izquierda: todos los hechos que apoyan el pensamiento. A la derecha: todos los hechos que van en su contra, incluidas las cosas que normalmente descartaría. Luego responda a una pregunta de abogado: ¿cómo vería esto alguien que me quiere? Termine con una frase equilibrada y vuelva a puntuar su grado de creencia sobre 100. Si diez minutos le parecen demasiado, rellene solo la columna de la derecha: tres hechos en contra.",
+      "reflection_questions": [
+        "¿Qué columna le costó más rellenar, y por qué cree que fue así?",
+        "¿Se movió su grado de creencia en el pensamiento caliente, aunque fuera unos pocos puntos?",
+        "¿Qué voz escuchó cuando se preguntó cómo vería esto alguien que le quiere?"
+      ],
+      "scripture": {
+        "reference": "1 Tesalonicenses 5:21 (Reina-Valera 1909)",
+        "text": "Examinadlo todo; retened lo bueno."
+      },
+      "sources": [
+        31,
+        32,
+        217
+      ],
+      "keywords": [
+        "pruebas",
+        "debate de pensamientos",
+        "pensamiento equilibrado",
+        "detective",
+        "volver a puntuar"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Una voz más amable en su cabeza",
+      "quote": "En lugar de escuchar las voces críticas de su cabeza, usted puede desarrollar una voz interior que le cuide, a la que pueda escuchar cuando se sienta decaído y ponga en duda su propia valía.",
+      "quote_source": "Lawrence E. Shapiro (2017), Overcoming Depression (traducción)",
+      "explanation": "Algunos pensamientos no se mueven aunque usted sopese las pruebas. Puede enumerar diez hechos en contra de «No valgo nada» y seguir creyéndolo a un 95. Los módulos del CCI explican por qué: debajo de los pensamientos calientes de cada día suele haber una creencia central, una frase corta sobre uno mismo aprendida hace mucho tiempo, normalmente en la infancia. «Nadie puede quererme.» «No soy suficiente.» «Soy una carga.» Las creencias centrales se mantienen vivas fijándose en todo lo que encaja con ellas y descartando todo lo que no. Por eso, al cabo de los años, se sienten menos como creencias y más como el suelo que uno pisa.\n\nMuchas personas con depresión llevan también dentro una voz crítica que habla exactamente con estas frases. El psicólogo Lawrence Shapiro señala que esta voz suele tener una historia: un padre o una madre, un maestro, un adulto duro. Es prestada. Usted no tiene por qué quedársela.\n\nLa alternativa no es un optimismo forzado. En el ejemplo del CCI, Erica pone a prueba «Nadie puede quererme» frente a su vida real: cuatro amigos íntimos en la escuela, un vecino que le hizo confidencias, un compañero de trabajo con quien toma café. Su creencia equilibrada es modesta y verdadera: «No le caeré bien a todo el mundo todo el tiempo, pero a algunas personas sí les caigo bien.» Ella puede creerse esa frase, y eso es lo que la hace útil.\n\nEl ejercicio de Shapiro va más allá: escriba lo que le diría alguien que le quisiera profundamente, e imagine a esa persona diciéndoselo. A muchas personas esto les resulta incómodo al principio. Esa incomodidad muestra cuánto tiempo ha tenido la otra voz la habitación para ella sola. Si esto le remueve más de lo que puede sostener hoy, llévelo a su terapeuta o a su médico.",
+      "challenge": "Escriba una frase que una persona amable le diría sobre el día de hoy. No un eslogan, sino algo verdadero y concreto: «Te levantaste y leíste esto sintiéndote fatal. Eso cuenta.» Póngala donde la vea: la pantalla de bloqueo de su teléfono, una tarjeta en el bolsillo, el diario de la aplicación. Léala una vez cuando empiece la voz crítica. Si escribir una le resulta demasiado difícil, tome prestada la de Erica: «No le caeré bien a todo el mundo todo el tiempo, pero a algunas personas sí les caigo bien», y léala dos veces.",
+      "reflection_questions": [
+        "¿A la voz de quién se parece más su crítico interior?",
+        "¿Qué frase corta le dice sobre usted con más frecuencia, y cuándo empezó a creerla?",
+        "¿Qué persona, real o imaginada, podría imaginar diciéndole algo amable?"
+      ],
+      "scripture": {
+        "reference": "Salmos 103:14 (Reina-Valera 1909)",
+        "text": "Porque él conoce nuestra condición; acuérdase que somos polvo."
+      },
+      "sources": [
+        33,
+        229,
+        32
+      ],
+      "keywords": [
+        "autocompasión",
+        "crítico interior",
+        "creencias centrales",
+        "voz que cuida",
+        "diálogo interno"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Hágalo antes de tener ganas",
+      "quote": "Cualquier tarea puede dividirse en pasos cada vez más pequeños, hasta encontrar algo que sea posible.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "Esta semana ha tratado de los pensamientos. Terminamos con el cuerpo, porque los dos no están separados. Cuando usted está deprimido, el pensamiento «no lo voy a disfrutar» o «es demasiado difícil» llega antes que cualquier actividad, y casi siempre gana. Usted hace menos. Con menos que hacer, el bucle de dar vueltas a las cosas tiene más espacio. Hacer menos también significa menos momentos de placer o de logro, así que el ánimo se hunde un poco más y el pensamiento «nada ayuda» reúne más pruebas. Los módulos del CCI llaman a esto el círculo vicioso, y la activación conductual es la forma deliberada de invertirlo.\n\nEl orden importa. La mayoría de las personas espera a sentirse motivada para actuar. En la depresión, esa espera puede durar meses. La activación conductual le da la vuelta: primero actuar, de una manera muy pequeña, y dejar que el sentimiento llegue después, o no. Los módulos son muy claros con el tamaño. No limpie la cocina; lave cinco platos. No lea un capítulo; lea cinco minutos. Si levantarse es la tarea, propóngase estar diez minutos fuera de la cama. Fíjese una hora en lugar de una meta, y cuente como éxito el simple hecho de hacerlo, haya sentido lo que haya sentido.\n\nHay dos tipos de actividad que ayudan: las que dan un pequeño destello de placer (un paseo, música, una llamada) y las que dan una sensación de logro (una factura pagada, una cama hecha). Las dos interrumpen la rumiación, porque una mente que está haciendo algo tiene menos espacio para dar vueltas. La próxima semana trata del movimiento, que resulta ser una de las acciones pequeñas mejor estudiadas. La tarea de hoy es solo programar una.",
+      "challenge": "Elija una actividad para mañana, de diez minutos o menos, y escriba cuándo la hará: «9:30, caminar hasta el final de la calle y volver» o «después de comer, lavar cinco platos». Puntúe su ánimo del 1 al 10 antes y después, como un experimento, no como un examen. Puede aparecer el pensamiento «no va a servir de nada»; deje que le acompañe. Si diez minutos son demasiado, que sean dos: abra las cortinas y quédese en la luz mientras hierve el agua.",
+      "reflection_questions": [
+        "¿Qué hizo esta semana sin tener ganas, por pequeño que fuera?",
+        "¿Qué pensamiento le detiene con más frecuencia antes de empezar?",
+        "¿Cuál sería la versión de diez minutos de algo que antes disfrutaba?"
+      ],
+      "scripture": {
+        "reference": "Salmos 37:23-24 (Reina-Valera 1909)",
+        "text": "Por Jehová son ordenados los pasos del hombre, Y aprueba su camino. Cuando cayere, no quedará postrado; Porque Jehová sostiene su mano."
+      },
+      "sources": [
+        27,
+        32,
+        34,
+        191
+      ],
+      "keywords": [
+        "activación conductual",
+        "acción",
+        "motivación",
+        "pasos pequeños",
+        "planificación"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "theme": "sleep_light_circadian",
+  "lang": "es",
+  "theme_intro": "Esta semana trata del sueño, la luz y el reloj interno del cuerpo. Dormir mal es uno de los síntomas más frecuentes de la depresión, y las investigaciones muestran que también es una de sus causas. Por eso, es un terreno donde los pequeños cambios pueden marcar la diferencia. A lo largo de siete días iremos construyendo un ritmo sencillo que usted pueda mantener: una hora fija para despertarse, luz natural por la mañana y un final del día más sereno.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "Sueño y depresión: un camino de doble sentido",
+      "quote": "Existe una asociación muy fuerte entre las alteraciones del sueño y la depresión mayor.",
+      "quote_source": "Nutt, Wilson & Paterson (2008) (traducción)",
+      "explanation": "Si la depresión le ha arruinado el sueño, usted forma parte de la mayoría. En una encuesta realizada en el Reino Unido a 2.800 personas con depresión, el 97 % dijo tener dificultades para dormir cuando estaba deprimido, y la mayoría contó que el problema empezó más o menos al mismo tiempo que el bajo estado de ánimo. Aproximadamente tres de cada cuatro personas con depresión padecen insomnio; algunas, sobre todo las más jóvenes, duermen en cambio demasiado.\n\nPero el camino tiene doble sentido. Dormir mal no es solo un síntoma; también contribuye a causar la depresión. En una amplia encuesta estadounidense, el 14 % de las personas con insomnio había desarrollado una nueva depresión un año después. Los hombres jóvenes que padecían insomnio en la universidad tenían el doble de probabilidades de deprimirse en los treinta años siguientes. Y en un estudio con 351 personas mayores, quienes se habían recuperado de la depresión pero seguían durmiendo mal tenían varias veces más probabilidades de recaer en los dos años siguientes, incluso teniendo en cuenta sus otros síntomas y su medicación.\n\nEsto es importante porque el sueño es una de las pocas partes de la depresión sobre las que usted puede trabajar directamente, y los datos sugieren que, cuando el sueño mejora, el ánimo suele mejorar también. Nada de lo que propone esta semana le pide dormir menos ni esforzarse más por dormir. Le pide que observe, con delicadeza, su propio ritmo, y que luego cambie algunas de las cosas que lo moldean: a qué hora se levanta, cuándo ven sus ojos la luz del día y cómo termina su noche.",
+      "challenge": "Esta noche, antes de apagar la luz, escriba tres líneas breves en algún lugar donde vuelva a encontrarlas: la hora a la que se levantó esta mañana, la hora a la que se va a acostar y una palabra que describa cómo estuvo su energía hoy. Hágalo cada noche de esta semana; le llevará menos de un minuto y poco a poco le dará una imagen de su ritmo. Si hoy le resulta demasiado, anote solo la hora a la que se levantó.",
+      "reflection_questions": [
+        "¿Cuándo empezó a cambiar su sueño: antes del bajo estado de ánimo, al mismo tiempo o después?",
+        "¿Qué efecto tiene en usted una mala noche sobre el día siguiente?",
+        "¿Qué aspecto del sueño le preocupa más: conciliar el sueño, despertarse durante la noche, despertarse demasiado temprano o dormir demasiado?"
+      ],
+      "scripture": {
+        "reference": "Salmos 3:5 (Reina-Valera 1909)",
+        "text": "Yo me acosté, y dormí, y desperté; porque Jehová me sostuvo."
+      },
+      "sources": [
+        150,
+        161,
+        60
+      ],
+      "keywords": [
+        "sueño",
+        "insomnio",
+        "depresión",
+        "factor de riesgo",
+        "observar"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "El ancla: una hora fija para levantarse",
+      "quote": "El sueño de los pacientes deprimidos puede ser más sensible a los acontecimientos vitales que alteran los ritmos diarios.",
+      "quote_source": "Nutt, Wilson & Paterson (2008) (traducción)",
+      "explanation": "Dos sistemas deciden cuándo duerme usted. Uno es la presión del sueño: cuanto más tiempo lleva despierto, más fuerte es la atracción hacia el sueño, como una deuda que crece a lo largo del día. El otro es el reloj interno, un pequeño grupo de células en lo profundo del cerebro que marca un ritmo de unas 24 horas y le indica a cada órgano qué hora es. Se duerme bien cuando los dos están de acuerdo.\n\nLa depresión altera a ambos. Las personas deprimidas a menudo se duermen tarde, se despiertan de madrugada y vuelven a despertarse demasiado pronto. Un equipo de investigación descubrió que los pacientes deprimidos cuya rutina se había visto sacudida por acontecimientos como perder el trabajo, una mudanza o una separación pasaban despiertos mucho más tiempo durante la noche que los pacientes deprimidos con una rutina más estable. En las personas sin depresión, esos mismos acontecimientos no marcaban ninguna diferencia. Otro estudio encontró que, cuanto más se había desfasado el sueño de una persona respecto a su reloj interno, más grave era su depresión.\n\nPor eso el hábito más útil de todos es una hora de levantarse que no cambie. Después de una mala noche, la tentación es quedarse en la cama. Pero dormir hasta tarde retrasa el reloj y gasta la presión del sueño que necesitará la noche siguiente, y así la mala noche se repite. Levantarse a la misma hora, aunque esté cansado, mantiene el ancla en su sitio y permite que el sueño la encuentre de nuevo. No se trata de dormir menos, y nunca se trata de obligarse a permanecer despierto. Se trata de levantarse a una hora constante y dejar que la hora de acostarse se ajuste por sí sola.",
+      "challenge": "Elija una hora de levantarse que pueda mantener todos los días de esta semana, incluido el fin de semana, y ponga una alarma. Cuando suene mañana, incorpórese, ponga los pies en el suelo y abra las cortinas antes de decidir nada más. No la ponga más temprano de lo que suele despertarse; se trata de constancia, no de dormir menos. Si ahora mismo una hora fija le parece imposible, intente levantarse dentro de la hora siguiente a su hora habitual.",
+      "reflection_questions": [
+        "¿Qué suele pasar con su mañana después de una mala noche?",
+        "¿Qué hora de levantarse sería realista para usted: no la ideal, sino una que pudiera mantener?",
+        "¿Qué le haría un poco más fácil levantarse a esa hora: una lámpara con temporizador, una bebida preparada, un motivo para estar en pie?"
+      ],
+      "scripture": {
+        "reference": "Lamentaciones 3:22-23 (Reina-Valera 1909)",
+        "text": "Es por la misericordia de Jehová que no somos consumidos, porque nunca decayeron sus misericordias. Nuevas son cada mañana; grande es tu fidelidad."
+      },
+      "sources": [
+        150,
+        81,
+        36
+      ],
+      "keywords": [
+        "hora de levantarse",
+        "reloj interno",
+        "rutina",
+        "ancla",
+        "circadiano"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "La luz de la mañana pone el reloj en hora",
+      "quote": "La luz intensa por la noche retrasa el reloj, y la luz intensa por la mañana es necesaria para sincronizarlo con un ritmo de 24 horas; con luz u oscuridad constantes, la duración del ciclo es de unas 24,3 h.",
+      "quote_source": "Nutt, Wilson & Paterson (2008) (traducción)",
+      "explanation": "Su reloj interno no es del todo exacto. Si se le deja a su aire, se alarga un poco, hasta unas 24,3 horas, así que necesita ajustarse cada día. La señal que lo ajusta es la luz que llega a los ojos, y la hora importa: la luz intensa por la mañana adelanta el reloj y lo estabiliza; la luz intensa a última hora de la tarde o por la noche lo retrasa. Si la depresión ha ido desplazando su ritmo hacia más tarde, la luz de la mañana es la corrección.\n\nLa luz del día es mucho más fuerte de lo que parece. La iluminación normal de interior ronda unos pocos cientos de lux; una lámpara de luz para tratar la depresión invernal da unos 10.000 lux, unas veinte veces más que una habitación iluminada; incluso un cielo nublado al aire libre suele dar varios miles. En Basilea, las personas con depresión invernal que daban cada día un paseo de una hora al aire libre mejoraron más al cabo de una semana que quienes se sentaban media hora frente a una luz artificial intensa, y además los que caminaban se levantaban más temprano. En Helsinki, 160 adultos trabajadores hicieron ejercicio dos o tres mañanas por semana durante ocho semanas, la mitad de ellos bajo luces intensas; ambos grupos se sintieron mejor, pero el grupo con luz intensa mejoró más, sobre todo en el cansancio matutino y en las ganas de comer hidratos de carbono. Y entre 16.800 adultos estadounidenses, quienes tenían depresión y habían pasado dos semanas con poca luz solar tenían más del doble de probabilidades de presentar problemas de memoria y de concentración.\n\nPara esto no necesita ningún aparato. Necesita que sus ojos estén al aire libre, o junto a una ventana que dé al cielo, durante la primera hora después de despertarse.",
+      "challenge": "Mañana, durante la primera hora después de levantarse, pase diez minutos al aire libre, a la luz del día: un paseo tranquilo, el jardín, un banco, el umbral de la puerta con una bebida caliente. No se ponga gafas de sol, pero nunca mire directamente al sol. Si todavía está oscuro cuando se despierte, encienda las luces más potentes que tenga y salga en cuanto haya luz. Si hoy diez minutos fuera le parecen demasiado, abra bien una ventana y siéntese tres minutos mirando al cielo.",
+      "reflection_questions": [
+        "¿Cuánta luz del día vieron realmente sus ojos ayer antes del mediodía?",
+        "¿Hay algún lugar cerca de su puerta donde podría quedarse de pie unos minutos cada mañana?",
+        "¿Qué notó en su cuerpo o en su ánimo después de estar fuera esta mañana?"
+      ],
+      "scripture": {
+        "reference": "Salmos 143:8 (Reina-Valera 1909)",
+        "text": "Hazme oír por la mañana tu misericordia, porque en ti he confiado: hazme saber el camino por donde ande, porque a ti he alzado mi alma."
+      },
+      "sources": [
+        150,
+        144,
+        127,
+        111,
+        140
+      ],
+      "keywords": [
+        "luz de la mañana",
+        "luz del día",
+        "circadiano",
+        "paseo",
+        "luz solar"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "El jet lag del fin de semana y el trabajo por turnos",
+      "quote": "Nuestros resultados indican que el desajuste entre el tiempo circadiano y el tiempo social puede ser un factor de riesgo para desarrollar depresión, especialmente en personas de 31 a 40 años.",
+      "quote_source": "Levandovski et al. (2011) (traducción)",
+      "explanation": "Casi todos vivimos con dos horarios. Los días laborables, un despertador nos levanta. Los días libres, dormimos hasta tarde. Los investigadores llaman a la distancia entre ambos \"jet lag social\". El cuerpo lo vive casi como si cruzara husos horarios cada semana, sin vacaciones al final.\n\nEn un estudio con algo más de 4000 personas de zonas rurales de Brasil, quienes desplazaban su sueño más de dos horas en los días libres tenían puntuaciones de depresión claramente más altas que los demás. Las personas \"noctámbulas\" por naturaleza también puntuaban más alto. Otros estudios relacionan el jet lag social con síntomas depresivos, más allá de lo tarde que alguien tienda a dormirse por naturaleza o de cuánto duerma. Quedarse en la cama el sábado parece una forma de recuperar. Para el reloj interno, es un desplazamiento más.\n\nEl trabajo por turnos merece honestidad. Aproximadamente uno de cada cinco trabajadores trabaja fuera del horario diurno, y el cuerpo rara vez se adapta del todo. En un estudio de laboratorio, diez adultos sanos que comieron y durmieron con doce horas de desfase durante unos días tuvieron más azúcar en sangre, niveles más bajos de la hormona que indica saciedad y un sueño aproximadamente una quinta parte menos eficiente. A lo largo de doce años, los trabajadores por turnos daneses recibieron alrededor de un tercio más de tratamiento hospitalario por enfermedades del corazón y de la circulación que quienes trabajaban de día. Si esta es su vida, usted no está fallando. El horario es duro. Lo que ayuda es mantener el sueño tan constante como lo permita el cuadrante de turnos, proteger las horas que sí tiene con una habitación oscura y silenciosa, y hablar con su médico sobre su horario.\n\nPara todos los demás, el objetivo de este fin de semana es pequeño: que la diferencia sea de menos de una hora.",
+      "challenge": "Revise sus notas de los últimos días y compare la hora a la que se despierta entre semana con la habitual del fin de semana. Si la diferencia es de más de una hora, ponga el despertador de este fin de semana a menos de una hora de su hora habitual entre semana. Dedique esa hora temprana y tranquila a algo amable: un desayuno sin prisas, la luz de la mañana como ayer. Si trabaja por turnos, elija el único periodo de sueño que pueda mantener estable en sus días libres y protéjalo. Si esto es demasiado, calcule su diferencia y anote el número.",
+      "reflection_questions": [
+        "¿Cuántas horas de jet lag social arrastra cada semana?",
+        "¿Qué espera que le dé quedarse en la cama, y se lo da?",
+        "Si su horario depende de un cuadrante de turnos, ¿qué cosa que protege su sueño sigue estando bajo su control?"
+      ],
+      "scripture": {
+        "reference": "Marcos 2:27 (Reina-Valera 1909)",
+        "text": "El sábado por causa del hombre es hecho; no el hombre por causa del sábado."
+      },
+      "sources": [
+        129,
+        36,
+        182,
+        208
+      ],
+      "keywords": [
+        "jet lag social",
+        "fin de semana",
+        "trabajo por turnos",
+        "cronotipo",
+        "constancia"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "La noche: dejar que el día termine",
+      "quote": "En paz me acostaré, y asimismo dormiré; porque solo tú, Jehová, me harás estar confiado.",
+      "quote_source": "Salmos 4:8 (Reina-Valera 1909)",
+      "explanation": "Si la mañana pone en hora el reloj, la noche decide si se le puede oír. Hay tres cosas que suelen interponerse, y ninguna de ellas es un fallo moral.\n\nLa primera es la luz. La claridad que ayuda a las ocho de la mañana retrasa el reloj a las once de la noche, y las pantallas del teléfono, la tableta y el televisor son brillantes. La segunda es lo que consumimos. La cafeína permanece en el cuerpo muchas horas, así que un café por la tarde sigue actuando a la hora de acostarse. El alcohol hace llegar el sueño más rápido, pero fragmenta la segunda mitad de la noche; en un seguimiento prolongado de hombres tratados por problemas con el alcohol, quienes se mantuvieron sobrios dormían mejor y referían menos ansiedad y depresión. La nicotina es un estimulante. Son formas de sobrellevar las cosas; también roban el sueño en silencio. La tercera es la comida. Las cenas tardías y pesadas obligan al cuerpo a digerir cuando quiere descansar, y comer tarde les indica a los relojes de sus órganos que todavía es de día. En un cuidadoso estudio con 26 adultos ingresados, un día con más grasas saturadas y azúcar fue seguido de un sueño más ligero y entrecortado, con menos sueño profundo, el que repara; más fibra significó más sueño profundo.\n\nUna rutina para relajarse no tiene por qué ser complicada: la última hora con menos luz, las pantallas guardadas o atenuadas, algo lento y cotidiano. Si pasa mucho rato despierto en la cama, es mejor levantarse, sentarse en un lugar con poca luz y volver cuando tenga sueño que pelear en la oscuridad. La cama debe significar sueño, no un campo de batalla.",
+      "challenge": "Elija un solo cambio para esta noche y haga solo ese: luces atenuadas y pantallas guardadas durante la última hora; nada de cafeína después de primera hora de la tarde; no usar el alcohol para conciliar el sueño; o hacer la última comida importante al menos tres horas antes de acostarse. Decídalo ahora y escríbalo o cuénteselo a alguien. Si esta noche incluso uno de ellos le parece demasiado, apague la luz principal una hora antes de acostarse y use una sola lámpara.",
+      "reflection_questions": [
+        "¿Qué suele contener la última hora de su día?",
+        "Siendo sincero, ¿cuál de estas cosas (la luz, la cafeína, el alcohol o la comida tardía) es la que más afecta a sus noches?",
+        "¿Cómo sería para usted un final del día más amable?"
+      ],
+      "scripture": {
+        "reference": "Salmos 127:2 (Reina-Valera 1909)",
+        "text": "Por demás os es el madrugar a levantaros, el veros tarde en reposo, el comer pan de dolores: pues que a su amado dará Dios el sueño."
+      },
+      "sources": [
+        150,
+        36,
+        194,
+        135
+      ],
+      "keywords": [
+        "noche",
+        "pantallas",
+        "cafeína",
+        "alcohol",
+        "relajación antes de dormir",
+        "comer tarde"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Cuando el problema es el propio sueño",
+      "quote": "Se ha descrito que diversas alteraciones del sueño influyen negativamente en la depresión, y estos efectos pueden ser reversibles.",
+      "quote_source": "Pigeon (2009) (traducción)",
+      "explanation": "A veces el problema no son los hábitos, sino un trastorno del sueño. Hay dos en particular que se esconden dentro de la depresión.\n\nEl primero es la apnea del sueño. Durante el sueño, la vía respiratoria se estrecha o se cierra, la respiración se detiene durante segundos y el cerebro se sobresalta y queda medio despierto. A veces ocurre cientos de veces en una noche, sin que uno lo note. Las pistas son ronquidos fuertes, jadear o atragantarse mientras duerme, despertarse sin sentirse descansado y quedarse dormido durante el día. En una encuesta a casi 19.000 personas de cinco países europeos, casi una de cada cinco personas con depresión mayor tenía también un trastorno del sueño relacionado con la respiración, y lo contrario también se cumplía. En un estudio con 1.400 adultos seguidos en un laboratorio del sueño durante varios años, cada grado más de gravedad en los trastornos respiratorios aumentaba en torno a un 80 % la probabilidad de desarrollar depresión. La parte esperanzadora llega desde Australia: de 426 personas evaluadas por sospecha de apnea, tres cuartas partes tenían síntomas depresivos importantes. Tras tres meses de tratamiento con una mascarilla respiratoria (CPAP), la puntuación media de depresión bajó de 11 a 4 sobre 27, y la proporción de personas con síntomas importantes pasó del 75 % al 4 %. Al principio, casi una de cada cinco pensaba que estaría mejor muerta. Esos pensamientos habían desaparecido. A nadie se le cambiaron los antidepresivos.\n\nEl segundo es el insomnio que persiste aunque el ánimo mejore. Les ocurre a cerca de la mitad de las personas que se recuperan. Existe un tratamiento específico y estructurado, la terapia cognitivo-conductual para el insomnio (TCC-I). En un ensayo, mejoró tanto la depresión como el sueño más que la medicación sola.\n\nNinguno de los dos puede diagnosticarse con un mensaje como este. Ambos son motivos para hablar con su médico.",
+      "challenge": "Anote tres cosas que un médico querría saber sobre su sueño: si ronca o jadea (pregúnteselo a quien le oiga dormir), cuánto tarda en dormirse y con qué frecuencia se despierta, y si se queda dormido durante el día. Si alguna de las pistas de la apnea encaja con usted, pida o planifique hoy una cita y lleve sus notas consigo. Si eso es demasiado, envíe un solo mensaje para preguntarle a alguien si usted ronca.",
+      "reflection_questions": [
+        "¿Alguien le ha dicho alguna vez que ronca o que parece dejar de respirar mientras duerme?",
+        "Si su problema de sueño fuera una afección médica y no una debilidad, ¿cómo se trataría a sí mismo de otra manera?",
+        "¿Qué le impide hablar de su sueño con su médico, y qué se lo haría más fácil?"
+      ],
+      "scripture": {
+        "reference": "Mateo 11:28 (Reina-Valera 1909)",
+        "text": "Venid a mí todos los que estáis trabajados y cargados, que yo os haré descansar."
+      },
+      "sources": [
+        152,
+        160,
+        79,
+        161
+      ],
+      "keywords": [
+        "apnea del sueño",
+        "ronquidos",
+        "CPAP",
+        "insomnio",
+        "TCC-I",
+        "médico"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Estaciones, luz y un ritmo que mantener",
+      "quote": "Todo tiene su tiempo, y todo lo que se quiere debajo del cielo, tiene su hora.",
+      "quote_source": "Eclesiastés 3:1 (Reina-Valera 1909)",
+      "explanation": "Para algunas personas, la oscuridad es literal. El trastorno afectivo estacional es una depresión que llega cuando los días se acortan y se retira en primavera. Trae una somnolencia pesada, poca energía, antojo de alimentos dulces y ricos en almidón, y la tendencia a apartarse de los demás. Es unas cuatro veces más frecuente en las mujeres y más común lejos del ecuador: en Gran Bretaña, aproximadamente un 2 % presenta el trastorno completo y alrededor de una quinta parte nota un bajón invernal más leve. Muchas personas con depresión común también sienten que el invierno las golpea con más fuerza.\n\nEl tratamiento mejor estudiado es la luz intensa: una lámpara de unos 10.000 lux que se usa durante un tiempo fijo cada mañana, desde principios de otoño hasta la primavera. En los ensayos agrupados, cerca de la mitad de las personas con depresión estacional se recuperaron por completo con la luz, y la luz de la mañana funcionó mejor que la de la noche. Los efectos secundarios suelen ser leves: cansancio visual, dolor de cabeza, algo de inquietud. Pero la luz puede interactuar con algunos medicamentos y no se aconseja con ciertas afecciones oculares ni con antecedentes de manía. Por eso debe usarse bajo la orientación de un profesional, junto con su tratamiento actual y nunca en lugar de él. La terapia cognitivo-conductual adaptada al invierno ha igualado a la luz en los ensayos, y el ejercicio por la mañana con luz natural también ayuda.\n\nSea cual sea la estación, esta semana ha construido una cosa: un ritmo. Una hora de despertar que no cambia. Luz del día en los ojos durante la primera hora tras despertarse. Una noche que se va apagando. Nada de esto cuesta dinero ni exige fuerza de voluntad por la noche; solo una decisión por la mañana. La depresión le dice que nada de lo que haga importará. Su reloj interno no está de acuerdo: responde a lo que usted hace hoy.",
+      "challenge": "Escriba su ritmo en una tarjeta o en una nota del teléfono, en tres líneas: mi hora de despertar es ___; mi luz de la mañana es ___ (dónde y durante cuánto tiempo); mi noche se apaga a las ___. Póngala donde la vea mañana por la mañana. Si su ánimo bajo sigue las estaciones, añada una cuarta línea con los meses en que suele empezar, y lleve la tarjeta a su próxima cita para preguntar por la terapia de luz. Si tres líneas son demasiado, escriba la que ya ha logrado esta semana.",
+      "reflection_questions": [
+        "¿Sigue su estado de ánimo el calendario? ¿Qué meses son los más difíciles?",
+        "De los tres anclajes (hora de despertar, luz de la mañana y una noche que se apaga), ¿cuál le resultó más fácil esta semana y cuál no?",
+        "¿Qué necesitaría para mantener uno de ellos la próxima semana?"
+      ],
+      "scripture": {
+        "reference": "Salmos 74:16 (Reina-Valera 1909)",
+        "text": "Tuyo es el día, tuya también es la noche: Tú aparejaste la luna y el sol."
+      },
+      "sources": [
+        140,
+        172,
+        127
+      ],
+      "keywords": [
+        "trastorno afectivo estacional",
+        "terapia de luz",
+        "invierno",
+        "ritmo",
+        "compromiso"
+      ]
+    }
+  ]
+}

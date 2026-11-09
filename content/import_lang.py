@@ -10,7 +10,8 @@ WEEKS = ["understanding_depression", "thinking_rumination_cbt", "exercise", "sle
 lang = sys.argv[1]; publish = '--publish' in sys.argv
 SECRET = os.environ['LD_JOB_SECRET']; SVC = os.environ.get('SUPABASE_SECRET_KEY')
 def curl(url, body, key, extra=()):
-    p = '/tmp/claude-1000/-home-katadmin/3ef0ea16-ee62-430f-8f6f-07a40cf1d13c/scratchpad/payload_lang.json'
+    import tempfile
+    p = os.path.join(tempfile.gettempdir(), 'ld_payload_lang.json')
     json.dump(body, open(p, 'w'), ensure_ascii=False)
     r = subprocess.run(['curl', '-s', '-X', 'POST', url, '-H', f'apikey: {key}', '-H', f'Authorization: Bearer {key}', '-H', 'Content-Type: application/json', *extra, '--data-binary', f'@{p}'], capture_output=True, text=True)
     return r.stdout

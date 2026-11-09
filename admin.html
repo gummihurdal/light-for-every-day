@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0E1628">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/grace.css?v=202611082218">
+<link rel="stylesheet" href="assets/grace.css?v=202611091847">
 <style>
 .row{display:grid;grid-template-columns:60px 1fr 120px 110px;gap:10px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--border2);cursor:pointer;font-size:15px}
 .row:hover{background:var(--navy2)}
@@ -48,8 +48,8 @@
   </div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.js"></script>
-<script src="assets/app.js?v=202611082218"></script>
-<script src="assets/shell.js?v=202611082218"></script>
+<script src="assets/app.js?v=202611091847"></script>
+<script src="assets/shell.js?v=202611091847"></script>
 <script>
 const sb = supabase.createClient(LD.SB, LD.KEY);
 let themes = [], rows = [], current = null, lang = 'en';
@@ -62,7 +62,7 @@ async function boot() {
   if (!admin || !admin.length) { $('login').innerHTML = `<p>Signed in as ${LD.esc(session.user.email)}, but this address is not on the editors list. Ask the administrator to add it.</p><button class="g-btn" onclick="sb.auth.signOut().then(()=>location.reload())">Sign Out</button>`; return; }
   $('login').style.display = 'none'; $('app').style.display = 'block';
   themes = (await sb.from('ld_themes').select('*').order('week')).data || [];
-  $('langs').innerHTML = ['en', 'de', 'fr'].map(l => `<button class="g-btn ${l === lang ? 'gold' : ''}" data-l="${l}">${l.toUpperCase()}</button>`).join('');
+  $('langs').innerHTML = ['en', 'de', 'fr', 'es'].map(l => `<button class="g-btn ${l === lang ? 'gold' : ''}" data-l="${l}">${l.toUpperCase()}</button>`).join('');
   $('langs').querySelectorAll('button').forEach(b => b.addEventListener('click', () => { lang = b.dataset.l; $('langs').querySelectorAll('button').forEach(x => x.classList.toggle('gold', x === b)); load(); }));
   await load(); loadFeedback();
 }

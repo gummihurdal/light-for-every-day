@@ -1,0 +1,226 @@
+{
+  "theme": "understanding_depression",
+  "lang": "es",
+  "theme_intro": "La depresión es una de las enfermedades más comunes del mundo, y una de las menos comprendidas por quienes la padecen. Esta primera semana sienta las bases: qué es la depresión y qué provoca, de dónde viene, por qué no es culpa de nadie, qué mitos mantienen a las personas en silencio y cómo es realmente pedir ayuda. Todo lo que sigue se apoya en un hecho: la depresión tiene tratamiento, y la mayoría de las personas mejora.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "No está solo, y esto es una enfermedad",
+      "quote": "La depresión puede afectar a cualquier tipo de persona en cualquier etapa de su vida.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "Si su mente no deja de decirle que algo anda mal en usted, empiece por aquí: lo que tiene tiene nombre, y millones de personas lo tienen en este mismo momento.\n\nLa Organización Mundial de la Salud calcula que entre 300 y 350 millones de personas viven con depresión. En su Encuesta Mundial de Salud Mental, realizada en 17 países, aproximadamente 1 de cada 20 adultos había pasado por un episodio de depresión solo en el último año. A lo largo de la vida, las grandes encuestas de población sitúan la cifra en aproximadamente 1 de cada 10 a 1 de cada 7 personas. El estudio sobre la Carga Mundial de Enfermedades situó la depresión en segundo lugar entre todas las causas de años vividos con discapacidad en 2019.\n\nEstas cifras importan por una sola razón. La depresión no es rara, no es extraña y no es señal de un carácter débil. El propio folleto de la OMS lo dice con claridad: es algo que le puede pasar a cualquiera, y no es una señal de debilidad. Afecta a jóvenes y mayores, a ricos y pobres, a personas de fe profunda y a personas sin ninguna fe.\n\nUsted no eligió esto. Algo ha fallado en los sistemas que regulan el ánimo, la energía y el pensamiento, del mismo modo que algo falla en el cuerpo con la diabetes o con un problema de tiroides. Por eso se llama enfermedad, y por eso, como otras enfermedades, responde al tratamiento y al cuidado. Esta semana veremos qué es, de dónde viene y qué ayuda. Hoy la única tarea es dejar que un hecho se asiente: usted es uno entre muchos, y ninguno de ustedes tiene la culpa.",
+      "challenge": "Hoy, preste atención a esa voz. Cada vez que se sorprenda pensando «¿Qué me pasa?» o «Debería poder con esto», respóndale, en voz alta o en su interior: «Esto es depresión. Es una enfermedad, y es frecuente». Hágalo tantas veces como hable la voz. Antes de dormir, escriba una línea en su diario: ¿cuántas veces habló, y cómo se sintió al responderle? Si hoy es demasiado, lea una vez más la frase de arriba y deje que eso sea suficiente.",
+      "reflection_questions": [
+        "¿Cuándo notó por primera vez que esto era más que un simple bajón pasajero?",
+        "¿A quién de su entorno creería si le dijera que la depresión es una enfermedad y no un fracaso? ¿Qué le diría hoy esa persona?",
+        "¿Qué cambia, aunque sea un poco, cuando llama a esto enfermedad en lugar de debilidad?"
+      ],
+      "scripture": {
+        "reference": "Salmos 34:18 (Reina-Valera 1909)",
+        "text": "Cercano está Jehová a los quebrantados de corazón; y salvará a los contritos de espíritu."
+      },
+      "sources": [
+        2,
+        13,
+        26,
+        10,
+        126
+      ],
+      "keywords": [
+        "depresión",
+        "prevalencia",
+        "OMS",
+        "enfermedad, no debilidad",
+        "no está solo"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "Lo que la depresión le hace",
+      "quote": "La depresión ralentiza el pensamiento, empobrece los sentimientos y altera funciones corporales como el sueño y el apetito.",
+      "quote_source": "Bergland & Jónsson (2017), Adventist Review (traducción)",
+      "explanation": "La depresión no es un solo sentimiento. Es un conjunto de cambios que afectan a casi todas las dimensiones de una persona. Por eso puede resultar tan difícil reconocerla desde dentro. Los médicos buscan varios de estos cambios que duren dos semanas o más y que interfieran en la vida diaria.\n\nEl estado de ánimo es la parte más evidente: tristeza, vacío o una especie de apatía donde antes había alegría. Muchas personas también se sienten ansiosas, culpables o sin valor. El pensamiento cambia también. La mente se vuelve contra sí misma, da vueltas a lo mal que está todo y le cuesta concentrarse, recordar o tomar incluso pequeñas decisiones.\n\nEl cuerpo también participa. El sueño se rompe: despertarse a las cuatro de la madrugada, o dormir doce horas y seguir agotado. El apetito disminuye o aumenta. La energía se agota, y el interés sexual a menudo desaparece. Algunas personas tienen dolores de cabeza, molestias de estómago o dolores que ninguna prueba explica. El ánimo suele pesar más por la mañana y aliviarse un poco hacia la tarde.\n\nPor último, cambia la conducta. Las personas dejan de hacer lo que antes disfrutaban, cancelan planes y se sienten solas, pero incapaces de buscar a alguien. En los hombres y en los adolescentes, la depresión puede parecerse más a irritabilidad o enfado que a tristeza.\n\nAlgunas personas también tienen pensamientos de muerte o de no querer estar aquí. Son un síntoma de la enfermedad, no un veredicto sobre su vida. Si está pensando en quitarse la vida, por favor llame hoy a una línea de crisis; en la página de Ayuda encontrará el número de su país.\n\nNo todo el mundo tiene todos los síntomas. Ver los suyos por escrito es el primer paso para tratarlos.",
+      "challenge": "Tome una hoja de papel o su diario y dibuje tres columnas: Cuerpo, Pensamientos y sentimientos, Lo que hago. En cada una, escriba los uno o dos cambios que más note en usted ahora mismo, por ejemplo \"me despierto a las cuatro\", \"no puedo decidir qué comer\", \"dejé de contestar mensajes\". Dedíquele diez minutos, no más. Es la misma hoja de trabajo que se usa en las consultas; convierte una niebla en una lista. Si hoy le resulta demasiado, escriba una sola palabra en una sola columna.",
+      "reflection_questions": [
+        "¿Cuál de los cambios que anotó le sorprendió descubrir que forma parte de la depresión?",
+        "¿Cómo cambia su manera de verse a sí mismo, a los demás y al futuro cuando está deprimido?",
+        "¿Qué le gustaría que una persona cercana entendiera sobre lo que esta enfermedad le hace a su cuerpo?"
+      ],
+      "scripture": {
+        "reference": "Salmos 6:6 (Reina-Valera 1909)",
+        "text": "Trabajado he con mi gemido: Toda la noche inundo mi lecho, Riego mi estrado con mis lágrimas."
+      },
+      "sources": [
+        1,
+        13,
+        26,
+        223,
+        74
+      ],
+      "keywords": [
+        "síntomas",
+        "estado de ánimo",
+        "sueño",
+        "apetito",
+        "concentración",
+        "aislamiento"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Por qué ocurre: muchas causas, ninguna culpa",
+      "quote": "Es importante comprender que la depresión no tiene una sola causa, sino que probablemente se debe a una combinación de factores que interactúan entre sí.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez (traducción)",
+      "explanation": "Cuando uno está deprimido, la mente busca a quién culpar y casi siempre termina señalándole a usted. La investigación cuenta otra historia: la depresión nace de muchos hilos, y la mayoría de ellos usted nunca los eligió.\n\nAlgunos hilos son biológicos. La depresión se da en familias. En un estudio que siguió a tres generaciones durante 30 años, los hijos de un padre o una madre con depresión tenían aproximadamente el doble de probabilidades de desarrollar ellos mismos una depresión mayor. Lo que se hereda es una vulnerabilidad, no una condena; muchas personas la llevan consigo y nunca enferman. Las hormonas del estrés, los mensajeros químicos del cerebro, la tiroides y otras enfermedades físicas, así como los efectos secundarios de algunos medicamentos comunes, también influyen.\n\nAlgunos hilos son la vida misma. La pérdida de una persona, de un trabajo, de la salud o de un papel en la vida. La acumulación de presiones: preocupaciones económicas, desempleo, conflictos en casa, el cuidado de otra persona, el dolor crónico. Un trauma o un abandono en los primeros años puede dejar el sistema nervioso más sensible a las amenazas y decepciones posteriores. La OMS señala la pobreza, la soledad, el duelo y la pérdida del empleo entre los mayores riesgos para la salud mental.\n\nAlgunos hilos son hábitos de pensamiento: reglas duras sobre cómo debería ser usted, cargar con la culpa de lo malo y no reconocerse ningún mérito en lo bueno. Estos hábitos se pueden desaprender, y de eso trata la próxima semana.\n\nUna revisión sobre la biología de la depresión, realizada por un psiquiatra suizo, concluyó que ninguna explicación única sirve para todos; las causas varían de una persona a otra. Usted no provocó esto por ser débil, perezoso o falto de fe. Varios hilos tiraron a la vez, y la cuerda cedió.",
+      "challenge": "Tómese cinco minutos y escriba como título «Lo que tiraba de mí». Debajo, anote todo lo que en los últimos dos años le haya añadido peso: una pérdida, una enfermedad, presiones económicas, una mudanza, un sueño interrumpido, antecedentes familiares, una infancia difícil. No juzgue la lista ni la ordene por importancia; basta con el hecho. Después, léala una vez y fíjese en cuántas de esas cosas usted no eligió. Si hoy le resulta demasiado, escriba una sola cosa y cierre el cuaderno.",
+      "reflection_questions": [
+        "¿Qué hilos de su propia historia estaban fuera de su control?",
+        "Si un amigo le mostrara la misma lista, ¿qué le diría usted sobre de quién es la culpa?",
+        "¿Hay algún hilo que le gustaría comprender mejor esta semana?"
+      ],
+      "scripture": {
+        "reference": "Salmos 103:14 (Reina-Valera 1909)",
+        "text": "Porque él conoce nuestra condición; acuérdase que somos polvo."
+      },
+      "sources": [
+        26,
+        221,
+        223,
+        230,
+        99
+      ],
+      "keywords": [
+        "causas",
+        "genética",
+        "estrés",
+        "pérdida",
+        "trauma",
+        "no es su culpa"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "El círculo vicioso y el pequeño paso",
+      "quote": "En la depresión, el cerebro queda atrapado en círculos viciosos de pensamientos y emociones negativos que se alimentan mutuamente y dejan poco o ningún espacio para lo positivo.",
+      "quote_source": "Bergland & Jónsson (2017), Adventist Review (traducción)",
+      "explanation": "La depresión tiene una lógica cruel. Agota la energía y la motivación, y entonces usted hace menos. Hacer menos significa tener menos momentos de placer o de logro, y el ánimo se hunde todavía más. Las tareas pendientes se acumulan, y ese montón se convierte, para la mente, en la prueba de que usted está fracasando, lo que vuelve a agotar la energía. Apartarse de los demás elimina justo el contacto que podría interrumpir la espiral. Quedarse en la cama para descansar deja la mente libre para repetir los mismos pensamientos dolorosos, lo que los profesionales llaman rumiación, y usted termina más cansado, no menos.\n\nEl cerebro, además, se inclina hacia un lado. Una mente deprimida está sensibilizada para captar todo lo negativo: un rostro cansado, un cielo gris, un mensaje sin respuesta. La amabilidad, una buena comida o una mañana soleada se notan menos y se sienten menos.\n\nEntender esto es útil, porque en un círculo se puede entrar por cualquier punto, y por eso también se puede romper por cualquier punto. Los programas conductuales que se usan en las clínicas no esperan a que vuelva la motivación. Empiezan por la acción, tan pequeña como haga falta: diez minutos fuera de la cama, cinco platos lavados, las cortinas abiertas. La regla es: primero la acción, después la motivación. Cada pequeño paso cumplido le da a la mente otro foco y una pequeña sensación de logro, y con los días el círculo empieza a girar en la dirección contraria.\n\nEl error habitual es intentar demasiado y demasiado pronto, no llegar y sentirse peor. Empiece por algo más pequeño de lo que le parezca razonable. Al principio, lo importante no es qué hace ni cuánto, sino que está haciendo algo.",
+      "challenge": "Elija una acción que le lleve menos de diez minutos y que la depresión le haya estado impidiendo: abrir las cortinas y quedarse dos minutos en la luz, lavar cinco platos, caminar hasta el final de la calle o responder a un mensaje. Decida ahora mismo a qué hora la hará. Antes y después, anote en su diario su estado de ánimo del 0 al 10. Si incluso eso le resulta demasiado, siéntese en el borde de la cama durante un minuto con los dos pies en el suelo. Eso también cuenta.",
+      "reflection_questions": [
+        "¿Dónde suele apretarse primero el círculo en su caso: en hacer menos, en apartarse de los demás o en pensamientos más pesados?",
+        "¿Qué notó en su estado de ánimo antes y después de la pequeña acción de hoy?",
+        "¿Qué es algo que ha dejado de hacer y que echa de menos?"
+      ],
+      "scripture": {
+        "reference": "Isaías 40:29 (Reina-Valera 1909)",
+        "text": "Él da esfuerzo al cansado, y multiplica las fuerzas al que no tiene ningunas."
+      },
+      "sources": [
+        223,
+        26,
+        27,
+        74
+      ],
+      "keywords": [
+        "círculo vicioso",
+        "aislamiento",
+        "inactividad",
+        "rumiación",
+        "activación conductual",
+        "pequeños pasos"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Mitos que hacen callar a las personas",
+      "quote": "La depresión es una enfermedad diagnosticable, no una emoción ni un sentimiento concretos.",
+      "quote_source": "Huizen (2019), Medical News Today (traducción)",
+      "explanation": "Muchas personas esperan meses o años antes de contárselo a alguien. Gran parte de lo que las hace callar son unos pocos mitos. Estos son los peores.\n\n«No es una enfermedad de verdad; es tristeza o lástima de uno mismo». La tristeza pasa; no le impide trabajar, dormir ni comer. La depresión dura dos semanas o más y cambia su manera de pensar, de sentir y de actuar. En una encuesta realizada en Estados Unidos, casi dos tercios de los adultos que habían tenido un episodio depresivo sufrieron por él un deterioro grave.\n\n«Las personas fuertes salen adelante solas». La Organización Mundial de la Salud lo dice con palabras sencillas: la depresión no es un signo de debilidad. A menudo alcanza a quienes han sido fuertes para todos los demás.\n\n«Tiene que haber pasado algo terrible». Los traumas y las pérdidas aumentan el riesgo, pero la depresión puede llegar cuando, vista desde fuera, la vida parece ir bien.\n\n«Hablar de ello lo empeora». Es justo al revés. La mayoría de las personas necesita ayuda externa para mejorar, y las terapias basadas en la conversación están entre los tratamientos mejor estudiados.\n\n«Manténgase ocupado y se le pasará». Volcarse en el trabajo rara vez ayuda y a menudo añade agotamiento. Una actividad pequeña y elegida ayuda; una actividad frenética, no.\n\n«Los verdaderos creyentes no se deprimen». Dos psiquiatras adventistas escribieron que creer en Dios, aceptar la salvación y estar lleno del Espíritu no nos libran necesariamente del dolor mental. Elías se derrumbó bajo un árbol, desesperado. David escribió salmos desde el fondo del pozo. La fe puede ser un consuelo dentro de la depresión; no es una vacuna contra ella.\n\nTodos estos mitos tienen el mismo efecto: convierten una enfermedad tratable en una vergüenza privada. No es ni lo uno ni lo otro.",
+      "challenge": "Elija de los mitos anteriores aquel que, en parte, usted cree sobre sí mismo. Escríbalo en el lado izquierdo de una hoja con sus propias palabras, por ejemplo: «Debería poder con esto yo solo». En el lado derecho, escriba en una sola frase el hecho que lo desmiente. Después lea en voz alta una vez lo que ha escrito a la derecha. Diez minutos como máximo. Si hoy le resulta demasiado, ponga el dedo sobre ese mito en este mensaje y diga: «Eso no es verdad».",
+      "reflection_questions": [
+        "¿Qué mito escuchó usted mientras crecía, en casa, en el trabajo o en la iglesia?",
+        "¿Quién teme usted que más le juzgaría si lo supiera? ¿Qué cree que esa persona piensa realmente sobre la depresión?",
+        "¿Qué cambiaría esta semana si usted creyera de verdad el hecho que escribió en el lado derecho de la hoja?"
+      ],
+      "scripture": {
+        "reference": "1 Reyes 19:5 (Reina-Valera 1909)",
+        "text": "Y echándose debajo del enebro, quedóse dormido: y he aquí luego un ángel que le tocó, y le dijo: Levántate, come."
+      },
+      "sources": [
+        74,
+        13,
+        223,
+        26
+      ],
+      "keywords": [
+        "mitos",
+        "estigma",
+        "debilidad",
+        "fe",
+        "hablar ayuda"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Pedir ayuda y cómo es el tratamiento",
+      "quote": "La depresión es un trastorno que puede diagnosticarse y tratarse de forma fiable en la atención primaria.",
+      "quote_source": "Marcus, Yasamy, van Ommeren, Chisholm & Saxena (2012), OMS (traducción)",
+      "explanation": "La mayoría de las personas con depresión nunca recibe tratamiento. En los países ricos, entre un tercio y la mitad de las personas con depresión grave no recibió ninguna atención en el año anterior. En todo el mundo, donde hay datos, menos de la mitad recibe tratamiento, y en muchas regiones, menos del 30 %. Hay poca esperanza y poca energía, y la propia enfermedad le susurra que nada serviría. Por eso, lo primero que conviene saber es esto: pedir ayuda no es un último recurso. Es la respuesta esperable ante una enfermedad frecuente.\n\nPor dónde empezar. Su médico de cabecera o el profesional de salud de su zona es la primera puerta adecuada. Puede descartar causas físicas, como problemas de tiroides o efectos secundarios de algún medicamento. También puede valorar la gravedad de la depresión y tratarle o derivarle a otro profesional. No necesita encontrar las palabras exactas. Basta con decir: «Creo que puedo estar deprimido».\n\nCómo es el tratamiento. Las recomendaciones de la OMS proponen un apoyo básico combinado con una terapia psicológica, medicación antidepresiva o ambas. La terapia cognitivo-conductual, la terapia interpersonal y la terapia de resolución de problemas son breves y estructuradas. Son eficaces para la mayoría de las personas que aprenden sus herramientas. Los antidepresivos ayudan a muchas personas con depresión moderada o grave. En la depresión leve no suelen ser el primer paso, y la terapia, la autoayuda y el estilo de vida pesan más. Toda decisión sobre la medicación, incluido cualquier cambio, debe tomarse hablando con su médico.\n\nTenga paciencia con el proceso. Los antidepresivos suelen tardar entre dos y cuatro semanas en empezar a hacer efecto, y la terapia avanza semana a semana. La autoayuda guiada, incluido un programa como este, acompaña a la atención profesional, nunca la sustituye.",
+      "challenge": "Escriba el nombre de una persona a la que podría contárselo: su médico, una enfermera, un pastor, un amigo que sepa escuchar. Debajo, escriba la primera frase que le diría, tan sencilla como: «Desde hace semanas no soy yo y creo que puede ser depresión». Si ya acude a un médico o a un terapeuta, escriba algo que todavía no le haya dicho. Si hoy eso es demasiado, busque el número de teléfono de la consulta de su médico y guárdelo en su móvil. Ese es el paso.",
+      "reflection_questions": [
+        "¿Qué le ha impedido, o todavía le impide, contarle a un profesional cómo está de verdad?",
+        "Si ya ha recibido ayuda antes, ¿qué le sirvió y qué no?",
+        "¿A quién le gustaría tener a su lado, en la sala de espera o al teléfono, cuando dé este paso?"
+      ],
+      "scripture": {
+        "reference": "Eclesiastés 4:9-10 (Reina-Valera 1909)",
+        "text": "Mejores son dos que uno; porque tienen mejor paga de su trabajo. Porque si cayeren, el uno levantará a su compañero; mas ¡ay del solo! que cuando cayere, no habrá segundo que lo levante."
+      },
+      "sources": [
+        2,
+        126,
+        223,
+        26,
+        74
+      ],
+      "keywords": [
+        "pedir ayuda",
+        "médico",
+        "terapia",
+        "TCC",
+        "antidepresivos",
+        "brecha de tratamiento"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "La depresión tiene tratamiento: el camino que tenemos por delante",
+      "quote": "La mayoría de las cosas en este mundo son pasajeras; por fortuna, con la ayuda y el apoyo adecuados, muchas veces también lo es la depresión.",
+      "quote_source": "Bergland & Jónsson (2017), Adventist Review (traducción)",
+      "explanation": "Uno de los síntomas de la depresión es la convicción de que nunca terminará. Abraham Lincoln, atrapado por ella en 1841, escribió que era \"el hombre más desdichado que existe\" y dudaba de que algún día fuera a estar mejor. Se equivocaba; era la enfermedad la que hablaba. Si la idea de que esto nunca terminará se ha convertido en la idea de poner fin a su vida, por favor, llame hoy mismo a una línea de crisis; en la página de Ayuda encontrará el número de su país.\n\nLa OMS lo dice en seis palabras: \"la depresión tiene solución al alcance\". En un ensayo con 240 mujeres de bajos ingresos en Chile, el 70% de las que recibieron una atención estructurada, paso a paso, se había recuperado a los seis meses, frente al 30% con la atención habitual. Ensayos en Uganda y la India encontraron lo mismo con terapia de grupo y consejeros no profesionales. Un análisis publicado en The Lancet Psychiatry estimó que ampliar el acceso al tratamiento añadiría 43 millones de años de vida saludable en todo el mundo para 2030.\n\nLa honestidad también importa. La depresión a menudo regresa. La recuperación rara vez es una línea recta, y muchas personas conservan algunos síntomas residuales durante un tiempo. Por eso, las próximas semanas no tratan de una solución rápida, sino de construir una vida que le sostenga: los pensamientos que dan vueltas y vueltas, el movimiento, el sueño y la luz del día, la comida y el agua, el tiempo en la naturaleza, aflojar el alcohol y la nicotina, la gratitud, la conexión con otros, la fe y una mirada lúcida a la medicación. Cada uno de estos temas tiene evidencia que lo respalda. Cada uno funciona junto con su médico, nunca en su lugar.\n\nPor hoy, deje que este hecho se mantenga en pie: la mayoría de las personas con depresión mejoran con la ayuda adecuada, y no hay nada en usted que le excluya.",
+      "challenge": "Mire la lista de las próximas semanas y elija el área en la que un pequeño cambio le parezca más posible ahora mismo: pensamientos, movimiento, sueño, alimentación, luz, naturaleza, conexión o fe. Escríbala en su diario con una frase que empiece así: \"Esta semana intentaré...\". Y que sea algo muy pequeño: un paseo de cinco minutos, abrir las cortinas a las ocho, un mensaje a un amigo. Luego vuelva mañana para el día 8. Si hoy le resulta demasiado, escriba solo la palabra del área que ha elegido.",
+      "reflection_questions": [
+        "¿Cómo sería \"estar mejor\" para usted, en una imagen pequeña y concreta, como sentarse con un café y saborearlo?",
+        "¿Quién o qué le ha ayudado antes a atravesar una etapa difícil, aunque fuera un poco?",
+        "¿Cuál de los temas que vienen le despierta más esperanza, y cuál más recelo?"
+      ],
+      "scripture": {
+        "reference": "Salmos 30:5 (Reina-Valera 1909)",
+        "text": "Porque un momento será su furor; mas en su voluntad está la vida: por la tarde durará el lloro, y á la mañana vendrá la alegría."
+      },
+      "sources": [
+        223,
+        2,
+        59,
+        126,
+        13
+      ],
+      "keywords": [
+        "esperanza",
+        "tratable",
+        "recuperación",
+        "el camino por delante",
+        "Lincoln"
+      ]
+    }
+  ]
+}

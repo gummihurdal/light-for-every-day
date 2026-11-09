@@ -1,0 +1,213 @@
+{
+  "theme": "hydration",
+  "lang": "es",
+  "theme_intro": "Esta semana trata de las cosas más pequeñas que mejoran el ánimo de forma medible: el agua, comer con regularidad, la luz de la mañana, una superficie despejada. Ninguna de ellas trata la depresión por sí sola, y todas acompañan su tratamiento, nunca lo sustituyen. Pero la depresión es lo primero que le quita, sin hacer ruido, y recuperarlas es algo que usted puede hacer casi cualquier día, incluso en uno malo.",
+  "days": [
+    {
+      "day_in_theme": 1,
+      "title": "La prueba del vaso de agua",
+      "quote": "En mujeres jóvenes sanas, niveles leves de deshidratación provocan cambios adversos en estados de ánimo clave, como el vigor y la fatiga, así como un aumento de los dolores de cabeza y de la dificultad para concentrarse, sin alterar de forma sustancial aspectos clave del rendimiento cognitivo.",
+      "quote_source": "Armstrong et al. (2012) (traducción)",
+      "explanation": "Este es un pequeño experimento que los investigadores han repetido muchas veces. Se toma a adultos sanos y se les deja perder entre un 1 y un 2 por ciento de su peso corporal en agua, lo que para la mayoría de las personas es menos de un litro. Después se les pregunta cómo se sienten.\n\nEn un estudio, 25 mujeres jóvenes sanas pasaron tres jornadas distintas de ocho horas en un laboratorio. Los días en que estaban levemente deshidratadas, con una pérdida media de alrededor del 1,4 por ciento de su peso corporal, dijeron tener menos energía, más fatiga, más dolor de cabeza y más dificultad para concentrarse. Además, las tareas les resultaban más pesadas. Sus pruebas de razonamiento apenas cambiaron. Lo que se movió fue el ánimo. Un estudio equivalente con 26 hombres jóvenes encontró el mismo patrón: más fatiga y más tensión, con efectos solo pequeños sobre la atención. Incluso con una pérdida de agua mayor, el ánimo empeoró antes que los resultados de las pruebas. Una revisión que reunió estos estudios concluyó que los hallazgos sobre el estado de ánimo son más consistentes que los cognitivos.\n\nDos advertencias honestas. Se trataba de personas sanas, no de personas con depresión, y el efecto es modesto. Nadie dice que el agua trate la depresión. Pero los síntomas de esa lista son exactamente los que la depresión ya le trae a usted: el cansancio, la concentración nublada, la sensación de que todo cuesta más. Si una parte del peso que siente hoy se debe a un cuerpo que no ha bebido lo suficiente, esa parte puede cambiar en menos de una hora. En una semana dedicada a cosas básicas y pequeñas, esta es la más pequeña de todas.",
+      "challenge": "Hoy, haga la prueba consigo mismo. Cuando termine de leer, beba un vaso de agua entero, despacio. Fíjese en cómo se siente ahora y descríbalo con una sola palabra. Ponga un recordatorio para dentro de 45 minutos y vuelva a describirlo, con una sola palabra. Esa es toda la tarea. Si levantarse a por un vaso le parece demasiado, pida a alguien que se lo traiga. También puede dejar esta noche una taza o una botella junto a la cama, para que el vaso de mañana ya esté a su alcance.",
+      "reflection_questions": [
+        "¿Cuándo bebió por última vez algo que no fuera café ni té? ¿Fue hoy?",
+        "¿Cuál de estas cosas le resulta más familiar ahora mismo: el cansancio, el dolor de cabeza, la falta de concentración, la sensación de que las tareas cuestan más de lo que deberían?",
+        "¿Qué le haría más fácil tener un vaso de agua a mano mañana por la mañana?"
+      ],
+      "scripture": {
+        "reference": "Isaías 58:11 (Reina-Valera 1909)",
+        "text": "Y serás como huerta de riego, y como manadero de aguas, cuyas aguas nunca faltan."
+      },
+      "sources": [
+        23,
+        91,
+        80,
+        138
+      ],
+      "keywords": [
+        "agua",
+        "deshidratación",
+        "fatiga",
+        "concentración",
+        "estado de ánimo"
+      ]
+    },
+    {
+      "day_in_theme": 2,
+      "title": "La sed llega tarde",
+      "quote": "Aunque todo el mundo siente sed de vez en cuando, en las personas sanas que viven en climas templados la sed tiene poco papel en el control cotidiano de la ingesta de agua.",
+      "quote_source": "Popkin, D'Anci & Rosenberg (2010) (traducción)",
+      "explanation": "Quizá dé por hecho que su cuerpo le avisará cuando necesite agua. Lo hace, pero más tarde y en voz más baja de lo que cabría esperar.\n\nEn un estudio británico, 15 adultos sanos pasaron 37 horas sin beber, tomando solo el agua de sus alimentos. Su sed aumentó durante las primeras 13 horas y luego dejó de aumentar, aunque su cuerpo seguía perdiendo agua: casi un 3 por ciento del peso corporal al final. Lo que sí aumentó fue el dolor de cabeza. Lo que disminuyó fue su estado de alerta y su capacidad de concentración. Una amplia revisión sobre el agua y la salud lo dice con claridad: en los climas templados, la sed tiene poco papel en el día a día de cuánto bebemos. Bebemos por costumbre, por el sabor, con las comidas, por compañía. Las personas mayores sienten menos sed tras pasar un tiempo sin líquidos y beben menos para compensarlo. Por eso la revisión aconseja beber con regularidad, incluso sin tener sed.\n\nLa depresión le quita muchos de los hábitos que antes llevaban agua a su día: el café con un compañero, la comida sentado a la mesa. Si pasa horas en la cama, puede ir de una tarde a la tarde siguiente casi sin beber nada. Los investigadores lo llaman deshidratación voluntaria. No es una elección. Es una falta de señales.\n\nAsí que la respuesta no es la fuerza de voluntad. Es poner el agua allí donde ya se dirige su mirada: una botella en el escritorio, un vaso junto a cada comida, una taza al lado de la cama. Si tiene una enfermedad del corazón o de los riñones, o toma algún medicamento que afecte al equilibrio de líquidos, pregunte a su médico cuánta agua es adecuada para usted.",
+      "challenge": "Prepare dos señales, no una cantidad. Primero, ponga una botella o un vaso lleno en algún lugar donde lo vaya a ver en la próxima hora: junto al cargador del teléfono, en la mesa de la cocina, al lado del hervidor. Segundo, elija una comida de hoy en la que el vaso de agua llegue a la mesa antes que la comida. Beba lo que le apetezca. Hoy el objetivo es la preparación, no la cantidad. Si incluso eso le resulta pesado, llene ahora un vaso y déjelo junto a su cama para la mañana.",
+      "reflection_questions": [
+        "Si piensa en el día de ayer, ¿cuántas horas pasaron entre una bebida y la siguiente?",
+        "¿Hacia dónde se dirige su mirada con más frecuencia durante el día? ¿Podría estar el agua allí?",
+        "¿Hay alguien en su vida que quizá también se olvide de beber? ¿Podrían recordárselo el uno al otro?"
+      ],
+      "scripture": {
+        "reference": "Salmos 42:1–2 (Reina-Valera 1909)",
+        "text": "Como el ciervo brama por las corrientes de las aguas, así clama por ti, oh Dios, el alma mía. Mi alma tiene sed de Dios, del Dios vivo."
+      },
+      "sources": [
+        187,
+        164,
+        138
+      ],
+      "keywords": [
+        "sed",
+        "hábitos",
+        "señales",
+        "personas mayores",
+        "botella de agua"
+      ]
+    },
+    {
+      "day_in_theme": 3,
+      "title": "Lo que bebemos en su lugar",
+      "quote": "Cualquiera que bebiere de esta agua, volverá a tener sed; mas el que bebiere del agua que yo le daré, para siempre no tendrá sed.",
+      "quote_source": "Juan 4:13–14 (Reina-Valera 1909)",
+      "explanation": "La mayor parte de lo que bebemos no es agua. Una revisión sobre el agua y la salud señala que bebemos sobre todo por el sabor, el estímulo y el placer. También indica que el consumo total de líquidos entre los adultos estadounidenses aumentó aproximadamente una cuarta parte entre 1989 y 2002, y que todo ese aumento procedía de bebidas con calorías. Cuando el agua sustituye a las bebidas azucaradas y a los zumos, se ingiere menos energía. Y en algunas personas, advierte la revisión, el alcohol puede convertirse silenciosamente en una dependencia.\n\nLa depresión empuja con fuerza hacia esas bebidas. El café promete energía cuando no le queda ninguna. El azúcar promete un empujón. El alcohol promete calma. Son intentos de sobrellevar las cosas, no fracasos, y merecen comprensión, no un sermón. El problema está en la segunda mitad de la curva. Un cuaderno de trabajo sobre la depresión describe cómo el impulso pasajero de la cafeína termina en cansancio, dolor de cabeza y tensión; y si se toma tarde, cuesta horas de sueño. En un estudio de tres años con unas 70.000 mujeres posmenopáusicas, las que tenían más azúcar añadido en su dieta presentaban una probabilidad alrededor de un 23 por ciento mayor de desarrollar depresión que las que tenían menos.\n\nUna buena noticia, para que esto no sea otra norma más. El café y el té cuentan como líquido; la investigación no demuestra que deshidraten. En estudios observacionales, quienes beben té incluso presentan tasas más bajas de depresión, aunque la pausa y la compañía pueden importar tanto como las hojas. Así que el paso de esta semana no consiste en renunciar a nada. Es un cambio suave: conserve el ritual y cambie lo que hay en la taza. Si el alcohol se ha vuelto diario, hable con su médico antes de reducirlo bruscamente; dejarlo de golpe puede ser peligroso.",
+      "challenge": "Elija hoy una bebida a la que suela recurrir: el segundo café, el refresco de cola de la tarde, la copa de vino de la noche. Cámbiela por agua, en la misma taza o el mismo vaso, a la misma hora, en la misma silla. Conserve todo el ritual excepto el líquido. Si le ayudan las burbujas o el sabor, use agua con gas o añada una rodaja de limón. Si un cambio completo le parece demasiado, beba primero un vaso de agua y después tome la bebida que quería. Sea curioso, no estricto.",
+      "reflection_questions": [
+        "¿A qué bebida recurre cuando el día se hace más difícil, y qué espera que haga por usted?",
+        "¿Qué parte de ese momento le importa más: el sabor, el calor, la pausa, la compañía?",
+        "¿Hay alguna bebida que le preocupe en silencio? ¿A quién podría decírselo?"
+      ],
+      "scripture": {
+        "reference": "Salmos 63:1 (Reina-Valera 1909)",
+        "text": "Dios, Dios mío eres tú: levantaréme a ti de mañana: mi alma tiene sed de ti, mi carne te desea, en tierra de sequedad y transida sin aguas."
+      },
+      "sources": [
+        164,
+        229,
+        90,
+        76
+      ],
+      "keywords": [
+        "cafeína",
+        "azúcar",
+        "alcohol",
+        "sustituciones",
+        "rituales"
+      ]
+    },
+    {
+      "day_in_theme": 4,
+      "title": "Levántate y come",
+      "quote": "Levántate, come: porque gran camino te resta.",
+      "quote_source": "1 Reyes 19:7 (Reina-Valera 1909)",
+      "explanation": "Cuando Elías se desplomó bajo un árbol y pidió morir, antes que nada recibió pan, agua y sueño. Y después, lo mismo otra vez.\n\nLa depresión altera la forma de comer. Algunas personas se olvidan de comer hasta la tarde. Otras picotean cosas dulces porque no exigen nada. Ambas cosas llevan al mismo vaivén: largos intervalos sin comer, un subidón de azúcar y luego una caída. Los investigadores sospechan que esas caídas influyen en el estado de ánimo. Tras una subida rápida del azúcar en sangre, el cuerpo segrega más insulina de la necesaria. El azúcar puede bajar tanto que se liberan hormonas del estrés como la adrenalina y el cortisol. Se sienten como ansiedad, irritabilidad y hambre. Mientras tanto, el cerebro se queda corto de combustible, y usted se siente aturdido y cansado.\n\nUn experimento lo puso a prueba. Ochenta y dos adultos sanos siguieron dos dietas, durante 28 días cada una, con las mismas calorías y el mismo equilibrio de nutrientes. La única diferencia era el tipo de carbohidratos: de absorción rápida, que disparan el azúcar en sangre, o de absorción lenta. Con la dieta de absorción rápida, sus puntuaciones de síntomas depresivos fueron alrededor de un 38 por ciento más altas. La alteración general del estado de ánimo fue un 55 por ciento mayor, y el cansancio, un 26 por ciento mayor. Las mismas personas, las mismas calorías, una curva distinta. Una revisión reciente sobre alimentación y ansiedad incluye las comidas regulares entre los hábitos que estabilizan el azúcar en sangre.\n\nAquí la palanca es pequeña: coma algo en las dos horas siguientes a despertarse y procure que los intervalos entre comidas no pasen de cuatro o cinco horas. Combinar un carbohidrato con proteína o fibra suaviza la curva: pan con queso o crema de cacahuete, avena con yogur, una manzana con frutos secos. Si tiene diabetes, siga el plan acordado con su médico.",
+      "challenge": "Hoy, intente tener tres momentos para comer en lugar de uno o ninguno. No hace falta que sean comidas completas. El desayuno puede ser un plátano y un puñado de frutos secos. El almuerzo puede ser pan con queso o hummus. Una pausa por la tarde puede ser un yogur o un huevo cocido. Póngase un vaso de agua junto a cada uno. Si hoy le resulta imposible cocinar, no pasa nada: compre algo, pídalo prestado o abra una lata. Si tres le parecen demasiados, que sean dos, y que el primero llegue en las dos horas siguientes a levantarse.",
+      "reflection_questions": [
+        "¿Qué comió ayer y a qué horas? Sin juzgarse, solo para tener una imagen.",
+        "¿En qué momento del día se desploma más su energía? ¿Qué había comido en las horas anteriores?",
+        "¿Qué alimento podría tener en casa que no le exija nada?"
+      ],
+      "scripture": {
+        "reference": "Salmos 107:9 (Reina-Valera 1909)",
+        "text": "Porque sació al alma menesterosa, Y llenó de bien al alma hambrienta."
+      },
+      "sources": [
+        52,
+        90,
+        24
+      ],
+      "keywords": [
+        "comidas",
+        "azúcar en sangre",
+        "carga glucémica",
+        "energía",
+        "apetito"
+      ]
+    },
+    {
+      "day_in_theme": 5,
+      "title": "Tres pequeñas acciones antes que nada",
+      "quote": "Cómo pasamos nuestros días es, por supuesto, cómo pasamos nuestra vida.",
+      "quote_source": "Annie Dillard, The Writing Life (traducción)",
+      "explanation": "Las mañanas suelen ser la peor hora de la depresión. Usted se despierta ya cansado, el día no tiene forma y cada decisión pesa. Algo que ayuda es quitar las decisiones de en medio: una pequeña secuencia fija que ocurre antes de tener que elegir nada.\n\nAquí tiene una, con una razón detrás de cada paso. Primero, un vaso de agua. Lleva ocho horas o más sin beber, y en la investigación que vimos esta semana, las personas que bebieron agua dijeron sentirse más tranquilas y despiertas en cuestión de minutos. Segundo, luz. Su reloj interno se ajusta cada día sobre todo con la luz, y una revisión de la investigación sobre los ritmos circadianos es clara: la luz de la mañana adelanta el reloj, mientras que la luz de la noche lo retrasa. Muchas personas con depresión notan que su sueño y su energía se van desplazando hacia más tarde; abrir las cortinas, o quedarse dos minutos junto a una ventana o una puerta abierta, es una pequeña corrección que se aplica cada día. Tercero, lávese la cara, con agua fría si lo soporta. Para esto no hay ningún estudio que citar. Es una señal para usted mismo de que el día ha empezado y de que usted está en él.\n\nLos programas de activación conductual se basan en el mismo principio: primero viene la acción y después la motivación, y los pequeños logros cuentan aunque no den placer. Su lista de actividades que mejoran el ánimo incluye abrir las cortinas y las persianas para dejar entrar la luz, tomar una bebida caliente y arreglarse sin prisas. Tres minutos. Las mismas tres cosas, en el mismo orden, tenga ganas o no. Eso es un ancla.",
+      "challenge": "Mañana por la mañana, antes de mirar el teléfono, haga tres cosas seguidas: beba el vaso de agua que dejó junto a la cama, abra las cortinas o acérquese a una ventana o una puerta y mire afuera durante un minuto, y después lávese la cara. Deje el vaso preparado esta noche, para que el primer paso ya le esté esperando. Si tres le parecen demasiados, haga lo del agua y las cortinas desde la cama. Si se despierta por la tarde, esa sigue siendo su mañana; el ancla funciona a cualquier hora.",
+      "reflection_questions": [
+        "¿Qué es lo primerísimo que hace al despertarse, y cómo le deja sentirse?",
+        "De las tres cosas, el agua, la luz o lavarse, ¿cuál le resultaría más fácil para empezar?",
+        "¿Hay algún lugar en su casa donde de verdad llegue la luz de la mañana?"
+      ],
+      "scripture": {
+        "reference": "Lamentaciones 3:22–23 (Reina-Valera 1909)",
+        "text": "Es por la misericordia de Jehová que no somos consumidos, porque nunca decayeron sus misericordias. Nuevas son cada mañana; grande es tu fidelidad."
+      },
+      "sources": [
+        138,
+        36,
+        27
+      ],
+      "keywords": [
+        "mañana",
+        "rutina",
+        "luz",
+        "reloj interno",
+        "ancla"
+      ]
+    },
+    {
+      "day_in_theme": 6,
+      "title": "Una superficie, una ventana",
+      "quote": "Cualquier tarea puede dividirse en pasos cada vez más pequeños, hasta encontrar algo que sea alcanzable.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez, Module 2 (traducción)",
+      "explanation": "Cuando la depresión le agota la energía, las tareas se acumulan: los platos, la ropa sobre la silla, el correo sin abrir. Los psicólogos del Centre for Clinical Interventions describen lo que sucede después. Al mirar el montón, usted se siente abrumado, luego culpable, luego más convencido de que está fallando, y la depresión se hace más honda. El círculo funciona en ambos sentidos.\n\nSus módulos de activación conductual señalan algo importante aquí: el placer no es el único sentimiento que vale la pena buscar. La sensación de logro también cuenta, y a menudo es más fácil de alcanzar. Hacer la cama puede darle placer al ver la cama ordenada, pero también le da la sensación de haber hecho algo para mejorar su hogar. Las tareas que aportan una sensación de dominio le ayudan a sentir que empieza a recuperar el control. Su consejo: reduzca la tarea hasta que se ajuste a su nivel actual. No limpie la cocina, lave los platos; si eso es demasiado, apílelos; si eso es demasiado, lave cinco platos o despeje un trozo de encimera. Apunte a diez minutos, no a un trabajo terminado, y trátelo como un experimento: valore su estado de ánimo antes y después.\n\nLo mismo vale para su propio cuerpo. Lavarse el pelo o ponerse ropa con la que se sienta bien aparecen en su lista de actividades útiles, junto a escuchar música y llamar a un amigo. No se trata de exigencias. Se trata de una superficie despejada y una ventana abierta como prueba, visible desde donde usted se sienta, de que hoy algo se movió.",
+      "challenge": "Elija una superficie que pueda ver desde donde pasa la mayor parte del tiempo: una mesita de noche, un rincón de la encimera de la cocina, la silla donde se amontona la ropa. Primero abra una ventana. Ponga un temporizador de diez minutos y despeje solo esa superficie; límpiela si tiene energía. Cuando suene el temporizador, pare, aunque quede algo por hacer. Valore su estado de ánimo del uno al diez antes y después. Si diez minutos es demasiado, abra la ventana y devuelva un solo objeto a su sitio.",
+      "reflection_questions": [
+        "¿Qué pequeño desorden le pesa más cuando lo mira?",
+        "¿Cuándo sintió por última vez una sensación de logro, por pequeña que fuera? ¿Qué fue?",
+        "¿Cómo sería reconocerse el mérito por diez minutos, en lugar de por terminar?"
+      ],
+      "scripture": {
+        "reference": "Lucas 16:10 (Reina-Valera 1909)",
+        "text": "El que es fiel en lo muy poco, también en lo más es fiel."
+      },
+      "sources": [
+        27,
+        26
+      ],
+      "keywords": [
+        "activación conductual",
+        "logro",
+        "ordenar",
+        "cuidado personal",
+        "pasos pequeños"
+      ]
+    },
+    {
+      "day_in_theme": 7,
+      "title": "Un suelo para los días difíciles",
+      "quote": "Los tropiezos en el progreso pueden ocurrir en cualquier momento y son de esperar.",
+      "quote_source": "Nathan, Rees, Lim & Correia (2003), Back from the Bluez, Module 9 (traducción)",
+      "explanation": "Seamos honestos sobre esta semana. Un vaso de agua no trata la depresión. Tampoco el desayuno ni una mesa despejada. Los estudios que leímos encontraron efectos modestos, sobre todo en voluntarios sanos: más energía y concentración con suficiente agua, un ánimo más estable con comidas de liberación lenta, un reloj interno ajustado por la luz de la mañana, una sensación de logro con tareas pequeñas. Modesto es la palabra justa. Y estas cosas acompañan a su tratamiento, nunca lo sustituyen.\n\nPiense en ellas como un suelo, no como una escalera. Una escalera sirve para salir. Un suelo impide que un día difícil se convierta en uno peor. En un mal día usted no hará ejercicio, no llamará a un amigo ni cocinará. Pero normalmente sí puede beber un vaso de agua, comer algo sencillo, abrir las cortinas y lavarse la cara. Estas cosas evitan que la parte del peso que viene del cuerpo se sume a la parte que viene de la depresión.\n\nEl módulo de autocuidado que hemos estado leyendo cuenta con las recaídas. Los días bajos, dicen sus autores, forman parte de ser humano, y la trampa es creer que se ha vuelto a la casilla de salida. Propone escribir de antemano a qué prestará atención, bajo apartados como el autocuidado y el apoyo social. Un día mínimo es esa idea en su forma más pequeña: de tres a cinco cosas que hará los días en que no pueda hacer nada más. Escritas cuando tiene la mente clara, leídas cuando no la tiene.\n\nSi un día difícil le lleva a pensar en quitarse la vida, eso es más de lo que cualquier suelo puede sostener. Por favor, llame hoy a una línea de crisis; en la página de Ayuda encontrará el número de su país.",
+      "challenge": "Escriba su día mínimo en una tarjeta o en el diario de la aplicación: de tres a cinco acciones, cada una de menos de dos minutos, que hará en los peores días. Por ejemplo: beber un vaso de agua al despertar; comer una cosa sencilla; abrir las cortinas; lavarme la cara; enviar un mensaje a una persona. Ponga la tarjeta donde pueda verla desde la cama. Si escribir le parece demasiado hoy, copie esa lista tal como está; más adelante podrá hacerla suya.",
+      "reflection_questions": [
+        "¿Cuál de los pequeños básicos de esta semana marcó una diferencia más notable para usted?",
+        "¿Cómo suele ser un día difícil para usted, y qué significaría tener un suelo debajo?",
+        "¿A quién podría contarle su día mínimo, para que otra persona sepa a qué está intentando aferrarse?"
+      ],
+      "scripture": {
+        "reference": "Salmos 23:2–3 (Reina-Valera 1909)",
+        "text": "En lugares de delicados pastos me hará yacer: junto a aguas de reposo me pastoreará. Confortará mi alma."
+      },
+      "sources": [
+        34,
+        27,
+        23,
+        52,
+        36
+      ],
+      "keywords": [
+        "día mínimo",
+        "recaídas",
+        "autocuidado",
+        "plan",
+        "básicos"
+      ]
+    }
+  ]
+}
