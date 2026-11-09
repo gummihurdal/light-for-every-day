@@ -1,6 +1,6 @@
 # Light for Every Day — App Store listing (1.0)
 
-**Name:** Light for Every Day · **Subtitle (EN):** Small daily steps out of depression · **Subtitle (ES):** Pequeños pasos contra la depresión
+**Name:** Light for Every Day · **Subtitle (EN):** Daily steps out of depression · **Subtitle (ES):** Pasos contra la depresión
 **Category:** Health & Fitness (secondary: Lifestyle) · **Age rating:** 12+ (infrequent/mild medical or treatment information) · **Price:** Free
 **Support URL:** https://light.azurenexus.com/contact.html · **Privacy policy:** https://light.azurenexus.com/privacy.html
 **Bundle ID:** com.azurenexus.light · **Version:** 1.0 (build 1)
