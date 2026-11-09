@@ -1,0 +1,103 @@
+name: Build iOS App
+
+on:
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches: [main]
+    paths: ['capacitor.config.json', 'ios/**', 'www/**']
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Sync Capacitor
+        run: npx cap sync ios
+      
+      - name: Install CocoaPods
+        working-directory: ios/App
+        run: |
+          pod install || true
+
+      - name: Build iOS
+        working-directory: ios/App
+        run: |
+          if [ -f "App.xcworkspace/contents.xcworkspacedata" ]; then
+            xcodebuild -workspace App.xcworkspace \
+              -scheme App \
+              -configuration Release \
+              -archivePath $RUNNER_TEMP/Light.xcarchive \
+              -sdk iphoneos \
+              CODE_SIGNING_ALLOWED=NO \
+              archive
+          else
+            xcodebuild -project App.xcodeproj \
+              -scheme App \
+              -configuration Release \
+              -archivePath $RUNNER_TEMP/Light.xcarchive \
+              -sdk iphoneos \
+              CODE_SIGNING_ALLOWED=NO \
+              archive
+          fi
+      
+      - name: Create unsigned IPA
+        run: |
+          mkdir -p $RUNNER_TEMP/Payload
+          cp -r $RUNNER_TEMP/Light.xcarchive/Products/Applications/App.app $RUNNER_TEMP/Payload/
+          cd $RUNNER_TEMP
+          zip -r Light.ipa Payload
+          
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Light-iOS
+          path: ${{ runner.temp }}/Light.ipa
+
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Sync Capacitor
+        run: npx cap sync android
+      
+      - name: Build Android
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease bundleRelease
+      
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Light-Android-APK
+          path: android/app/build/outputs/apk/release/app-release.apk
+      
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: Light-Android-AAB
+          path: android/app/build/outputs/bundle/release/app-release.aab

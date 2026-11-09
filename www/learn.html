@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light for Every Day — Week</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+</head>
+<body>
+<div class="shell">
+  <aside class="topic-sb" id="topic-sb">
+    <div class="tsb-head">
+      <a class="tsb-back" href="topics.html" id="tsb-back">← The Journey</a>
+      <div class="tsb-title" id="tsb-title"></div>
+      <div class="tsb-sub" id="tsb-sub"></div>
+    </div>
+    <div class="tsb-list" id="tsb-list"></div>
+  </aside>
+  <main class="content">
+    <div class="topbar">
+      <div class="tb-title" id="tb-title">Loading…</div>
+      <div class="tb-prog" id="tb-prog"></div>
+    </div>
+    <div id="loading"><span class="load-t">Preparing your week</span></div>
+    <div id="overview"></div>
+    <div id="lesson-view"></div>
+  </main>
+</div>
+<script src="assets/app.js?v=202611091902"></script>
+<script src="assets/shell.js?v=202611091902"></script>
+<script>
+const params = new URLSearchParams(location.search);
+const slug = params.get('topic'); const initDay = parseInt(params.get('day') || '0');
+let topic = null, days = [], cur = 0;
+const esc = LD.esc;
+if (!slug) location.href = 'topics.html';
+async function init() {
+  const themes = await LD.getThemes();
+  topic = themes.find(t => t.slug === slug);
+  if (!topic) { location.href = 'topics.html'; return; }
+  const idx = await LD.getMessagesIndex();
+  const first = (topic.week - 1) * 7 + 1;
+  const list = idx.filter(r => r.day_number >= first && r.day_number < first + 7);
+  days = list.map(r => ({ n: r.day_number - first + 1, day_number: r.day_number, title: r.title }));
+  document.title = `${topic.title} — Light for Every Day`;
+  document.getElementById('tsb-title').textContent = topic.title; document.getElementById('tsb-back').textContent = T.allWeeks;
+  document.getElementById('tsb-sub').textContent = `${T.week} ${topic.week} · ${topic.subtitle || ''}`;
+  document.getElementById('tb-title').textContent = topic.title;
+  buildSidebar();
+  document.getElementById('loading').style.display = 'none';
+  if (initDay && days.find(d => d.n === initDay)) showDay(initDay); else showOverview();
+}
+function buildSidebar() {
+  document.getElementById('tsb-list').innerHTML = `<div class="tsb-ov on" id="sb-ov" onclick="showOverview()">${T.overview}</div>` +
+    days.map(d => `<div class="tsb-lesson" id="sb-${d.n}" onclick="showDay(${d.n})"><span class="tsb-n">${d.n}</span><span class="tsb-lt">${esc(d.title)}</span></div>`).join('');
+}
+function setActive(id) { document.querySelectorAll('.tsb-ov,.tsb-lesson').forEach(el => el.classList.remove('on')); document.getElementById(id)?.classList.add('on'); }
+function showOverview() {
+  cur = 0; document.getElementById('lesson-view').style.display = 'none';
+  document.getElementById('tb-prog').textContent = `${days.length} ${T.days}`;
+  setActive('sb-ov');
+  const done = LD.done();
+  const ov = document.getElementById('overview'); ov.style.display = 'block';
+  ov.innerHTML = `
+    <div class="ov-hero">
+      <div class="ov-title">${esc(topic.title)}</div>
+      <div class="ov-sub">${T.week} ${topic.week} · ${esc(topic.subtitle || '')}</div>
+      <div class="ov-desc">${esc(topic.description || topic.intro || '')}</div>
+    </div>
+    <div class="ov-list">${days.map(d => `
+      <div class="ov-item" onclick="showDay(${d.n})">
+        <span class="ov-num">${d.n}</span>
+        <span class="ov-ts">${esc(d.title)}</span>
+        <span class="ov-arr">${done[d.day_number] ? '✓' : '→'}</span>
+      </div>`).join('')}</div>`;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+async function showDay(num) {
+  const d = days.find(x => x.n === num); if (!d) return;
+  cur = num; history.replaceState(null, '', `?topic=${slug}&day=${num}`);
+  document.getElementById('overview').style.display = 'none'; setActive(`sb-${num}`);
+  const lv = document.getElementById('lesson-view'); lv.style.display = 'flex'; lv.innerHTML = '<div id="loading"><span class="load-t">Loading</span></div>';
+  const m = await LD.getMessage(d.day_number); if (!m) { lv.innerHTML = '<span class="load-t">Not available</span>'; return; }
+  document.getElementById('tb-title').textContent = m.title;
+  document.getElementById('tb-prog').textContent = `${T.day} ${num} ${T.of} ${days.length}`;
+  const pct = Math.round((num / days.length) * 100);
+  const qs = (m.reflection_questions || []).map((q, i) => `<div class="sp-q"><div class="sp-qt">${T.question} ${i + 1}</div><div class="sp-qtxt">${esc(q)}</div></div>`).join('');
+  const sc = m.scripture;
+  lv.classList.add('fade-in'); setTimeout(() => lv.classList.remove('fade-in'), 350);
+  lv.innerHTML = `
+    <div class="lv-head">
+      <div class="lv-num">${T.week} ${topic.week} · ${T.day} ${num} ${T.of} ${days.length} · ${T.day} ${d.day_number} ${T.of} ${LD.TOTAL_DAYS}</div>
+      <div class="lv-title">${esc(m.title)}</div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+    <div class="two-col">
+      <div>
+        <div class="key-idea"><div class="ki-lbl">${T.quote}</div><div class="ki-t">"${esc(m.quote)}" — ${esc(m.quote_source)}</div></div>
+        ${sc && LD.settings.scripture ? `<div class="sc-block"><div class="sc-ref">${esc(sc.reference)}</div><div class="sc-t">"${esc(sc.text)}"</div></div>` : ''}
+        <div class="orn"><div class="orn-l"></div><span class="orn-s">· · ·</span><div class="orn-l"></div></div>
+        <div class="block-lbl">${T.explanation}</div>
+        <div class="med-body">${LD.paras(m.explanation)}</div>
+        <div class="orn"><div class="orn-l"></div><span class="orn-s">· · ·</span><div class="orn-l"></div></div>
+        <div class="call-block"><div class="block-lbl">${T.challenge}</div><div class="call-text prose">${LD.paras(m.challenge)}</div></div>
+        <div class="lv-nav">
+          <button class="lv-btn" onclick="navigate(-1)" ${num <= 1 ? 'disabled' : ''}>${T.prev}</button>
+          <a class="lv-btn" href="today.html?day=${d.day_number}">${T.openToday}</a>
+          <button class="lv-btn" onclick="navigate(1)" ${num >= days.length ? 'disabled' : ''}>${T.next}</button>
+        </div>
+      </div>
+      <div><div class="sp"><div class="sp-lbl">${T.reflection}</div>${qs}</div><div class="sp"><div class="sp-lbl">${T.sources}</div><ol class="src-list" id="srcs"><li>Loading…</li></ol></div></div>
+    </div>`;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  try { const srcs = await LD.getSources((m.sources || []).filter(x => typeof x === 'number')); document.getElementById('srcs').innerHTML = srcs.map(x => `<li>${esc(x.citation || x.title)}${x.doi ? ` <a href="https://doi.org/${esc(x.doi)}" target="_blank" rel="noopener">doi</a>` : ''}</li>`).join(''); } catch (e) {}
+}
+function navigate(dir) { showDay(cur + dir); }
+init().catch(console.error);
+</script>
+</body>
+</html>

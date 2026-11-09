@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light for Every Day — Settings</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+</head>
+<body>
+<main class="main">
+  <div class="topbar"><div class="tb-title">Settings</div><div class="tb-sub">Preferences</div></div>
+  <div class="body" style="padding:32px 48px 80px">
+    <div class="settings-cols">
+      <div>
+        <div class="sec">
+          <div class="sec-title">Your Profile</div>
+          <div class="profile-row">
+            <div class="avatar" onclick="editName()"><span id="av-initial">?</span><div class="avatar-edit">✎</div></div>
+            <div><div class="profile-name" id="prof-name">Fellow Traveller</div><div class="profile-role">Daily Reader</div></div>
+            <button class="profile-edit-btn" onclick="editName()">Edit</button>
+          </div>
+          <div class="field-row">
+            <div class="field-icon">🕯</div>
+            <div class="field-info"><div class="field-lbl">Journey Started</div><div class="field-val" id="started-val">Not started</div></div>
+            <input type="date" id="started" class="field-input" style="max-width:170px" onchange="setStart(this.value)">
+          </div>
+          <div class="field-row">
+            <div class="field-icon">📅</div>
+            <div class="field-info"><div class="field-lbl">Current Day</div><div class="field-val" id="cur-val">—</div></div>
+            <a class="field-action" href="today.html">Open</a>
+          </div>
+          <div class="field-row">
+            <div class="field-icon">✓</div>
+            <div class="field-info"><div class="field-lbl">Challenges Done</div><div class="field-val" id="done-val">0</div></div>
+          </div>
+          <div class="field-row">
+            <div class="field-icon">🌐</div>
+            <div class="field-info"><div class="field-lbl">Language · Sprache · Langue</div><div class="field-val" style="font-size:13px;color:var(--text-d)">German and French are machine-translated drafts under review</div></div>
+            <select id="lang" class="field-select" style="max-width:150px" onchange="LD.saveSettings({lang:this.value});location.reload()"></select>
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-title">Reading Preferences</div>
+          <div class="slider-row">
+            <div class="slider-info"><div class="slider-lbl">Font Size</div><div class="slider-val" id="fs-val">Medium</div></div>
+            <input type="range" min="1" max="3" value="2" id="fs" oninput="setFS(this.value)">
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info"><div class="toggle-lbl">A Word of Hope</div><div class="toggle-sub">Show the short Scripture verse with each day's message</div></div>
+            <div class="toggle" id="t-scripture" onclick="tog(this,'scripture')"></div>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info"><div class="toggle-lbl">Daily Reminder</div><div class="toggle-sub">A gentle notification each morning (on supported devices)</div></div>
+            <div class="toggle" id="t-remind" onclick="remind(this)"></div>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info"><div class="toggle-lbl">Install As An App</div><div class="toggle-sub">Add to your Home Screen for one-tap access. iPhone: Share → Add to Home Screen.</div></div>
+            <button class="field-action" id="install" style="display:none">Install</button>
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-title">Privacy &amp; Reset</div>
+          <div class="danger-row">
+            <div><div class="danger-lbl">Export My Data</div><div class="danger-sub">Journal, moods, check-ins and self-check scores as a file</div></div>
+            <button class="profile-edit-btn" style="margin:0" onclick="exportData()">Export</button>
+          </div>
+          <div class="danger-row">
+            <div><div class="danger-lbl">Reset Progress</div><div class="danger-sub">Clear challenges done and mood check-ins, keep your start date</div></div>
+            <button class="btn-d" onclick="clearProg()">Reset</button>
+          </div>
+          <div class="danger-row">
+            <div><div class="danger-lbl">Erase Everything</div><div class="danger-sub">Remove all data from this device</div></div>
+            <button class="btn-d" onclick="eraseAll()">Erase</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="plan">
+          <div class="plan-lbl">Your Journey</div>
+          <div class="plan-name">Eighty-Four Days of Light</div>
+          <div class="plan-desc">Twelve weeks, one theme each, one short message a day. Freely offered. Everything you write stays on your device.</div>
+          <a class="plan-btn" href="subscribe.html">Get It By E-mail</a>
+        </div>
+        <div class="plan">
+          <div class="plan-lbl">About</div>
+          <div class="plan-name">Light for Every Day</div>
+          <div class="plan-desc">Drafted from a library of more than two hundred studies on depression and reviewed by people before publication. A sister project of Grace for Every Day.</div>
+          <a class="plan-btn" href="about.html">Why This Works</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="assets/app.js?v=202611091902"></script>
+<script src="assets/shell.js?v=202611091902"></script>
+<script>
+const s = LD.settings;
+const name = s.name || 'Fellow Traveller';
+document.getElementById('prof-name').textContent = name; document.getElementById('av-initial').textContent = name.charAt(0).toUpperCase();
+document.getElementById('lang').innerHTML = Object.entries(LD.LANGS).map(([k, v]) => `<option value="${k}" ${k === LD.lang() ? 'selected' : ''}>${v}</option>`).join('');
+const FS = { small: 1, normal: 2, large: 3 }, FSN = ['Small', 'Medium', 'Large'];
+document.getElementById('fs').value = FS[s.size] || 2; document.getElementById('fs-val').textContent = FSN[(FS[s.size] || 2) - 1];
+function setFS(v) { document.getElementById('fs-val').textContent = FSN[v - 1]; LD.saveSettings({ size: ['small', 'normal', 'large'][v - 1] }); }
+document.getElementById('t-scripture').classList.toggle('on', !!s.scripture);
+document.getElementById('t-remind').classList.toggle('on', !!LD.store.get('remind', false));
+function tog(el, key) { el.classList.toggle('on'); LD.saveSettings({ [key]: el.classList.contains('on') }); }
+async function remind(el) { const v = !el.classList.contains('on'); if (v && 'Notification' in window) { const p = await Notification.requestPermission(); if (p !== 'granted') return; } el.classList.toggle('on', v); LD.store.set('remind', v); }
+function editName() { const n = prompt('Your first name (only for the greeting):', s.name || ''); if (n !== null) { LD.saveSettings({ name: n.trim().slice(0, 30) }); location.reload(); } }
+const st = LD.startedOn(); document.getElementById('started').value = st || ''; document.getElementById('started').max = LD.todayISO();
+document.getElementById('started-val').textContent = st || 'Not started'; document.getElementById('cur-val').textContent = LD.currentDay() ? `Day ${LD.currentDay()} of ${LD.TOTAL_DAYS}` : '—';
+document.getElementById('done-val').textContent = Object.keys(LD.done()).length;
+function setStart(v) { if (v) { LD.start(v); location.reload(); } }
+let deferred; window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); deferred = e; document.getElementById('install').style.display = 'inline-block'; });
+document.getElementById('install').addEventListener('click', () => { if (deferred) { deferred.prompt(); deferred = null; } });
+function exportData() { const data = {}; ['started_on', 'done', 'journal', 'moods', 'settings', 'phq9', 'gratitude'].forEach(k => data[k] = LD.store.get(k, null)); const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })); a.download = 'light-for-every-day-' + LD.todayISO() + '.json'; a.click(); }
+function clearProg() { if (confirm('Clear challenges done and mood check-ins?')) { LD.store.del('done'); LD.store.del('moods'); location.reload(); } }
+function eraseAll() { if (confirm('Erase your journey, journal, moods and settings from this device? This cannot be undone.')) { LD.eraseAll(); location.href = 'index.html'; } }
+</script>
+</body>
+</html>

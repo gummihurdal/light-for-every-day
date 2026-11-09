@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Unsubscribe — Light for Every Day</title><meta name="robots" content="noindex"><link rel="icon" href="icons/icon.svg" type="image/svg+xml"><meta name="theme-color" content="#0E1628"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/grace.css?v=202611091902"></head><body>
+<main class="main"><div class="topbar"><div class="tb-title">Daily E-mail</div></div><div class="body" style="padding:56px 48px"><div class="contact-wrap"><div class="form-success" style="display:block" id="box"><div class="form-success-icon">✦</div><div class="form-success-t">Stop the Daily E-mail?</div><div class="form-success-s">You can come back any time. Your journal and progress in the app are unaffected; they live on your device.</div><button class="submit-btn" id="go" style="margin-top:20px;align-self:center">Yes, Unsubscribe</button></div></div></div></main>
+<script src="assets/app.js?v=202611091902"></script><script src="assets/shell.js?v=202611091902"></script>
+<script>
+const t = new URLSearchParams(location.search).get('t'); const box = document.getElementById('box');
+if (!t) box.innerHTML = '<div class="form-success-t">Missing Link</div><div class="form-success-s">Please use the unsubscribe link at the bottom of one of our e-mails.</div>';
+document.getElementById('go')?.addEventListener('click', async () => {
+  try {
+    const r = await fetch(LD.SB + '/rest/v1/rpc/ld_unsubscribe', { method: 'POST', headers: { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_token: t }) });
+    const ok = r.ok && (await r.json()) === true;
+    box.innerHTML = ok ? '<div class="form-success-icon">✦</div><div class="form-success-t">Done</div><div class="form-success-s">No more e-mails will be sent. Go gently. <a href="index.html" style="color:var(--gold)">Back to the app</a></div>' : '<div class="form-success-t">Link Not Recognised</div><div class="form-success-s">If you still receive e-mails, write to hello@med.azurenexus.com.</div>';
+  } catch (e) { box.innerHTML = '<div class="form-success-t">Something went wrong</div><div class="form-success-s">Please try again in a minute.</div>'; }
+});
+</script></body></html>

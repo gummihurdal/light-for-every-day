@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light for Every Day – small daily steps out of depression</title>
+<meta name="description" content="Light for Every Day — daily hope for people living with depression. One short message a day: a quote, an explanation grounded in research, a challenge, and questions for reflection.">
+<meta name="keywords" content="depression, daily encouragement, mental health, hope, reflection, Christian, research">
+<meta property="og:title" content="Light for Every Day – small daily steps out of depression">
+<meta property="og:description" content="Eighty-four short daily messages for people living with depression, grounded in research.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Light">
+<meta name="theme-color" content="#C9A43A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0E1628;--navy2:#131D35;--navy4:#0A1020;--gold:#C9A43A;--gold-l:#E0BC5A;--gold-d:#8A6E20;--text:#C8B898;--text-d:#6A6050;--text-b:#EDE0C0;--border:rgba(201,164,58,0.18);--border2:rgba(201,164,58,0.08)}
+html{scroll-behavior:smooth}
+body{background:var(--navy4);color:var(--text);font-family:'Cormorant Garamond',serif;overflow-x:hidden}
+.hero{position:relative;height:100vh;min-height:600px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('hero-beach.jpg');background-size:cover;background-position:center 30%;transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1.05) translateY(0)}to{transform:scale(1.12) translateY(-2%)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,15,30,0.35) 0%,rgba(10,15,30,0.4) 35%,rgba(10,15,30,0.62) 60%,rgba(10,15,30,0.78) 80%,rgba(10,15,30,0.9) 100%)}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;animation:fadeUp 1.4s cubic-bezier(0.22,1,0.36,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-eyebrow{font-family:'Cinzel',serif;font-size:10px;letter-spacing:8px;text-transform:uppercase;color:rgba(255,255,255,0.92);margin-bottom:24px;text-shadow:0 2px 16px rgba(0,0,0,0.9),0 1px 4px rgba(0,0,0,0.8);animation:fadeUp 1.4s .2s cubic-bezier(0.22,1,0.36,1) both}
+.hero-title{font-family:'Cinzel Decorative',serif;font-size:clamp(36px,6vw,88px);font-weight:400;color:#fff;line-height:1.1;letter-spacing:2px;text-shadow:0 4px 40px rgba(0,0,0,0.5);margin-bottom:20px;animation:fadeUp 1.4s .35s cubic-bezier(0.22,1,0.36,1) both}
+.hero-tag{font-family:'Cinzel',serif;font-size:clamp(11px,1.4vw,15px);letter-spacing:4px;text-transform:uppercase;color:#F8EED4;margin:0 0 22px;text-shadow:0 1px 3px rgba(0,0,0,0.95),0 2px 18px rgba(0,0,0,0.9);animation:fadeUp 1.4s .45s cubic-bezier(0.22,1,0.36,1) both}
+.hero-rule{width:60px;height:1px;background:var(--gold);margin:0 auto 20px;opacity:.7;animation:fadeUp 1.4s .5s cubic-bezier(0.22,1,0.36,1) both}
+.hero-sub{font-size:clamp(17px,2.2vw,23px);font-style:italic;font-weight:400;color:#F2EDE4;text-shadow:0 1px 3px rgba(0,0,0,0.6),0 2px 14px rgba(0,0,0,0.55);line-height:1.65;max-width:560px;animation:fadeUp 1.4s .55s cubic-bezier(0.22,1,0.36,1) both}
+.hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:44px;animation:fadeUp 1.4s .7s cubic-bezier(0.22,1,0.36,1) both}
+.cta-primary{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--navy4);background:var(--gold);border:none;padding:16px 40px;cursor:pointer;text-decoration:none;transition:all .3s;display:inline-block;box-shadow:0 0 32px rgba(201,164,58,0.3)}
+.cta-primary:hover{background:var(--gold-l);box-shadow:0 0 48px rgba(201,164,58,0.5);transform:translateY(-1px)}
+.cta-secondary{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#F2EDE4;background:rgba(10,15,30,0.35);border:1.5px solid #F2EDE4;text-shadow:0 1px 3px rgba(0,0,0,0.6);padding:16px 32px;cursor:pointer;text-decoration:none;transition:all .3s;display:inline-block}
+.cta-secondary:hover{border-color:var(--gold);color:var(--gold)}
+.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeUp 1.4s 1s cubic-bezier(0.22,1,0.36,1) both}
+.hero-scroll span{font-family:'Cinzel',serif;font-size:7px;letter-spacing:5px;text-transform:uppercase;color:#F2EDE4;text-shadow:0 1px 3px rgba(0,0,0,0.6)}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold-d),transparent);animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.4;transform:scaleY(.8)}50%{opacity:1;transform:scaleY(1)}}
+.today-strip{background:var(--navy2);border-bottom:1px solid var(--border2);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.ts-label{font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;text-transform:uppercase;color:var(--gold)}
+.ts-text{font-size:16px;font-style:italic;color:var(--text-b);flex:1;text-align:center}
+.ts-ref{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-d);white-space:nowrap}
+.features{padding:96px 48px;background:var(--navy4)}
+.section-eyebrow{font-family:'Cinzel',serif;font-size:8px;letter-spacing:6px;text-transform:uppercase;color:var(--gold-d);text-align:center;margin-bottom:12px}
+.section-title{font-family:'Cinzel',serif;font-size:clamp(20px,2.5vw,30px);font-weight:500;color:var(--text-b);text-align:center;margin-bottom:56px;letter-spacing:1px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;max-width:1200px;margin:0 auto;background:var(--border2)}
+.card{background:var(--navy);padding:40px 32px;text-decoration:none;border-top:2px solid transparent;transition:all .35s cubic-bezier(0.22,1,0.36,1);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,164,58,0.04) 0%,transparent 60%);opacity:0;transition:opacity .35s}
+.card:hover{background:var(--navy2);border-top-color:var(--gold-d);transform:translateY(-2px)}
+.card:hover::before{opacity:1}
+.card-icon{font-size:22px;margin-bottom:20px;opacity:.7;transition:opacity .3s}
+.card:hover .card-icon{opacity:1}
+.card-label{font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;text-transform:uppercase;color:var(--gold-d);margin-bottom:12px}
+.card-title{font-family:'Cinzel',serif;font-size:clamp(15px,1.8vw,19px);font-weight:500;color:var(--text-b);margin-bottom:12px;line-height:1.35}
+.card-desc{font-size:clamp(14px,1.5vw,16px);line-height:1.8;color:var(--text-d);font-style:italic;font-weight:300;flex:1}
+.card-arrow{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--gold-d);margin-top:24px;transition:all .3s;display:inline-block}
+.card:hover .card-arrow{color:var(--gold);letter-spacing:5px}
+.verse-section{position:relative;padding:100px 48px;overflow:hidden;background:var(--navy2);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2)}
+.verse-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(201,164,58,0.05) 0%,transparent 70%);pointer-events:none}
+.verse-inner{max-width:760px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.verse-orn{font-size:28px;color:var(--gold-d);opacity:.5;margin-bottom:28px;letter-spacing:12px}
+.verse-text{font-size:clamp(22px,3vw,38px);font-style:italic;font-weight:300;color:var(--text-b);line-height:1.7;margin-bottom:20px}
+.verse-ref{font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold)}
+.verse-cta{display:inline-block;margin-top:36px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--gold-d);text-decoration:none;border-bottom:1px solid var(--gold-d);padding-bottom:3px;transition:all .3s}
+.verse-cta:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.studies{padding:80px 48px;background:var(--navy4)}
+.studies-inner{max-width:1200px;margin:0 auto}
+.studies-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;gap:20px;flex-wrap:wrap}
+.studies-all{font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--gold-d);text-decoration:none;border-bottom:1px solid var(--gold-d);padding-bottom:2px;transition:all .3s}
+.studies-all:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:var(--border2)}
+.topic-pill{background:var(--navy);padding:20px 20px;text-decoration:none;display:flex;align-items:center;gap:12px;transition:all .25s;border-left:2px solid transparent}
+.topic-pill:hover{background:var(--navy2);border-left-color:var(--gold-d)}
+.tp-num{font-family:'Cinzel',serif;font-size:9px;color:var(--text-d);min-width:18px}
+.tp-name{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-b);transition:color .25s;line-height:1.3}
+.topic-pill:hover .tp-name{color:var(--gold)}
+.safety{padding:64px 48px;background:var(--navy);border-top:1px solid var(--border2)}
+.safety-inner{max-width:760px;margin:0 auto;text-align:center}
+.safety-text{font-size:clamp(15px,1.8vw,18px);line-height:1.9;color:var(--text);font-style:italic}
+.safety-text b{color:var(--gold);font-style:normal;font-family:'Cinzel',serif;font-size:14px;letter-spacing:2px}
+.footer{background:var(--navy);border-top:1px solid var(--border2);padding:48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer-brand{font-family:'Cinzel',serif;font-size:14px;font-weight:600;letter-spacing:2px;color:var(--gold)}
+.footer-sub{font-size:13px;font-style:italic;color:var(--text-d);margin-top:4px}
+.footer-links{display:flex;gap:28px;flex-wrap:wrap}
+.footer-link{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--text-d);text-decoration:none;transition:color .2s}
+.footer-link:hover{color:var(--gold)}
+@media(max-width:768px){
+  .hero-title{font-size:clamp(28px,10vw,52px)}
+  .hero-tag{font-size:11px;letter-spacing:2px;line-height:1.7;padding:0 12px;color:#FFFFFF}
+  .hero-sub{font-size:19px;font-weight:500}
+  .cta-secondary{font-size:11px}
+  .today-strip{flex-direction:column;text-align:center;padding:20px 24px}
+  .features{padding:64px 20px}.verse-section{padding:72px 24px}.studies{padding:56px 20px}.safety{padding:48px 20px}
+  .footer{padding:36px 24px;flex-direction:column;text-align:center}.footer-links{justify-content:center}
+  .hero-ctas{flex-direction:column;align-items:center}.cta-primary,.cta-secondary{width:100%;max-width:260px;text-align:center}
+}
+
+.lang-bar{position:absolute;top:22px;right:28px;z-index:5;display:flex;gap:6px;animation:fadeUp 1.4s .9s cubic-bezier(0.22,1,0.36,1) both}
+.lang-bar button{background:rgba(8,13,26,0.35);border:1px solid rgba(237,224,192,0.3);color:rgba(237,224,192,0.85);font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;padding:8px 12px;cursor:pointer;transition:all .3s;backdrop-filter:blur(6px)}
+.lang-bar button:hover{border-color:var(--gold);color:var(--gold)}
+.lang-bar button.on{background:var(--gold);border-color:var(--gold);color:var(--navy4)}
+@media(max-width:768px){.lang-bar{top:14px;right:14px}.lang-bar button{padding:7px 10px;font-size:9px}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="lang-bar" id="lang-bar"><button data-l="en">EN</button><button data-l="de">DE</button><button data-l="fr">FR</button><button data-l="es">ES</button></div>
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow" data-i="eyebrow">Pause · Breathe · Walk</div>
+    <h1 class="hero-title">Light for Every Day</h1>
+    <div class="hero-tag" data-i="tag">Small daily steps out of depression</div>
+    <div class="hero-rule"></div>
+    <p class="hero-sub" data-i="sub">A place to pause when the days are dark. One short message each morning for people living with depression.</p>
+    <div class="hero-ctas">
+      <a class="cta-primary" href="today.html" id="cta-main" data-i="ctaToday">Today's Light</a>
+      <a class="cta-secondary" href="today.html?study=open" data-i="ctaJourney">The Journey</a>
+      <a class="cta-secondary" href="subscribe.html" data-i="ctaEmail">Get It By E-mail</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span data-i="scroll">Scroll Down</span><div class="scroll-line"></div></div>
+</section>
+
+<div class="today-strip" id="today-strip">
+  <div class="ts-label" data-i="tsLabel">Today's Word of Hope</div>
+  <div class="ts-text" id="ts-text">…</div>
+  <div class="ts-ref" id="ts-ref"></div>
+</div>
+
+<section class="features" id="explore">
+  <div class="section-eyebrow" data-i="fEyebrow">Everything in One Place</div>
+  <div class="section-title" data-i="fTitle">Where would you like to begin?</div>
+  <div class="cards">
+    <a class="card" href="today.html">
+      <div class="card-icon">🕯️</div>
+      <div class="card-label" data-i="c1l">Every Day</div>
+      <div class="card-title" data-i="c1t">Today's Light</div>
+      <div class="card-desc" data-i="c1d">A fresh message each morning — a quote, what the research actually found, one small challenge, and questions for reflection.</div>
+      <div class="card-arrow" data-i="enter">Enter →</div>
+    </a>
+    <a class="card" href="topics.html">
+      <div class="card-icon">📖</div>
+      <div class="card-label" data-i="c2l">12 Weeks</div>
+      <div class="card-title" data-i="c2t">The Journey</div>
+      <div class="card-desc" data-i="c2d">Understanding depression, thoughts, movement, sleep, food, connection, faith, getting help — seven days on each, in order or as you choose.</div>
+      <div class="card-arrow" data-i="open">Open →</div>
+    </a>
+    <a class="card" href="calendar.html">
+      <div class="card-icon">📅</div>
+      <div class="card-label" data-i="c3l">Day By Day</div>
+      <div class="card-title" data-i="c3t">My Progress</div>
+      <div class="card-desc" data-i="c3d">See your eighty-four days laid out by date. Revisit past days, see what you completed, and watch your mood check-ins over the weeks.</div>
+      <div class="card-arrow" data-i="open">Open →</div>
+    </a>
+    <a class="card" href="archive.html">
+      <div class="card-icon">🗂️</div>
+      <div class="card-label" data-i="c4l">Everything</div>
+      <div class="card-title" data-i="c4t">All Messages</div>
+      <div class="card-desc" data-i="c4d">Browse every message. Filter by week or search by theme, quote or author. Nothing lost, everything available.</div>
+      <div class="card-arrow" data-i="browse">Browse →</div>
+    </a>
+    <a class="card" href="tools.html">
+      <div class="card-icon">🌿</div>
+      <div class="card-label" data-i="c5l">For Hard Days</div>
+      <div class="card-title" data-i="c5t">Toolbox</div>
+      <div class="card-desc" data-i="c5d">A self-check used by doctors worldwide, a breathing exercise, three good things, and an activity menu for the hardest days.</div>
+      <div class="card-arrow" data-i="enter">Enter →</div>
+    </a>
+    <a class="card" href="about.html">
+      <div class="card-icon">📚</div>
+      <div class="card-label" data-i="c6l">The Evidence</div>
+      <div class="card-title" data-i="c6t">Why This Works</div>
+      <div class="card-desc" data-i="c6d">Every message rests on real studies. See how the messages are made, who reviews them, and browse the library of more than two hundred sources.</div>
+      <div class="card-arrow" data-i="read">Read →</div>
+    </a>
+  </div>
+</section>
+
+<section class="verse-section">
+  <div class="verse-inner">
+    <div class="verse-orn">· · ·</div>
+    <div class="verse-text" id="verse-text">Loading…</div>
+    <div class="verse-ref" id="verse-ref"></div>
+    <a class="verse-cta" href="today.html" data-i="verseCta">Read today's full message →</a>
+  </div>
+</section>
+
+<section class="studies">
+  <div class="studies-inner">
+    <div class="studies-head">
+      <div>
+        <div class="section-eyebrow" style="text-align:left;margin-bottom:6px" data-i="sEyebrow">Structured Journey</div>
+        <div class="section-title" style="text-align:left;margin-bottom:0;font-size:clamp(16px,2vw,22px)" data-i="sTitle">Twelve Weeks Toward Recovery</div>
+      </div>
+      <a class="studies-all" href="topics.html" data-i="whole">The Whole Journey →</a>
+    </div>
+    <div class="topics-grid" id="pills"></div>
+  </div>
+</section>
+
+<section class="safety">
+  <div class="safety-inner">
+    <div class="section-eyebrow" data-i="safeEyebrow">If You Need Help Now</div>
+    <p class="safety-text"><span data-i="safe1">If you are in crisis or thinking about ending your life, please reach out today.</span> CH <b>143</b> · <span data-i="youth">youth</span> <b>147</b> · <span data-i="emergency">emergency</span> <b>144</b>. <a href="help.html" style="color:var(--gold)" data-i="other">Other countries →</a><br><span data-i="safe2">Light for Every Day is daily encouragement grounded in research. It is not therapy and does not replace your doctor. Everything you write in it stays on your device.</span></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <div class="footer-brand">Light for Every Day</div>
+    <div class="footer-sub" data-i="fsub">Daily Hope &amp; Small Steps</div>
+  </div>
+  <div class="footer-links">
+    <a class="footer-link" href="today.html" data-i="ctaToday">Today</a>
+    <a class="footer-link" href="topics.html" data-i="ctaJourney">The Journey</a>
+    <a class="footer-link" href="calendar.html" data-i="c3t">My Progress</a>
+    <a class="footer-link" href="archive.html" data-i="c4t">All Messages</a>
+    <a class="footer-link" href="tools.html" data-i="c5t">Toolbox</a>
+    <a class="footer-link" href="help.html" data-i="help">Help Now</a>
+    <a class="footer-link" href="about.html" data-i="c6t">Why This Works</a>
+    <a class="footer-link" href="contact.html" data-i="contact">Contact</a>
+    <a class="footer-link" href="settings.html" data-i="settings">Settings</a>
+    <a class="footer-link" href="https://graceforevery.day">Grace for Every Day</a>
+  </div>
+</footer>
+
+<script src="assets/app.js?v=202611091902"></script>
+<script>
+const LAND = {
+  en: { eyebrow: 'Pause · Breathe · Walk', sub: 'A place to pause when the days are dark. One short message each morning for people living with depression.', ctaToday: "Today's Light", ctaJourney: 'The Journey', ctaEmail: 'Get It By E-mail', scroll: 'Scroll Down', tsLabel: "Today's Word of Hope", fEyebrow: 'Everything in One Place', fTitle: 'Where would you like to begin?',
+    c1l: 'Every Day', c1t: "Today's Light", c1d: 'A fresh message each morning — a quote, what the research actually found, one small challenge, and questions for reflection.', c2l: '12 Weeks', c2t: 'The Journey', c2d: 'Understanding depression, thoughts, movement, sleep, food, connection, faith, getting help — seven days on each, in order or as you choose.', c3l: 'Day By Day', c3t: 'My Progress', c3d: 'See your eighty-four days laid out by date. Revisit past days, see what you completed, and watch your mood check-ins over the weeks.', c4l: 'Everything', c4t: 'All Messages', c4d: 'Browse every message. Filter by week or search by theme, quote or author. Nothing lost, everything available.', c5l: 'For Hard Days', c5t: 'Toolbox', c5d: 'A self-check used by doctors worldwide, a breathing exercise, three good things, and an activity menu for the hardest days.', c6l: 'The Evidence', c6t: 'Why This Works', c6d: 'Every message rests on real studies. See how the messages are made, who reviews them, and browse the library of more than two hundred sources.',
+    enter: 'Enter →', open: 'Open →', browse: 'Browse →', read: 'Read →', verseCta: "Read today's full message →", sEyebrow: 'Structured Journey', sTitle: 'Twelve Weeks Toward Recovery', whole: 'The Whole Journey →', safeEyebrow: 'If You Need Help Now', safe1: 'If you are in crisis or thinking about ending your life, please reach out today.', youth: 'youth', emergency: 'emergency', other: 'Other countries →', safe2: 'Light for Every Day is daily encouragement grounded in research. It is not therapy and does not replace your doctor. Everything you write in it stays on your device.', fsub: 'Small daily steps out of depression', tag: 'Small daily steps out of depression', help: 'Help Now', contact: 'Contact', settings: 'Settings', dayN: 'Day' },
+  de: { eyebrow: 'Innehalten · Atmen · Weitergehen', sub: 'Ein Ort zum Innehalten, wenn die Tage dunkel sind. Jeden Morgen eine kurze Nachricht für Menschen mit Depression.', ctaToday: 'Licht für heute', ctaJourney: 'Der Weg', ctaEmail: 'Per E-Mail erhalten', scroll: 'Nach unten', tsLabel: 'Das Wort der Hoffnung für heute', fEyebrow: 'Alles an einem Ort', fTitle: 'Wo möchten Sie beginnen?',
+    c1l: 'Jeden Tag', c1t: 'Licht für heute', c1d: 'Jeden Morgen eine neue Nachricht: ein Zitat, was die Forschung wirklich gefunden hat, eine kleine Aufgabe und Fragen zum Nachdenken.', c2l: '12 Wochen', c2t: 'Der Weg', c2d: 'Depression verstehen, Gedanken, Bewegung, Schlaf, Essen, Verbindung, Glaube, Hilfe holen: je sieben Tage, der Reihe nach oder wie Sie möchten.', c3l: 'Tag für Tag', c3t: 'Mein Fortschritt', c3d: 'Ihre 84 Tage nach Datum. Vergangene Tage nachlesen, Erledigtes sehen und Ihre Stimmung über die Wochen verfolgen.', c4l: 'Alles', c4t: 'Alle Nachrichten', c4d: 'Jede Nachricht durchblättern. Nach Woche filtern oder nach Thema, Zitat oder Autor suchen.', c5l: 'Für schwere Tage', c5t: 'Werkzeugkasten', c5d: 'Ein Selbsttest, den Ärztinnen und Ärzte weltweit nutzen, eine Atemübung, drei gute Dinge und eine Aktivitätenliste für die schwersten Tage.', c6l: 'Die Belege', c6t: 'Warum das wirkt', c6d: 'Jede Nachricht stützt sich auf echte Studien. Sehen Sie, wie die Nachrichten entstehen, wer sie prüft, und blättern Sie in der Bibliothek mit über zweihundert Quellen.',
+    enter: 'Öffnen →', open: 'Öffnen →', browse: 'Stöbern →', read: 'Lesen →', verseCta: 'Die ganze Nachricht von heute lesen →', sEyebrow: 'Ein strukturierter Weg', sTitle: 'Zwölf Wochen in Richtung Genesung', whole: 'Der ganze Weg →', safeEyebrow: 'Wenn Sie jetzt Hilfe brauchen', safe1: 'Wenn Sie in einer Krise sind oder daran denken, sich das Leben zu nehmen, holen Sie sich bitte heute Hilfe.', youth: 'Jugendliche', emergency: 'Notruf', other: 'Andere Länder →', safe2: 'Light for Every Day ist tägliche Ermutigung auf Grundlage der Forschung. Es ist keine Therapie und ersetzt nicht Ihren Arzt oder Ihre Ärztin. Alles, was Sie hier schreiben, bleibt auf Ihrem Gerät.', fsub: 'Kleine tägliche Schritte aus der Depression', tag: 'Kleine tägliche Schritte aus der Depression', help: 'Hilfe jetzt', contact: 'Kontakt', settings: 'Einstellungen', dayN: 'Tag' },
+  fr: { eyebrow: 'Pause · Respirer · Avancer', sub: 'Un lieu où faire une pause quand les jours sont sombres. Chaque matin, un court message pour les personnes vivant avec une dépression.', ctaToday: 'La lumière du jour', ctaJourney: 'Le chemin', ctaEmail: 'Recevoir par e-mail', scroll: 'Défiler', tsLabel: "La parole d'espérance du jour", fEyebrow: 'Tout au même endroit', fTitle: 'Par où voulez-vous commencer ?',
+    c1l: 'Chaque jour', c1t: 'La lumière du jour', c1d: 'Un nouveau message chaque matin : une citation, ce que la recherche a vraiment trouvé, un petit défi et des questions pour la réflexion.', c2l: '12 semaines', c2t: 'Le chemin', c2d: 'Comprendre la dépression, les pensées, le mouvement, le sommeil, l’alimentation, les liens, la foi, demander de l’aide : sept jours sur chaque thème, dans l’ordre ou à votre guise.', c3l: 'Jour après jour', c3t: 'Ma progression', c3d: 'Vos 84 jours par date. Relire les jours passés, voir ce que vous avez accompli et suivre votre humeur au fil des semaines.', c4l: 'Tout', c4t: 'Tous les messages', c4d: 'Parcourir chaque message. Filtrer par semaine ou chercher par thème, citation ou auteur.', c5l: 'Pour les jours difficiles', c5t: 'Boîte à outils', c5d: 'Une auto-évaluation utilisée par les médecins du monde entier, un exercice de respiration, trois bonnes choses et un menu d’activités pour les jours les plus durs.', c6l: 'Les preuves', c6t: 'Pourquoi ça marche', c6d: 'Chaque message repose sur de vraies études. Voyez comment les messages sont écrits, qui les relit, et parcourez la bibliothèque de plus de deux cents sources.',
+    enter: 'Entrer →', open: 'Ouvrir →', browse: 'Parcourir →', read: 'Lire →', verseCta: 'Lire le message complet du jour →', sEyebrow: 'Un chemin structuré', sTitle: 'Douze semaines vers le rétablissement', whole: 'Tout le chemin →', safeEyebrow: 'Si vous avez besoin d’aide maintenant', safe1: 'Si vous êtes en crise ou si vous pensez à mettre fin à vos jours, demandez de l’aide aujourd’hui.', youth: 'jeunes', emergency: 'urgences', other: 'Autres pays →', safe2: 'Light for Every Day est un encouragement quotidien fondé sur la recherche. Ce n’est pas une thérapie et cela ne remplace pas votre médecin. Tout ce que vous écrivez ici reste sur votre appareil.', fsub: 'Petits pas quotidiens pour sortir de la dépression', tag: 'Petits pas quotidiens pour sortir de la dépression', help: 'Aide maintenant', contact: 'Contact', settings: 'Réglages', dayN: 'Jour' }
+};
+function applyLang() {
+  const L = LD.lang(), D = LAND[L] || LAND.en;
+  document.documentElement.lang = L;
+  document.querySelectorAll('[data-i]').forEach(el => { const k = el.dataset.i; if (D[k] != null) el.textContent = D[k]; });
+  document.querySelectorAll('#lang-bar button').forEach(b => b.classList.toggle('on', b.dataset.l === L));
+  const day = LD.currentDay(); if (day) document.getElementById('cta-main').textContent = `${D.ctaToday} · ${D.dayN} ${day}`;
+}
+document.querySelectorAll('#lang-bar button').forEach(b => b.addEventListener('click', () => { LD.saveSettings({ lang: b.dataset.l }); Object.keys(LD).length; location.reload(); }));
+(async () => {
+  applyLang();
+  const day = LD.currentDay();
+  try {
+    const [m, themes] = await Promise.all([LD.getMessage(day || 1), LD.getThemes()]);
+    document.getElementById('pills').innerHTML = themes.map((t, i) => `<a class="topic-pill" href="learn.html?topic=${t.slug}"><span class="tp-num">${String(i + 1).padStart(2, '0')}</span><span class="tp-name">${LD.esc(t.title)}</span></a>`).join('');
+    if (m) {
+      const sc = m.scripture && m.scripture.text ? m.scripture : null;
+      document.getElementById('ts-text').textContent = sc ? '\u201c' + sc.text + '\u201d' : '\u201c' + m.quote + '\u201d';
+      document.getElementById('ts-ref').textContent = sc ? sc.reference : m.quote_source;
+      document.getElementById('verse-text').textContent = '\u201c' + m.quote + '\u201d';
+      document.getElementById('verse-ref').textContent = m.quote_source;
+    }
+  } catch (e) { document.getElementById('verse-text').textContent = 'Weeping may endure for a night, but joy comes in the morning.'; document.getElementById('verse-ref').textContent = 'Psalm 30:5'; }
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js?v=202611091902').catch(() => {});
+})();
+</script>
+</body>
+</html>

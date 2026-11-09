@@ -13,5 +13,12 @@
     "@anthropic-ai/sdk": "^1.6.0",
     "@supabase/supabase-js": "^2.49.1",
     "resend": "^4.8.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/ios": "^8.6.0"
   }
 }

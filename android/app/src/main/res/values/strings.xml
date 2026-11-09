@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Light for Every Day</string>
+    <string name="title_activity_main">Light for Every Day</string>
+    <string name="package_name">com.azurenexus.light</string>
+    <string name="custom_url_scheme">com.azurenexus.light</string>
+</resources>

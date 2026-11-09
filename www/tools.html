@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toolbox — Light for Every Day</title>
+<meta name="description" content="A PHQ-9 self-check, a breathing exercise, three good things, and an activity menu for low-energy days.">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+</head>
+<body>
+<main class="main">
+  <div class="topbar"><div class="tb-title">Toolbox</div><div class="tb-sub">For Hard Days</div></div>
+  <div class="page-hero">
+    <div class="ph-eyebrow">Small Instruments</div>
+    <div class="ph-title">Toolbox</div>
+    <div class="ph-rule"></div>
+    <div class="ph-sub">Small instruments for hard days. Everything here stays on your device.</div>
+  </div>
+  <div class="body" style="padding:32px 48px 80px">
+    <div class="tabs" role="tablist">
+      <button class="on" data-t="phq">Self-Check</button><button data-t="breathe">Breathe</button><button data-t="good">Three Good Things</button><button data-t="menu">Activity Menu</button>
+    </div>
+
+    <section class="pane on" id="pane-phq">
+      <div class="sec">
+        <div class="sec-title">How Heavy Has It Been?</div>
+        <p>This is the PHQ-9, the nine-question screening tool doctors use worldwide. It is not a diagnosis. It helps you see where you are and gives you something concrete to show a doctor. <strong style="color:var(--text-b)">Over the last two weeks, how often have you been bothered by any of the following?</strong></p>
+        <div id="phq"></div>
+        <div class="btn-row" style="margin-top:18px;align-items:center"><button class="g-btn gold" id="phq-go">See My Score</button><span class="sp-note" id="phq-last" style="margin:0"></span></div>
+        <div id="phq-out" style="margin-top:18px"></div>
+        <p class="sp-note">PHQ-9 © Pfizer Inc., free to use without permission (Kroenke, Spitzer &amp; Williams, 2001). Bands: 0–4 minimal, 5–9 mild, 10–14 moderate, 15–19 moderately severe, 20–27 severe.</p>
+      </div>
+    </section>
+
+    <section class="pane" id="pane-breathe">
+      <div class="sec" style="text-align:center">
+        <div class="sec-title">Slow Breathing</div>
+        <p>Four seconds in, six seconds out. Longer out-breaths calm the body's alarm system. Try one minute. Nothing to achieve; follow the circle.</p>
+        <div class="breath" id="breath">Ready</div>
+        <div class="btn-row" style="justify-content:center"><button class="g-btn gold" id="b-start">Start</button><button class="g-btn" id="b-stop" disabled>Stop</button></div>
+        <p class="sp-note" id="b-count" style="margin-top:12px"></p>
+      </div>
+    </section>
+
+    <section class="pane" id="pane-good">
+      <div class="sec">
+        <div class="sec-title">Three Good Things</div>
+        <p>Each evening, write three things that went well today and, if you can, why. They can be tiny: the coffee was warm, someone held a door. In Seligman's trials this simple exercise still lifted mood six months later. On a very dark day, one thing is enough.</p>
+        <div style="display:grid;gap:10px;margin:16px 0"><input class="field-input" type="text" id="g1" placeholder="1."><input class="field-input" type="text" id="g2" placeholder="2."><input class="field-input" type="text" id="g3" placeholder="3."></div>
+        <div class="btn-row" style="align-items:center"><button class="g-btn gold" id="g-save">Save Today</button><span class="sp-note" id="g-msg" style="margin:0"></span></div>
+      </div>
+      <div class="sec"><div class="sec-title">Earlier Entries</div><ul class="g-list" id="g-list"><li>Nothing yet.</li></ul></div>
+    </section>
+
+    <section class="pane" id="pane-menu">
+      <div class="sec">
+        <div class="sec-title">Activity Menu</div>
+        <p>Depression says "nothing will help, so why bother". Behavioural activation says: do first, feel later. Pick one thing from the menu, make it as small as you need, and do it now. Tap to mark it done.</p>
+        <h3>Two-Minute Things</h3><div class="menu" data-g="a"></div>
+        <h3>Ten-Minute Things</h3><div class="menu" data-g="b"></div>
+        <h3>Things That Take a Bit More</h3><div class="menu" data-g="c"></div>
+        <p class="sp-note">Marks reset each day.</p>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="assets/app.js?v=202611091902"></script>
+<script src="assets/shell.js?v=202611091902"></script>
+<script>
+document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b)); document.querySelectorAll('.pane').forEach(p => p.classList.toggle('on', p.id === 'pane-' + b.dataset.t)); history.replaceState(null, '', '#' + b.dataset.t); }));
+if (location.hash) { const b = document.querySelector(`.tabs button[data-t="${location.hash.slice(1)}"]`); if (b) b.click(); }
+const PHQ = ['Little interest or pleasure in doing things', 'Feeling down, depressed, or hopeless', 'Trouble falling or staying asleep, or sleeping too much', 'Feeling tired or having little energy', 'Poor appetite or overeating', 'Feeling bad about yourself, or that you are a failure or have let yourself or your family down', 'Trouble concentrating on things, such as reading the newspaper or watching television', 'Moving or speaking so slowly that other people could have noticed, or the opposite: being so fidgety or restless that you have been moving around a lot more than usual', 'Thoughts that you would be better off dead, or of hurting yourself in some way'];
+const OPTS = ['Not at all', 'Several days', 'More than half the days', 'Nearly every day'];
+const phq = document.getElementById('phq');
+phq.innerHTML = PHQ.map((q, i) => `<div class="phq-q"><p>${i + 1}. ${q}</p><div class="scale" data-q="${i}">${OPTS.map((o, v) => `<button data-v="${v}">${o}</button>`).join('')}</div></div>`).join('');
+phq.querySelectorAll('.scale button').forEach(b => b.addEventListener('click', () => b.parentElement.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b))));
+const hist = LD.store.get('phq9', []);
+if (hist.length) document.getElementById('phq-last').textContent = `Last time (${hist[hist.length - 1].date}): ${hist[hist.length - 1].score}`;
+document.getElementById('phq-go').addEventListener('click', () => {
+  const vals = [...phq.querySelectorAll('.scale')].map(s => { const on = s.querySelector('button.on'); return on ? parseInt(on.dataset.v) : null; });
+  if (vals.some(v => v === null)) { LD.toast('Please answer all nine'); return; }
+  const score = vals.reduce((a, b) => a + b, 0);
+  const band = score < 5 ? ['Minimal', 'Your answers suggest minimal symptoms right now. Keep doing what helps.'] : score < 10 ? ['Mild', 'Mild symptoms. The daily practices in this journey are well suited to this range. If it lasts, mention it to your doctor.'] : score < 15 ? ['Moderate', 'Moderate symptoms. Please make an appointment with your doctor and show them this score. Treatment helps, and the sooner the better.'] : score < 20 ? ['Moderately Severe', 'Moderately severe symptoms. Please see a doctor this week. This level of depression responds to treatment; you do not have to carry it alone.'] : ['Severe', 'Severe symptoms. Please contact a doctor today, or go to an emergency service. You deserve help now, not later.'];
+  const q9 = vals[8] > 0;
+  hist.push({ date: LD.todayISO(), score }); LD.store.set('phq9', hist.slice(-24));
+  document.getElementById('phq-out').innerHTML = `<div class="call-block" style="text-align:left"><div class="result">Score ${score} of 27 · ${band[0]}</div><p style="color:var(--text)">${band[1]}</p>${q9 ? `<p style="color:var(--text-b)"><strong>You answered that you have had thoughts of being better off dead or of hurting yourself.</strong> Please talk to someone today. In Switzerland call <b style="color:var(--gold)">143</b> (24 hours) or <b style="color:var(--gold)">144</b> in an emergency. <a href="help.html" style="color:var(--gold)">Find your country's line →</a> You matter, and these thoughts are a symptom that can lift with help.</p>` : ''}${hist.length > 1 ? `<p class="sp-note">Previous: ${hist.slice(-6, -1).map(h => `${h.date.slice(5)}: ${h.score}`).join(' · ')}</p>` : ''}<p class="sp-note">Screening only. Only a clinician can diagnose. Take a screenshot to show your doctor.</p></div>`;
+  document.getElementById('phq-out').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+let bt = null, phase = 0, secs = 0, tick = null; const breath = document.getElementById('breath');
+function cycle() { const inhale = phase % 2 === 0; breath.textContent = inhale ? 'Breathe In' : 'Breathe Out'; breath.style.transitionDuration = (inhale ? 4 : 6) + 's'; breath.style.transform = inhale ? 'scale(1.35)' : 'scale(1)'; phase++; bt = setTimeout(cycle, inhale ? 4000 : 6000); }
+document.getElementById('b-start').addEventListener('click', () => { phase = 0; secs = 0; cycle(); document.getElementById('b-start').disabled = true; document.getElementById('b-stop').disabled = false; tick = setInterval(() => { secs++; document.getElementById('b-count').textContent = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`; }, 1000); });
+document.getElementById('b-stop').addEventListener('click', () => { clearTimeout(bt); clearInterval(tick); breath.textContent = 'Well Done'; breath.style.transform = 'scale(1)'; document.getElementById('b-start').disabled = false; document.getElementById('b-stop').disabled = true; });
+const G = LD.store.get('gratitude', {});
+function renderG() { const keys = Object.keys(G).sort().reverse().slice(0, 14); document.getElementById('g-list').innerHTML = keys.length ? keys.map(k => `<li><strong style="color:var(--gold-d)">${k}</strong><br>${G[k].filter(Boolean).map(LD.esc).join(' · ')}</li>`).join('') : '<li>Nothing yet.</li>'; const t = G[LD.todayISO()]; if (t) ['g1', 'g2', 'g3'].forEach((id, i) => document.getElementById(id).value = t[i] || ''); }
+renderG();
+document.getElementById('g-save').addEventListener('click', () => { const v = ['g1', 'g2', 'g3'].map(id => document.getElementById(id).value.trim()); if (!v.some(Boolean)) { LD.toast('Even one thing counts'); return; } G[LD.todayISO()] = v; LD.store.set('gratitude', G); renderG(); document.getElementById('g-msg').textContent = 'Saved.'; });
+const MENU = { a: ['Drink a full glass of water', 'Open a window and take five slow breaths', 'Stand up and stretch toward the ceiling', 'Wash your face with cool water', 'Step outside the door for one minute', 'Send one person a single-line message', 'Put on a song you used to love', 'Make the bed, roughly', 'Write down one thing you are grateful for', 'Look at the sky for a minute'],
+  b: ['Walk to the end of the street and back', 'Shower and put on clean clothes', 'Eat something small with protein', 'Clear one surface', 'Sit in the sun or by the brightest window', 'Water the plants or tidy one shelf', 'Do the breathing exercise for a few minutes', "Read today's message", 'Call someone who is easy to talk to', 'Write three lines in your journal'],
+  c: ['A 20–30 minute walk, ideally in a park or by trees', 'Cook a simple meal with vegetables', 'Attend something: church, a group, a class', 'Do one errand you have been avoiding', 'Meet a friend for a coffee or a walk', 'Spend time on something you used to enjoy, even if it feels flat', "Book a doctor's appointment", 'Help someone with a small task', 'Visit a library, a garden or a quiet place', "Plan tomorrow's first small step and set an alarm for it"] };
+const mk = 'menu_' + LD.todayISO(); const md = LD.store.get(mk, {});
+Object.entries(MENU).forEach(([g, items]) => { document.querySelector(`.menu[data-g="${g}"]`).innerHTML = items.map((t, i) => `<button data-k="${g}${i}" class="${md[g + i] ? 'on' : ''}">${md[g + i] ? '✓ ' : ''}${t}</button>`).join(''); });
+document.querySelectorAll('.menu button').forEach(b => b.addEventListener('click', () => { const k = b.dataset.k; md[k] = !md[k]; LD.store.set(mk, md); b.classList.toggle('on', md[k]); b.textContent = (md[k] ? '✓ ' : '') + b.textContent.replace(/^✓ /, ''); }));
+</script>
+</body>
+</html>

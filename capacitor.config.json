@@ -1,0 +1,27 @@
+{
+  "appId": "com.azurenexus.light",
+  "appName": "Light for Every Day",
+  "webDir": "www",
+  "server": {
+    "url": "https://light.azurenexus.com",
+    "cleartext": false
+  },
+  "android": {
+    "backgroundColor": "#0E1628",
+    "allowMixedContent": false,
+    "overScrollMode": "never"
+  },
+  "ios": {
+    "backgroundColor": "#0E1628",
+    "contentInset": "always",
+    "scrollEnabled": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": true,
+      "launchShowDuration": 1500,
+      "backgroundColor": "#0E1628",
+      "showSpinner": false
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light for Every Day — All Messages</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+</head>
+<body>
+<main class="main">
+  <div class="topbar">
+    <div class="tb-title" id="tb-title">All Messages</div>
+    <div class="tb-right"><span class="tb-sub" id="tb-count"></span></div>
+  </div>
+  <div class="filter-bar" id="filters">
+    <span class="filter-lbl">Week</span>
+    <button class="fb on" onclick="setWeek('all',this)">All</button>
+    <div class="search-wrap"><input class="search-inp" placeholder="Search title, quote or author…" id="search" oninput="doSearch()"></div>
+  </div>
+  <div id="loading"><span class="load-t">Loading messages…</span></div>
+  <div class="body" id="body" style="display:none;padding:28px 40px 80px">
+    <div class="grid" id="grid"></div>
+    <div class="pag" id="pag"></div>
+  </div>
+</main>
+<script src="assets/app.js?v=202611091902"></script>
+<script src="assets/shell.js?v=202611091902"></script>
+<script>
+const PAGE = 18; let all = [], filtered = [], page = 0, weekFilter = 'all', searchQ = '', themes = [];
+const esc = LD.esc;
+async function load() {
+  document.getElementById('tb-title').textContent = T.all;
+  const H = { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY };
+  [themes, all] = await Promise.all([LD.getThemes(), fetch(`${LD.SB}/rest/v1/ld_messages?select=day_number,theme,title,quote,quote_source,scripture&lang=eq.${LD.lang()}&status=eq.published&order=day_number`, { headers: H }).then(r => r.json())]);
+  if (!all.length && LD.lang() !== 'en') all = await fetch(`${LD.SB}/rest/v1/ld_messages?select=day_number,theme,title,quote,quote_source,scripture&lang=eq.en&status=eq.published&order=day_number`, { headers: H }).then(r => r.json());
+  const fb = document.getElementById('filters'); const sw = fb.querySelector('.search-wrap');
+  themes.forEach(t => { const b = document.createElement('button'); b.className = 'fb'; b.textContent = `${t.week}`; b.title = t.title; b.onclick = () => setWeek(t.week, b); fb.insertBefore(b, sw); });
+  document.getElementById('loading').style.display = 'none'; document.getElementById('body').style.display = 'block';
+  applyFilters();
+}
+function applyFilters() {
+  const sq = searchQ.toLowerCase();
+  filtered = all.filter(d => { const w = Math.floor((d.day_number - 1) / 7) + 1; return (weekFilter === 'all' || w === weekFilter) && (!sq || (d.title || '').toLowerCase().includes(sq) || (d.quote || '').toLowerCase().includes(sq) || (d.quote_source || '').toLowerCase().includes(sq)); });
+  page = 0; renderPage();
+}
+function renderPage() {
+  const slice = filtered.slice(page * PAGE, page * PAGE + PAGE);
+  document.getElementById('tb-count').textContent = `${filtered.length} Messages`;
+  const done = LD.done();
+  document.getElementById('grid').innerHTML = slice.map((d, i) => {
+    const th = themes.find(t => t.slug === d.theme) || {};
+    return `<a class="acard" href="today.html?day=${d.day_number}" style="animation-delay:${(i % PAGE * 0.03).toFixed(2)}s">
+      <div class="card-img"><div class="card-img-placeholder"><div class="card-img-grad"></div><div class="card-img-verse">${esc(d.scripture?.reference || th.title || '')}</div></div></div>
+      <div class="card-body">
+        <div class="card-date">${T.day} ${d.day_number} · ${T.week} ${th.week || ''}${done[d.day_number] ? ' · ✓' : ''}</div>
+        <div class="card-theme">${esc(d.title)}</div>
+        <div class="card-quote">"${esc(d.quote)}"</div>
+      </div>
+      <div class="card-foot"><span class="card-ref">${esc(th.title || '')}</span><span class="card-arr">→</span></div>
+    </a>`;
+  }).join('');
+  const pages = Math.ceil(filtered.length / PAGE); let ph = '';
+  if (pages > 1) {
+    ph += `<button class="pag-btn" onclick="gp(page-1)" ${page === 0 ? 'disabled' : ''}>← Prev</button>`;
+    for (let p = Math.max(0, page - 2); p <= Math.min(pages - 1, page + 2); p++) ph += `<button class="pag-btn ${p === page ? 'on' : ''}" onclick="gp(${p})">${p + 1}</button>`;
+    ph += `<button class="pag-btn" onclick="gp(page+1)" ${page >= pages - 1 ? 'disabled' : ''}>Next →</button>`;
+  }
+  document.getElementById('pag').innerHTML = ph;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function gp(p) { if (p >= 0 && p < Math.ceil(filtered.length / PAGE)) { page = p; renderPage(); } }
+function setWeek(w, btn) { weekFilter = w; document.querySelectorAll('.fb').forEach(b => b.classList.remove('on')); btn.classList.add('on'); applyFilters(); }
+function doSearch() { searchQ = document.getElementById('search').value; applyFilters(); }
+load().catch(console.error);
+</script>
+</body>
+</html>

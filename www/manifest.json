@@ -1,0 +1,22 @@
+{
+  "name": "Light for Every Day",
+  "short_name": "Light",
+  "description": "Daily hope and reflection for people living with depression, grounded in research.",
+  "start_url": "./today.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0E1628",
+  "theme_color": "#C9A43A",
+  "orientation": "portrait",
+  "lang": "en",
+  "categories": ["health", "lifestyle"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Today's Light", "url": "./today.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Help Now", "url": "./help.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

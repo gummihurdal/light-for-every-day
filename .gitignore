@@ -4,3 +4,9 @@ node_modules/
 /sql_out/
 ops/.env
 ops/send.log
+ios/App/Pods/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.keystore

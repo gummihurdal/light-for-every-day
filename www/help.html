@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Now — Light for Every Day</title>
+<meta name="description" content="Crisis lines for your country, when to see a doctor, and what to expect.">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+</head>
+<body>
+<main class="main">
+  <div class="topbar"><div class="tb-title">Help Now</div><div class="tb-sub">You Are Not Alone</div></div>
+  <div class="page-hero">
+    <div class="ph-eyebrow">If You Need Someone Now</div>
+    <div class="ph-title">Help, Now</div>
+    <div class="ph-rule"></div>
+    <div class="ph-sub">If you are thinking about ending your life, or you are afraid you might hurt yourself, please contact someone right now. Crisis lines are free, confidential, and used to exactly this. You do not need the right words.</div>
+  </div>
+  <div class="body" style="padding:32px 48px 80px">
+    <div class="settings-cols">
+      <div>
+        <div class="sec">
+          <div class="sec-title">Switzerland</div>
+          <div class="line"><div><b>Die Dargebotene Hand · La Main Tendue · Telefono Amico</b><small>24 hours, free, anonymous. Also by chat at 143.ch</small></div><a class="tel" href="tel:143">143</a></div>
+          <div class="line"><div><b>Pro Juventute</b><small>For children and young people, 24 hours</small></div><a class="tel" href="tel:147">147</a></div>
+          <div class="line"><div><b>Emergency</b><small>If life is in immediate danger</small></div><a class="tel" href="tel:144">144</a></div>
+        </div>
+        <div class="sec">
+          <div class="sec-title">Your Country</div>
+          <label class="field-lbl" for="country">Choose a country</label>
+          <select id="country" class="field-select" style="margin-bottom:14px"></select>
+          <div id="lines"></div>
+          <p class="sp-note">Compiled from the public directory of suicide crisis lines on Wikipedia. Numbers change; if one does not work, search "crisis line" with your country's name, or call your emergency number. Report a wrong number on the <a href="contact.html" style="color:var(--gold-d)">contact page</a>.</p>
+        </div>
+        <div class="sec">
+          <div class="sec-title">When to See a Doctor</div>
+          <p>Make an appointment if, for more than two weeks, you have had low mood or lost interest in most things, and this is affecting your sleep, energy, appetite, concentration or daily life. Go sooner if you have thoughts of death or self-harm, if you cannot look after yourself, or if someone who knows you is worried.</p>
+          <p>You can say exactly this: <em>"I think I might be depressed. For the past few weeks I have felt … and I am struggling with … I would like to talk about what help is available."</em> You can show the <a href="tools.html#phq" style="color:var(--gold-d)">self-check score</a>. A family doctor is a good first door; they can refer you to a psychologist or psychiatrist.</p>
+        </div>
+      </div>
+      <div>
+        <div class="plan">
+          <div class="plan-lbl">What Depression Is Not</div>
+          <div class="plan-desc">It is not weakness, laziness, a character flaw, or a failure of faith. It is a common illness that affects around one person in five at some point in life, and it is one of the most treatable. Most people who get treatment improve. Believers get depressed too; the Bible is full of people who did.</div>
+        </div>
+        <div class="plan">
+          <div class="plan-lbl">If You Are Worried About Someone</div>
+          <div class="plan-desc">Ask directly and calmly: "Are you thinking about suicide?" Asking does not plant the idea; it opens a door.<br><br>Listen more than you talk. Do not argue, minimise, or rush to fix.<br><br>Stay with them, or make sure someone does. Help them call a line or reach a doctor; offer to go along.<br><br>Remove means if there is immediate danger, and call emergency services.<br><br>Keep showing up afterwards. Depression lasts longer than a crisis.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="assets/app.js?v=202611091902"></script>
+<script src="assets/shell.js?v=202611091902"></script>
+<script>
+(async () => {
+  const sel = document.getElementById('country'), out = document.getElementById('lines'); let data = {};
+  try { data = await (await fetch('crisis_lines.json')).json(); } catch (e) { out.innerHTML = '<p>Country list could not load. Please search "crisis line" and your country, or call your emergency number.</p>'; return; }
+  const names = Object.keys(data).sort(); sel.innerHTML = names.map(n => `<option>${LD.esc(n)}</option>`).join('');
+  const REGION = { CH: 'Switzerland', DE: 'Germany', AT: 'Austria', FR: 'France', IT: 'Italy', ES: 'Spain', PT: 'Portugal', GB: 'United Kingdom', US: 'United States', NL: 'Netherlands', BE: 'Belgium', CZ: 'Czech Republic', PL: 'Poland', RO: 'Romania', BG: 'Bulgaria', HU: 'Hungary', SK: 'Slovakia', SI: 'Slovenia', HR: 'Croatia', IS: 'Iceland', NO: 'Norway', SE: 'Sweden', DK: 'Denmark', FI: 'Finland', IE: 'Ireland', LU: 'Luxembourg', GR: 'Greece', CA: 'Canada', AU: 'Australia', BR: 'Brazil', AR: 'Argentina', MX: 'Mexico', IN: 'India', ZA: 'South Africa', PH: 'Philippines', KE: 'Kenya', NG: 'Nigeria', GH: 'Ghana' };
+  const guess = LD.store.get('country', null) || REGION[(navigator.language.split('-')[1] || '').toUpperCase()] || 'Switzerland';
+  if (names.includes(guess)) sel.value = guess;
+  function show() {
+    const c = sel.value; LD.store.set('country', c); const ls = data[c] || [];
+    out.innerHTML = ls.length ? ls.map(l => { const nums = (l.contact.match(/\+?\d[\d \-()]{3,}\d/g) || []).map(n => n.trim()); return `<div class="line"><div><b>${LD.esc(l.contact)}</b>${l.url ? `<small><a href="${LD.esc(l.url)}" target="_blank" rel="noopener" style="color:var(--gold-d)">${LD.esc(l.url.replace(/^https?:\/\//, '').replace(/\/$/, ''))}</a></small>` : ''}</div>${nums[0] ? `<a class="tel" href="tel:${nums[0].replace(/[^\d+]/g, '')}">Call</a>` : ''}</div>`; }).join('') : '<p>No line listed for this country. Please call your national emergency number.</p>';
+  }
+  sel.addEventListener('change', show); show();
+})();
+</script>
+</body>
+</html>

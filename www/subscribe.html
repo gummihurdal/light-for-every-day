@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily E-mail — Light for Every Day</title>
+<meta name="description" content="Receive each day's message by e-mail, every morning, for 84 days.">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+</head>
+<body>
+<main class="main">
+  <div class="topbar"><div class="tb-title">Get It By E-mail</div><div class="tb-sub">One Message Each Morning</div></div>
+  <div class="body" style="padding:56px 48px 80px">
+    <div class="contact-wrap">
+      <div class="contact-header">
+        <div class="contact-eyebrow">Delivered to You</div>
+        <div class="contact-title">One Message, Every Morning</div>
+        <div class="contact-sub">The same daily message, in your inbox at the hour you choose, so you do not have to remember to come here. Day 1 arrives tomorrow morning; the series runs 84 days. Unsubscribe with one tap at any time.</div>
+      </div>
+      <form class="contact-form" id="f" novalidate>
+        <div><label class="field-lbl" for="email">E-mail Address</label><input class="field-input" type="email" id="email" required autocomplete="email" placeholder="you@example.com"></div>
+        <div class="form-row">
+          <div><label class="field-lbl" for="hour">Deliver At</label><select class="field-select" id="hour"><option value="5">05:00</option><option value="6">06:00</option><option value="7" selected>07:00</option><option value="8">08:00</option><option value="9">09:00</option><option value="12">12:00</option><option value="18">18:00</option><option value="21">21:00</option></select></div>
+          <div><label class="field-lbl" for="tz">Time Zone</label><select class="field-select" id="tz"></select></div>
+        </div>
+        <label style="display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--text);line-height:1.6"><input type="checkbox" id="consent" style="accent-color:var(--gold);width:18px;height:18px;margin-top:4px;flex:none"><span>I agree to receive one e-mail a day for 84 days. My address is used for nothing else and is deleted when I unsubscribe. <a href="privacy.html" style="color:var(--gold-d)">Privacy</a></span></label>
+        <div class="form-err" id="msg"></div>
+        <button class="submit-btn" type="submit" id="go">Start By E-mail →</button>
+      </form>
+      <div class="form-success" id="ok"><div class="form-success-icon">✦</div><div class="form-success-t" id="ok-t">Almost There</div><div class="form-success-s" id="ok-s"></div></div>
+      <div class="contact-or" style="margin-top:40px"><div class="contact-or-line"></div><span class="contact-or-text">WhatsApp · Telegram · Signal</span><div class="contact-or-line"></div></div>
+      <p style="text-align:center;font-style:italic;color:var(--text-d);line-height:1.7">Every message has a Share button, so you can forward it to a friend or a group. A WhatsApp broadcast is being prepared; until then the e-mail is the reliable way to receive it.</p>
+    </div>
+  </div>
+</main>
+<script src="assets/app.js?v=202611091902"></script>
+<script src="assets/shell.js?v=202611091902"></script>
+<script>
+const TZ = ['Europe/Zurich', 'Europe/Berlin', 'Europe/Vienna', 'Europe/Paris', 'Europe/Rome', 'Europe/Madrid', 'Europe/Lisbon', 'Europe/London', 'Europe/Dublin', 'Europe/Amsterdam', 'Europe/Brussels', 'Europe/Prague', 'Europe/Warsaw', 'Europe/Bucharest', 'Europe/Sofia', 'Europe/Budapest', 'Europe/Athens', 'Europe/Oslo', 'Europe/Stockholm', 'Europe/Copenhagen', 'Europe/Helsinki', 'Atlantic/Reykjavik', 'America/New_York', 'America/Chicago', 'America/Denver', 'America/Los_Angeles', 'America/Sao_Paulo', 'Africa/Johannesburg', 'Africa/Nairobi', 'Asia/Manila', 'Asia/Kolkata', 'Australia/Sydney'];
+const tz = document.getElementById('tz'); const mine = Intl.DateTimeFormat().resolvedOptions().timeZone; if (mine && !TZ.includes(mine)) TZ.unshift(mine);
+tz.innerHTML = TZ.map(z => `<option ${z === mine ? 'selected' : ''}>${z}</option>`).join('');
+document.getElementById('f').addEventListener('submit', async e => {
+  e.preventDefault();
+  const email = document.getElementById('email').value.trim(), msg = document.getElementById('msg');
+  const show = t => { msg.textContent = t; msg.style.display = 'block'; };
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { show('Please check the e-mail address.'); return; }
+  if (!document.getElementById('consent').checked) { show('Please tick the consent box.'); return; }
+  document.getElementById('go').disabled = true; msg.style.display = 'none';
+  try {
+    const r = await LD.subscribe(email, parseInt(document.getElementById('hour').value), tz.value);
+    document.getElementById('f').style.display = 'none'; document.getElementById('ok').style.display = 'block';
+    if (r === 'exists') { document.getElementById('ok-t').textContent = 'Already Signed Up'; document.getElementById('ok-s').textContent = 'Check your inbox and spam folder for the confirmation e-mail.'; }
+    else document.getElementById('ok-s').textContent = `We have sent a confirmation to ${email}. Tap the link in it and your first message arrives tomorrow morning. If nothing arrives within an hour, check the spam folder.`;
+  } catch (err) { show('Something went wrong. Please try again in a minute.'); document.getElementById('go').disabled = false; }
+});
+</script>
+</body>
+</html>
