@@ -1,4 +1,4 @@
-/* Light for Every Day — sidebar shell replicated from graceforevery.day. Requires assets/app.js?v=202611091902 (LD). */
+/* Light for Every Day — sidebar shell replicated from graceforevery.day. Requires assets/app.js?v=202611092039 (LD). */
 (function () {
   const SHORT = {
     en: ['Understanding', 'Thoughts', 'Movement', 'Sleep & Light', 'Food & Mood', 'Water & Basics', 'Outdoors', 'What We Reach For', 'Gratitude', 'Connection', 'Trust & Meaning', 'Getting Help'],
@@ -65,7 +65,7 @@
 </aside>`;
   document.body.insertAdjacentHTML('afterbegin', html);
   var now = new Date();
-  var LOC = { en: 'en-GB', de: 'de-CH', fr: 'fr-CH' }[L] || 'en-GB';
+  var LOC = { en: 'en-GB', de: 'de-CH', fr: 'fr-CH', es: 'es-ES' }[L] || 'en-GB';
   var DAYNAME = now.toLocaleDateString(LOC, { weekday: 'long' }), MONNAME = now.toLocaleDateString(LOC, { month: 'long' });
   var cap = x => x.charAt(0).toUpperCase() + x.slice(1);
   var el = document.getElementById('sb-date');
@@ -99,7 +99,7 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addCrisis); else addCrisis();
   window.LDshell = { THEMES, addCrisis };
-  if (window.LD) { LD.applySettings(); if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js?v=202611091902').catch(() => {}); }
+  if (window.LD) { LD.applySettings(); if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js?v=202611092039').catch(() => {}); }
   window.greetingFor = function () { const h = now.getHours(); const g = T.greet[h < 5 ? 0 : h < 12 ? 1 : h < 13 ? 2 : h < 18 ? 3 : 4]; const n = window.LD && LD.settings.name; return `${g}${n ? ', ' + n : ''}`; };
   window.topDate = function () { return cap(now.toLocaleDateString(LOC, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })); };
 })();

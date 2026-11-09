@@ -232,7 +232,7 @@ body{background:var(--navy4);color:var(--text);font-family:'Cormorant Garamond',
   </div>
 </footer>
 
-<script src="assets/app.js?v=202611091902"></script>
+<script src="assets/app.js?v=202611092039"></script>
 <script>
 const LAND = {
   en: { eyebrow: 'Pause · Breathe · Walk', sub: 'A place to pause when the days are dark. One short message each morning for people living with depression.', ctaToday: "Today's Light", ctaJourney: 'The Journey', ctaEmail: 'Get It By E-mail', scroll: 'Scroll Down', tsLabel: "Today's Word of Hope", fEyebrow: 'Everything in One Place', fTitle: 'Where would you like to begin?',
@@ -267,7 +267,7 @@ document.querySelectorAll('#lang-bar button').forEach(b => b.addEventListener('c
       document.getElementById('verse-ref').textContent = m.quote_source;
     }
   } catch (e) { document.getElementById('verse-text').textContent = 'Weeping may endure for a night, but joy comes in the morning.'; document.getElementById('verse-ref').textContent = 'Psalm 30:5'; }
-  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js?v=202611091902').catch(() => {});
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js?v=202611092039').catch(() => {});
 })();
 </script>
 </body>

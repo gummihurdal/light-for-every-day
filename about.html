@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0E1628">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+<link rel="stylesheet" href="assets/grace.css?v=202611092039">
 </head>
 <body>
 <main class="main">
@@ -60,8 +60,8 @@
     </div>
   </div>
 </main>
-<script src="assets/app.js?v=202611091902"></script>
-<script src="assets/shell.js?v=202611091902"></script>
+<script src="assets/app.js?v=202611092039"></script>
+<script src="assets/shell.js?v=202611092039"></script>
 <script>
 (async () => {
   const [themes, srcs] = await Promise.all([LD.getThemes(), fetch(LD.SB + '/rest/v1/ld_sources?select=id,title,authors,year,journal,doi,kind,theme,citation&order=theme,year', { headers: { apikey: LD.KEY, Authorization: 'Bearer ' + LD.KEY } }).then(r => r.json())]);

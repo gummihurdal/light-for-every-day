@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0E1628">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/grace.css?v=202611091902">
+<link rel="stylesheet" href="assets/grace.css?v=202611092039">
 </head>
 <body>
 <main class="main">
@@ -68,8 +68,8 @@
     </section>
   </div>
 </main>
-<script src="assets/app.js?v=202611091902"></script>
-<script src="assets/shell.js?v=202611091902"></script>
+<script src="assets/app.js?v=202611092039"></script>
+<script src="assets/shell.js?v=202611092039"></script>
 <script>
 document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b)); document.querySelectorAll('.pane').forEach(p => p.classList.toggle('on', p.id === 'pane-' + b.dataset.t)); history.replaceState(null, '', '#' + b.dataset.t); }));
 if (location.hash) { const b = document.querySelector(`.tabs button[data-t="${location.hash.slice(1)}"]`); if (b) b.click(); }
